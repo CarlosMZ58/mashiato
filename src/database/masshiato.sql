@@ -8,7 +8,7 @@ create table registro (
     apellido varchar(30),
     telefono varchar(30),
     correo varchar(50),
-    contraseña varchar(30),
+    contrasena varchar(30),
     direccion varchar(50)
 );
-insert into registro(nombre, correo, contraseña)values ("admin","admin","admin");
+insert into registro(nombre, correo, contrasena)values ("admin","admin","admin");
