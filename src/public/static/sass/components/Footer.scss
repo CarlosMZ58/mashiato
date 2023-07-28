@@ -1,0 +1,54 @@
+$colorfondo: #fff;
+$colorsecundario: #b09b71;
+* {
+    @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=PT+Mono&display=swap");
+}
+@mixin grosor{
+  font-weight: 800;
+}
+@mixin alinearTextCenter{
+  text-align: center;
+}
+@mixin fuenteTitulos {
+    font-family: "Nunito", sans-serif;
+}
+@mixin fuenteParrafosN {
+    font-family: "Quicksand", sans-serif;
+}
+@mixin fuenteParrafosP {
+    font-family: "PT Mono", monospace;
+}
+@mixin listas {
+    list-style: none;
+}
+@mixin border {
+    border-radius: 1.5em;
+}
+body{
+  padding: 0;
+  margin: 0;
+}
+footer{
+  background: $colorsecundario;
+  #contenedorFooter {
+      width: 100%;
+      height: 100%;
+      display: grid;
+      grid-template-columns: repeat(3, 30%);
+      justify-content: space-evenly;
+      h3 {
+          font-size: 25px;
+          @include fuenteTitulos;
+          @include alinearTextCenter;
+          @include grosor();
+      }
+      #contenedorLogoNavRedesFooter{
+        #navPrincipalFooter{
+          width: 100%;
+          height: 100%;
+        }
+      }
+  }
+}
