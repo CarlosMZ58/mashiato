@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"style.css"}
+{"version":3,"sourceRoot":"","sources":["components/Navegacion.scss"],"names":[],"mappings":"AAMA;EACI;EACA;EACA;EACA;;AACA;EACI;EACA;;AACA;EACI;EACA;;;AAKZ;EACI;EACA;EACA;;AAEA;EAzBA;EACA;EACA;EAyBI;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACI;;AAOJ;EACI;EACA;;AAOJ;EACI;EACA;EACA;EACA;EACA;EACA;EAEA;EACA;;AAEA;EACI;EACA;EACA;EAvEhB;EACA;EACA","file":"style.css"}
