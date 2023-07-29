@@ -1,6 +1,10 @@
-$colorFondo: #fff;
-$colorSecundario: #b09b71;
+$colorFondoAndText: #fff;
+$colorSecundario: #9e7540;
 $colorTerceareo: #000;
+$colorInsta: #e72fcfde;
+$colorWhatsapp: #23c73e;
+$colorTwitter: #1d8dd8;
+$colorFacebook: #0f26a8;
 * {
     @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap");
     @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
@@ -53,6 +57,7 @@ footer {
         grid-template-columns: repeat(3, 30%);
         justify-content: space-evenly;
         h3 {
+            color: $colorFondoAndText;
             font-size: 25px;
             @include fuenteTitulos;
             @include alinearTextCenter;
@@ -72,15 +77,110 @@ footer {
                     font-weight: bold;
                     @include textDecoration();
                     @include fuenteParrafosP();
-                    color: $colorTerceareo;
+                    color: $colorFondoAndText;
                 }
                 li:hover {
                     @include trasform();
                 }
             }
             #redesFooter {
-                @include centrar();
+                #menuRedesFooter {
+                    display: grid;
+                    grid-template-columns: repeat(4, 20%);
+                    place-content: center;
+                    gap: 2px;
+                    margin-right: 20px;
+                    li {
+                        @include listas();
+                        @include centrar();
+                    }
+                    & figure {
+                        height: 29px;
+                        background-color: $colorFondoAndText;
+                        border-radius: 50%;
+                        border: #5c3706 solid 3px;
+                        padding: 7px;
+                        margin: 0 30px 0 0;
+                    }
+                    & a {
+                        @include textDecoration();
+                    }
+                    & .ionicon {
+                        width: auto;
+                        height: 29px;
+                    }
+                    #logoInstagram {
+                        fill: $colorInsta;
+                    }
+                    #logoWhatsapp {
+                        fill: $colorWhatsapp;
+                    }
+                    #logoTwitter {
+                        fill: $colorTwitter;
+                    }
+                    #logoFacebook {
+                        fill: $colorFacebook;
+                    }
+                    figure:hover {
+                        transform: scale(1.2);
+                        background: $colorFondoAndText;
+                        opacity: 70%;
+                    }
+                }
             }
+        }
+        #menuFooter {
+            li {
+                @include listas();
+                padding: 10px;
+                text-align: center;
+                width: auto;
+                height: auto;
+            }
+            & a {
+                font-size: 22px;
+                margin-right: 42px;
+                font-weight: bold;
+                @include textDecoration();
+                @include fuenteParrafosP();
+                color: $colorFondoAndText;
+            }
+            li:hover {
+                @include trasform();
+            }
+        }
+        #productosFooter{
+            li {
+                @include listas();
+                padding: 10px;
+                text-align: center;
+                width: auto;
+                height: auto;
+            }
+            & a {
+                font-size: 22px;
+                margin-right: 40px;
+                font-weight: bold;
+                @include textDecoration();
+                @include fuenteParrafosP();
+                color: $colorFondoAndText;
+            }
+            li:hover {
+                @include trasform();
+            }
+        }
+    }
+    #derechosAutor{
+        hr{
+            border-width: 2px;
+            border-top: none;
+        }
+        p{
+            color: $colorFondoAndText;
+            font-size: 18px;
+            @include fuenteParrafosP();
+            @include alinearTextCenter();
+            padding: 8px;
         }
     }
 }
