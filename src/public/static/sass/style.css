@@ -11,6 +11,87 @@ body {
 
 footer {
   background: #9e7540;
+  width: 100vw;
+  position: fixed;
+  bottom: 0px;
+}
+footer #contenedorAnimacion {
+  background-color: #9e7540;
+  margin: -5px 0px 0px 0px;
+  padding: 0px;
+  color: #fff;
+  text-align: center;
+}
+footer #contenedorAnimacion svg {
+  width: 100%;
+  overflow: visible;
+}
+footer #contenedorAnimacion svg .wave {
+  animation: wave 3s linear;
+  animation-iteration-count: infinite;
+  fill: #9e7540;
+}
+footer #contenedorAnimacion svg .drop {
+  fill: #9e7540;
+  animation: drop 3.2s linear infinite normal;
+  stroke: #9e7540;
+  stroke-width: 0.5;
+  transform: translateY(25px);
+  transform-box: fill-box;
+  transform-origin: 50% 100%;
+}
+footer #contenedorAnimacion svg .drop2 {
+  animation-delay: 3s;
+  animation-duration: 3s;
+}
+footer #contenedorAnimacion svg .drop3 {
+  animation-delay: -2s;
+  animation-duration: 3.4s;
+}
+footer #contenedorAnimacion svg .drop4 {
+  animation-delay: 1.7s;
+}
+footer #contenedorAnimacion svg .drop5 {
+  animation-delay: 2.7s;
+  animation-duration: 3.1s;
+}
+footer #contenedorAnimacion svg .drop6 {
+  animation-delay: -2.1s;
+  animation-duration: 3.2s;
+}
+footer #contenedorAnimacion svg .gooeff {
+  filter: url(#goo);
+}
+footer #contenedorAnimacion svg #wave2 {
+  animation-duration: 5s;
+  animation-direction: reverse;
+  opacity: 0.6;
+}
+footer #contenedorAnimacion svg #wave3 {
+  animation-duration: 7s;
+  opacity: 0.3;
+}
+@keyframes drop {
+  0% {
+    transform: translateY(25px);
+  }
+  30% {
+    transform: translateY(-10px) scale(0.1);
+  }
+  30.001% {
+    transform: translateY(25px) scale(1);
+  }
+  70% {
+    transform: translateY(25px);
+  }
+  100% {
+    transform: translateY(-10px) scale(0.1);
+  }
+}
+@keyframes wave {
+  to {
+    transform: translateX(-100%);
+  }
 }
 footer #contenedorFooter {
   width: 100%;
