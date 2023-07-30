@@ -5,263 +5,293 @@ $colorInsta: #e72fcfde;
 $colorWhatsapp: #23c73e;
 $colorTwitter: #1d8dd8;
 $colorFacebook: #0f26a8;
+
 * {
-    @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap");
-    @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
-    @import url("https://fonts.googleapis.com/css2?family=PT+Mono&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=PT+Mono&display=swap");
 }
 @mixin trasform {
-    transform: scale(1.1);
-    opacity: 0.9;
+  transform: scale(1.1);
+  opacity: 0.9;
 }
 @mixin centrar {
-    display: grid;
-    place-items: center;
-    place-content: center;
+  display: grid;
+  place-items: center;
+  place-content: center;
 }
 @mixin textDecoration {
-    text-decoration: none;
-    color: $colorTerceareo;
+  text-decoration: none;
+  color: $colorTerceareo;
 }
 @mixin grosor {
-    font-weight: 800;
+  font-weight: 800;
 }
 @mixin alinearTextCenter {
-    text-align: center;
+  text-align: center;
 }
 @mixin fuenteTitulos {
-    font-family: "Nunito", sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 @mixin fuenteParrafosN {
-    font-family: "Quicksand", sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 @mixin fuenteParrafosP {
-    font-family: "PT Mono", monospace;
+  font-family: "PT Mono", monospace;
 }
 @mixin listas {
-    list-style: none;
+  list-style: none;
 }
 @mixin border {
-    border-radius: 1.5em;
+  border-radius: 1.5em;
 }
 body {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 footer {
+  svg {
+    width: 100%;
+    overflow: visible;
+  }
+  .wave {
+    animation: wave 3s linear;
+    animation-iteration-count: infinite;
+    fill: $colorSecundario;
+  }
+  .drop {
+    fill: $colorSecundario;
+    animation: drop 3.2s linear infinite normal;
+    stroke: $colorSecundario;
+    stroke-width: 0.5;
+    transform: translateY(25px);
+    transform-box: fill-box;
+    transform-origin: 50% 100%;
+  }
+  .drop2 {
+    animation-delay: 3s;
+    animation-duration: 3s;
+  }
+  .drop3 {
+    animation-delay: -2s;
+    animation-duration: 3.4s;
+  }
+  .drop4 {
+    animation-delay: 1.7s;
+  }
+  .drop5 {
+    animation-delay: 2.7s;
+    animation-duration: 3.1s;
+  }
+  .drop6 {
+    animation-delay: -2.1s;
+    animation-duration: 3.2s;
+  }
+  .gooeff {
+    filter: url(#goo);
+  }
+  #wave2 {
+    animation-duration: 5s;
+    animation-direction: reverse;
+    opacity: 0.6;
+  }
+  #wave3 {
+    animation-duration: 7s;
+    opacity: 0.3;
+  }
+  @keyframes drop {
+    0% {
+      transform: translateY(25px);
+    }
+    30% {
+      transform: translateY(-10px) scale(0.1);
+    }
+    30.001% {
+      transform: translateY(25px) scale(1);
+    }
+    70% {
+      transform: translateY(25px);
+    }
+    100% {
+      transform: translateY(-10px) scale(0.1);
+    }
+  }
+  @keyframes wave {
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  #contenedorTodoFooter {
     background: $colorSecundario;
-    width: 100vw;
-    position: fixed;
-    bottom: 0px;
-    #contenedorAnimacion {
-        background-color: $colorSecundario;
-        margin: -5px 0px 0px 0px;
-        padding: 0px;
-        color: $colorFondoAndText;
-        @include alinearTextCenter();
-        svg {
-            width: 100%;
-            overflow: visible;
-            .wave {
-                animation: wave 3s linear;
-                animation-iteration-count: infinite;
-                fill: $colorSecundario;
-            }
-            .drop {
-                fill: $colorSecundario;
-                animation: drop 3.2s linear infinite normal;
-                stroke: $colorSecundario;
-                stroke-width: 0.5;
-                transform: translateY(25px);
-                transform-box: fill-box;
-                transform-origin: 50% 100%;
-            }
-            .drop2 {
-                animation-delay: 3s;
-                animation-duration: 3s;
-            }
-            .drop3 {
-                animation-delay: -2s;
-                animation-duration: 3.4s;
-            }
-            .drop4 {
-                animation-delay: 1.7s;
-            }
-            .drop5 {
-                animation-delay: 2.7s;
-                animation-duration: 3.1s;
-            }
-            .drop6 {
-                animation-delay: -2.1s;
-                animation-duration: 3.2s;
-            }
-            .gooeff {
-                filter: url(#goo);
-            }
-            #wave2 {
-                animation-duration: 5s;
-                animation-direction: reverse;
-                opacity: 0.6;
-            }
-            #wave3 {
-                animation-duration: 7s;
-                opacity: 0.3;
-            }
-            @keyframes drop {
-                0% {
-                    transform: translateY(25px);
-                }
-                30% {
-                    transform: translateY(-10px) scale(0.1);
-                }
-                30.001% {
-                    transform: translateY(25px) scale(1);
-                }
-                70% {
-                    transform: translateY(25px);
-                }
-                100% {
-                    transform: translateY(-10px) scale(0.1);
-                }
-            }
-            @keyframes wave {
-                to {
-                    transform: translateX(-100%);
-                }
-            }
-        }
-    }
     #contenedorFooter {
-        width: 100%;
-        height: 100%;
-        display: grid;
-        grid-template-columns: repeat(3, 30%);
-        justify-content: space-evenly;
-        h3 {
-            color: $colorFondoAndText;
-            font-size: 25px;
-            @include fuenteTitulos;
-            @include alinearTextCenter;
-            @include grosor();
-        }
-        #contenedorLogoNavRedesFooter {
-            #navPrincipalFooter {
-                li {
-                    @include listas();
-                    margin: 15px 100px 15px 0;
-                    text-align: center;
-                    width: auto;
-                    height: auto;
-                }
-                & a {
-                    font-size: 22px;
-                    font-weight: bold;
-                    @include textDecoration();
-                    @include fuenteParrafosP();
-                    color: $colorFondoAndText;
-                }
-                li:hover {
-                    @include trasform();
-                }
-            }
-            #redesFooter {
-                #menuRedesFooter {
-                    display: grid;
-                    grid-template-columns: repeat(4, 20%);
-                    place-content: center;
-                    gap: 2px;
-                    margin-right: 20px;
-                    li {
-                        @include listas();
-                        @include centrar();
-                    }
-                    & figure {
-                        height: 29px;
-                        background-color: $colorFondoAndText;
-                        border-radius: 50%;
-                        border: #5c3706 solid 3px;
-                        padding: 7px;
-                        margin: 0 30px 0 0;
-                    }
-                    & a {
-                        @include textDecoration();
-                    }
-                    & .ionicon {
-                        width: auto;
-                        height: 29px;
-                    }
-                    #logoInstagram {
-                        fill: $colorInsta;
-                    }
-                    #logoWhatsapp {
-                        fill: $colorWhatsapp;
-                    }
-                    #logoTwitter {
-                        fill: $colorTwitter;
-                    }
-                    #logoFacebook {
-                        fill: $colorFacebook;
-                    }
-                    figure:hover {
-                        transform: scale(1.2);
-                        background: $colorFondoAndText;
-                        opacity: 70%;
-                    }
-                }
-            }
-        }
-        #menuFooter {
-            li {
-                @include listas();
-                padding: 10px;
-                text-align: center;
-                width: auto;
-                height: auto;
-            }
-            & a {
-                font-size: 22px;
-                margin-right: 42px;
-                font-weight: bold;
-                @include textDecoration();
-                @include fuenteParrafosP();
-                color: $colorFondoAndText;
-            }
-            li:hover {
-                @include trasform();
-            }
-        }
-        #productosFooter {
-            li {
-                @include listas();
-                padding: 10px;
-                text-align: center;
-                width: auto;
-                height: auto;
-            }
-            & a {
-                font-size: 22px;
-                margin-right: 40px;
-                font-weight: bold;
-                @include textDecoration();
-                @include fuenteParrafosP();
-                color: $colorFondoAndText;
-            }
-            li:hover {
-                @include trasform();
-            }
-        }
-    }
-    #derechosAutor {
-        hr {
-            border-width: 2px;
-            border-top: none;
-        }
-        p {
-            color: $colorFondoAndText;
-            font-size: 18px;
+      width: 100%;
+      height: 100%;
+      display: grid;
+      grid-template-columns: repeat(3, 30%);
+      justify-content: space-evenly;
+      h3 {
+        color: $colorFondoAndText;
+        font-size: 23px;
+        @include fuenteTitulos;
+        @include alinearTextCenter;
+        @include grosor();
+      }
+      #contenedorLogoNavRedesFooter {
+        #navPrincipalFooter {
+          li {
+            @include listas();
+            margin: 15px 30px 15px 0;
+            text-align: center;
+            width: auto;
+            height: auto;
+          }
+          & a {
+            font-size: 20px;
+            font-weight: bold;
+            @include textDecoration();
             @include fuenteParrafosP();
-            @include alinearTextCenter();
-            padding: 8px;
+            color: $colorFondoAndText;
+          }
+          li:hover {
+            @include trasform();
+          }
         }
+        #logoFooter {
+          width: auto;
+          height: auto;
+          cursor: pointer;
+          a {
+            @include textDecoration();
+            display: grid;
+            grid-template-columns: 20% 60%;
+            place-items: right;
+            gap: 20px;
+            #logoTipo {
+              border-radius: 50%;
+              border: #5c3706 solid 3px;
+              width: 80px;
+              height: 80px;
+              img {
+                width: inherit;
+                height: inherit;
+                border-radius: 50%;
+              }
+            }
+            #isoLogo {
+              height: 85px;
+              width: 220px;
+              img {
+                height: inherit;
+                width: inherit;
+              }
+            }
+          }
+        }
+      }
+      #redesFooter {
+        #menuRedesFooter {
+          display: grid;
+          grid-template-columns: repeat(4, 20%);
+          place-content: center;
+          gap: 2px;
+          margin-right: 20px;
+          li {
+            @include listas();
+            @include centrar();
+          }
+          & figure {
+            height: 24px;
+            background-color: $colorFondoAndText;
+            border-radius: 50%;
+            border: #5c3706 solid 3px;
+            padding: 7px;
+            margin: 0 24px 0 0;
+          }
+          & a {
+            @include textDecoration();
+          }
+          & .ionicon {
+            width: auto;
+            height: 24px;
+          }
+          #logoInstagram {
+            fill: $colorInsta;
+          }
+          #logoWhatsapp {
+            fill: $colorWhatsapp;
+          }
+          #logoTwitter {
+            fill: $colorTwitter;
+          }
+          #logoFacebook {
+            fill: $colorFacebook;
+          }
+          figure:hover {
+            transform: scale(1.2);
+            background: $colorFondoAndText;
+            opacity: 70%;
+          }
+        }
+      }
     }
+    #menuFooter {
+      li {
+        @include listas();
+        padding: 10px;
+        text-align: center;
+        width: auto;
+        height: auto;
+      }
+      & a {
+        font-size: 20px;
+        margin-right: 42px;
+        font-weight: bold;
+        @include textDecoration();
+        @include fuenteParrafosP();
+        color: $colorFondoAndText;
+      }
+      li:hover {
+        @include trasform();
+      }
+    }
+    #productosFooter {
+      li {
+        @include listas();
+        text-align: center;
+        padding: 10px;
+        width: auto;
+        height: auto;
+      }
+      & a {
+        font-size: 20px;
+        margin-right: 40px;
+        font-weight: bold;
+        @include textDecoration();
+        @include fuenteParrafosP();
+        color: $colorFondoAndText;
+      }
+      li:hover {
+        @include trasform();
+      }
+    }
+  }
+  #derechosAutor {
+    hr {
+      border-width: 1.5px;
+      opacity: 40%;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      padding: 5px;
+      margin: 3px;
+    }
+    p {
+      color: $colorFondoAndText;
+      font-size: 16px;
+      @include fuenteParrafosP();
+      @include alinearTextCenter();
+      padding: 15px;
+      margin: 0;
+    }
+  }
 }
