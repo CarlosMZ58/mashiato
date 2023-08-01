@@ -1,99 +1,108 @@
 body {
   padding: 0;
   margin: 0;
+  background-color: #fff;
 }
 
-#contenedorNav {
+#headerNav {
   width: 100%;
-  height: 100px;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #9e7540;
+}
+#headerNav #logosHeader {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: repeat(2, 32%);
+  align-content: center;
+  align-items: center;
+  padding: 0;
 }
-#contenedorNav #logosNav {
-  display: grid;
-  grid-template-columns: 25% 75%;
+#headerNav #logosHeader .imgLogosHeader {
+  width: 120px;
+  height: 60px;
+  border-radius: 10px;
 }
-#contenedorNav #logosNav .imgLogosNav {
-  width: 150px;
-  height: 80px;
-}
-#contenedorNav #logosNav .logo1 {
-  border-radius: 30%;
-}
-#contenedorNav #logosNav .logo2 {
+#headerNav #logosHeader .logoHeader {
   width: 100px;
   height: 50px;
-  margin-top: 15px;
 }
-#contenedorNav #opcionesNav {
+#headerNav #opcionesHeader {
   display: grid;
-  grid-template-columns: 30% 20% repeat(2, 25%);
-}
-#contenedorNav #opcionesNav #buscadorNav {
-  height: 25px;
-  margin-top: 15px;
-}
-#contenedorNav #opcionesNav #modoOscuro {
-  width: 50px;
-  height: 30px;
-  margin-left: 10px;
-  margin-top: 15px;
-}
-#contenedorNav #opcionesNav #botonesInteracciones {
-  display: grid;
-  grid-template-columns: 50% 50%;
-}
-#contenedorNav #opcionesNav #botonesInteracciones .imgOpcionesNav {
-  width: 30px;
-  height: 30px;
+  grid-template-columns: 40% 60%;
 }
 
-#navPrincipal {
-  width: 100%;
+#barraNav {
+  background-color: #333;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   height: 60px;
-  margin-top: 30px;
 }
-#navPrincipal #menunav {
-  display: grid;
-  place-content: center;
-  place-items: center;
-  grid-template-columns: repeat(5, 20%);
-  grid-template-rows: 40px;
-  margin: 10px 0 0 10px;
+#barraNav .botonNav {
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 20px;
 }
-#navPrincipal #menunav li {
-  list-style: none;
-  width: 100%;
-  height: 100%;
-  border-radius: 40px;
-  display: grid;
-  place-items: center;
-  grid-template-rows: 40px;
+#barraNav .botonNav:hover {
+  background-color: #555;
+  cursor: pointer;
 }
-#navPrincipal #menunav li:hover .subMenuNav {
-  visibility: visible;
+
+body {
+  margin: 0;
+  padding: 0;
 }
-#navPrincipal #menunav li a {
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+.logo {
+  margin-right: 20px;
+}
+
+.center {
+  flex-grow: 1;
   text-align: center;
-  text-decoration: none;
 }
-#navPrincipal #menunav li #subMenuNav {
-  visibility: hidden;
-  margin-top: 2px;
-  display: grid;
-  grid-template-rows: auto;
-  width: 120%;
-  height: auto;
-  border-radius: 10px;
-  z-index: 1;
+
+.right {
+  display: flex;
+  align-items: center;
 }
-#navPrincipal #menunav li #subMenuNav li {
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  display: grid;
-  place-content: center;
-  place-items: center;
+
+.icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.btn-night-mode {
+  margin-right: 10px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+}
+
+.search-btn {
+  padding: 5px 10px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
 }
 
 /*# sourceMappingURL=style.css.map */
