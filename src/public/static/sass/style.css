@@ -4,16 +4,27 @@
 }
 #aprende .contenedorCuadrosAprende {
   display: grid;
-  grid-template-columns: repeat(2, 48%);
-  gap: 23px;
+  grid-template-columns: repeat(2, 49%);
+  gap: 24px;
   margin: 20px auto;
 }
-#aprende .contenedorCuadrosAprende .cuadrosAprende {
-  width: 100%;
-  height: 100%;
+#aprende .contenedorCuadrosAprende div {
+  width: 650px;
+  height: 650px;
+  color: #fff;
+  border-radius: 8px;
 }
-#aprende .contenedorCuadrosAprende .cuadrosAprende #cuadroV60 {
-  background: url(../../img/ARTICULOS/V60\ 2.jpg);
+#aprende .contenedorCuadrosAprende div h2 {
+  font-size: 28px;
+}
+#aprende .contenedorCuadrosAprende #cuadroV60 {
+  background: url(../../img/ARTICULOS/V60\ 3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#aprende .contenedorCuadrosAprende #cuadroCafeteraItaliana {
+  background: url(../../img/ARTICULOS/cafetera\ italiana\ 2.jpg);
+  background-size: cover;
 }
 
 /*# sourceMappingURL=style.css.map */
