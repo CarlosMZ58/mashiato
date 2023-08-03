@@ -1,3 +1,9 @@
+* {
+  @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=PT+Mono&display=swap");
+}
+
 #aprende {
   display: grid;
   grid-template-rows: repeat(2, 49%);
@@ -5,7 +11,7 @@
 #aprende .contenedorCuadrosAprende {
   display: grid;
   grid-template-columns: repeat(2, 49%);
-  gap: 24px;
+  gap: 18px;
   margin: 20px auto;
 }
 #aprende .contenedorCuadrosAprende div {
@@ -15,16 +21,75 @@
   border-radius: 8px;
 }
 #aprende .contenedorCuadrosAprende div h2 {
-  font-size: 28px;
+  margin-top: 475px;
+  font-size: 30px;
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+  background-color: rgba(29, 27, 27, 0.2274509804);
+  padding-top: 10px;
+}
+#aprende .contenedorCuadrosAprende div .contenedorBotonAprende {
+  display: grid;
+  place-content: center;
+  place-items: center;
+  width: 100%;
+  height: 40px;
+}
+#aprende .contenedorCuadrosAprende div .contenedorBotonAprende button {
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: none;
+}
+#aprende .contenedorCuadrosAprende div .contenedorBotonAprende .mi-boton {
+  color: #fff;
+  padding: 18px 28px;
+  border-radius: 8px;
+  border: rgba(255, 255, 255, 0.5254901961) solid 3px;
+  font-size: 16px;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.3568627451);
+}
+#aprende .contenedorCuadrosAprende div .contenedorBotonAprende .mi-boton:hover {
+  border: #fff solid 3.3px;
+  opacity: 80%;
+}
+#aprende .contenedorCuadrosAprende div .contenedorBotonAprende .mi-boton:active {
+  color: #FFC26F;
+  border: #FFC26F solid 3.3px;
 }
 #aprende .contenedorCuadrosAprende #cuadroV60 {
   background: url(../../img/ARTICULOS/V60\ 3.jpg);
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  opacity: 96%;
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.822);
 }
 #aprende .contenedorCuadrosAprende #cuadroCafeteraItaliana {
   background: url(../../img/ARTICULOS/cafetera\ italiana\ 2.jpg);
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 96%;
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.822);
+}
+#aprende .contenedorCuadrosAprende #cuadroPrensaFrancesa {
+  background: url(../../img/ARTICULOS/prensa\ francesa.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 96%;
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.822);
+}
+#aprende .contenedorCuadrosAprende #cuadroAeropress {
+  background: url(../../img/ARTICULOS/aero\ exprese.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 96%;
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.822);
 }
 
 /*# sourceMappingURL=style.css.map */

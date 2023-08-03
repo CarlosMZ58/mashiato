@@ -2,7 +2,34 @@
 @import "../sass/components/Navegacion.scss";
 @import "../sass/components/Main.scss";
 @import "../sass/components/ModoNoche.scss";
-$colorfondoletra: #fff;
+$colorFondoAndText: #fff;
+$colorSecundario: #9e7540;
+$colorTerceareo: #000;
+$colorCuarto: #FFC26F;
+$colorInsta: #e72fcfde;
+$colorWhatsapp: #23c73e;
+$colorTwitter: #1d8dd8;
+$colorFacebook: #0f26a8;
+* {
+  @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=PT+Mono&display=swap");
+}
+@mixin backEdition {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 96%;
+}
+@mixin fuenteTitulos {
+  font-family: "Nunito", sans-serif;
+}
+@mixin fuenteParrafosN {
+  font-family: "Quicksand", sans-serif;
+}
+@mixin fuenteParrafosP {
+  font-family: "PT Mono", monospace;
+}
 @mixin bordes {
   border-radius: 8px;
 }
@@ -13,25 +40,72 @@ $colorfondoletra: #fff;
   .contenedorCuadrosAprende {
     display: grid;
     grid-template-columns: repeat(2, 49%);
-    gap: 24px;
+    gap: 18px;
     margin: 20px auto;
-    div{
+    div {
       width: 650px;
       height: 650px;
-      color: $colorfondoletra;
+      color: $colorFondoAndText;
       @include bordes();
-      h2{
-        font-size: 28px;
+      h2 {
+        margin-top: 475px;
+        font-size: 30px;
+        @include fuenteTitulos();
+        text-align: center;
+        background-color: #1d1b1b3a;
+        padding-top: 10px;
+      }
+      .contenedorBotonAprende{
+        display: grid;
+        place-content: center;
+        place-items: center;
+        width: 100%;
+        height: 40px;
+        button {
+          padding: 0;
+          border: none;
+          background: none;
+          cursor: pointer;
+          outline: none;
+        }
+        .mi-boton {
+          color: $colorFondoAndText;
+          padding: 18px 28px;
+          @include bordes();
+          border: #ffffff86 solid 3px;
+          font-size: 16px;
+          text-decoration: none;
+          background-color: #0000005b;
+        }
+        .mi-boton:hover{
+          border: $colorFondoAndText solid 3.3px;
+          opacity: 80%;
+        }
+        .mi-boton:active{
+          color:$colorCuarto;
+          border: $colorCuarto solid 3.3px;
+        }
       }
     }
     #cuadroV60 {
       background: url(../../img/ARTICULOS/V60\ 3.jpg);
-      background-size: cover;
-      background-position: center;
+      @include backEdition();
+      box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.822);
     }
-    #cuadroCafeteraItaliana{
+    #cuadroCafeteraItaliana {
       background: url(../../img/ARTICULOS/cafetera\ italiana\ 2.jpg);
-      background-size: cover;
+      @include backEdition();
+      box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.822);
+    }
+    #cuadroPrensaFrancesa{
+      background: url(../../img/ARTICULOS/prensa\ francesa.jpg);
+      @include backEdition();
+      box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.822);
+    }
+    #cuadroAeropress{
+      background: url(../../img/ARTICULOS/aero\ exprese.jpg);
+      @include backEdition();
+      box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.822);
     }
   }
 }
