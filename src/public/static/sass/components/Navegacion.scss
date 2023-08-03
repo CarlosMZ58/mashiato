@@ -57,6 +57,7 @@ header {
     .center {
         flex-grow: 1;
         text-align: center;
+        margin-left: 40px;
     }
 
     .right {
@@ -89,16 +90,18 @@ header {
 
         input {
             padding: 5px;
-            border: 1px solid #ccc;
+            border: 1px solid #49361e;
             border-radius: 5px 0 0 5px;
             height: 24px;
+            background-color:  #70532fd2;
+            color: white;
         }
 
         .search-btn {
             padding: 5px 10px;
             height: 35px;
             border: none;
-            background-color: #007bff;
+            background-color:  #49361e;
             color: #fff;
             border-radius: 0 5px 5px 0;
         }
