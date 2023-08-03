@@ -4,40 +4,12 @@ body {
   background-color: #fff;
 }
 
-#headerNav {
-  width: 100%;
-  height: 90px;
-  display: flex;
-  justify-content: space-between;
-  background-color: #9e7540;
-}
-#headerNav #logosHeader {
-  display: grid;
-  grid-template-columns: repeat(2, 32%);
-  align-content: center;
-  align-items: center;
-  padding: 0;
-}
-#headerNav #logosHeader .imgLogosHeader {
-  width: 120px;
-  height: 60px;
-  border-radius: 10px;
-}
-#headerNav #logosHeader .logoHeader {
-  width: 100px;
-  height: 50px;
-}
-#headerNav #opcionesHeader {
-  display: grid;
-  grid-template-columns: 40% 60%;
-}
-
 #barraNav {
-  background-color: #333;
+  background-color: #49361e;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 60px;
+  height: 50px;
 }
 #barraNav .botonNav {
   color: #fff;
@@ -47,58 +19,57 @@ body {
 #barraNav .botonNav:hover {
   background-color: #555;
   cursor: pointer;
-}
-
-body {
-  margin: 0;
-  padding: 0;
+  border-radius: 5px;
 }
 
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #f0f0f0;
+  background-color: #9e7540;
   padding: 10px;
 }
-
-.logo {
+header .logo {
   margin-right: 20px;
 }
-
-.center {
+header .center {
   flex-grow: 1;
   text-align: center;
 }
-
-.right {
+header .right {
   display: flex;
   align-items: center;
 }
-
-.icon {
+header .right .icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+header .right .btn-night-mode {
   width: 24px;
   height: 24px;
   margin-right: 10px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
 }
-
-.btn-night-mode {
-  margin-right: 10px;
+header .right .btn-night-mode:hover {
+  background-color: #966b32;
+  border: solid 1px rgba(73, 54, 30, 0.8);
 }
-
-.search-bar {
+header .search-bar {
   display: flex;
   align-items: center;
 }
-
-.search-bar input {
+header .search-bar input {
   padding: 5px;
   border: 1px solid #ccc;
   border-radius: 5px 0 0 5px;
+  height: 24px;
 }
-
-.search-btn {
+header .search-bar .search-btn {
   padding: 5px 10px;
+  height: 35px;
   border: none;
   background-color: #007bff;
   color: #fff;
