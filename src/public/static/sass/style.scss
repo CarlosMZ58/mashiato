@@ -42,10 +42,23 @@ $colorCafe: #3b221a;
 body {
   padding: 0;
   margin: 0;
-  background-color: $colorFondoPag;
+  height: 600px;
+  background-image: linear-gradient(to left, #00000098, #332410a4), url(../../img/fondoregistro/fondo.registro4.jpg);
 }
 #contenedorRegistro{
-  width: 100%;
-  height: 100%;
-  background-image: url();
+  background-color: $colorCafe;
+  opacity: 75%;
+  width: 600px;
+  height: 600px;
+  margin: 55px 180px;
+  border-radius: 16px;
+  border: $colorSecundario solid 3px;
+  h2{
+    color: $colorFondoAndText;
+    font-weight: bold;
+    font-size: 35px;
+    @include fuenteTitulos();
+    text-align: center;
+    padding: 6px;
+  }
 }
