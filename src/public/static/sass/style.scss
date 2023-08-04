@@ -5,7 +5,7 @@
 $colorFondoAndText: #fff;
 $colorSecundario: #9e7540;
 $colorTerceareo: #000;
-$colorCuarto: #FFC26F;
+$colorCuarto: #ffc26f;
 $colorInsta: #e72fcfde;
 $colorWhatsapp: #23c73e;
 $colorTwitter: #1d8dd8;
@@ -19,7 +19,6 @@ $colorFacebook: #0f26a8;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 96%;
 }
 @mixin fuenteTitulos {
   font-family: "Nunito", sans-serif;
@@ -33,16 +32,67 @@ $colorFacebook: #0f26a8;
 @mixin bordes {
   border-radius: 8px;
 }
+body {
+  padding: 0;
+  margin: 0;
+}
 //index
-#sobreNosotros{
-  background-image: -o-linear-gradient(#000000, #8f1a1a ), url(../../img/ARTICULOS/molino\ 4.jpg);
+#sobreNosotros {
+  background-image: linear-gradient(#00000021, #3d200452),
+    url(../../img/ARTICULOS/portada\ pag.jpg);
   @include backEdition();
   width: 100%;
-  
+  height: 670px;
+  display: grid;
+  grid-template-columns: repeat(2, 49%);
+  #contenidoSobreNosotros {
+    width: 600px;
+    height: auto;
+    margin-top: 150px;
+    h1 {
+      font-size: 90px;
+      color: $colorFondoAndText;
+      @include fuenteTitulos();
+      text-align: center;
+    }
+    p {
+      @include fuenteParrafosN();
+      font-size: 18px;
+      padding: 0 60px;
+      text-align: justify;
+      color: $colorFondoAndText;
+    }
+    a {
+      text-decoration: none;
+    }
+    button {
+      color: $colorFondoAndText;
+      padding: 14px 24px;
+      @include bordes();
+      border: $colorFondoAndText solid 3px;
+      font-size: 16px;
+      background-color: $colorCuarto;
+      margin: 20px 0 0 230px;
+    }
+    button:hover {
+      opacity: 80%;
+      cursor: pointer;
+    }
+    button:active {
+      transform: scale(1.02);
+    }
+  }
+  #icono3D{
+    width: 600px;
+    height: 100%;
+    background-color: $colorSecundario;
+    margin: auto;
+  }
 }
 #aprende {
   display: grid;
   grid-template-rows: repeat(2, 49%);
+  margin-top: 40px;
   .contenedorCuadrosAprende {
     display: grid;
     grid-template-columns: repeat(2, 49%);
@@ -58,10 +108,9 @@ $colorFacebook: #0f26a8;
         font-size: 30px;
         @include fuenteTitulos();
         text-align: center;
-        background-color: #1d1b1b3a;
         padding-top: 10px;
       }
-      .contenedorBotonAprende{
+      .contenedorBotonAprende {
         display: grid;
         place-content: center;
         place-items: center;
@@ -83,33 +132,37 @@ $colorFacebook: #0f26a8;
           text-decoration: none;
           background-color: #0000005b;
         }
-        .mi-boton:hover{
+        .mi-boton:hover {
           border: $colorFondoAndText solid 3.3px;
           opacity: 80%;
         }
-        .mi-boton:active{
-          color:$colorCuarto;
+        .mi-boton:active {
+          color: $colorCuarto;
           border: $colorCuarto solid 3.3px;
         }
       }
     }
     #cuadroV60 {
-      background: url(../../img/ARTICULOS/V60\ 3.jpg);
+      background-image: linear-gradient(#6e6c6c00, #000000bd),
+        url(../../img/ARTICULOS/V60\ 3.jpg);
       @include backEdition();
       box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.822);
     }
     #cuadroCafeteraItaliana {
-      background: url(../../img/ARTICULOS/cafetera\ italiana\ 2.jpg);
+      background-image: linear-gradient(#6e6c6c00, #000000bd),
+        url(../../img/ARTICULOS/cafetera\ italiana\ 2.jpg);
       @include backEdition();
       box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.822);
     }
-    #cuadroPrensaFrancesa{
-      background: url(../../img/ARTICULOS/prensa\ francesa.jpg);
+    #cuadroPrensaFrancesa {
+      background-image: linear-gradient(#ebebeb38, #00000093),
+        url(../../img/ARTICULOS/prensa\ francesa.jpg);
       @include backEdition();
       box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.822);
     }
-    #cuadroAeropress{
-      background: url(../../img/ARTICULOS/aero\ exprese.jpg);
+    #cuadroAeropress {
+      background-image: linear-gradient(#ebebeb38, #00000093),
+        url(../../img/ARTICULOS/aero\ exprese.jpg);
       @include backEdition();
       box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.822);
     }

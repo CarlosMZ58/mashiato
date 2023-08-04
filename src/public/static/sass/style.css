@@ -4,9 +4,69 @@
   @import url("https://fonts.googleapis.com/css2?family=PT+Mono&display=swap");
 }
 
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#sobreNosotros {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1294117647), rgba(61, 32, 4, 0.3215686275)), url(../../img/ARTICULOS/portada\ pag.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 670px;
+  display: grid;
+  grid-template-columns: repeat(2, 49%);
+}
+#sobreNosotros #contenidoSobreNosotros {
+  width: 600px;
+  height: auto;
+  margin-top: 150px;
+}
+#sobreNosotros #contenidoSobreNosotros h1 {
+  font-size: 90px;
+  color: #fff;
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+}
+#sobreNosotros #contenidoSobreNosotros p {
+  font-family: "Quicksand", sans-serif;
+  font-size: 18px;
+  padding: 0 60px;
+  text-align: justify;
+  color: #fff;
+}
+#sobreNosotros #contenidoSobreNosotros a {
+  text-decoration: none;
+}
+#sobreNosotros #contenidoSobreNosotros button {
+  color: #fff;
+  padding: 14px 24px;
+  border-radius: 8px;
+  border: #fff solid 3px;
+  font-size: 16px;
+  background-color: #ffc26f;
+  margin: 20px 0 0 230px;
+}
+#sobreNosotros #contenidoSobreNosotros button:hover {
+  opacity: 80%;
+  cursor: pointer;
+}
+#sobreNosotros #contenidoSobreNosotros button:active {
+  transform: scale(1.02);
+}
+#sobreNosotros #icono3D {
+  width: 600px;
+  height: 100%;
+  background-color: #9e7540;
+  margin: auto;
+}
+
 #aprende {
   display: grid;
   grid-template-rows: repeat(2, 49%);
+  margin-top: 40px;
 }
 #aprende .contenedorCuadrosAprende {
   display: grid;
@@ -25,7 +85,6 @@
   font-size: 30px;
   font-family: "Nunito", sans-serif;
   text-align: center;
-  background-color: rgba(29, 27, 27, 0.2274509804);
   padding-top: 10px;
 }
 #aprende .contenedorCuadrosAprende div .contenedorBotonAprende {
@@ -56,39 +115,35 @@
   opacity: 80%;
 }
 #aprende .contenedorCuadrosAprende div .contenedorBotonAprende .mi-boton:active {
-  color: #FFC26F;
-  border: #FFC26F solid 3.3px;
+  color: #ffc26f;
+  border: #ffc26f solid 3.3px;
 }
 #aprende .contenedorCuadrosAprende #cuadroV60 {
-  background: url(../../img/ARTICULOS/V60\ 3.jpg);
+  background-image: linear-gradient(rgba(110, 108, 108, 0), rgba(0, 0, 0, 0.7411764706)), url(../../img/ARTICULOS/V60\ 3.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 96%;
   box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.822);
 }
 #aprende .contenedorCuadrosAprende #cuadroCafeteraItaliana {
-  background: url(../../img/ARTICULOS/cafetera\ italiana\ 2.jpg);
+  background-image: linear-gradient(rgba(110, 108, 108, 0), rgba(0, 0, 0, 0.7411764706)), url(../../img/ARTICULOS/cafetera\ italiana\ 2.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 96%;
   box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.822);
 }
 #aprende .contenedorCuadrosAprende #cuadroPrensaFrancesa {
-  background: url(../../img/ARTICULOS/prensa\ francesa.jpg);
+  background-image: linear-gradient(rgba(235, 235, 235, 0.2196078431), rgba(0, 0, 0, 0.5764705882)), url(../../img/ARTICULOS/prensa\ francesa.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 96%;
   box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.822);
 }
 #aprende .contenedorCuadrosAprende #cuadroAeropress {
-  background: url(../../img/ARTICULOS/aero\ exprese.jpg);
+  background-image: linear-gradient(rgba(235, 235, 235, 0.2196078431), rgba(0, 0, 0, 0.5764705882)), url(../../img/ARTICULOS/aero\ exprese.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 96%;
   box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.822);
 }
 
