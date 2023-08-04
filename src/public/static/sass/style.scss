@@ -10,6 +10,8 @@ $colorInsta: #e72fcfde;
 $colorWhatsapp: #23c73e;
 $colorTwitter: #1d8dd8;
 $colorFacebook: #0f26a8;
+$colorFondoPag: #ebddca;
+$colorCafe: #3b221a;
 * {
   @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap");
   @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
@@ -35,6 +37,7 @@ $colorFacebook: #0f26a8;
 body {
   padding: 0;
   margin: 0;
+  background-color: $colorFondoPag;
 }
 //index
 #sobreNosotros {
@@ -58,21 +61,23 @@ body {
     p {
       @include fuenteParrafosN();
       font-size: 18px;
+      font-weight: bold;
       padding: 0 60px;
-      text-align: justify;
+      text-align: center;
       color: $colorFondoAndText;
     }
     a {
       text-decoration: none;
     }
     button {
-      color: $colorFondoAndText;
+      color: $colorCafe;
+      font-weight: bold;
       padding: 14px 24px;
       @include bordes();
-      border: $colorFondoAndText solid 3px;
+      border: $colorCafe solid 3px;
       font-size: 16px;
       background-color: $colorCuarto;
-      margin: 20px 0 0 230px;
+      margin: 40px 0 0 230px;
     }
     button:hover {
       opacity: 80%;
@@ -85,8 +90,16 @@ body {
   #icono3D{
     width: 600px;
     height: 100%;
-    background-color: $colorSecundario;
     margin: auto;
+    figure{
+      width: 372px;
+      height: 372px;
+      margin: 130px auto;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
   }
 }
 #aprende {

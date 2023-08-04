@@ -7,6 +7,7 @@
 body {
   padding: 0;
   margin: 0;
+  background-color: #ebddca;
 }
 
 #sobreNosotros {
@@ -33,21 +34,23 @@ body {
 #sobreNosotros #contenidoSobreNosotros p {
   font-family: "Quicksand", sans-serif;
   font-size: 18px;
+  font-weight: bold;
   padding: 0 60px;
-  text-align: justify;
+  text-align: center;
   color: #fff;
 }
 #sobreNosotros #contenidoSobreNosotros a {
   text-decoration: none;
 }
 #sobreNosotros #contenidoSobreNosotros button {
-  color: #fff;
+  color: #3b221a;
+  font-weight: bold;
   padding: 14px 24px;
   border-radius: 8px;
-  border: #fff solid 3px;
+  border: #3b221a solid 3px;
   font-size: 16px;
   background-color: #ffc26f;
-  margin: 20px 0 0 230px;
+  margin: 40px 0 0 230px;
 }
 #sobreNosotros #contenidoSobreNosotros button:hover {
   opacity: 80%;
@@ -59,8 +62,16 @@ body {
 #sobreNosotros #icono3D {
   width: 600px;
   height: 100%;
-  background-color: #9e7540;
   margin: auto;
+}
+#sobreNosotros #icono3D figure {
+  width: 372px;
+  height: 372px;
+  margin: 130px auto;
+}
+#sobreNosotros #icono3D figure img {
+  width: 100%;
+  height: 100%;
 }
 
 #aprende {
