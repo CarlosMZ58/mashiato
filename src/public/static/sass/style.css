@@ -11,22 +11,115 @@ body {
   background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5960784314), rgba(51, 36, 16, 0.6431372549)), url(../../img/fondoregistro/fondo.registro4.jpg);
 }
 
-#contenedorRegistro {
+#contenedorRegistro form {
   background-color: #3b221a;
-  opacity: 75%;
   width: 600px;
-  height: 600px;
-  margin: 55px 180px;
+  height: 100%;
+  margin: 4px 180px;
   border-radius: 16px;
-  border: #9e7540 solid 3px;
+  border: #9e7540 solid 2.8px;
+  box-shadow: 0 0 20px #000;
 }
-#contenedorRegistro h2 {
+#contenedorRegistro form h2 {
   color: #fff;
   font-weight: bold;
   font-size: 35px;
   font-family: "Nunito", sans-serif;
   text-align: center;
   padding: 6px;
+}
+#contenedorRegistro form .contenedorCassillasRegistro {
+  position: relative;
+  margin: 35px;
+}
+#contenedorRegistro form .contenedorCassillasRegistro input {
+  background: none;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 10px 10px 6px;
+  display: block;
+  width: 93%;
+  border: none;
+  border-bottom: 1px solid #fff;
+}
+#contenedorRegistro form .contenedorCassillasRegistro input:focus {
+  outline: none;
+  color: #e6c290;
+}
+#contenedorRegistro form .contenedorCassillasRegistro label {
+  color: #fff;
+  font-size: 20px;
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  transition: 0.3s ease all;
+  pointer-events: none;
+}
+#contenedorRegistro form .contenedorCassillasRegistro input:focus ~ label,
+#contenedorRegistro form .contenedorCassillasRegistro input:valid ~ label {
+  top: -14px;
+  font-size: 16px;
+  color: #ffc26f;
+}
+#contenedorRegistro form .barra {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+#contenedorRegistro form .barra::before {
+  content: "";
+  height: 2px;
+  width: 0%;
+  bottom: 0;
+  position: absolute;
+  background-color: #9e7540;
+  transition: 0.2s ease width;
+  left: 0;
+}
+#contenedorRegistro form input:focus ~ .barra::before {
+  width: 96%;
+}
+#contenedorRegistro form #contenidoPregunta {
+  text-align: center;
+  padding: 5px;
+}
+#contenedorRegistro form #contenidoPregunta p {
+  color: #fff;
+  font-size: 16px;
+  font-family: "PT Mono", monospace;
+}
+#contenedorRegistro form #contenidoPregunta p a {
+  color: #ffc26f;
+  font-family: "PT Mono", monospace;
+  text-decoration: none;
+  padding: 5px;
+}
+#contenedorRegistro form #contenidoPregunta p a:hover {
+  text-decoration: underline;
+}
+#contenedorRegistro form #contenedorBotonesRegistro {
+  display: flex;
+  margin: 20px;
+  justify-content: center;
+}
+#contenedorRegistro form #contenedorBotonesRegistro button {
+  padding: 10px 15px;
+  border-radius: 7px;
+  font-family: "Quicksand", sans-serif;
+  border: none;
+  background-color: #ffc26f;
+  font-size: 15px;
+  color: #3b221a;
+  font-weight: 700;
+}
+#contenedorRegistro form #contenedorBotonesRegistro button:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  transition: 0.4s ease all;
+}
+#contenedorRegistro .form {
+  width: 100%;
+  margin: auto;
 }
 
 /*# sourceMappingURL=style.css.map */

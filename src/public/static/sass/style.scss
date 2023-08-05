@@ -15,7 +15,7 @@ $colorInsta: #e72fcfde;
 $colorWhatsapp: #23c73e;
 $colorTwitter: #1d8dd8;
 $colorFacebook: #0f26a8;
-$colorFondoPag: #ebddca;
+$colorfocustext: #e6c290;
 $colorCafe: #3b221a;
 * {
   @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap");
@@ -37,28 +37,125 @@ $colorCafe: #3b221a;
   font-family: "PT Mono", monospace;
 }
 @mixin bordes {
-  border-radius: 8px;
+  border-radius: 7px;
 }
 body {
   padding: 0;
   margin: 0;
   height: 600px;
-  background-image: linear-gradient(to left, #00000098, #332410a4), url(../../img/fondoregistro/fondo.registro4.jpg);
+  background-image: linear-gradient(to left, #00000098, #332410a4),
+    url(../../img/fondoregistro/fondo.registro4.jpg);
 }
-#contenedorRegistro{
-  background-color: $colorCafe;
-  opacity: 75%;
-  width: 600px;
-  height: 600px;
-  margin: 55px 180px;
-  border-radius: 16px;
-  border: $colorSecundario solid 3px;
-  h2{
-    color: $colorFondoAndText;
-    font-weight: bold;
-    font-size: 35px;
-    @include fuenteTitulos();
-    text-align: center;
-    padding: 6px;
+#contenedorRegistro {
+  form {
+    background-color: $colorCafe;
+    // opacity: 75%;
+    width: 600px;
+    height: 100%;
+    margin: 4px 180px;
+    border-radius: 16px;
+    border: $colorSecundario solid 2.8px;
+    box-shadow: 0 0 20px #000 ;
+    h2 {
+      color: $colorFondoAndText;
+      font-weight: bold;
+      font-size: 35px;
+      @include fuenteTitulos();
+      text-align: center;
+      padding: 6px;
+    }
+    .contenedorCassillasRegistro {
+      position: relative;
+      margin: 35px;
+      input{
+        background: none;
+        color: $colorFondoAndText;
+        font-size: 14px;
+        padding: 10px 10px 10px 6px;
+        display: block;
+        width: 93%;
+        border: none;
+        border-bottom: 1px solid $colorFondoAndText;
+      }
+      input:focus{
+        outline: none;
+        color: $colorfocustext;
+      }
+      label{
+        color: $colorFondoAndText;
+        font-size: 20px;
+        position: absolute;
+        left: 5px;
+        top: 10px;
+        transition: 0.3s ease all;
+        pointer-events: none;
+      }
+      input:focus~label,
+      input:valid~label{
+        top: -14px;
+        font-size: 16px;
+        color: $colorCuarto;
+      }
+    }
+    .barra{
+      position: relative;
+      display: block;
+      width: 100%;
+    }
+    .barra::before{
+      content: "";
+      height: 2px;
+      width: 0%;
+      bottom: 0;
+      position: absolute;
+      background-color: $colorSecundario;
+      transition: 0.2s ease width;
+      left: 0;
+    }
+    input:focus~.barra::before{
+      width: 96%;
+    }
+    #contenidoPregunta{
+      text-align: center;
+      padding: 5px;
+      p{
+        color: $colorFondoAndText;
+        font-size: 16px;
+        @include fuenteParrafosP();
+        a{
+          color: $colorCuarto;
+          @include fuenteParrafosP();
+          text-decoration: none;
+          padding: 5px;
+        }
+        a:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+    #contenedorBotonesRegistro{
+      display: flex;
+      margin: 20px;
+      justify-content: center;
+      button{
+        padding: 10px 15px;
+        @include bordes();
+        @include fuenteParrafosN();
+        border: none;
+        background-color: $colorCuarto;
+        font-size: 15px;
+        color: $colorCafe;
+        font-weight: 700;
+      }
+      button:hover{
+        transform: scale(1.05);
+        cursor: pointer;
+        transition: 0.4s ease all;
+      }
+    }
+  }
+  .form{
+    width: 100%;
+    margin: auto;
   }
 }
