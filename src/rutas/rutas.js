@@ -7,6 +7,7 @@ const cargaImagenes = multer({
 const controlador = require('../controladores/controladores')
 
 rutas.get('/',controlador.zonaIndex);
+rutas.get('/registro',controlador.zonaInicio);
 
 
 
