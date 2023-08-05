@@ -15,7 +15,7 @@ body {
   background-color: #3b221a;
   width: 600px;
   height: 100%;
-  margin: 90px 180px;
+  margin: 93px 180px;
   border-radius: 16px;
   border: #9e7540 solid 2.8px;
   box-shadow: 0 0 20px #000;
@@ -112,7 +112,6 @@ body {
   color: #3b221a;
   font-weight: 700;
   margin: 25px;
-  box-shadow: 0 0 4px #9e7540;
 }
 #contenedorInicio form #contenedorBotonesInicio button:hover {
   transform: scale(1.05);

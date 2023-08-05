@@ -47,7 +47,7 @@ body {
     // opacity: 75%;
     width: 600px;
     height: 100%;
-    margin: 90px 180px;
+    margin: 93px 180px;
     border-radius: 16px;
     border: $colorSecundario solid 2.8px;
     box-shadow: 0 0 20px #000 ;
@@ -142,7 +142,6 @@ body {
         color: $colorCafe;
         font-weight: 700;
         margin: 25px;
-        box-shadow: 0 0 4px $colorSecundario;
       }
       button:hover{
         transform: scale(1.05);
