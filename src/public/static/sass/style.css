@@ -2,6 +2,8 @@
   @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap");
   @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
   @import url("https://fonts.googleapis.com/css2?family=PT+Mono&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap");
 }
 
 body {
@@ -23,13 +25,14 @@ body {
 #sobreNosotros #contenidoSobreNosotros {
   width: 600px;
   height: auto;
-  margin-top: 150px;
+  margin-top: 140px;
 }
 #sobreNosotros #contenidoSobreNosotros h1 {
-  font-size: 90px;
+  font-size: 80px;
   color: #fff;
-  font-family: "Nunito", sans-serif;
+  font-family: "Caveat", cursive;
   text-align: center;
+  text-transform: uppercase;
 }
 #sobreNosotros #contenidoSobreNosotros p {
   font-family: "Quicksand", sans-serif;
@@ -50,7 +53,7 @@ body {
   border: #3b221a solid 3px;
   font-size: 16px;
   background-color: #ffc26f;
-  margin: 40px 0 0 230px;
+  margin: 35px 0 0 230px;
 }
 #sobreNosotros #contenidoSobreNosotros button:hover {
   opacity: 80%;
