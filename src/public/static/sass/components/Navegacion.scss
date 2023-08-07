@@ -29,6 +29,7 @@ body {
     align-items: center;
     height: 50px;
     position: fixed;
+    width: 100%;
 
     .botonNav {
         color: #fff;
@@ -50,15 +51,25 @@ header {
     justify-content: space-between;
     background-color: $colorSecundario;
     padding: 10px;
+    height: 90px;
 
     .logo {
-        margin-right: 20px;
+        margin-right: 15px;
+        img {
+            width: 170px;
+            height: 150px;
+            background-color: none;
+        }
     }
 
     .center {
         flex-grow: 1;
         text-align: center;
         margin-left: 40px;
+        img{
+            width: 300px;
+            height: 100px;
+        }
     }
 
     .right {
@@ -66,9 +77,10 @@ header {
         align-items: center;
 
         .icon {
-            width: 24px;
-            height: 24px;
+            width: 35px;
+            height: 35px;
             cursor: pointer;
+            margin: 0;
         }
 
         .btn-night-mode {
@@ -94,15 +106,15 @@ header {
             border: 1px solid #49361e;
             border-radius: 5px 0 0 5px;
             height: 24px;
-            background-color:  #70532fd2;
+            background-color: #70532fd2;
             color: white;
         }
 
         .search-btn {
             padding: 5px 10px;
-            height: 35px;
+            height: 36px;
             border: none;
-            background-color:  #49361e;
+            background-color: #49361e;
             color: #fff;
             border-radius: 0 5px 5px 0;
         }
