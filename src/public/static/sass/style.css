@@ -9,75 +9,53 @@ body {
   margin: 0;
 }
 
-footer svg {
-  width: 100%;
-  overflow: visible;
-}
 footer .wave {
-  animation: wave 3s linear;
-  animation-iteration-count: infinite;
-  fill: #9e7540;
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(../../../img/ICONOS/wavesNegative.svg);
+  background-size: 1000px 100px;
 }
-footer .drop {
-  fill: #9e7540;
-  animation: drop 3.2s linear infinite normal;
-  stroke: #9e7540;
-  stroke-width: 0.5;
-  transform: translateY(25px);
-  transform-box: fill-box;
-  transform-origin: 50% 100%;
+footer .wave #wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animatewave 4s linear infinite;
 }
-footer .drop2 {
-  animation-delay: 3s;
-  animation-duration: 3s;
+footer .wave #wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 20px;
+  animation: animatewave02 5.2s linear infinite;
 }
-footer .drop3 {
-  animation-delay: -2s;
-  animation-duration: 3.4s;
+footer .wave #wave3 {
+  z-index: 1000;
+  opacity: 0.7;
+  bottom: 10px;
+  animation: animatewave 2.9s linear infinite;
 }
-footer .drop4 {
-  animation-delay: 1.7s;
+footer .wave #wave4 {
+  z-index: 999;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animatewave02 3.6s linear infinite;
 }
-footer .drop5 {
-  animation-delay: 2.7s;
-  animation-duration: 3.1s;
-}
-footer .drop6 {
-  animation-delay: -2.1s;
-  animation-duration: 3.2s;
-}
-footer .gooeff {
-  filter: url(#goo);
-}
-footer #wave2 {
-  animation-duration: 5s;
-  animation-direction: reverse;
-  opacity: 0.6;
-}
-footer #wave3 {
-  animation-duration: 7s;
-  opacity: 0.3;
-}
-@keyframes drop {
+@keyframes animatewave {
   0% {
-    transform: translateY(25px);
-  }
-  30% {
-    transform: translateY(-10px) scale(0.1);
-  }
-  30.001% {
-    transform: translateY(25px) scale(1);
-  }
-  70% {
-    transform: translateY(25px);
+    background-position-x: 0px;
   }
   100% {
-    transform: translateY(-10px) scale(0.1);
+    background-position-x: 1000px;
   }
 }
-@keyframes wave {
-  to {
-    transform: translateX(-100%);
+@keyframes animatewave02 {
+  0% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: 1000px;
   }
 }
 footer #contenedorTodoFooter {
