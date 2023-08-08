@@ -5,7 +5,7 @@ body {
 }
 
 #barraNav {
-  background-color: #49361e;
+  background-color: #3b2b18;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -19,7 +19,7 @@ body {
   padding: 10px 20px;
 }
 #barraNav .botonNav:hover {
-  background-color: #555;
+  background-color: #362817;
   cursor: pointer;
   border-radius: 5px;
   transform: scale();
@@ -29,7 +29,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #9e7540;
+  background-color: #49361e;
   padding: 10px;
   height: 90px;
 }
@@ -45,6 +45,7 @@ header .center {
   flex-grow: 1;
   text-align: center;
   margin-left: 40px;
+  color: white;
 }
 header .center img {
   width: 300px;
@@ -67,6 +68,7 @@ header .right .btn-night-mode {
   background-color: transparent;
   border: none;
   padding: 0;
+  color: white;
 }
 header .right .btn-night-mode:hover {
   background-color: #966b32;
@@ -78,17 +80,18 @@ header .search-bar {
 }
 header .search-bar input {
   padding: 5px;
-  border: 1px solid #49361e;
+  border: 1px solid #2c2012;
   border-radius: 5px 0 0 5px;
   height: 24px;
-  background-color: rgba(112, 83, 47, 0.8235294118);
+  background-color: rgba(156, 115, 65, 0.3764705882);
   color: white;
 }
 header .search-bar .search-btn {
   padding: 5px 10px;
   height: 36px;
   border: none;
-  background-color: #49361e;
+  background-color: #312414;
+  border: 1px solid #2c2012;
   color: #fff;
   border-radius: 0 5px 5px 0;
 }
