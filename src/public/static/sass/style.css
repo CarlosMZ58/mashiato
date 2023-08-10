@@ -7,11 +7,16 @@
 body {
   padding: 0;
   margin: 0;
-  height: 600px;
-  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5960784314), rgba(51, 36, 16, 0.6431372549)), url(../../img/fondoregistro/fondo.registro4.jpg);
 }
 
-#contenedorRegistro form {
+#contenedorAllRI {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5960784314), rgba(51, 36, 16, 0.6431372549)), url(../../img/fondoregistro/fondo.registro4.jpg);
+}
+#contenedorAllRI #contenedorRegistro form {
   background-color: #3b221a;
   width: 600px;
   height: 100%;
@@ -20,7 +25,7 @@ body {
   border: #9e7540 solid 2.8px;
   box-shadow: 0 0 20px #000;
 }
-#contenedorRegistro form h2 {
+#contenedorAllRI #contenedorRegistro form h2 {
   color: #fff;
   font-weight: bold;
   font-size: 35px;
@@ -28,11 +33,11 @@ body {
   text-align: center;
   padding: 6px;
 }
-#contenedorRegistro form .contenedorCassillasRegistro {
+#contenedorAllRI #contenedorRegistro form .contenedorCassillasRegistro {
   position: relative;
   margin: 35px;
 }
-#contenedorRegistro form .contenedorCassillasRegistro input {
+#contenedorAllRI #contenedorRegistro form .contenedorCassillasRegistro input {
   background: none;
   color: #fff;
   font-size: 14px;
@@ -42,11 +47,11 @@ body {
   border: none;
   border-bottom: 1px solid #fff;
 }
-#contenedorRegistro form .contenedorCassillasRegistro input:focus {
+#contenedorAllRI #contenedorRegistro form .contenedorCassillasRegistro input:focus {
   outline: none;
   color: #e6c290;
 }
-#contenedorRegistro form .contenedorCassillasRegistro label {
+#contenedorAllRI #contenedorRegistro form .contenedorCassillasRegistro label {
   color: #fff;
   font-size: 20px;
   position: absolute;
@@ -55,18 +60,18 @@ body {
   transition: 0.3s ease all;
   pointer-events: none;
 }
-#contenedorRegistro form .contenedorCassillasRegistro input:focus ~ label,
-#contenedorRegistro form .contenedorCassillasRegistro input:valid ~ label {
+#contenedorAllRI #contenedorRegistro form .contenedorCassillasRegistro input:focus ~ label,
+#contenedorAllRI #contenedorRegistro form .contenedorCassillasRegistro input:valid ~ label {
   top: -14px;
   font-size: 16px;
   color: #ffc26f;
 }
-#contenedorRegistro form .barra {
+#contenedorAllRI #contenedorRegistro form .barra {
   position: relative;
   display: block;
   width: 100%;
 }
-#contenedorRegistro form .barra::before {
+#contenedorAllRI #contenedorRegistro form .barra::before {
   content: "";
   height: 2px;
   width: 0%;
@@ -76,33 +81,33 @@ body {
   transition: 0.2s ease width;
   left: 0;
 }
-#contenedorRegistro form input:focus ~ .barra::before {
+#contenedorAllRI #contenedorRegistro form input:focus ~ .barra::before {
   width: 96%;
 }
-#contenedorRegistro form #contenidoPregunta {
+#contenedorAllRI #contenedorRegistro form #contenidoPregunta {
   text-align: center;
   padding: 5px;
 }
-#contenedorRegistro form #contenidoPregunta p {
+#contenedorAllRI #contenedorRegistro form #contenidoPregunta p {
   color: #fff;
   font-size: 16px;
   font-family: "PT Mono", monospace;
 }
-#contenedorRegistro form #contenidoPregunta p a {
+#contenedorAllRI #contenedorRegistro form #contenidoPregunta p a {
   color: #ffc26f;
   font-family: "PT Mono", monospace;
   text-decoration: none;
   padding: 5px;
 }
-#contenedorRegistro form #contenidoPregunta p a:hover {
+#contenedorAllRI #contenedorRegistro form #contenidoPregunta p a:hover {
   text-decoration: underline;
 }
-#contenedorRegistro form #contenedorBotonesRegistro {
+#contenedorAllRI #contenedorRegistro form #contenedorBotonesRegistro {
   display: flex;
   margin: 20px;
   justify-content: center;
 }
-#contenedorRegistro form #contenedorBotonesRegistro button {
+#contenedorAllRI #contenedorRegistro form #contenedorBotonesRegistro button {
   padding: 10px 15px;
   border-radius: 7px;
   font-family: "Quicksand", sans-serif;
@@ -112,12 +117,12 @@ body {
   color: #3b221a;
   font-weight: 700;
 }
-#contenedorRegistro form #contenedorBotonesRegistro button:hover {
+#contenedorAllRI #contenedorRegistro form #contenedorBotonesRegistro button:hover {
   transform: scale(1.05);
   cursor: pointer;
   transition: 0.4s ease all;
 }
-#contenedorRegistro .form {
+#contenedorAllRI #contenedorRegistro .form {
   width: 100%;
   margin: auto;
 }
