@@ -55,11 +55,12 @@ header .right {
   display: flex;
   align-items: center;
 }
-header .right .icon {
+header .right .ionicon {
   width: 35px;
   height: 35px;
   cursor: pointer;
   margin: 0;
+  fill: white;
 }
 header .right .btn-night-mode {
   width: 24px;
