@@ -17,7 +17,7 @@ body {
   background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5960784314), rgba(51, 36, 16, 0.6431372549)), url(../../img/fondoregistro/fondo.registro4.jpg);
 }
 #contenedorAllRI #contenedorRegistro form {
-  background-color: #3b221a;
+  background-color: #2b1007;
   width: 600px;
   height: 100%;
   margin: 0px 180px;
@@ -114,7 +114,7 @@ body {
   border: none;
   background-color: #ffc26f;
   font-size: 15px;
-  color: #3b221a;
+  color: #2b1007;
   font-weight: 700;
 }
 #contenedorAllRI #contenedorRegistro form #contenedorBotonesRegistro button:hover {
