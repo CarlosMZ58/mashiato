@@ -20,7 +20,7 @@ body {
   background-color: #3b221a;
   width: 600px;
   height: 100%;
-  margin: 4px 180px;
+  margin: 0px 180px;
   border-radius: 16px;
   border: #9e7540 solid 2.8px;
   box-shadow: 0 0 20px #000;
@@ -35,7 +35,7 @@ body {
 }
 #contenedorAllRI #contenedorRegistro form .contenedorCassillasRegistro {
   position: relative;
-  margin: 35px;
+  margin: 30.5px;
 }
 #contenedorAllRI #contenedorRegistro form .contenedorCassillasRegistro input {
   background: none;
