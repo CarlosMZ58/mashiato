@@ -12,7 +12,7 @@ body {
 }
 
 #contenedorAllRAndI #contenedorInicio form {
-  background-color: #3b221a;
+  background-color: #2b1007;
   width: 600px;
   height: 100%;
   margin: 93px 180px;
@@ -109,7 +109,7 @@ body {
   border: none;
   background-color: #ffc26f;
   font-size: 15px;
-  color: #3b221a;
+  color: #2b1007;
   font-weight: 700;
   margin: 25px;
 }
