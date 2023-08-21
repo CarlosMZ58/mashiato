@@ -8,15 +8,6 @@ $sobreLetras: #7e7e7e;
 
 $colorCafe: #3b221a;
 
-@mixin centrar {
-    display: grid;
-    place-content: center;
-    place-items: center;
-}
-@mixin centrarFlex {
-    align-items: center;
-    align-content: center;
-}
 
 body {
     padding: 0;
@@ -42,70 +33,45 @@ body {
             background-color: #362817;
             cursor: pointer;
             border-radius: 5px;
-            transform: scale();
         }
     }
 }
 
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #49361e;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
     padding: 10px;
-    height: 90px;
+    height: 300px;
+    background-image: url(../../../img/fondonav5.jpg);
+
 
     .logo {
         margin-right: 15px;
         img {
-            width: 170px;
-            height: 150px;
-            background-color: none;
-        }
-    }
-
-    .center {
-        flex-grow: 1;
-        text-align: center;
-        margin-left: 40px;
-        color: white;
-        img{
-            width: 300px;
-            height: 100px;
+            width: 190px;
+            height: 170px;
+            translate: -30px -33px;
         }
     }
 
     .right {
         display: flex;
-        align-items: center;
 
         .ionicon {
             width: 35px;
             height: 35px;
             cursor: pointer;
-            margin: 0;
-            fill: white;
+            position: absolute;
+            translate: 270px 10px;
+            fill: rgb(0, 0, 0);
         }
 
-        .btn-night-mode {
-            width: 24px;
-            height: 24px;
-            margin-right: 10px;
-            background-color: transparent;
-            border: none;
-            padding: 0;
-            color: white;
-        }
-        .btn-night-mode:hover {
-            background-color: #966b32;
-            border: solid 1px #49361ecc;
-        }
     }
 
     .search-bar {
-        display: flex;
-        align-items: center;
-
+    display: flex;
+    translate: 250px 27px;
+        
         input {
             padding: 5px;
             border: 1px solid #2c2012;
@@ -118,7 +84,6 @@ header {
         .search-btn {
             padding: 5px 10px;
             height: 36px;
-            border: none;
             background-color: #312414;
             border: 1px solid #2c2012;
             color: #fff;
