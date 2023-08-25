@@ -131,6 +131,7 @@ footer {
       h3 {
         color: $colorFondoAndText;
         font-size: 23px;
+        margin: 0;
         @include fuenteTitulos;
         @include alinearTextCenter;
         @include grosor();
@@ -188,47 +189,58 @@ footer {
         }
       }
       #redesFooter {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         #menuRedesFooter {
-          display: grid;
-          grid-template-columns: repeat(4, 20%);
-          place-content: center;
-          gap: 2px;
-          margin-right: 20px;
-          li {
-            @include listas();
-            @include centrar();
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 300px;
+          li{
+            list-style: none;
+            width: 100%;
+            height: 100%;
+            figure{
+              border-radius: 50%;
+              border: solid 3px #5c3706;
+              background-color: #ffffff;
+              height: 38px;
+              width: 38px;
+              margin: 0;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              svg{
+                width: 30px;
+                height: 30px;
+              }
+            }
           }
-          & figure {
-            height: 24px;
-            background-color: $colorFondoAndText;
-            border-radius: 50%;
-            border: #5c3706 solid 3px;
-            padding: 7px;
-            margin: 0 24px 0 0;
+          #lgW:hover{
+            fill: $colorFondoAndText;
+            background-color: $colorWhatsapp;
+            border: solid 3px $colorFondoAndText;
+            transition: 0.3s ease-in;
+            transform: scale(1.06);
+            animation-duration: 0.5s;
+            animation-name: fondoWhatsapp;
+            box-shadow: 5px 5px 10px #23c73e8f;
           }
-          & a {
-            @include textDecoration();
+          @keyframes fondoWhatsapp {
+            0%{fill: #000;}
+            25%{fill: #313030;}
+            50%{fill: #504e4e;}
+            75%{fill: #979797;}
+            100%{fill: #ffffff;}
           }
-          & .ionicon {
-            width: auto;
-            height: 24px;
-          }
-          #logoInstagram {
-            fill: $colorInsta;
-          }
-          #logoWhatsapp {
-            fill: $colorWhatsapp;
-          }
-          #logoTwitter {
-            fill: $colorTwitter;
-          }
-          #logoFacebook {
-            fill: $colorFacebook;
-          }
-          figure:hover {
-            transform: scale(1.2);
-            background: $colorFondoAndText;
-            opacity: 70%;
+          #lgT:hover{
+            fill: $colorTerceareo;
+            border: solid 3px $colorTerceareo;
+            transition: 0.3s ease-in;
+            transform: scale(1.06);
+            box-shadow: 5px 5px 10px #0000007e;
           }
         }
       }
