@@ -6,3 +6,36 @@
 //index//
 
 //nosotros//
+body{
+    margin: 0;
+    padding: 0;
+}
+.nosotrosPrincipal{
+    width: 100%;
+    height: 100%;
+    background-image: url(../../img/);
+    display: flex;
+    flex-direction: column-reverse;
+}
+.izquierda{
+    justify-content: end;
+}
+.derecha{
+    translate: 38.7% 0;
+}
+.cartasNosotros{
+    background-color: pink;
+    color: white;
+    width: 70%;
+    height: 250px;
+    margin: 20px;
+    display: flex;
+}
+.cartasNosotros p{
+    background-color: aqua;
+    width: 35%;
+    height: 100%;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
