@@ -110,7 +110,7 @@ footer #contenedorTodoFooter #contenedorFooter #contenedorLogoNavRedesFooter #na
   height: auto;
 }
 footer #contenedorTodoFooter #contenedorFooter #contenedorLogoNavRedesFooter #navPrincipalFooter a {
-  font-size: 20px;
+  font-size: 19px;
   font-weight: bold;
   text-decoration: none;
   color: #000;
@@ -120,38 +120,6 @@ footer #contenedorTodoFooter #contenedorFooter #contenedorLogoNavRedesFooter #na
 footer #contenedorTodoFooter #contenedorFooter #contenedorLogoNavRedesFooter #navPrincipalFooter li:hover {
   transform: scale(1.1);
   opacity: 0.9;
-}
-footer #contenedorTodoFooter #contenedorFooter #contenedorLogoNavRedesFooter #logoFooter {
-  width: auto;
-  height: auto;
-  cursor: pointer;
-}
-footer #contenedorTodoFooter #contenedorFooter #contenedorLogoNavRedesFooter #logoFooter a {
-  text-decoration: none;
-  color: #000;
-  display: grid;
-  grid-template-columns: 20% 60%;
-  place-items: right;
-  gap: 20px;
-}
-footer #contenedorTodoFooter #contenedorFooter #contenedorLogoNavRedesFooter #logoFooter a #logoTipo {
-  border-radius: 50%;
-  border: #5c3706 solid 3px;
-  width: 80px;
-  height: 80px;
-}
-footer #contenedorTodoFooter #contenedorFooter #contenedorLogoNavRedesFooter #logoFooter a #logoTipo img {
-  width: inherit;
-  height: inherit;
-  border-radius: 50%;
-}
-footer #contenedorTodoFooter #contenedorFooter #contenedorLogoNavRedesFooter #logoFooter a #isoLogo {
-  height: 85px;
-  width: 220px;
-}
-footer #contenedorTodoFooter #contenedorFooter #contenedorLogoNavRedesFooter #logoFooter a #isoLogo img {
-  height: inherit;
-  width: inherit;
 }
 footer #contenedorTodoFooter #contenedorFooter #redesFooter {
   display: flex;
@@ -186,38 +154,33 @@ footer #contenedorTodoFooter #contenedorFooter #redesFooter #menuRedesFooter li 
   height: 30px;
 }
 footer #contenedorTodoFooter #contenedorFooter #redesFooter #menuRedesFooter #lgW:hover {
-  fill: #fff;
-  background-color: #23c73e;
-  border: solid 3px #fff;
+  fill: #23c73e;
+  background-color: #fff;
+  border: solid 3px #23c73e;
   transition: 0.3s ease-in;
   transform: scale(1.06);
-  animation-duration: 0.5s;
-  animation-name: fondoWhatsapp;
-  box-shadow: 5px 5px 10px rgba(35, 199, 62, 0.5607843137);
-}
-@keyframes fondoWhatsapp {
-  0% {
-    fill: #000;
-  }
-  25% {
-    fill: #313030;
-  }
-  50% {
-    fill: #504e4e;
-  }
-  75% {
-    fill: #979797;
-  }
-  100% {
-    fill: #ffffff;
-  }
 }
 footer #contenedorTodoFooter #contenedorFooter #redesFooter #menuRedesFooter #lgT:hover {
   fill: #000;
+  background-color: #fff;
   border: solid 3px #000;
   transition: 0.3s ease-in;
   transform: scale(1.06);
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4941176471);
+}
+footer #contenedorTodoFooter #contenedorFooter #redesFooter #menuRedesFooter #lgI:hover {
+  fill: rgba(231, 47, 207, 0.8705882353);
+  background-color: #fff;
+  border: solid 3px rgba(231, 47, 207, 0.8705882353);
+  transition: 0.3s ease-in;
+  transform: scale(1.06);
+}
+footer #contenedorTodoFooter #contenedorFooter #redesFooter #menuRedesFooter #lgF:hover {
+  fill: #0f26a8;
+  background-color: #fff;
+  border: solid 3px #0f26a8;
+  transition: 0.3s ease-in;
+  transform: scale(1.06);
+  box-shadow: 4px 4px 8px rgba(255, 255, 255, 0.368627451);
 }
 footer #contenedorTodoFooter #menuFooter li {
   list-style: none;
@@ -227,7 +190,7 @@ footer #contenedorTodoFooter #menuFooter li {
   height: auto;
 }
 footer #contenedorTodoFooter #menuFooter a {
-  font-size: 20px;
+  font-size: 18px;
   margin-right: 42px;
   font-weight: bold;
   text-decoration: none;
@@ -247,7 +210,7 @@ footer #contenedorTodoFooter #productosFooter li {
   height: auto;
 }
 footer #contenedorTodoFooter #productosFooter a {
-  font-size: 20px;
+  font-size: 18px;
   margin-right: 40px;
   font-weight: bold;
   text-decoration: none;

@@ -146,7 +146,7 @@ footer {
             height: auto;
           }
           & a {
-            font-size: 20px;
+            font-size: 19px;
             font-weight: bold;
             @include textDecoration();
             @include fuenteParrafosP();
@@ -154,37 +154,6 @@ footer {
           }
           li:hover {
             @include trasform();
-          }
-        }
-        #logoFooter {
-          width: auto;
-          height: auto;
-          cursor: pointer;
-          a {
-            @include textDecoration();
-            display: grid;
-            grid-template-columns: 20% 60%;
-            place-items: right;
-            gap: 20px;
-            #logoTipo {
-              border-radius: 50%;
-              border: #5c3706 solid 3px;
-              width: 80px;
-              height: 80px;
-              img {
-                width: inherit;
-                height: inherit;
-                border-radius: 50%;
-              }
-            }
-            #isoLogo {
-              height: 85px;
-              width: 220px;
-              img {
-                height: inherit;
-                width: inherit;
-              }
-            }
           }
         }
       }
@@ -219,28 +188,33 @@ footer {
             }
           }
           #lgW:hover{
-            fill: $colorFondoAndText;
-            background-color: $colorWhatsapp;
-            border: solid 3px $colorFondoAndText;
+            fill: $colorWhatsapp;
+            background-color: $colorFondoAndText;
+            border: solid 3px $colorWhatsapp;
             transition: 0.3s ease-in;
             transform: scale(1.06);
-            animation-duration: 0.5s;
-            animation-name: fondoWhatsapp;
-            box-shadow: 5px 5px 10px #23c73e8f;
-          }
-          @keyframes fondoWhatsapp {
-            0%{fill: #000;}
-            25%{fill: #313030;}
-            50%{fill: #504e4e;}
-            75%{fill: #979797;}
-            100%{fill: #ffffff;}
           }
           #lgT:hover{
             fill: $colorTerceareo;
+            background-color: $colorFondoAndText;
             border: solid 3px $colorTerceareo;
             transition: 0.3s ease-in;
             transform: scale(1.06);
-            box-shadow: 5px 5px 10px #0000007e;
+          }
+          #lgI:hover{
+            fill: $colorInsta;
+            background-color: $colorFondoAndText;
+            border: solid 3px $colorInsta;
+            transition: 0.3s ease-in;
+            transform: scale(1.06);
+          }
+          #lgF:hover{
+            fill: $colorFacebook;
+            background-color: $colorFondoAndText;
+            border: solid 3px $colorFacebook;
+            transition: 0.3s ease-in;
+            transform: scale(1.06);
+            box-shadow: 4px 4px 8px #ffffff5e;
           }
         }
       }
@@ -254,7 +228,7 @@ footer {
         height: auto;
       }
       & a {
-        font-size: 20px;
+        font-size: 18px;
         margin-right: 42px;
         font-weight: bold;
         @include textDecoration();
@@ -274,7 +248,7 @@ footer {
         height: auto;
       }
       & a {
-        font-size: 20px;
+        font-size: 18px;
         margin-right: 40px;
         font-weight: bold;
         @include textDecoration();
