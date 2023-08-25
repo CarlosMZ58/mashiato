@@ -51,74 +51,76 @@ body {
 footer {
   width: 100%;
   svg {
-    width:100%;
-    overflow:visible;
+    width: 100%;
+    overflow: visible;
   }
   .wave {
     animation: wave 3s linear;
-    animation-iteration-count:infinite;
+    animation-iteration-count: infinite;
     fill: $colorSecundario;
   }
   .drop {
     fill: $colorSecundario;
     animation: drop 3.2s linear infinite normal;
     stroke: $colorSecundario;
-    stroke-width:0.5;
-    transform: translateY(25px) ;
+    stroke-width: 0.5;
+    transform: translateY(25px);
     transform-box: fill-box;
     transform-origin: 50% 100%;
   }
   .drop1 {
     animation-delay: 1s;
-    animation-duration:2.8s;
+    animation-duration: 2.8s;
   }
   .drop2 {
     animation-delay: 3s;
-    animation-duration:3s;
+    animation-duration: 3s;
   }
   .drop3 {
     animation-delay: -2s;
-    animation-duration:3.4s;
+    animation-duration: 3.4s;
   }
   .drop4 {
     animation-delay: 1.7s;
   }
   .drop5 {
     animation-delay: 2.7s;
-    animation-duration:3.1s;
+    animation-duration: 3.1s;
   }
   .drop6 {
     animation-delay: -2.1s;
-    animation-duration:3.2s;
+    animation-duration: 3.2s;
   }
   .gooeff {
-      filter: url(#goo);
+    filter: url(#goo);
   }
   #wave2 {
-    animation-duration:5s;
+    animation-duration: 5s;
     animation-direction: reverse;
-    opacity: .6
+    opacity: 0.6;
   }
   #wave3 {
     animation-duration: 7s;
-    opacity:.3;
+    opacity: 0.3;
   }
   @keyframes drop {
     0% {
-      transform: translateY(25px); 
+      transform: translateY(25px);
     }
     30% {
-      transform: translateY(-10px) scale(.1);
+      transform: translateY(-10px) scale(0.1);
     }
     70% {
-      transform: translateY(25px); 
+      transform: translateY(25px);
     }
-    100% { 
-      transform: translateY(-10px) scale(.1);  
+    100% {
+      transform: translateY(-10px) scale(0.1);
     }
   }
   @keyframes wave {
-    to {transform: translateX(-100%);}
+    to {
+      transform: translateX(-100%);
+    }
   }
   #contenedorTodoFooter {
     background: $colorSecundario;
@@ -167,54 +169,49 @@ footer {
           align-items: center;
           justify-content: center;
           width: 300px;
-          li{
+          li {
             list-style: none;
             width: 100%;
             height: 100%;
-            figure{
+            figure {
               border-radius: 50%;
-              border: solid 3px #5c3706;
-              background-color: #ffffff;
+              border: solid 1.8px #5c3706;
+              background-color: #ffffffc4;
               height: 38px;
               width: 38px;
               margin: 0;
               display: flex;
               justify-content: center;
               align-items: center;
-              svg{
+              svg {
                 width: 30px;
                 height: 30px;
               }
             }
           }
-          #lgW:hover{
+          #lgW:hover {
             fill: $colorWhatsapp;
             background-color: $colorFondoAndText;
-            border: solid 3px $colorWhatsapp;
+            border: solid 1.8px $colorWhatsapp;
             transition: 0.3s ease-in;
-            transform: scale(1.06);
           }
-          #lgT:hover{
+          #lgT:hover {
             fill: $colorTerceareo;
             background-color: $colorFondoAndText;
-            border: solid 3px $colorTerceareo;
+            border: solid 1.8px $colorTerceareo;
             transition: 0.3s ease-in;
-            transform: scale(1.06);
           }
-          #lgI:hover{
+          #lgI:hover {
             fill: $colorInsta;
             background-color: $colorFondoAndText;
-            border: solid 3px $colorInsta;
+            border: solid 1.8px $colorInsta;
             transition: 0.3s ease-in;
-            transform: scale(1.06);
           }
-          #lgF:hover{
+          #lgF:hover {
             fill: $colorFacebook;
             background-color: $colorFondoAndText;
-            border: solid 3px $colorFacebook;
+            border: solid 1.8px $colorFacebook;
             transition: 0.3s ease-in;
-            transform: scale(1.06);
-            box-shadow: 4px 4px 8px #ffffff5e;
           }
         }
       }
@@ -239,24 +236,156 @@ footer {
         @include trasform();
       }
     }
-    #productosFooter {
-      li {
-        @include listas();
-        text-align: center;
-        padding: 10px;
-        width: auto;
+    #informacionCafeteria {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      #telefono {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        width: 100%;
         height: auto;
+        figure{
+          height: 38px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-left: 0;
+          svg{
+            fill: $colorFondoAndText;
+            border-radius: 50%;
+            border: solid 2px #5c3706;
+            height: 23px;
+            width: 23PX;
+            margin: 0 10px;
+            padding: 4px;
+          }
+          a{
+            color: $colorFondoAndText;
+            font-size: 16px;
+            @include fuenteParrafosP();
+            @include grosor();
+            text-decoration: none;
+          }
+        }
       }
-      & a {
-        font-size: 18px;
-        margin-right: 40px;
-        font-weight: bold;
-        @include textDecoration();
-        @include fuenteParrafosP();
-        color: $colorFondoAndText;
+      #direccion{
+        display: flex;
+        align-items: center;
+        margin: 0;
+        width: 100%;
+        height: auto;
+        figure{
+          height: 38px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-left: 0;
+          svg{
+            fill: $colorFondoAndText;
+            border-radius: 50%;
+            border: solid 2px #5c3706;
+            height: 23px;
+            width: 23PX;
+            margin: 0 10px;
+            padding: 4px;
+          }
+          a {
+            color: $colorFondoAndText;
+            font-size: 16px;
+            @include fuenteParrafosP();
+            @include grosor();
+            text-decoration: none;
+          }
+        }
       }
-      li:hover {
-        @include trasform();
+      #emailFooter{
+        display: flex;
+        align-items: center;
+        margin: 0;
+        width: 100%;
+        height: auto;
+        figure{
+          height: 38px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-left: 0;
+          svg{
+            fill: $colorFondoAndText;
+            border-radius: 50%;
+            border: solid 2px #5c3706;
+            height: 23px;
+            width: 23PX;
+            margin: 0 10px;
+            padding: 4px;
+          }
+          a{
+            color: $colorFondoAndText;
+            font-size: 16px;
+            @include fuenteParrafosP();
+            @include grosor();
+            text-decoration: none;
+          }
+          a:hover{
+            text-decoration: underline;
+            cursor: pointer;
+            color: #5c3706;
+            transition: 0.4s ease-in-out;
+          }
+        }
+      }
+      #suscrib{
+        margin: 0;
+        width: 100%;
+        h4{
+          color: $colorFondoAndText;
+          font-size: 24px;
+          text-align: center;
+        }
+        form{
+          padding-bottom: 15px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          border-bottom: 1px solid #fff;
+          margin-bottom: 20px;
+          svg{
+            color: $colorFondoAndText;
+            width: 28px;
+            height: 28px;
+            margin-right: 10px;
+          }
+          input{
+            width: 100%;
+            background: transparent;
+            color: #fff;
+            border: 0;
+            outline: none;
+          }
+          input::placeholder{
+            color: #fff;
+            font-size: 16px;
+            @include fuenteParrafosP()
+          }
+          button{
+            background: transparent;
+            border: 0;
+            outline: none;
+            cursor: pointer;
+            svg{
+              width: 28px;
+              height: 28px;
+              fill: $colorFondoAndText;
+            }
+            svg:hover{
+              transform: scale(1.05);
+              transition: 0.8 ease;
+            }
+          }
+        }
       }
     }
   }

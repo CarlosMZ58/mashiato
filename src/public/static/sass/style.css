@@ -140,8 +140,8 @@ footer #contenedorTodoFooter #contenedorFooter #redesFooter #menuRedesFooter li 
 }
 footer #contenedorTodoFooter #contenedorFooter #redesFooter #menuRedesFooter li figure {
   border-radius: 50%;
-  border: solid 3px #5c3706;
-  background-color: #ffffff;
+  border: solid 1.8px #5c3706;
+  background-color: rgba(255, 255, 255, 0.768627451);
   height: 38px;
   width: 38px;
   margin: 0;
@@ -156,31 +156,26 @@ footer #contenedorTodoFooter #contenedorFooter #redesFooter #menuRedesFooter li 
 footer #contenedorTodoFooter #contenedorFooter #redesFooter #menuRedesFooter #lgW:hover {
   fill: #23c73e;
   background-color: #fff;
-  border: solid 3px #23c73e;
+  border: solid 1.8px #23c73e;
   transition: 0.3s ease-in;
-  transform: scale(1.06);
 }
 footer #contenedorTodoFooter #contenedorFooter #redesFooter #menuRedesFooter #lgT:hover {
   fill: #000;
   background-color: #fff;
-  border: solid 3px #000;
+  border: solid 1.8px #000;
   transition: 0.3s ease-in;
-  transform: scale(1.06);
 }
 footer #contenedorTodoFooter #contenedorFooter #redesFooter #menuRedesFooter #lgI:hover {
   fill: rgba(231, 47, 207, 0.8705882353);
   background-color: #fff;
-  border: solid 3px rgba(231, 47, 207, 0.8705882353);
+  border: solid 1.8px rgba(231, 47, 207, 0.8705882353);
   transition: 0.3s ease-in;
-  transform: scale(1.06);
 }
 footer #contenedorTodoFooter #contenedorFooter #redesFooter #menuRedesFooter #lgF:hover {
   fill: #0f26a8;
   background-color: #fff;
-  border: solid 3px #0f26a8;
+  border: solid 1.8px #0f26a8;
   transition: 0.3s ease-in;
-  transform: scale(1.06);
-  box-shadow: 4px 4px 8px rgba(255, 255, 255, 0.368627451);
 }
 footer #contenedorTodoFooter #menuFooter li {
   list-style: none;
@@ -202,25 +197,157 @@ footer #contenedorTodoFooter #menuFooter li:hover {
   transform: scale(1.1);
   opacity: 0.9;
 }
-footer #contenedorTodoFooter #productosFooter li {
-  list-style: none;
-  text-align: center;
-  padding: 10px;
-  width: auto;
+footer #contenedorTodoFooter #informacionCafeteria {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer #contenedorTodoFooter #informacionCafeteria #telefono {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  width: 100%;
   height: auto;
 }
-footer #contenedorTodoFooter #productosFooter a {
-  font-size: 18px;
-  margin-right: 40px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #000;
-  font-family: "PT Mono", monospace;
-  color: #fff;
+footer #contenedorTodoFooter #informacionCafeteria #telefono figure {
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0;
 }
-footer #contenedorTodoFooter #productosFooter li:hover {
-  transform: scale(1.1);
-  opacity: 0.9;
+footer #contenedorTodoFooter #informacionCafeteria #telefono figure svg {
+  fill: #fff;
+  border-radius: 50%;
+  border: solid 2px #5c3706;
+  height: 23px;
+  width: 23PX;
+  margin: 0 10px;
+  padding: 4px;
+}
+footer #contenedorTodoFooter #informacionCafeteria #telefono figure a {
+  color: #fff;
+  font-size: 16px;
+  font-family: "PT Mono", monospace;
+  font-weight: 800;
+  text-decoration: none;
+}
+footer #contenedorTodoFooter #informacionCafeteria #direccion {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  width: 100%;
+  height: auto;
+}
+footer #contenedorTodoFooter #informacionCafeteria #direccion figure {
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0;
+}
+footer #contenedorTodoFooter #informacionCafeteria #direccion figure svg {
+  fill: #fff;
+  border-radius: 50%;
+  border: solid 2px #5c3706;
+  height: 23px;
+  width: 23PX;
+  margin: 0 10px;
+  padding: 4px;
+}
+footer #contenedorTodoFooter #informacionCafeteria #direccion figure a {
+  color: #fff;
+  font-size: 16px;
+  font-family: "PT Mono", monospace;
+  font-weight: 800;
+  text-decoration: none;
+}
+footer #contenedorTodoFooter #informacionCafeteria #emailFooter {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  width: 100%;
+  height: auto;
+}
+footer #contenedorTodoFooter #informacionCafeteria #emailFooter figure {
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0;
+}
+footer #contenedorTodoFooter #informacionCafeteria #emailFooter figure svg {
+  fill: #fff;
+  border-radius: 50%;
+  border: solid 2px #5c3706;
+  height: 23px;
+  width: 23PX;
+  margin: 0 10px;
+  padding: 4px;
+}
+footer #contenedorTodoFooter #informacionCafeteria #emailFooter figure a {
+  color: #fff;
+  font-size: 16px;
+  font-family: "PT Mono", monospace;
+  font-weight: 800;
+  text-decoration: none;
+}
+footer #contenedorTodoFooter #informacionCafeteria #emailFooter figure a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #5c3706;
+  transition: 0.4s ease-in-out;
+}
+footer #contenedorTodoFooter #informacionCafeteria #suscrib {
+  margin: 0;
+  width: 100%;
+}
+footer #contenedorTodoFooter #informacionCafeteria #suscrib h4 {
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+}
+footer #contenedorTodoFooter #informacionCafeteria #suscrib form {
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 20px;
+}
+footer #contenedorTodoFooter #informacionCafeteria #suscrib form svg {
+  color: #fff;
+  width: 28px;
+  height: 28px;
+  margin-right: 10px;
+}
+footer #contenedorTodoFooter #informacionCafeteria #suscrib form input {
+  width: 100%;
+  background: transparent;
+  color: #fff;
+  border: 0;
+  outline: none;
+}
+footer #contenedorTodoFooter #informacionCafeteria #suscrib form input::placeholder {
+  color: #fff;
+  font-size: 16px;
+  font-family: "PT Mono", monospace;
+}
+footer #contenedorTodoFooter #informacionCafeteria #suscrib form button {
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+footer #contenedorTodoFooter #informacionCafeteria #suscrib form button svg {
+  width: 28px;
+  height: 28px;
+  fill: #fff;
+}
+footer #contenedorTodoFooter #informacionCafeteria #suscrib form button svg:hover {
+  transform: scale(1.05);
+  transition: 0.8 ease;
 }
 footer #derechosAutor hr {
   border-width: 1.5px;
