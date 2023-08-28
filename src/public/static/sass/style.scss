@@ -13,21 +13,22 @@ body{
 .nosotrosPrincipal{
     width: 100%;
     height: 100%;
-    background-image: url(../../img/);
+    background-image: url(../../img/fondonav3.jpg);
+    background-size: cover;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
 }
 .izquierda{
-    justify-content: end;
+    align-items: end;
 }
 .derecha{
     translate: 38.7% 0;
 }
 .cartasNosotros{
-    background-color: pink;
+    background-color: rgba(255, 192, 203, 0);
     color: white;
     width: 70%;
-    height: 250px;
+    height: px;
     margin: 20px;
     display: flex;
 }
@@ -38,4 +39,9 @@ body{
     justify-content: center;
     margin: 0;
     padding: 0;
+}
+.cartasNosotros img{
+    width: 60%;
+    height: 100%;
+
 }
