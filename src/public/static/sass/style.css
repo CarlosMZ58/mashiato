@@ -96,7 +96,6 @@ footer #contenedorTodoFooter #contenedorFooter #infoCafeFooter {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 footer #contenedorTodoFooter #contenedorFooter #infoCafeFooter figure {
@@ -116,29 +115,24 @@ footer #contenedorTodoFooter #contenedorFooter #infoCafeFooter p {
   text-align: justify;
   margin: 0;
 }
-footer #contenedorTodoFooter #contenedorFooter #contactanosFooter h2 {
-  font-family: "Nunito", sans-serif;
-  color: #fff;
-  text-align: center;
-}
-footer #contenedorTodoFooter #contenedorFooter #contactanosFooter #redesFooter {
+footer #contenedorTodoFooter #contenedorFooter #infoCafeFooter #redesFooter {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-footer #contenedorTodoFooter #contenedorFooter #contactanosFooter #redesFooter h3 {
+footer #contenedorTodoFooter #contenedorFooter #infoCafeFooter #redesFooter h3 {
   font-family: "Nunito", sans-serif;
   color: #fff;
   text-align: center;
 }
-footer #contenedorTodoFooter #contenedorFooter #contactanosFooter #redesFooter #contenedorRedes {
+footer #contenedorTodoFooter #contenedorFooter #infoCafeFooter #redesFooter #contenedorRedes {
   display: flex;
   padding: 7px;
   width: auto;
   height: 100%;
-  margin: 0;
+  margin: 0 0 30px 0;
 }
-footer #contenedorTodoFooter #contenedorFooter #contactanosFooter #redesFooter #contenedorRedes li {
+footer #contenedorTodoFooter #contenedorFooter #infoCafeFooter #redesFooter #contenedorRedes li {
   list-style: none;
   width: 38px;
   height: 38px;
@@ -147,31 +141,69 @@ footer #contenedorTodoFooter #contenedorFooter #contactanosFooter #redesFooter #
   margin: 3px;
   padding: 0;
 }
-footer #contenedorTodoFooter #contenedorFooter #contactanosFooter #redesFooter #contenedorRedes li svg {
+footer #contenedorTodoFooter #contenedorFooter #infoCafeFooter #redesFooter #contenedorRedes li svg {
   fill: #fff;
   width: 28px;
   height: 28px;
   padding: 5px;
 }
-footer #contenedorTodoFooter #contenedorFooter #contactanosFooter #redesFooter #contenedorRedes li:hover {
+footer #contenedorTodoFooter #contenedorFooter #infoCafeFooter #redesFooter #contenedorRedes li:hover {
   transform: scale(1.05);
   transition: 0.4s ease;
 }
-footer #contenedorTodoFooter #contenedorFooter #contactanosFooter #redesFooter #contenedorRedes #whatsapp:hover {
+footer #contenedorTodoFooter #contenedorFooter #infoCafeFooter #redesFooter #contenedorRedes #whatsapp:hover {
   background-color: #23c73e;
   transition: 0.6s ease-in;
 }
-footer #contenedorTodoFooter #contenedorFooter #contactanosFooter #redesFooter #contenedorRedes #intagram:hover {
+footer #contenedorTodoFooter #contenedorFooter #infoCafeFooter #redesFooter #contenedorRedes #intagram:hover {
   background-color: rgba(182, 12, 159, 0.8705882353);
   transition: 0.6s ease-in;
 }
-footer #contenedorTodoFooter #contenedorFooter #contactanosFooter #redesFooter #contenedorRedes #facebook:hover {
+footer #contenedorTodoFooter #contenedorFooter #infoCafeFooter #redesFooter #contenedorRedes #facebook:hover {
   background-color: #0f26a8;
   transition: 0.6s ease-in;
 }
-footer #contenedorTodoFooter #contenedorFooter #contactanosFooter #redesFooter #contenedorRedes #twitter:hover {
+footer #contenedorTodoFooter #contenedorFooter #infoCafeFooter #redesFooter #contenedorRedes #twitter:hover {
   background-color: #000;
   transition: 0.6s ease-in;
+}
+footer #contenedorTodoFooter #contenedorFooter #contactanosFooter h2 {
+  font-family: "Nunito", sans-serif;
+  color: #fff;
+  text-align: center;
+}
+footer #contenedorTodoFooter #contenedorFooter #contactanosFooter #datosExtraCafeteria {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+footer #contenedorTodoFooter #contenedorFooter #contactanosFooter #datosExtraCafeteria .contenedorDatos {
+  display: flex;
+  width: 90%;
+  margin: 5px;
+}
+footer #contenedorTodoFooter #contenedorFooter #contactanosFooter #datosExtraCafeteria .contenedorDatos span {
+  font-family: "Quicksand", sans-serif;
+  color: #fff;
+  margin: auto 0;
+  margin-left: 10px;
+  cursor: pointer;
+}
+footer #contenedorTodoFooter #contenedorFooter #contactanosFooter #datosExtraCafeteria .contenedorDatos figure {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  margin: 10px 0 10px 100px;
+}
+footer #contenedorTodoFooter #contenedorFooter #contactanosFooter #datosExtraCafeteria .contenedorDatos figure svg {
+  width: 24px;
+  height: 24px;
+  fill: #fff;
+  color: #fff;
 }
 footer #derechosAutor hr {
   border-width: 1.5px;
