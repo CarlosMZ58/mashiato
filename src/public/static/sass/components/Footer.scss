@@ -1,7 +1,7 @@
 $colorFondoAndText: #fff;
 $colorSecundario: #9e7540;
 $colorTerceareo: #000;
-$colorInsta: #e72fcfde;
+$colorInsta: #b60c9fde;
 $colorWhatsapp: #23c73e;
 $colorTwitter: #1d8dd8;
 $colorFacebook: #0f26a8;
@@ -123,266 +123,90 @@ footer {
     }
   }
   #contenedorTodoFooter {
-    background: $colorSecundario;
+    background-color: $colorSecundario;
     #contenedorFooter {
-      width: 100%;
-      height: 100%;
       display: grid;
-      grid-template-columns: repeat(3, 30%);
-      justify-content: space-evenly;
-      h3 {
-        color: $colorFondoAndText;
-        font-size: 23px;
-        margin: 0;
-        @include fuenteTitulos;
-        @include alinearTextCenter;
-        @include grosor();
-      }
-      #contenedorLogoNavRedesFooter {
-        #navPrincipalFooter {
-          li {
-            @include listas();
-            margin: 15px 30px 15px 0;
-            text-align: center;
-            width: auto;
-            height: auto;
-          }
-          & a {
-            font-size: 19px;
-            font-weight: bold;
-            @include textDecoration();
-            @include fuenteParrafosP();
-            color: $colorFondoAndText;
-          }
-          li:hover {
-            @include trasform();
-          }
-        }
-      }
-      #redesFooter {
+      grid-template-columns: repeat(3, 33%);
+      #infoCafeFooter {
+        width: 100%;
+        height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        #menuRedesFooter {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          width: 300px;
-          li {
-            list-style: none;
-            width: 100%;
-            height: 100%;
-            figure {
-              border-radius: 50%;
-              border: solid 1.8px #5c3706;
-              background-color: #ffffffc4;
-              height: 38px;
-              width: 38px;
-              margin: 0;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              svg {
-                width: 30px;
-                height: 30px;
-              }
-            }
-          }
-          #lgW:hover {
-            fill: $colorWhatsapp;
-            background-color: $colorFondoAndText;
-            border: solid 1.8px $colorWhatsapp;
-            transition: 0.3s ease-in;
-          }
-          #lgT:hover {
-            fill: $colorTerceareo;
-            background-color: $colorFondoAndText;
-            border: solid 1.8px $colorTerceareo;
-            transition: 0.3s ease-in;
-          }
-          #lgI:hover {
-            fill: $colorInsta;
-            background-color: $colorFondoAndText;
-            border: solid 1.8px $colorInsta;
-            transition: 0.3s ease-in;
-          }
-          #lgF:hover {
-            fill: $colorFacebook;
-            background-color: $colorFondoAndText;
-            border: solid 1.8px $colorFacebook;
-            transition: 0.3s ease-in;
+        figure {
+          width: 225px;
+          height: 70px;
+          margin-right: 70px;
+          margin-bottom: 0;
+          img {
+            width: inherit;
+            height: inherit;
           }
         }
-      }
-    }
-    #menuFooter {
-      li {
-        @include listas();
-        padding: 10px;
-        text-align: center;
-        width: auto;
-        height: auto;
-      }
-      & a {
-        font-size: 18px;
-        margin-right: 42px;
-        font-weight: bold;
-        @include textDecoration();
-        @include fuenteParrafosP();
-        color: $colorFondoAndText;
-      }
-      li:hover {
-        @include trasform();
-      }
-    }
-    #informacionCafeteria {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      #telefono {
-        display: flex;
-        align-items: center;
-        margin: 0;
-        width: 100%;
-        height: auto;
-        figure{
-          height: 38px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          margin-left: 0;
-          svg{
-            fill: $colorFondoAndText;
-            border-radius: 50%;
-            border: solid 2px #5c3706;
-            height: 23px;
-            width: 23PX;
-            margin: 0 10px;
-            padding: 4px;
-          }
-          a{
-            color: $colorFondoAndText;
-            font-size: 16px;
-            @include fuenteParrafosP();
-            @include grosor();
-            text-decoration: none;
-          }
-        }
-      }
-      #direccion{
-        display: flex;
-        align-items: center;
-        margin: 0;
-        width: 100%;
-        height: auto;
-        figure{
-          height: 38px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          margin-left: 0;
-          svg{
-            fill: $colorFondoAndText;
-            border-radius: 50%;
-            border: solid 2px #5c3706;
-            height: 23px;
-            width: 23PX;
-            margin: 0 10px;
-            padding: 4px;
-          }
-          a {
-            color: $colorFondoAndText;
-            font-size: 16px;
-            @include fuenteParrafosP();
-            @include grosor();
-            text-decoration: none;
-          }
-        }
-      }
-      #emailFooter{
-        display: flex;
-        align-items: center;
-        margin: 0;
-        width: 100%;
-        height: auto;
-        figure{
-          height: 38px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          margin-left: 0;
-          svg{
-            fill: $colorFondoAndText;
-            border-radius: 50%;
-            border: solid 2px #5c3706;
-            height: 23px;
-            width: 23PX;
-            margin: 0 10px;
-            padding: 4px;
-          }
-          a{
-            color: $colorFondoAndText;
-            font-size: 16px;
-            @include fuenteParrafosP();
-            @include grosor();
-            text-decoration: none;
-          }
-          a:hover{
-            text-decoration: underline;
-            cursor: pointer;
-            color: #5c3706;
-            transition: 0.4s ease-in-out;
-          }
-        }
-      }
-      #suscrib{
-        margin: 0;
-        width: 100%;
-        h4{
+        p {
+          @include fuenteParrafosN();
           color: $colorFondoAndText;
-          font-size: 24px;
+          padding: 15px;
+          text-align: justify;
+          margin: 0;
+        }
+      }
+      #contactanosFooter {
+        h2 {
+          @include fuenteTitulos();
+          color: $colorFondoAndText;
           text-align: center;
         }
-        form{
-          padding-bottom: 15px;
+        #redesFooter {
           display: flex;
+          flex-direction: column;
           align-items: center;
-          justify-content: space-between;
-          border-bottom: 1px solid #fff;
-          margin-bottom: 20px;
-          svg{
+          h3 {
+            @include fuenteTitulos();
             color: $colorFondoAndText;
-            width: 28px;
-            height: 28px;
-            margin-right: 10px;
+            text-align: center;
           }
-          input{
-            width: 100%;
-            background: transparent;
-            color: #fff;
-            border: 0;
-            outline: none;
-          }
-          input::placeholder{
-            color: #fff;
-            font-size: 16px;
-            @include fuenteParrafosP()
-          }
-          button{
-            background: transparent;
-            border: 0;
-            outline: none;
-            cursor: pointer;
-            svg{
-              width: 28px;
-              height: 28px;
-              fill: $colorFondoAndText;
+          #contenedorRedes {
+            display: flex;
+            padding: 7px;
+            width: auto;
+            height: 100%;
+            margin: 0;
+            li {
+              list-style: none;
+              width: 38px;
+              height: 38px;
+              border-radius: 50%;
+              border: solid 2px $colorFondoAndText;
+              margin: 3px;
+              padding: 0;
+              svg {
+                fill: $colorFondoAndText;
+                width: 28px;
+                height: 28px;
+                padding: 5px;
+              }
             }
-            svg:hover{
+            li:hover{
               transform: scale(1.05);
-              transition: 0.8 ease;
+              transition: 0.4s ease;
+            }
+            #whatsapp:hover{
+              background-color: $colorWhatsapp;
+              transition: 0.6s ease-in;
+            }
+            #intagram:hover{
+              background-color: $colorInsta;
+              transition: 0.6s ease-in;
+            }
+            #facebook:hover{
+              background-color: $colorFacebook;
+              transition: 0.6s ease-in;
+            }
+            #twitter:hover{
+              background-color: $colorTerceareo;
+              transition: 0.6s ease-in;
             }
           }
         }
@@ -405,7 +229,7 @@ footer {
       @include fuenteParrafosP();
       @include alinearTextCenter();
       padding: 15px;
-      margin: 0;
+      margin-top: 0;
     }
   }
 }

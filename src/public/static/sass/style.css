@@ -85,269 +85,93 @@ footer #wave3 {
   }
 }
 footer #contenedorTodoFooter {
-  background: #9e7540;
+  background-color: #9e7540;
 }
 footer #contenedorTodoFooter #contenedorFooter {
-  width: 100%;
-  height: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 30%);
-  justify-content: space-evenly;
+  grid-template-columns: repeat(3, 33%);
 }
-footer #contenedorTodoFooter #contenedorFooter h3 {
-  color: #fff;
-  font-size: 23px;
-  margin: 0;
-  font-family: "Nunito", sans-serif;
-  text-align: center;
-  font-weight: 800;
-}
-footer #contenedorTodoFooter #contenedorFooter #contenedorLogoNavRedesFooter #navPrincipalFooter li {
-  list-style: none;
-  margin: 15px 30px 15px 0;
-  text-align: center;
-  width: auto;
-  height: auto;
-}
-footer #contenedorTodoFooter #contenedorFooter #contenedorLogoNavRedesFooter #navPrincipalFooter a {
-  font-size: 19px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #000;
-  font-family: "PT Mono", monospace;
-  color: #fff;
-}
-footer #contenedorTodoFooter #contenedorFooter #contenedorLogoNavRedesFooter #navPrincipalFooter li:hover {
-  transform: scale(1.1);
-  opacity: 0.9;
-}
-footer #contenedorTodoFooter #contenedorFooter #redesFooter {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-footer #contenedorTodoFooter #contenedorFooter #redesFooter #menuRedesFooter {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 300px;
-}
-footer #contenedorTodoFooter #contenedorFooter #redesFooter #menuRedesFooter li {
-  list-style: none;
+footer #contenedorTodoFooter #contenedorFooter #infoCafeFooter {
   width: 100%;
   height: 100%;
-}
-footer #contenedorTodoFooter #contenedorFooter #redesFooter #menuRedesFooter li figure {
-  border-radius: 50%;
-  border: solid 1.8px #5c3706;
-  background-color: rgba(255, 255, 255, 0.768627451);
-  height: 38px;
-  width: 38px;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-footer #contenedorTodoFooter #contenedorFooter #redesFooter #menuRedesFooter li figure svg {
-  width: 30px;
-  height: 30px;
-}
-footer #contenedorTodoFooter #contenedorFooter #redesFooter #menuRedesFooter #lgW:hover {
-  fill: #23c73e;
-  background-color: #fff;
-  border: solid 1.8px #23c73e;
-  transition: 0.3s ease-in;
-}
-footer #contenedorTodoFooter #contenedorFooter #redesFooter #menuRedesFooter #lgT:hover {
-  fill: #000;
-  background-color: #fff;
-  border: solid 1.8px #000;
-  transition: 0.3s ease-in;
-}
-footer #contenedorTodoFooter #contenedorFooter #redesFooter #menuRedesFooter #lgI:hover {
-  fill: rgba(231, 47, 207, 0.8705882353);
-  background-color: #fff;
-  border: solid 1.8px rgba(231, 47, 207, 0.8705882353);
-  transition: 0.3s ease-in;
-}
-footer #contenedorTodoFooter #contenedorFooter #redesFooter #menuRedesFooter #lgF:hover {
-  fill: #0f26a8;
-  background-color: #fff;
-  border: solid 1.8px #0f26a8;
-  transition: 0.3s ease-in;
-}
-footer #contenedorTodoFooter #menuFooter li {
-  list-style: none;
-  padding: 10px;
-  text-align: center;
-  width: auto;
-  height: auto;
-}
-footer #contenedorTodoFooter #menuFooter a {
-  font-size: 18px;
-  margin-right: 42px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #000;
-  font-family: "PT Mono", monospace;
-  color: #fff;
-}
-footer #contenedorTodoFooter #menuFooter li:hover {
-  transform: scale(1.1);
-  opacity: 0.9;
-}
-footer #contenedorTodoFooter #informacionCafeteria {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-footer #contenedorTodoFooter #informacionCafeteria #telefono {
-  display: flex;
-  align-items: center;
-  margin: 0;
-  width: 100%;
-  height: auto;
+footer #contenedorTodoFooter #contenedorFooter #infoCafeFooter figure {
+  width: 225px;
+  height: 70px;
+  margin-right: 70px;
+  margin-bottom: 0;
 }
-footer #contenedorTodoFooter #informacionCafeteria #telefono figure {
-  height: 38px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 0;
+footer #contenedorTodoFooter #contenedorFooter #infoCafeFooter figure img {
+  width: inherit;
+  height: inherit;
 }
-footer #contenedorTodoFooter #informacionCafeteria #telefono figure svg {
-  fill: #fff;
-  border-radius: 50%;
-  border: solid 2px #5c3706;
-  height: 23px;
-  width: 23PX;
-  margin: 0 10px;
-  padding: 4px;
-}
-footer #contenedorTodoFooter #informacionCafeteria #telefono figure a {
+footer #contenedorTodoFooter #contenedorFooter #infoCafeFooter p {
+  font-family: "Quicksand", sans-serif;
   color: #fff;
-  font-size: 16px;
-  font-family: "PT Mono", monospace;
-  font-weight: 800;
-  text-decoration: none;
-}
-footer #contenedorTodoFooter #informacionCafeteria #direccion {
-  display: flex;
-  align-items: center;
+  padding: 15px;
+  text-align: justify;
   margin: 0;
-  width: 100%;
-  height: auto;
 }
-footer #contenedorTodoFooter #informacionCafeteria #direccion figure {
-  height: 38px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 0;
-}
-footer #contenedorTodoFooter #informacionCafeteria #direccion figure svg {
-  fill: #fff;
-  border-radius: 50%;
-  border: solid 2px #5c3706;
-  height: 23px;
-  width: 23PX;
-  margin: 0 10px;
-  padding: 4px;
-}
-footer #contenedorTodoFooter #informacionCafeteria #direccion figure a {
+footer #contenedorTodoFooter #contenedorFooter #contactanosFooter h2 {
+  font-family: "Nunito", sans-serif;
   color: #fff;
-  font-size: 16px;
-  font-family: "PT Mono", monospace;
-  font-weight: 800;
-  text-decoration: none;
-}
-footer #contenedorTodoFooter #informacionCafeteria #emailFooter {
-  display: flex;
-  align-items: center;
-  margin: 0;
-  width: 100%;
-  height: auto;
-}
-footer #contenedorTodoFooter #informacionCafeteria #emailFooter figure {
-  height: 38px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 0;
-}
-footer #contenedorTodoFooter #informacionCafeteria #emailFooter figure svg {
-  fill: #fff;
-  border-radius: 50%;
-  border: solid 2px #5c3706;
-  height: 23px;
-  width: 23PX;
-  margin: 0 10px;
-  padding: 4px;
-}
-footer #contenedorTodoFooter #informacionCafeteria #emailFooter figure a {
-  color: #fff;
-  font-size: 16px;
-  font-family: "PT Mono", monospace;
-  font-weight: 800;
-  text-decoration: none;
-}
-footer #contenedorTodoFooter #informacionCafeteria #emailFooter figure a:hover {
-  text-decoration: underline;
-  cursor: pointer;
-  color: #5c3706;
-  transition: 0.4s ease-in-out;
-}
-footer #contenedorTodoFooter #informacionCafeteria #suscrib {
-  margin: 0;
-  width: 100%;
-}
-footer #contenedorTodoFooter #informacionCafeteria #suscrib h4 {
-  color: #fff;
-  font-size: 24px;
   text-align: center;
 }
-footer #contenedorTodoFooter #informacionCafeteria #suscrib form {
-  padding-bottom: 15px;
+footer #contenedorTodoFooter #contenedorFooter #contactanosFooter #redesFooter {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  border-bottom: 1px solid #fff;
-  margin-bottom: 20px;
 }
-footer #contenedorTodoFooter #informacionCafeteria #suscrib form svg {
+footer #contenedorTodoFooter #contenedorFooter #contactanosFooter #redesFooter h3 {
+  font-family: "Nunito", sans-serif;
   color: #fff;
-  width: 28px;
-  height: 28px;
-  margin-right: 10px;
+  text-align: center;
 }
-footer #contenedorTodoFooter #informacionCafeteria #suscrib form input {
-  width: 100%;
-  background: transparent;
-  color: #fff;
-  border: 0;
-  outline: none;
+footer #contenedorTodoFooter #contenedorFooter #contactanosFooter #redesFooter #contenedorRedes {
+  display: flex;
+  padding: 7px;
+  width: auto;
+  height: 100%;
+  margin: 0;
 }
-footer #contenedorTodoFooter #informacionCafeteria #suscrib form input::placeholder {
-  color: #fff;
-  font-size: 16px;
-  font-family: "PT Mono", monospace;
+footer #contenedorTodoFooter #contenedorFooter #contactanosFooter #redesFooter #contenedorRedes li {
+  list-style: none;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: solid 2px #fff;
+  margin: 3px;
+  padding: 0;
 }
-footer #contenedorTodoFooter #informacionCafeteria #suscrib form button {
-  background: transparent;
-  border: 0;
-  outline: none;
-  cursor: pointer;
-}
-footer #contenedorTodoFooter #informacionCafeteria #suscrib form button svg {
-  width: 28px;
-  height: 28px;
+footer #contenedorTodoFooter #contenedorFooter #contactanosFooter #redesFooter #contenedorRedes li svg {
   fill: #fff;
+  width: 28px;
+  height: 28px;
+  padding: 5px;
 }
-footer #contenedorTodoFooter #informacionCafeteria #suscrib form button svg:hover {
+footer #contenedorTodoFooter #contenedorFooter #contactanosFooter #redesFooter #contenedorRedes li:hover {
   transform: scale(1.05);
-  transition: 0.8 ease;
+  transition: 0.4s ease;
+}
+footer #contenedorTodoFooter #contenedorFooter #contactanosFooter #redesFooter #contenedorRedes #whatsapp:hover {
+  background-color: #23c73e;
+  transition: 0.6s ease-in;
+}
+footer #contenedorTodoFooter #contenedorFooter #contactanosFooter #redesFooter #contenedorRedes #intagram:hover {
+  background-color: rgba(182, 12, 159, 0.8705882353);
+  transition: 0.6s ease-in;
+}
+footer #contenedorTodoFooter #contenedorFooter #contactanosFooter #redesFooter #contenedorRedes #facebook:hover {
+  background-color: #0f26a8;
+  transition: 0.6s ease-in;
+}
+footer #contenedorTodoFooter #contenedorFooter #contactanosFooter #redesFooter #contenedorRedes #twitter:hover {
+  background-color: #000;
+  transition: 0.6s ease-in;
 }
 footer #derechosAutor hr {
   border-width: 1.5px;
@@ -364,7 +188,7 @@ footer #derechosAutor p {
   font-family: "PT Mono", monospace;
   text-align: center;
   padding: 15px;
-  margin: 0;
+  margin-top: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
