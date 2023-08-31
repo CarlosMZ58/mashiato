@@ -1,96 +1,115 @@
-// $colorFondoAndText: #fff;
+$colorFondoAndText: #fff;
 
-// $colorSecundario: #9e7540;
+$colorSecundario: #9e7540;
 
-// $colorTerceareo: #000;
+$colorTerceareo: #000;
 
-// $sobreLetras: #7e7e7e;
+$sobreLetras: #7e7e7e;
 
-// $colorCafe: #3b221a;
+$colorCafe: #3b221a;
 
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: $colorFondoAndText;
+}
 
-// body {
-//     box-sizing: border-box;
-//     padding: 0;
-//     margin: 0;
-//     background-color: $colorFondoAndText;
-// }
+header {
+    display: grid;
+    grid-template-columns: 10% 75% 15%;
+    height: 400px;
+    background-image: url(../../img/fondonav5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: white;
 
-// #barraNav {
-//     background-color: #3b2b18;
-//     display: flex;
-//     justify-content: space-around;
-//     align-items: center;
-//     height: 50px;
-//     position: fixed;
-//     width: 100%;
+    .imgLogoh {
+        width: 170px;
+        height: 150px;
+        img {
+            width: 170px;
+            height: 150px;
+            translate: -20px -20px;
+        }
+    }
+    .icopor {
+        display: grid;
+        grid-template-columns: 35% 30%;
+        padding-left: 40px;
+        .ionicon {
+            width: 35px;
+            height: 35px;
+            fill: rgb(255, 255, 255);
+            cursor: pointer;
+        }
+    }
+    .botones {
+        display: flex;
+        justify-content: center;
+    }
 
-//     .botonNav {
-//         color: #fff;
-//         font-size: 18px;
-//         padding: 10px 20px;
+    .barraBusqueda {
+        display: flex;
+        justify-content: center;
 
-//         &:hover {
-//             background-color: #362817;
-//             cursor: pointer;
-//             border-radius: 5px;
-//         }
-//     }
-// }
+        input {
+            margin-top: 10px;
+            width: 65%;
+            padding: 5px;
+            border: none;
+            border-right: none;
+            border-radius: 5px 0 0 5px;
+            height: 24px;
+            background-color: #00000060;
+            color: white;
+        }
 
-// header {
-//     display: grid;
-//     grid-template-columns: repeat(2, 50%);
-//     padding: 10px;
-//     height: 300px;
-//     background-image: url(../../../img/fondonav2.jpg);
-//     background-size: cover;
-//     background-repeat: no-repeat;
+        .botonBuscar {
+            display: flex;
+            margin-top: 10px;
+            padding: 0;
+            height: 36px;
+            background-color: #271b0db0;
+            border: none;
+            border-left: none;
+            color: #fff;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
 
+            svg{
+                width: 90%;
+                height: 90%;
+                translate: 0 -5px;
+            }
+        }
+    }
+    #navBarra {
+        translate: 0 99px;
+        background-color: #0000006b;
+        height: 50px;
+        width: 100vmax;
+        display: flex;
+        justify-content: center;
 
-//     .logo {
-//         margin-right: 15px;
-//         img {
-//             width: 190px;
-//             height: 170px;
-//             translate: -30px -33px;
-//         }
-//     }
+        .botonNav {
+            text-align: center;
+            margin: auto;
+            list-style: none;
+            color: #fff;
+            margin-top: 11px;
+            font-size: 22px;
+            text-decoration: none;
+            display: block;
+            width: 20%;
+            height: 100%;
 
-//     .right {
-//         display: flex;
-
-//         .ionicon {
-//             width: 35px;
-//             height: 35px;
-//             cursor: pointer;
-//             position: absolute;
-//             translate: 270px 10px;
-//             fill: rgb(0, 0, 0);
-//         }
-
-//     }
-
-//     .search-bar {
-//     display: flex;
-//     translate: 250px 27px;
-        
-//         input {
-//             padding: 5px;
-//             border: 1px solid #2c2012;
-//             border-radius: 5px 0 0 5px;
-//             height: 24px;
-//             background-color: #9c734160;
-//             color: white;
-//         }
-
-//         .search-btn {
-//             padding: 5px 10px;
-//             height: 36px;
-//             background-color: #312414;
-//             border: 1px solid #2c2012;
-//             color: #fff;
-//             border-radius: 0 5px 5px 0;
-//         }
-//     }
-// }
+            &:hover {
+                background-color: #36281700;
+                cursor: pointer;
+                border-radius: 5px;
+            }
+        }
+    }
+}

@@ -1,3 +1,100 @@
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+}
 
+header {
+  display: grid;
+  grid-template-columns: 10% 75% 15%;
+  height: 400px;
+  background-image: url(../../img/fondonav5.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: white;
+}
+header .imgLogoh {
+  width: 170px;
+  height: 150px;
+}
+header .imgLogoh img {
+  width: 170px;
+  height: 150px;
+  translate: -20px -20px;
+}
+header .icopor {
+  display: grid;
+  grid-template-columns: 35% 30%;
+  padding-left: 40px;
+}
+header .icopor .ionicon {
+  width: 35px;
+  height: 35px;
+  fill: rgb(255, 255, 255);
+  cursor: pointer;
+}
+header .botones {
+  display: flex;
+  justify-content: center;
+}
+header .barraBusqueda {
+  display: flex;
+  justify-content: center;
+}
+header .barraBusqueda input {
+  margin-top: 10px;
+  width: 65%;
+  padding: 5px;
+  border: none;
+  border-right: none;
+  border-radius: 5px 0 0 5px;
+  height: 24px;
+  background-color: rgba(0, 0, 0, 0.3764705882);
+  color: white;
+}
+header .barraBusqueda .botonBuscar {
+  display: flex;
+  margin-top: 10px;
+  padding: 0;
+  height: 36px;
+  background-color: rgba(39, 27, 13, 0.6901960784);
+  border: none;
+  border-left: none;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+header .barraBusqueda .botonBuscar svg {
+  width: 90%;
+  height: 90%;
+  translate: 0 -5px;
+}
+header #navBarra {
+  translate: 0 99px;
+  background-color: rgba(0, 0, 0, 0.4196078431);
+  height: 50px;
+  width: 100vmax;
+  display: flex;
+  justify-content: center;
+}
+header #navBarra .botonNav {
+  text-align: center;
+  margin: auto;
+  list-style: none;
+  color: #fff;
+  margin-top: 11px;
+  font-size: 22px;
+  text-decoration: none;
+  display: block;
+  width: 20%;
+  height: 100%;
+}
+header #navBarra .botonNav:hover {
+  background-color: rgba(54, 40, 23, 0);
+  cursor: pointer;
+  border-radius: 5px;
+}
 
 /*# sourceMappingURL=style.css.map */
