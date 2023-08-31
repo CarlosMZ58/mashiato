@@ -35,6 +35,9 @@ header .icopor .ionicon {
   fill: rgb(255, 255, 255);
   cursor: pointer;
 }
+header .icopor .ionicon:hover {
+  fill: #b8b8b8;
+}
 header .botones {
   display: flex;
   justify-content: center;
@@ -47,7 +50,7 @@ header .barraBusqueda input {
   margin-top: 10px;
   width: 65%;
   padding: 5px;
-  border: none;
+  border: 1px solid #444444;
   border-right: none;
   border-radius: 5px 0 0 5px;
   height: 24px;
@@ -60,7 +63,7 @@ header .barraBusqueda .botonBuscar {
   padding: 0;
   height: 36px;
   background-color: rgba(39, 27, 13, 0.6901960784);
-  border: none;
+  border: 1px solid #444444;
   border-left: none;
   color: #fff;
   border-radius: 0 5px 5px 0;
@@ -70,6 +73,11 @@ header .barraBusqueda .botonBuscar svg {
   width: 90%;
   height: 90%;
   translate: 0 -5px;
+  fill: white;
+}
+header .barraBusqueda .botonBuscar :hover svg {
+  fill: #b8b8b8;
+  transform: scale(1.2);
 }
 header #navBarra {
   translate: 0 99px;
@@ -77,24 +85,19 @@ header #navBarra {
   height: 50px;
   width: 100vmax;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
 }
 header #navBarra .botonNav {
-  text-align: center;
-  margin: auto;
-  list-style: none;
-  color: #fff;
-  margin-top: 11px;
-  font-size: 22px;
+  color: #adadad;
   text-decoration: none;
-  display: block;
-  width: 20%;
   height: 100%;
+  padding: 0;
+  padding-top: 25px;
 }
 header #navBarra .botonNav:hover {
-  background-color: rgba(54, 40, 23, 0);
-  cursor: pointer;
-  border-radius: 5px;
+  color: #fff;
+  transform: scale(1.2);
 }
 
 /*# sourceMappingURL=style.css.map */

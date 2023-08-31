@@ -43,6 +43,9 @@ header {
             height: 35px;
             fill: rgb(255, 255, 255);
             cursor: pointer;
+            &:hover{
+                fill: #b8b8b8;
+            }
         }
     }
     .botones {
@@ -58,7 +61,7 @@ header {
             margin-top: 10px;
             width: 65%;
             padding: 5px;
-            border: none;
+            border: 1px solid #444444;
             border-right: none;
             border-radius: 5px 0 0 5px;
             height: 24px;
@@ -72,16 +75,23 @@ header {
             padding: 0;
             height: 36px;
             background-color: #271b0db0;
-            border: none;
+            border: 1px solid #444444;
             border-left: none;
             color: #fff;
             border-radius: 0 5px 5px 0;
             cursor: pointer;
 
-            svg{
+            svg {
                 width: 90%;
                 height: 90%;
                 translate: 0 -5px;
+                fill: white;
+            }
+            & :hover{
+                svg{
+                    fill: #b8b8b8;
+                    transform: scale(1.2);
+                }
             }
         }
     }
@@ -91,24 +101,20 @@ header {
         height: 50px;
         width: 100vmax;
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
+        align-items: center;
 
         .botonNav {
-            text-align: center;
-            margin: auto;
-            list-style: none;
-            color: #fff;
-            margin-top: 11px;
-            font-size: 22px;
+            color: #adadad;
             text-decoration: none;
-            display: block;
-            width: 20%;
-            height: 100%;
+            height: 100%;            
+            padding: 0;
+            padding-top: 25px;
 
-            &:hover {
-                background-color: #36281700;
-                cursor: pointer;
-                border-radius: 5px;
+
+            &:hover{
+                color: #fff;
+                transform: scale(1.2);
             }
         }
     }
