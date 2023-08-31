@@ -133,6 +133,18 @@ body {
         display: flex;
         margin: 20px;
         justify-content: center;
+        a{
+          padding: 10px 15px;
+          @include bordes();
+          @include fuenteParrafosN();
+          border: none;
+          background-color: $colorCuarto;
+          font-size: 15px;
+          color: $colorCafe;
+          font-weight: 700;
+          margin: 25px 10px;
+          text-decoration: none;
+        }
         button{
           padding: 10px 15px;
           @include bordes();
@@ -142,12 +154,17 @@ body {
           font-size: 15px;
           color: $colorCafe;
           font-weight: 700;
-          margin: 25px;
+          margin: 25px 10px;
+        }
+        a:hover{
+          transform: scale(1.05);
+          cursor: pointer;
+          transition: 0.4s ease-in;
         }
         button:hover{
           transform: scale(1.05);
           cursor: pointer;
-          transition: 0.4s ease all;
+          transition: 0.4s ease-in;
         }
       }
     }

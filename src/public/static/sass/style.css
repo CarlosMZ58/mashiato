@@ -102,6 +102,18 @@ body {
   margin: 20px;
   justify-content: center;
 }
+#contenedorAllRAndI #contenedorInicio form #contenedorBotonesInicio a {
+  padding: 10px 15px;
+  border-radius: 7px;
+  font-family: "Quicksand", sans-serif;
+  border: none;
+  background-color: #ffc26f;
+  font-size: 15px;
+  color: #2b1007;
+  font-weight: 700;
+  margin: 25px 10px;
+  text-decoration: none;
+}
 #contenedorAllRAndI #contenedorInicio form #contenedorBotonesInicio button {
   padding: 10px 15px;
   border-radius: 7px;
@@ -111,12 +123,17 @@ body {
   font-size: 15px;
   color: #2b1007;
   font-weight: 700;
-  margin: 25px;
+  margin: 25px 10px;
+}
+#contenedorAllRAndI #contenedorInicio form #contenedorBotonesInicio a:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  transition: 0.4s ease-in;
 }
 #contenedorAllRAndI #contenedorInicio form #contenedorBotonesInicio button:hover {
   transform: scale(1.05);
   cursor: pointer;
-  transition: 0.4s ease all;
+  transition: 0.4s ease-in;
 }
 #contenedorAllRAndI #contenedorInicio .form {
   width: 100%;
