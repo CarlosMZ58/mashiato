@@ -243,6 +243,61 @@ footer {
           }
         }
       }
+      #suscribcion{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        margin: 0;
+        width: 80%;
+        h4{
+          color: $colorFondoAndText;
+          font-size: 30px;
+          text-align: center;
+          margin-top: 70px;
+        }
+        form{
+          padding-bottom: 15px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          border-bottom: 1px solid #fff;
+          margin-bottom: 20px;
+          svg{
+            fill: $colorFondoAndText;
+            width: 26px;
+            height: 26px;
+            margin-right: 10px;
+          }
+          input{
+            width: 100%;
+            background: transparent;
+            color: #fff;
+            border: 0;
+            outline: none;
+          }
+          input::placeholder{
+            color: #fff;
+            font-size: 16px;
+            @include fuenteParrafosP()
+          }
+          button{
+            background: transparent;
+            border: 0;
+            outline: none;
+            cursor: pointer;
+            svg{
+              width: 28px;
+              height: 28px;
+              fill: $colorFondoAndText;
+            }
+            svg:hover{
+              transform: scale(1.05);
+              transition: 0.8 ease;
+            }
+          }
+        }
+      }
     }
   }
   #derechosAutor {

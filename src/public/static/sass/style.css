@@ -153,19 +153,19 @@ footer #contenedorTodoFooter #contenedorFooter #infoCafeFooter #redesFooter #con
 }
 footer #contenedorTodoFooter #contenedorFooter #infoCafeFooter #redesFooter #contenedorRedes #whatsapp:hover {
   background-color: #23c73e;
-  transition: 0.6s ease-in;
+  transition: 0.6s ease;
 }
 footer #contenedorTodoFooter #contenedorFooter #infoCafeFooter #redesFooter #contenedorRedes #intagram:hover {
   background-color: rgba(182, 12, 159, 0.8705882353);
-  transition: 0.6s ease-in;
+  transition: 0.6s ease;
 }
 footer #contenedorTodoFooter #contenedorFooter #infoCafeFooter #redesFooter #contenedorRedes #facebook:hover {
   background-color: #0f26a8;
-  transition: 0.6s ease-in;
+  transition: 0.6s ease;
 }
 footer #contenedorTodoFooter #contenedorFooter #infoCafeFooter #redesFooter #contenedorRedes #twitter:hover {
   background-color: #000;
-  transition: 0.6s ease-in;
+  transition: 0.6s ease;
 }
 footer #contenedorTodoFooter #contenedorFooter #contactanosFooter h2 {
   font-family: "Nunito", sans-serif;
@@ -204,6 +204,61 @@ footer #contenedorTodoFooter #contenedorFooter #contactanosFooter #datosExtraCaf
   height: 24px;
   fill: #fff;
   color: #fff;
+}
+footer #contenedorTodoFooter #contenedorFooter #suscribcion {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  margin: 0;
+  width: 80%;
+}
+footer #contenedorTodoFooter #contenedorFooter #suscribcion h4 {
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 70px;
+}
+footer #contenedorTodoFooter #contenedorFooter #suscribcion form {
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 20px;
+}
+footer #contenedorTodoFooter #contenedorFooter #suscribcion form svg {
+  fill: #fff;
+  width: 26px;
+  height: 26px;
+  margin-right: 10px;
+}
+footer #contenedorTodoFooter #contenedorFooter #suscribcion form input {
+  width: 100%;
+  background: transparent;
+  color: #fff;
+  border: 0;
+  outline: none;
+}
+footer #contenedorTodoFooter #contenedorFooter #suscribcion form input::placeholder {
+  color: #fff;
+  font-size: 16px;
+  font-family: "PT Mono", monospace;
+}
+footer #contenedorTodoFooter #contenedorFooter #suscribcion form button {
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+footer #contenedorTodoFooter #contenedorFooter #suscribcion form button svg {
+  width: 28px;
+  height: 28px;
+  fill: #fff;
+}
+footer #contenedorTodoFooter #contenedorFooter #suscribcion form button svg:hover {
+  transform: scale(1.05);
+  transition: 0.8 ease;
 }
 footer #derechosAutor hr {
   border-width: 1.5px;
