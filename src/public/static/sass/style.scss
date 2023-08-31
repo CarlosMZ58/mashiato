@@ -37,7 +37,7 @@ $colorCafe: #3b221a;
   font-family: "Caveat", cursive;
 }
 @mixin bordes {
-  border-radius: 8px;
+  border-radius: 12px;
 }
 body {
   padding: 0;
@@ -81,7 +81,7 @@ body {
         }
         .mi-boton {
           color: $colorFondoAndText;
-          padding: 18px 28px;
+          padding: 18px 20px;
           @include bordes();
           border: #ffffff86 solid 3px;
           font-size: 16px;
@@ -121,6 +121,110 @@ body {
         url(../../img/ARTICULOS/aero\ exprese.jpg);
       @include backEdition();
       box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.822);
+    }
+  }
+}
+#procesov60{
+  width: 100%;
+  height: 100%;
+  #fondov60materiales{
+    width: 100%;
+    height: 580px;
+    background-image: linear-gradient(#08080877, #000000b7),
+        url(../../img/ARTICULOS/v60\ portada\ mats.jpg);
+        @include backEdition();
+      box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.822);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    #materialesv60{
+      height: auto;
+      background-color: #00000081;
+      border-radius: 10px;
+      margin: 0 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      h3{
+        @include fuenteh1();
+        font-size: 23px;
+        color: $colorFondoAndText;
+      }
+      li{
+        width: 80%;
+        height: 50px;
+        margin: 5px;
+        color: $colorFondoAndText;
+        h5{
+          font-size: 15px;
+          @include fuenteParrafosN();
+        }
+      }
+      li::marker{
+        font-size: 24px;
+        margin: 0;
+      }
+    }
+    #contenidoTitulov60{
+      width: 60%;
+      height: auto;
+      h2{
+        @include fuenteh1();
+        color: $colorFondoAndText;
+        font-size: 60px;
+        text-align: center;
+      }
+      p{
+        color: $colorFondoAndText;
+        font-size: 16px;
+        text-align: justify;
+        padding: 0 55px;
+        @include fuenteParrafosN();
+        font-weight: bold;
+      }
+    }
+  }
+  #contenedorPasosv60{
+    width: 100%;
+    height: auto;
+    .pasov60{
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      margin: 50px 0;
+      figure{
+        width: auto;
+        height: auto;
+        img{
+          border-radius: 10px;
+          width: 325px;
+          height: 325px;
+          box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.822);
+        }
+      }
+      .contenedorInforPasosv60{
+        width: 500px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 0 150px;
+        h3{
+          font-size: 30px;
+          @include fuenteh1();
+          color: $colorTerceareo;
+        }
+        p{
+          color: $colorTerceareo;
+          font-size: 18px;
+          @include fuenteParrafosN();
+          text-align: justify;
+        }
+      }
     }
   }
 }
