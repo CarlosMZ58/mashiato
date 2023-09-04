@@ -1,3 +1,30 @@
+* {
+  @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=PT+Mono&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap");
+}
 
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #ebddca;
+}
+
+#contenedorOrigendelcafe {
+  width: 1345px;
+  height: 680px;
+  display: grid;
+  grid-template-columns: 39% 50%;
+  justify-content: space-evenly;
+  place-items: center;
+}
+#contenedorOrigendelcafe #encabezadoOrigenCafe {
+  background-color: #1d8dd8;
+}
+#contenedorOrigendelcafe #textoEncabezadoOrigenCafe {
+  background-color: #0f26a8;
+}
 
 /*# sourceMappingURL=style.css.map */

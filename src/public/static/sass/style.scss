@@ -3,3 +3,61 @@
 @import "../sass/components/Main.scss";
 @import "../sass/components/ModoNoche.scss";
 
+$colorFondoAndText: #fff;
+$colorSecundario: #9e7540;
+$colorTerceareo: #000;
+$colorCuarto: #ffc26f;
+$colorInsta: #e72fcfde;
+$colorWhatsapp: #23c73e;
+$colorTwitter: #1d8dd8;
+$colorFacebook: #0f26a8;
+$colorFondoPag: #ebddca;
+$colorCafe: #3b221a;
+* {
+  @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=PT+Mono&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap");
+}
+@mixin backEdition {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@mixin fuenteTitulos {
+  font-family: "Nunito", sans-serif;
+}
+@mixin fuenteParrafosN {
+  font-family: "Quicksand", sans-serif;
+}
+@mixin fuenteParrafosP {
+  font-family: "PT Mono", monospace;
+}
+@mixin fuenteh1 {
+  font-family: "Caveat", cursive;
+}
+@mixin bordes {
+  border-radius: 12px;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background-color: $colorFondoPag;
+}
+
+#contenedorOrigendelcafe{
+  width: 1345px;
+  height: 680px;
+  display: grid;
+  grid-template-columns: 39% 50%;
+  justify-content: space-evenly;
+  // column-gap: 50px;
+  place-items: center;
+  #encabezadoOrigenCafe{
+    background-color: #1d8dd8;
+  }
+  #textoEncabezadoOrigenCafe{
+    background-color: #0f26a8;
+  }
+}
