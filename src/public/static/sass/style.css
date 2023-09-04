@@ -13,23 +13,53 @@ body {
 }
 
 #contenedorOrigendelcafe {
-  width: 1345px;
+  width: 100%;
   height: 680px;
   display: grid;
-  grid-template-columns: 39% 50%;
+  grid-template-columns: 49% 45%;
   justify-content: space-evenly;
   place-items: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.568627451), rgba(0, 0, 0, 0.7411764706)), url(../../img/ORIGEN//PAISAJE\ DE\ CAFE\ 2.jpg);
+  background-image: linear-gradient(rgba(37, 36, 36, 0.6901960784), rgba(0, 0, 0, 0.7176470588)), url(../../img/ORIGEN//PAISAJE\ DE\ CAFE\ 2.jpg);
   font-family: "Caveat", cursive;
-  box-shadow: bottom;
+  box-shadow: 6px 6px 15px rgb(0, 0, 0);
 }
 #contenedorOrigendelcafe #encabezadoOrigenCafe h2 {
   color: #fff;
   text-align: center;
-  font-size: 45px;
+  font-size: 48px;
 }
 #contenedorOrigendelcafe #textoEncabezadoOrigenCafe {
-  background-color: #0f26a8;
+  padding: 50px;
+}
+#contenedorOrigendelcafe #textoEncabezadoOrigenCafe p {
+  color: #fff;
+  font-size: 18px;
+  text-align: justify;
+  font-family: "Quicksand", sans-serif;
+}
+
+#contenedorInformacionOrigen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+#contenedorInformacionOrigen #informacionOrigenCafe {
+  width: 60%;
+  height: auto;
+}
+#contenedorInformacionOrigen #informacionOrigenCafe h3 {
+  font-size: 23px;
+  font-family: "Nunito", sans-serif;
+  color: #000;
+}
+#contenedorInformacionOrigen #informacionOrigenCafe p {
+  font-family: "Quicksand", sans-serif;
+  color: #000;
+  text-align: justify;
+  font-size: 18px;
+  margin: 10px 0;
 }
 
 /*# sourceMappingURL=style.css.map */
