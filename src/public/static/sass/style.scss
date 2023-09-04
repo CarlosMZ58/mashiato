@@ -6,42 +6,56 @@
 //index//
 
 //nosotros//
-body{
+body {
     margin: 0;
     padding: 0;
 }
-.nosotrosPrincipal{
+#nosotrosPrincipal {
     width: 100%;
-    height: 100%;
-    background-image: url(../../img/fondonav3.jpg);
-    background-size: cover;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
-}
-.izquierda{
-    align-items: end;
-}
-.derecha{
-    translate: 38.7% 0;
-}
-.cartasNosotros{
-    background-color: rgba(255, 192, 203, 0);
-    color: white;
-    width: 70%;
-    height: px;
-    margin: 20px;
-    display: flex;
-}
-.cartasNosotros p{
-    background-color: aqua;
-    width: 35%;
-    height: 100%;
-    justify-content: center;
     margin: 0;
     padding: 0;
-}
-.cartasNosotros img{
-    width: 60%;
-    height: 100%;
 
+    .cartasNosotros {
+        width: 800px;
+        height: 300px;
+        overflow: hidden;
+        margin: 20px;
+        background-color: black;
+        border-style: hidden;
+
+        .logosNosotros {
+            width: 800px;
+            height: 300px;
+        }
+        h3{
+            position: absolute;
+            background-color: black;
+            color: white;
+            z-index: 100;
+            width: 800px;
+            translate: 0 -20px;
+            text-align: center;
+        }
+
+        p{
+            color: aliceblue;
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            background-color: black;
+            translate: 500px -16px;
+        }
+        
+    }
+    .izquierda {
+        align-items: end;
+    }
+    .derecha {
+        translate: 64% 0;
+    }
 }
