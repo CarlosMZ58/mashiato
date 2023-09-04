@@ -19,6 +19,8 @@ body {
   grid-template-columns: 39% 50%;
   justify-content: space-evenly;
   place-items: center;
+  background-image: linear-gradient(rgba(110, 108, 108, 0), rgba(0, 0, 0, 0.7411764706)), url(../../img/ARTICULOS/V60\ 3.jpg);
+  font-family: "Caveat", cursive;
 }
 #contenedorOrigendelcafe #encabezadoOrigenCafe {
   background-color: #1d8dd8;

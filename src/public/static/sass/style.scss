@@ -52,8 +52,9 @@ body {
   display: grid;
   grid-template-columns: 39% 50%;
   justify-content: space-evenly;
-  // column-gap: 50px;
   place-items: center;
+  background-image: linear-gradient(#6e6c6c00, #000000bd), url(../../img/ARTICULOS/V60\ 3.jpg);
+  @include fuenteh1();
   #encabezadoOrigenCafe{
     background-color: #1d8dd8;
   }
