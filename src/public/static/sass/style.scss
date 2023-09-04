@@ -24,7 +24,7 @@ body {
         overflow: hidden;
         margin: 20px;
         background-color: black;
-        border-style: hidden;
+        border-radius: 8px;
 
         .logosNosotros {
             width: 800px;
@@ -32,23 +32,27 @@ body {
         }
         h3{
             position: absolute;
-            background-color: black;
+            background-color: rgba(0, 0, 0, 0.658);
             color: white;
             z-index: 100;
             width: 800px;
             translate: 0 -20px;
             text-align: center;
+
         }
 
         p{
             color: aliceblue;
             position: absolute;
-            width: 300px;
-            height: 300px;
+            width: 0px;
+            height: 301px;
             display: flex;
             align-items: center;
-            background-color: black;
-            translate: 500px -16px;
+            text-align: center;
+            translate: 500px -19px;
+            font-size: 18px;
+            background-color: rgba(0, 0, 0, 0.705);
+            visibility: hidden;
         }
         
     }
@@ -57,5 +61,26 @@ body {
     }
     .derecha {
         translate: 64% 0;
+    }
+    .cartasNosotros:hover{
+        cursor: pointer;
+        p{
+            color: aliceblue;
+            position: absolute;
+            width: 300px;
+            height: 301px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            translate: 500px -19px;
+            font-size: 18px;
+            background-color: rgba(0, 0, 0, 0.705);
+            visibility: visible;
+            transition: .3s;
+        }
+        h3{
+            width: 500px;
+            text-align: left;
+        }
     }
 }
