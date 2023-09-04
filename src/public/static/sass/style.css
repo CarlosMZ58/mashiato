@@ -19,11 +19,14 @@ body {
   grid-template-columns: 39% 50%;
   justify-content: space-evenly;
   place-items: center;
-  background-image: linear-gradient(rgba(110, 108, 108, 0), rgba(0, 0, 0, 0.7411764706)), url(../../img/ARTICULOS/V60\ 3.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.568627451), rgba(0, 0, 0, 0.7411764706)), url(../../img/ORIGEN//PAISAJE\ DE\ CAFE\ 2.jpg);
   font-family: "Caveat", cursive;
+  box-shadow: bottom;
 }
-#contenedorOrigendelcafe #encabezadoOrigenCafe {
-  background-color: #1d8dd8;
+#contenedorOrigendelcafe #encabezadoOrigenCafe h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 45px;
 }
 #contenedorOrigendelcafe #textoEncabezadoOrigenCafe {
   background-color: #0f26a8;

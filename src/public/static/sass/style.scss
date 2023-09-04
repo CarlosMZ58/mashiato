@@ -53,10 +53,15 @@ body {
   grid-template-columns: 39% 50%;
   justify-content: space-evenly;
   place-items: center;
-  background-image: linear-gradient(#6e6c6c00, #000000bd), url(../../img/ARTICULOS/V60\ 3.jpg);
+  background-image: linear-gradient(#00000091, #000000bd), url(../../img/ORIGEN//PAISAJE\ DE\ CAFE\ 2.jpg);
   @include fuenteh1();
+  box-shadow: bottom ;
   #encabezadoOrigenCafe{
-    background-color: #1d8dd8;
+    h2{
+      color: $colorFondoAndText;
+      text-align: center;
+      font-size: 45px;
+    }
   }
   #textoEncabezadoOrigenCafe{
     background-color: #0f26a8;
