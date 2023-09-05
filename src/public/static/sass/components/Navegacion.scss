@@ -8,11 +8,73 @@ $sobreLetras: #7e7e7e;
 
 $colorCafe: #3b221a;
 
+#sobreNosotros {
+    background-image: linear-gradient(#00000021, #3d200452),
+        url(../../img/ARTICULOS/portada\ pag.jpg);
+    @include backEdition();
+    width: 100%;
+    height: 670px;
+    display: grid;
+    grid-template-columns: repeat(2, 49%);
+    #contenidoSobreNosotros {
+        width: 600px;
+        height: auto;
+        margin-top: 140px;
+        h1 {
+            font-size: 80px;
+            color: $colorFondoAndText;
+            @include fuenteh1();
+            text-align: center;
+            text-transform: uppercase;
+        }
+        p {
+            @include fuenteParrafosN();
+            font-size: 18px;
+            font-weight: bold;
+            padding: 0 60px;
+            text-align: center;
+            color: $colorFondoAndText;
+        }
+        a {
+            text-decoration: none;
+        }
+        button {
+            color: $colorCafe;
+            font-weight: bold;
+            padding: 14px 24px;
+            @include bordes();
+            border: $colorCafe solid 3px;
+            font-size: 16px;
+            background-color: $colorCuarto;
+            margin: 35px 0 0 230px;
+        }
+        button:hover {
+            opacity: 80%;
+            cursor: pointer;
+        }
+        button:active {
+            transform: scale(1.02);
+        }
+    }
+    #icono3D {
+        width: 600px;
+        height: 100%;
+        margin: auto;
+        figure {
+            width: 372px;
+            height: 372px;
+            margin: 130px auto;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
 body {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    background-color: $colorFondoAndText;
 }
 
 header {
@@ -43,7 +105,7 @@ header {
             height: 35px;
             fill: rgb(255, 255, 255);
             cursor: pointer;
-            &:hover{
+            &:hover {
                 fill: #b8b8b8;
             }
         }
@@ -87,8 +149,8 @@ header {
                 translate: 0 -5px;
                 fill: white;
             }
-            & :hover{
-                svg{
+            & :hover {
+                svg {
                     fill: #b8b8b8;
                     transform: scale(1.2);
                 }
@@ -107,12 +169,11 @@ header {
         .botonNav {
             color: #adadad;
             text-decoration: none;
-            height: 100%;            
+            height: 100%;
             padding: 0;
             padding-top: 25px;
 
-
-            &:hover{
+            &:hover {
                 color: #fff;
                 transform: scale(1.2);
             }
