@@ -15,27 +15,21 @@ body {
 #contenedorOrigendelcafe {
   width: 100%;
   height: 680px;
-  display: grid;
-  grid-template-columns: 49% 45%;
-  justify-content: space-evenly;
-  place-items: center;
-  background-image: linear-gradient(rgba(37, 36, 36, 0.5254901961), rgba(0, 0, 0, 0.7176470588)), url(../../img/ORIGEN//PAISAJE\ DE\ CAFE\ 2.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(17, 17, 17, 0.6431372549), rgba(243, 158, 60, 0.1176470588)), url(../../img/ORIGEN//PAISAJE\ DE\ CAFE\ 2.jpg);
   font-family: "Caveat", cursive;
-  box-shadow: 6px 6px 15px rgb(0, 0, 0);
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.664);
+}
+#contenedorOrigendelcafe #encabezadoOrigenCafe {
+  width: 80%;
 }
 #contenedorOrigendelcafe #encabezadoOrigenCafe h2 {
   color: #fff;
   text-align: center;
-  font-size: 48px;
-  animation: animacionColorCafe 5s ease-in-out infinite;
-}
-#contenedorOrigendelcafe #encabezadoOrigenCafe h2 span {
-  width: 100px;
-}
-@keyframes animacionColorCafe {
-  100% {
-    transform: scale(1.06);
-  }
+  font-size: 60px;
 }
 #contenedorOrigendelcafe #textoEncabezadoOrigenCafe {
   padding: 50px;
