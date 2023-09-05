@@ -12,71 +12,6 @@ body {
   background-color: #ebddca;
 }
 
-#sobreNosotros {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1294117647), rgba(61, 32, 4, 0.3215686275)), url(../../img/ARTICULOS/portada\ pag.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 670px;
-  display: grid;
-  grid-template-columns: repeat(2, 49%);
-}
-#sobreNosotros #contenidoSobreNosotros {
-  width: 600px;
-  height: auto;
-  margin-top: 140px;
-}
-#sobreNosotros #contenidoSobreNosotros h1 {
-  font-size: 80px;
-  color: #fff;
-  font-family: "Caveat", cursive;
-  text-align: center;
-  text-transform: uppercase;
-}
-#sobreNosotros #contenidoSobreNosotros p {
-  font-family: "Quicksand", sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  padding: 0 60px;
-  text-align: center;
-  color: #fff;
-}
-#sobreNosotros #contenidoSobreNosotros a {
-  text-decoration: none;
-}
-#sobreNosotros #contenidoSobreNosotros button {
-  color: #3b221a;
-  font-weight: bold;
-  padding: 14px 24px;
-  border-radius: 8px;
-  border: #3b221a solid 3px;
-  font-size: 16px;
-  background-color: #ffc26f;
-  margin: 35px 0 0 230px;
-}
-#sobreNosotros #contenidoSobreNosotros button:hover {
-  opacity: 80%;
-  cursor: pointer;
-}
-#sobreNosotros #contenidoSobreNosotros button:active {
-  transform: scale(1.02);
-}
-#sobreNosotros #icono3D {
-  width: 600px;
-  height: 100%;
-  margin: auto;
-}
-#sobreNosotros #icono3D figure {
-  width: 372px;
-  height: 372px;
-  margin: 130px auto;
-}
-#sobreNosotros #icono3D figure img {
-  width: 100%;
-  height: 100%;
-}
-
 #aprendeIndex {
   display: flex;
   justify-content: center;
@@ -113,14 +48,21 @@ body {
   border-radius: 13px;
   color: #fff;
   font-size: 18px;
-  box-shadow: 3px 3px 12px rgba(255, 195, 111, 0.7882352941);
 }
 #aprendeIndex .cuadroAprendeIndex button:hover {
-  transform: scale(1.08);
+  transform: scale(1.09);
+  border: solid 2.2px #f3a941;
   cursor: pointer;
+  box-shadow: 3px 3px 12px #f3a941;
 }
 #aprendeIndex .cuadroAprendeIndex button:active {
   background: rgba(0, 0, 0, 0.7176470588);
+}
+#aprendeIndex .cuadroAprendeIndex:hover button {
+  transform: scale(1.08);
+  cursor: pointer;
+  box-shadow: 3px 3px 12px rgba(255, 195, 111, 0.7882352941);
+  transition: 0.6s ease-in-out;
 }
 #aprendeIndex .cuadroAprendeIndex:hover {
   transform: scale(1.04);

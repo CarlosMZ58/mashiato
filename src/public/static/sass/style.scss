@@ -79,15 +79,22 @@ body {
       border-radius: 13px;
       color: $colorFondoAndText;
       font-size: 18px;
-      box-shadow: 3px 3px 12px #ffc36fc9;
     }
     button:hover{
-      transform: scale(1.08);
+      transform: scale(1.09);
+      border: solid 2.2px #f3a941;
       cursor: pointer;
+      box-shadow: 3px 3px 12px #f3a941;
     }
     button:active{
       background: #000000b7;
     }
+  }
+  .cuadroAprendeIndex:hover button{
+    transform: scale(1.08);
+    cursor: pointer;
+    box-shadow: 3px 3px 12px #ffc36fc9;
+    transition: 0.6s ease-in-out;
   }
   .cuadroAprendeIndex:hover{
     transform: scale(1.04);
