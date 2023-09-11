@@ -1,17 +1,15 @@
-/* Error: Undefined variable.
- *    ,
- * 36 |   background-color: $colorFondoPag;
- *    |                     ^^^^^^^^^^^^^^
- *    '
- *   style.scss 36:21  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 36 \2502    background-color: $colorFondoPag;\d\a    \2502                      ^^^^^^^^^^^^^^\a    \2575 \a   style.scss 36:21  root stylesheet";
+* {
+  @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=PT+Mono&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap");
 }
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #ebddca;
+}
+
+/*# sourceMappingURL=style.css.map */

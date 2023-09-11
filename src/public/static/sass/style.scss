@@ -10,6 +10,17 @@
   @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
   @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap");
 }
+$colorFondoAndText: #fff;
+$colorSecundario: #9e7540;
+$colorTerceareo: #000;
+$colorCuarto: #ffc26f;
+$colorInsta: #e72fcfde;
+$colorWhatsapp: #23c73e;
+$colorTwitter: #1d8dd8;
+$colorFacebook: #0f26a8;
+$colorFondoPag: #ebddca;
+$colorCafe: #3b221a;
+
 @mixin backEdition {
   background-size: cover;
   background-position: center;
