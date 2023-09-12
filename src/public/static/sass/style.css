@@ -172,11 +172,12 @@ body {
   color: #2b1007;
   font-weight: 700;
   margin: 25px 10px;
+  box-shadow: 0px 0px 7px rgba(250, 188, 137, 0.6784313725);
 }
 #contenedorAllRAndI #contenedorInicio form #contenedorBotonesInicio button:hover {
   background-color: #ce914f;
   color: #fff;
-  box-shadow: 0px 0px 9px rgba(255, 255, 255, 0.8274509804);
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8980392157);
   cursor: pointer;
   transition: 0.7s ease-in-out;
 }

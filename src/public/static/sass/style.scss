@@ -206,11 +206,12 @@ body {
           color: $colorCafe;
           font-weight: 700;
           margin: 25px 10px;
+          box-shadow: 0px 0px 7px #fabc89ad;
         }
         button:hover{
           background-color: #ce914f;
           color: #fff;
-          box-shadow: 0px 0px 9px #ffffffd3 ;
+          box-shadow: 0px 0px 10px #ffffffe5;
           cursor: pointer;
           transition: 0.7s ease-in-out;
         }
