@@ -180,11 +180,14 @@ body {
   color: #2b1007;
   font-weight: 700;
   margin: 0 10px;
+  box-shadow: 0px 0px 7px rgba(250, 188, 137, 0.6784313725);
 }
 #contenedorAllRI #contenedorRegistro form #contenedorBotonesRegistro button:hover {
-  transform: scale(1.05);
+  background-color: #ce914f;
+  color: #fff;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8980392157);
   cursor: pointer;
-  transition: 0.4s ease-in;
+  transition: 0.7s ease-in-out;
 }
 #contenedorAllRI #contenedorRegistro .form {
   width: 100%;

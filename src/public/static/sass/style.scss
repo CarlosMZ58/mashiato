@@ -216,11 +216,14 @@ body {
           color: $colorCafe;
           font-weight: 700;
           margin: 0 10px;
+          box-shadow: 0px 0px 7px #fabc89ad;
         }
         button:hover {
-          transform: scale(1.05);
+          background-color: #ce914f;
+          color: #fff;
+          box-shadow: 0px 0px 10px #ffffffe5;
           cursor: pointer;
-          transition: 0.4s ease-in;
+          transition: 0.7s ease-in-out;
         }
       }
     }
