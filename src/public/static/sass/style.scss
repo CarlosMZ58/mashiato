@@ -16,11 +16,16 @@ $colorCafe: #2b1007;
   @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap");
   @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
   @import url("https://fonts.googleapis.com/css2?family=PT+Mono&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap");
 }
 @mixin backEdition {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+@mixin fuenteh1 {
+  font-family: "Caveat", cursive;
 }
 @mixin fuenteTitulos {
   font-family: "Nunito", sans-serif;
@@ -42,6 +47,64 @@ body {
     url(../../img/Background/fondo.registro4.jpg  );
 }
 #contenedorAllRAndI{
+  #barraNavegacionRegiyIncio{
+    width: 100%;
+    height: 60px;
+    background-color: #2b1007;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    box-shadow: 3px 3px 13px $colorTerceareo;
+    a{
+      color: $colorFondoAndText;
+      text-decoration: none;
+      @include fuenteh1();
+      font-size: 20px;
+      margin: 5px 20px;
+      letter-spacing: 3px;
+    }
+    #grupoNavegacion{
+      display: flex;
+      align-items: center;
+      #barraNavegacionFija{
+        position: relative;
+        display: flex;
+        gap: 30px;
+        margin: 5px 60px;
+        li{
+          list-style: none;
+          a{
+            position: relative;
+            @include fuenteParrafosP();
+            font-size: 18px;
+            font-weight: 500;
+            letter-spacing: 1px;
+          }
+          a:before{
+            content: "";
+            position: absolute;
+            bottom: -2px;
+            width: 100%;
+            height: 2px;
+            background-color: #e6c290;
+            transform: scaleX(0);
+            transition: transform 0.3s ease-in-out;
+            transform-origin: right;
+          }
+          a:hover::before{
+            transform: scaleX(1);
+            transform-origin: left;
+          }
+        }
+      }
+    }
+  }
   #contenedorInicio {
     form {
       background-color: $colorCafe;
@@ -133,18 +196,6 @@ body {
         display: flex;
         margin: 20px;
         justify-content: center;
-        a{
-          padding: 10px 15px;
-          @include bordes();
-          @include fuenteParrafosN();
-          border: none;
-          background-color: $colorCuarto;
-          font-size: 15px;
-          color: $colorCafe;
-          font-weight: 700;
-          margin: 25px 10px;
-          text-decoration: none;
-        }
         button{
           padding: 10px 15px;
           @include bordes();
@@ -156,15 +207,12 @@ body {
           font-weight: 700;
           margin: 25px 10px;
         }
-        a:hover{
-          transform: scale(1.05);
-          cursor: pointer;
-          transition: 0.4s ease-in;
-        }
         button:hover{
-          transform: scale(1.05);
+          background-color: #ce914f;
+          color: #fff;
+          box-shadow: 0px 0px 9px #ffffffd3 ;
           cursor: pointer;
-          transition: 0.4s ease-in;
+          transition: 0.7s ease-in-out;
         }
       }
     }
