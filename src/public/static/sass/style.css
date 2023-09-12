@@ -2,19 +2,81 @@
   @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap");
   @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
   @import url("https://fonts.googleapis.com/css2?family=PT+Mono&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap");
 }
 
 body {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 #contenedorAllRI {
+  padding: 0;
+  margin: 0;
   width: 100%;
   height: 100%;
   box-sizing: border-box;
-  padding: 20px;
   background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5960784314), rgba(51, 36, 16, 0.6431372549)), url(../../img/fondoregistro/fondo.registro4.jpg);
+}
+#contenedorAllRI #barraNavegacionRegiyIncio {
+  width: 100%;
+  height: 60px;
+  background-color: #2b1007;
+  box-sizing: border-box;
+  position: sticky;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  box-shadow: 3px 3px 13px #000;
+}
+#contenedorAllRI #barraNavegacionRegiyIncio a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Caveat", cursive;
+  font-size: 20px;
+  margin: 5px 20px;
+  letter-spacing: 3px;
+}
+#contenedorAllRI #barraNavegacionRegiyIncio #grupoNavegacion {
+  display: flex;
+  align-items: center;
+}
+#contenedorAllRI #barraNavegacionRegiyIncio #grupoNavegacion #barraNavegacionFija {
+  position: relative;
+  display: flex;
+  gap: 30px;
+  margin: 5px 60px;
+}
+#contenedorAllRI #barraNavegacionRegiyIncio #grupoNavegacion #barraNavegacionFija li {
+  list-style: none;
+}
+#contenedorAllRI #barraNavegacionRegiyIncio #grupoNavegacion #barraNavegacionFija li a {
+  position: relative;
+  font-family: "PT Mono", monospace;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+#contenedorAllRI #barraNavegacionRegiyIncio #grupoNavegacion #barraNavegacionFija li a:before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: #e6c290;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+  transform-origin: right;
+}
+#contenedorAllRI #barraNavegacionRegiyIncio #grupoNavegacion #barraNavegacionFija li a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 #contenedorAllRI #contenedorRegistro form {
   background-color: #2b1007;
@@ -108,18 +170,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-#contenedorAllRI #contenedorRegistro form #contenedorBotonesRegistro a {
-  padding: 10px 15px;
-  border-radius: 9px;
-  font-family: "Quicksand", sans-serif;
-  border: none;
-  background-color: #ffc26f;
-  font-size: 15px;
-  color: #2b1007;
-  font-weight: 700;
-  margin: 0 10px;
-  text-decoration: none;
-}
 #contenedorAllRI #contenedorRegistro form #contenedorBotonesRegistro button {
   padding: 10px 15px;
   border-radius: 9px;
@@ -130,11 +180,6 @@ body {
   color: #2b1007;
   font-weight: 700;
   margin: 0 10px;
-}
-#contenedorAllRI #contenedorRegistro form #contenedorBotonesRegistro a:hover {
-  transform: scale(1.05);
-  cursor: pointer;
-  transition: 0.4s ease-in;
 }
 #contenedorAllRI #contenedorRegistro form #contenedorBotonesRegistro button:hover {
   transform: scale(1.05);
