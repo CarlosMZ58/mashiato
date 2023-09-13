@@ -1,182 +1,88 @@
 $colorFondoAndText: #fff;
-
 $colorSecundario: #9e7540;
-
 $colorTerceareo: #000;
-
-$sobreLetras: #7e7e7e;
-
+$colorCuarto: #ffc26f;
+$colorInsta: #e72fcfde;
+$colorWhatsapp: #23c73e;
+$colorTwitter: #1d8dd8;
+$colorFacebook: #0f26a8;
+$colorFondoPag: #ebddca;
 $colorCafe: #3b221a;
 
-#sobreNosotros {
-    background-image: linear-gradient(#00000021, #3d200452),
-        url(../../img/ARTICULOS/portada\ pag.jpg);
-    @include backEdition();
+* {
+  @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=PT+Mono&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap");
+}
+@mixin backEdition {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@mixin fuenteTitulos {
+  font-family: "Nunito", sans-serif;
+}
+@mixin fuenteParrafosN {
+  font-family: "Quicksand", sans-serif;
+}
+@mixin fuenteParrafosP {
+  font-family: "PT Mono", monospace;
+}
+@mixin fuenteh1 {
+  font-family: "Caveat", cursive;
+}
+body{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+header{
+  width: 1366px;
+  height: 699px;
+  // background-image: linear-gradient(#6e6c6c00, #000000bd), url(../../../img/portadapag.jpg);
+  // background-size: cover;
+  // background-position: center;
+  background-color: #9e7540;
+  nav{
+    display: flex;
     width: 100%;
-    height: 670px;
-    display: grid;
-    grid-template-columns: repeat(2, 49%);
-    #contenidoSobreNosotros {
-        width: 600px;
-        height: auto;
-        margin-top: 140px;
-        h1 {
-            font-size: 80px;
-            color: $colorFondoAndText;
-            @include fuenteh1();
-            text-align: center;
-            text-transform: uppercase;
-        }
-        p {
-            @include fuenteParrafosN();
-            font-size: 18px;
-            font-weight: bold;
-            padding: 0 60px;
-            text-align: center;
-            color: $colorFondoAndText;
-        }
-        a {
-            text-decoration: none;
-        }
-        button {
-            color: $colorCafe;
-            font-weight: bold;
-            padding: 14px 24px;
-            @include bordes();
-            border: $colorCafe solid 3px;
-            font-size: 16px;
-            background-color: $colorCuarto;
-            margin: 35px 0 0 230px;
-        }
-        button:hover {
-            opacity: 80%;
-            cursor: pointer;
-        }
-        button:active {
-            transform: scale(1.02);
-        }
+    height: 80px;
+    #contenedorImgNav{
+      width: 10%;
+      margin: 0 303px 0 20px;
+      background-color: #1d8dd8;
     }
-    #icono3D {
-        width: 600px;
-        height: 100%;
-        margin: auto;
-        figure {
-            width: 372px;
-            height: 372px;
-            margin: 130px auto;
-            img {
-                width: 100%;
-                height: 100%;
-            }
-        }
-    }
-}
-body {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
-header {
-    display: grid;
-    grid-template-columns: 10% 75% 15%;
-    height: 400px;
-    background-image: url(../../img/fondonav5.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-color: white;
-
-    .imgLogoh {
-        width: 170px;
-        height: 150px;
-        img {
-            width: 170px;
-            height: 150px;
-            translate: -20px -20px;
-        }
-    }
-    .icopor {
-        display: grid;
-        grid-template-columns: 35% 30%;
-        padding-left: 40px;
-        .ionicon {
-            width: 35px;
-            height: 35px;
-            fill: rgb(255, 255, 255);
-            cursor: pointer;
-            &:hover {
-                fill: #b8b8b8;
-            }
-        }
-    }
-    .botones {
-        display: flex;
-        justify-content: center;
-    }
-
-    .barraBusqueda {
-        display: flex;
-        justify-content: center;
-
-        input {
-            margin-top: 10px;
-            width: 65%;
-            padding: 5px;
-            border: 1px solid #444444;
-            border-right: none;
-            border-radius: 5px 0 0 5px;
-            height: 24px;
-            background-color: #00000060;
-            color: white;
-        }
-
-        .botonBuscar {
-            display: flex;
-            margin-top: 10px;
-            padding: 0;
-            height: 36px;
-            background-color: #271b0db0;
-            border: 1px solid #444444;
-            border-left: none;
-            color: #fff;
-            border-radius: 0 5px 5px 0;
-            cursor: pointer;
-
-            svg {
-                width: 90%;
-                height: 90%;
-                translate: 0 -5px;
-                fill: white;
-            }
-            & :hover {
-                svg {
-                    fill: #b8b8b8;
-                    transform: scale(1.2);
-                }
-            }
-        }
-    }
-    #navBarra {
-        translate: 0 99px;
-        background-color: #0000006b;
+    #barraNavegacionPrincipalNav{
+      width: 55%;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      li{
+        background-color: #3b221a;
+        width: 24%;
         height: 50px;
-        width: 100vmax;
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
-
-        .botonNav {
-            color: #adadad;
-            text-decoration: none;
-            height: 100%;
-            padding: 0;
-            padding-top: 25px;
-
-            &:hover {
-                color: #fff;
-                transform: scale(1.2);
-            }
+        list-style: none;
+        a{
+          text-decoration: none;
+          @include fuenteParrafosN();
+          color: $colorFondoAndText;
+          font-weight: 600;
+          letter-spacing: 1.2px;
+          font-size: 16px;
+          padding: 15px;
         }
+      }
     }
+    #contenedorBotonesNav{
+      width: 13%;
+      background-color: #0f26a8;
+    }
+  }
 }

@@ -1,18 +1,61 @@
-/* Error: Undefined mixin.
- *    ,
- * 14 |     @include backEdition();
- *    |     ^^^^^^^^^^^^^^^^^^^^^^
- *    '
- *   components\Navegacion.scss 14:5  @import
- *   style.scss 1:9                   root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a    \2577 \a 14 \2502      @include backEdition();\d\a    \2502      ^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   components\\Navegacion.scss 14:5  @import\a   style.scss 1:9                   root stylesheet";
+* {
+  @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=PT+Mono&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap");
 }
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  width: 1366px;
+  height: 699px;
+  background-color: #9e7540;
+}
+header nav {
+  display: flex;
+  width: 100%;
+  height: 80px;
+}
+header nav #contenedorImgNav {
+  width: 10%;
+  margin: 0 303px 0 20px;
+  background-color: #1d8dd8;
+}
+header nav #barraNavegacionPrincipalNav {
+  width: 55%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav #barraNavegacionPrincipalNav li {
+  background-color: #3b221a;
+  width: 24%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+header nav #barraNavegacionPrincipalNav li a {
+  text-decoration: none;
+  font-family: "Quicksand", sans-serif;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  font-size: 16px;
+  padding: 15px;
+}
+header nav #contenedorBotonesNav {
+  width: 13%;
+  background-color: #0f26a8;
+}
+
+/*# sourceMappingURL=style.css.map */
