@@ -136,8 +136,8 @@ body {
       justify-content: center;
       align-items: flex-start;
       width: 350px;
-      height: 310px;
-      background-color: #d3a666cb;
+      height: 340px;
+      background-color: #ebc895;
       border-radius: 20px;
       box-shadow: 0px 11px 30px #000;
       transition: 0.5s ease;
@@ -161,7 +161,7 @@ body {
       }
       .contenidoTestimonio{
         position: absolute;
-        top: 252px;
+        top: 270px;
         overflow: hidden;
         height: 55px;
         width: 100%;
@@ -173,10 +173,20 @@ body {
           font-size: 23px;
           transition: 0.5s ease-in-out;
         }
+        h3{
+          @include fuenteParrafosN();
+          color: #423e3e;
+          font-weight: bold;
+          letter-spacing: 2px;
+          font-size: 16px;
+          margin: 0;
+        }
         p{
           @include fuenteParrafosN();
           padding: 0 30px;
           text-align: justify;
+          color: #000;
+          letter-spacing: 0.7px;
         }
         .contenedorEstrellas{
           display: flex;
@@ -185,14 +195,15 @@ body {
           svg{
             width: 30px;
             height: 30px;
-            fill: #fbff03;
-            color: #fbff03;
+            fill: #ffe601;
+            color: #ffe601;
+            filter: drop-shadow(0px 3px 3px #00000088);
           }
         }
       }
     }
     .tarjetaTestimonio:hover{
-      height: 460px;
+      height: 480px;
     }
     .tarjetaTestimonio:hover figure{
       top: -100px;
@@ -200,7 +211,7 @@ body {
     }
     .tarjetaTestimonio:hover .contenidoTestimonio{
       top: 150px;
-      height: 250px;
+      height: 290px;
       transition: 0.5s ease;
     }
   }
