@@ -16,17 +16,8 @@ body {
   background-color: #201c1c;
 }
 
-header {
-  position: relative;
-  top: 0;
-  width: 100%;
-  height: 699px;
-  background-image: linear-gradient(rgba(12, 11, 11, 0), rgba(0, 0, 0, 0.4235294118)), url(../../img/portadapag.jpg);
-  background-size: cover;
-  background-position: center;
-}
 header nav {
-  background-color: #2e1f18;
+  background-color: #493226;
   position: fixed;
   top: 0;
   right: 0;
@@ -193,29 +184,6 @@ header nav #contenedorBotonesNav #botonInicioNav a svg {
 header nav #contenedorBotonesNav #botonInicioNav a:hover svg {
   padding: 5px 5px 5px 5px;
   fill: #ffc26f;
-}
-header #contenedroTituloNav {
-  height: 400px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-  margin-top: 80px;
-  padding-top: 100px;
-}
-header #contenedroTituloNav figure img {
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
-  border: solid 2px #3b221a;
-}
-header #contenedroTituloNav p {
-  font-family: "Quicksand", sans-serif;
-  color: #fff;
-  font-size: 20px;
-  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

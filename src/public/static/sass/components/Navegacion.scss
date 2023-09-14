@@ -43,15 +43,8 @@ body{
   background-color: #201c1c;
 }
 header{
-  position: relative;
-  top: 0;
-  width: 100%;
-  height: 699px;
-  background-image: linear-gradient(#0c0b0b00, #0000006c), url(../../img/portadapag.jpg);
-  background-size: cover;
-  background-position: center;
   nav{
-    background-color: #2e1f18;
+    background-color: #493226;
     position: fixed;
     top: 0;
     right: 0;
@@ -220,32 +213,6 @@ header{
           fill: #ffc26f;
         }
       }
-    }
-  }
-  #contenedroTituloNav{
-    height: 400px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin-top: 80px;
-    padding-top: 100px;
-    figure{
-      img{
-        // color: #22130db6;
-        width: 220px;
-        height: 220px;
-        border-radius: 50%;
-        border: solid 2px $colorCafe;
-      }
-    }
-    p{
-      @include fuenteParrafosN();
-      color: $colorFondoAndText;
-      font-size: 20px;
-      margin: 0;
     }
   }
 }
