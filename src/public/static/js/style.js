@@ -9,8 +9,11 @@ document.getElementById('input').addEventListener('change', ()=>{
 
 window.addEventListener("scroll", function () {
   const navbar = document.querySelector("nav");
-  if (window.scrollY > 50) { // Cambia 50 a la cantidad de desplazamiento que desees antes de que la barra cambie de color
-      navbar.style.backgroundColor = "#22130d9d"; 
+  if (window.scrollY > 30) { // Cambia 50 a la cantidad de desplazamiento que desees antes de que la barra cambie de color
+      navbar.style.backgroundColor = "#2e1f18";
+      navbar.style.height = "60px"; 
   } else {
-      navbar.style.backgroundColor = "transparent";}
+      navbar.style.backgroundColor = "#2e1f18";
+      navbar.style.height = "90px";
+    }
 });

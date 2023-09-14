@@ -39,19 +39,28 @@ body{
   padding: 0;
   margin: 0;
 }
+.dark{
+  background-color: #201c1c;
+}
 header{
+  position: relative;
+  top: 0;
   width: 100%;
   height: 699px;
   background-image: linear-gradient(#0c0b0b00, #0000006c), url(../../img/portadapag.jpg);
   background-size: cover;
   background-position: center;
   nav{
-    // background-color: #22130d9d;
+    background-color: #2e1f18;
+    position: fixed;
+    top: 0;
+    right: 0;
     display: flex;
     width: 100%;
     height: 90px;
+    transition: 0.4s ease-in-out;
     #contenedorImgNav{
-      margin: 0 300px 0 20px;
+      margin: 0 160px 0 20px;
       padding: 0;
       display: flex;
       justify-content: center;
@@ -74,7 +83,7 @@ header{
       }
     }
     #barraNavegacionPrincipalNav{
-      width: 55%;
+      width: 500px;
       margin: 0;
       padding: 0;
       display: flex;
@@ -111,32 +120,33 @@ header{
       justify-content: center;
       align-items: center;
       #botonModoOscuroNav{
+        margin-left: 165px;
         display: flex;
         justify-content: center;
         align-items: center;
         svg{
-          fill: #ffffff;
-          width: 26px;
-          height: 26px;
+          fill: #ffffffd3;
+          width: 22px;
+          height: 22px;
           filter: drop-shadow(1px 1px 5px #ffc36f34);
           padding: 5px;
         }
         .switch{
           position: relative;
           display: inline-block;
-          width: 60px;
-          height: 30px;
-          filter: drop-shadow(1px 1px 10px #ffffff4f);
+          width: 50px;
+          height: 23px;
+          filter: drop-shadow(1px 1px 3px #ffffff4f);
           input{
             opacity: 0;
             width: 0;
             height: 0;
           }
           input:checked+.slider{
-            background-color: $colorTerceareo;
+            background-color: #131212ee;
           }
           input:focus+.slider{
-            box-shadow: 0 0 1 $colorTerceareo;
+            box-shadow: 0 0 1 #131212ee;
           }
           input:checked+.slider::before{
             -webkit-transform: translateX(26px);
@@ -158,8 +168,8 @@ header{
           .slider::before{
             position: absolute;
             content: "";
-            width: 23px;
-            height: 23px;
+            width: 16px;
+            height: 16px;
             left: 4px;
             bottom: 4px;
             border-radius: 50%;
@@ -170,24 +180,43 @@ header{
         }
       }
       #botonCarritoNav{
-        width: 50%;
         a{
           display: grid;
           place-items: center;
           text-decoration: none;
           svg{
             fill: $colorFondoAndText;
-            height: 40px;
-            width: 40px;
+            height: 35px;
+            width: 35px;
+            margin: 0 0 0 7px;
             padding: 5px 5px 5px 5px;
             transition: 0.5s ease;
-            border-radius: 10px;
             filter: drop-shadow(1px 1px 5px #ffc36f34);
           }
         }
         a:hover svg{
           padding: 5px 5px 5px 5px;
           border-radius: 10px;
+          fill: #ffc26f;
+        }
+      }
+      #botonInicioNav{
+        margin: 0 7px;
+        a{
+          display: grid;
+          place-items: center;
+          text-decoration: none;
+          svg{
+            fill: $colorFondoAndText;
+            height: 28px;
+            width: 28px;
+            padding: 5px 5px 5px 5px;
+            transition: 0.5s ease;
+            filter: drop-shadow(1px 1px 5px #ffc36f34);
+          }
+        }
+        a:hover svg{
+          padding: 5px 5px 5px 5px;
           fill: #ffc26f;
         }
       }
@@ -202,8 +231,10 @@ header{
     flex-direction: column;
     flex-wrap: wrap;
     margin-top: 80px;
+    padding-top: 100px;
     figure{
       img{
+        // color: #22130db6;
         width: 220px;
         height: 220px;
         border-radius: 50%;
