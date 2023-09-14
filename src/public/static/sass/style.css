@@ -74,10 +74,29 @@ header nav #barraNavegacionPrincipalNav li a {
   text-align: center;
   padding: 13px 5px 5px 5px;
   transition: 0.5s ease;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+header nav #barraNavegacionPrincipalNav li a:before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  width: 100%;
+  height: 3px;
+  background-color: #ffc26f;
+  box-shadow: 0 1px 10px rgba(255, 255, 255, 0.2823529412);
+  transform: scaleX(0);
+  transition: transform 0.35s ease-in-out;
+  transform-origin: right;
+}
+header nav #barraNavegacionPrincipalNav li a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 header nav #barraNavegacionPrincipalNav li:hover a {
   border-radius: 10px;
-  color: #ffc26f;
+  color: rgba(255, 255, 255, 0.5215686275);
   padding: 13px 5px 5px 5px;
 }
 header nav #contenedorBotonesNav {
@@ -150,20 +169,36 @@ header nav #contenedorBotonesNav #botonCarritoNav a {
   display: grid;
   place-items: center;
   text-decoration: none;
+  position: relative;
+  padding: 5px 5px 5px 5px;
+  margin-left: 7px;
 }
 header nav #contenedorBotonesNav #botonCarritoNav a svg {
   fill: #fff;
   height: 35px;
   width: 35px;
-  margin: 0 0 0 7px;
-  padding: 5px 5px 5px 5px;
   transition: 0.5s ease;
   filter: drop-shadow(1px 1px 5px rgba(255, 195, 111, 0.2039215686));
 }
+header nav #contenedorBotonesNav #botonCarritoNav a:before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  width: 100%;
+  height: 3px;
+  background-color: #ffc26f;
+  box-shadow: 0 1px 10px rgba(255, 255, 255, 0.2823529412);
+  transform: scaleX(0);
+  transition: transform 0.35s ease-in-out;
+  transform-origin: right;
+}
+header nav #contenedorBotonesNav #botonCarritoNav a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
 header nav #contenedorBotonesNav #botonCarritoNav a:hover svg {
-  padding: 5px 5px 5px 5px;
   border-radius: 10px;
-  fill: #ffc26f;
+  fill: rgba(255, 255, 255, 0.5215686275);
 }
 header nav #contenedorBotonesNav #botonInicioNav {
   margin: 0 7px;
@@ -172,18 +207,34 @@ header nav #contenedorBotonesNav #botonInicioNav a {
   display: grid;
   place-items: center;
   text-decoration: none;
+  padding: 5px 9px 9px 9px;
+  position: relative;
 }
 header nav #contenedorBotonesNav #botonInicioNav a svg {
   fill: #fff;
   height: 28px;
   width: 28px;
-  padding: 5px 5px 5px 5px;
   transition: 0.5s ease;
   filter: drop-shadow(1px 1px 5px rgba(255, 195, 111, 0.2039215686));
 }
+header nav #contenedorBotonesNav #botonInicioNav a:before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  width: 100%;
+  height: 3px;
+  background-color: #ffc26f;
+  box-shadow: 0 1px 10px rgba(255, 255, 255, 0.2823529412);
+  transform: scaleX(0);
+  transition: transform 0.35s ease-in-out;
+  transform-origin: right;
+}
+header nav #contenedorBotonesNav #botonInicioNav a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
 header nav #contenedorBotonesNav #botonInicioNav a:hover svg {
-  padding: 5px 5px 5px 5px;
-  fill: #ffc26f;
+  fill: rgba(255, 255, 255, 0.5215686275);
 }
 
 /*# sourceMappingURL=style.css.map */
