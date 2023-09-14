@@ -1,5 +1,6 @@
 $colorFondoAndText: #fff;
 $colorSecundario: #9e7540;
+$colorNavyFooter: #493226;
 $colorTerceareo: #000;
 $colorInsta: #b60c9fde;
 $colorWhatsapp: #23c73e;
@@ -57,12 +58,12 @@ footer {
   .wave {
     animation: wave 3s linear;
     animation-iteration-count: infinite;
-    fill: $colorSecundario;
+    fill: $colorNavyFooter;
   }
   .drop {
-    fill: $colorSecundario;
+    fill: $colorNavyFooter;
     animation: drop 3.2s linear infinite normal;
-    stroke: $colorSecundario;
+    stroke: $colorNavyFooter;
     stroke-width: 0.5;
     transform: translateY(25px);
     transform-box: fill-box;
@@ -123,7 +124,8 @@ footer {
     }
   }
   #contenedorTodoFooter {
-    background-color: $colorSecundario;
+    position: absolute;
+    background-color: $colorNavyFooter;
     #contenedorFooter {
       display: grid;
       grid-template-columns: repeat(3, 33%);

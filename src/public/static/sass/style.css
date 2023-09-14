@@ -19,12 +19,12 @@ footer svg {
 footer .wave {
   animation: wave 3s linear;
   animation-iteration-count: infinite;
-  fill: #9e7540;
+  fill: #493226;
 }
 footer .drop {
-  fill: #9e7540;
+  fill: #493226;
   animation: drop 3.2s linear infinite normal;
-  stroke: #9e7540;
+  stroke: #493226;
   stroke-width: 0.5;
   transform: translateY(25px);
   transform-box: fill-box;
@@ -85,7 +85,8 @@ footer #wave3 {
   }
 }
 footer #contenedorTodoFooter {
-  background-color: #9e7540;
+  position: absolute;
+  background-color: #493226;
 }
 footer #contenedorTodoFooter #contenedorFooter {
   display: grid;
