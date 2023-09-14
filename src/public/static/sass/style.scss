@@ -65,9 +65,15 @@ body {
       color: $colorFondoAndText;
       text-decoration: none;
       @include fuenteh1();
-      font-size: 20px;
+      font-size: 36px;
       margin: 5px 20px;
-      letter-spacing: 3px;
+      span{
+        margin: 0;
+        padding: 0;
+        color: #ce914f;
+        @include fuenteh1();
+        font-size: 36px;
+      }
     }
     #grupoNavegacion{
       display: flex;
