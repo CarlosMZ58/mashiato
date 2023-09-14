@@ -46,6 +46,7 @@ body {
   padding: 0;
   margin: 0;
   background-color: $colorFondoPag;
+  box-sizing: border-box;
 }
 #contenedorContactanos{
   background-image:linear-gradient(#6e6c6c00, #000000bd), url(../../img/fondoPagContactanos.jpg);
