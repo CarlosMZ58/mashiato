@@ -2,3 +2,116 @@
 @import "../sass/components/Navegacion.scss";
 @import "../sass/components/Main.scss";
 @import "../sass/components/ModoNoche.scss";
+
+// contactanos
+
+* {
+  @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=PT+Mono&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap");
+}
+@mixin backEdition {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@mixin fuenteTitulos {
+  font-family: "Nunito", sans-serif;
+}
+@mixin fuenteParrafosN {
+  font-family: "Quicksand", sans-serif;
+}
+@mixin fuenteParrafosP {
+  font-family: "PT Mono", monospace;
+}
+@mixin fuenteh1 {
+  font-family: "Caveat", cursive;
+}
+@mixin bordes {
+  border-radius: 12px;
+}
+$colorFondoAndText: #fff;
+$colorSecundario: #9e7540;
+$colorTerceareo: #000;
+$colorCuarto: #ffc26f;
+$colorInsta: #e72fcfde;
+$colorWhatsapp: #23c73e;
+$colorTwitter: #1d8dd8;
+$colorFacebook: #0f26a8;
+$colorFondoPag: #ebddca;
+$colorCafe: #3b221a;
+body {
+  padding: 0;
+  margin: 0;
+  background-color: $colorFondoPag;
+}
+#contenedorContactanos{
+  background-image:linear-gradient(#6e6c6c00, #000000bd), url(../../img/fondoPagContactanos.jpg);
+  @include backEdition();
+  width: 100%;
+  height: 699px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  #barraNavegacionRegiyIncio{
+    width: 100%;
+    height: 60px;
+    background-color: #2b1007;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    box-shadow: 3px 3px 13px $colorTerceareo;
+    a{
+      color: $colorFondoAndText;
+      text-decoration: none;
+      @include fuenteh1();
+      font-size: 20px;
+      margin: 5px 20px;
+      letter-spacing: 3px;
+    }
+    #grupoNavegacion{
+      display: flex;
+      align-items: center;
+      #barraNavegacionFija{
+        position: relative;
+        display: flex;
+        gap: 30px;
+        margin: 5px 60px;
+        li{
+          list-style: none;
+          a{
+            position: relative;
+            @include fuenteParrafosP();
+            font-size: 18px;
+            font-weight: 500;
+            letter-spacing: 1px;
+          }
+          a:before{
+            content: "";
+            position: absolute;
+            bottom: -2px;
+            width: 100%;
+            height: 2px;
+            background-color: #e6c290;
+            transform: scaleX(0);
+            transition: transform 0.3s ease-in-out;
+            transform-origin: right;
+          }
+          a:hover::before{
+            transform: scaleX(1);
+            transform-origin: left;
+          }
+        }
+      }
+    }
+  }
+}
