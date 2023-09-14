@@ -7,3 +7,10 @@ document.getElementById('input').addEventListener('change', ()=>{
   }
 })
 
+window.addEventListener("scroll", function () {
+  const navbar = document.querySelector("nav");
+  if (window.scrollY > 50) { // Cambia 50 a la cantidad de desplazamiento que desees antes de que la barra cambie de color
+      navbar.style.backgroundColor = "#22130d9d"; 
+  } else {
+      navbar.style.backgroundColor = "transparent";}
+});

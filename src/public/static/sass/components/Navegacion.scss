@@ -40,14 +40,13 @@ body{
   margin: 0;
 }
 header{
-  width: 1366px;
+  width: 100%;
   height: 699px;
   background-image: linear-gradient(#0c0b0b00, #0000006c), url(../../img/portadapag.jpg);
   background-size: cover;
   background-position: center;
   nav{
-    position: sticky;
-    background-color: #22130d4f;
+    // background-color: #22130d9d;
     display: flex;
     width: 100%;
     height: 90px;
