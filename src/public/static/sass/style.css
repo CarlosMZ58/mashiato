@@ -15,17 +15,39 @@ body {
 header {
   width: 1366px;
   height: 699px;
-  background-color: #9e7540;
+  background-image: linear-gradient(rgba(12, 11, 11, 0), rgba(0, 0, 0, 0.4235294118)), url(../../img/portadapag.jpg);
+  background-size: cover;
+  background-position: center;
 }
 header nav {
+  position: sticky;
+  background-color: rgba(34, 19, 13, 0.3098039216);
   display: flex;
   width: 100%;
-  height: 80px;
+  height: 90px;
 }
 header nav #contenedorImgNav {
-  width: 10%;
-  margin: 0 303px 0 20px;
-  background-color: #1d8dd8;
+  margin: 0 300px 0 20px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav #contenedorImgNav h1 {
+  font-family: "Caveat", cursive;
+  font-size: 40px;
+  color: #fff;
+  letter-spacing: 1px;
+  font-weight: bold;
+  margin: 0;
+}
+header nav #contenedorImgNav h1 span {
+  font-size: 40px;
+  color: #ffc26f;
+  letter-spacing: 1px;
+  font-weight: bold;
+  margin: 0;
+  filter: drop-shadow(1px 1px 5px rgba(184, 127, 42, 0.5568627451));
 }
 header nav #barraNavegacionPrincipalNav {
   width: 55%;
@@ -33,29 +55,139 @@ header nav #barraNavegacionPrincipalNav {
   padding: 0;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 header nav #barraNavegacionPrincipalNav li {
-  background-color: #3b221a;
-  width: 24%;
-  height: 50px;
+  list-style: none;
   display: flex;
   justify-content: center;
   align-items: center;
-  list-style: none;
 }
 header nav #barraNavegacionPrincipalNav li a {
   text-decoration: none;
   font-family: "Quicksand", sans-serif;
   color: #fff;
   font-weight: 600;
-  letter-spacing: 1.2px;
+  letter-spacing: 1px;
+  border-radius: 10px;
   font-size: 16px;
-  padding: 15px;
+  text-align: center;
+  padding: 13px 5px 5px 5px;
+  transition: 0.5s ease;
+}
+header nav #barraNavegacionPrincipalNav li:hover a {
+  border-radius: 10px;
+  color: #ffc26f;
+  padding: 13px 5px 5px 5px;
 }
 header nav #contenedorBotonesNav {
-  width: 13%;
-  background-color: #0f26a8;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav #contenedorBotonesNav #botonModoOscuroNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav #contenedorBotonesNav #botonModoOscuroNav svg {
+  fill: #ffffff;
+  width: 26px;
+  height: 26px;
+  filter: drop-shadow(1px 1px 5px rgba(255, 195, 111, 0.2039215686));
+  padding: 5px;
+}
+header nav #contenedorBotonesNav #botonModoOscuroNav .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  filter: drop-shadow(1px 1px 10px rgba(255, 255, 255, 0.3098039216));
+}
+header nav #contenedorBotonesNav #botonModoOscuroNav .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+header nav #contenedorBotonesNav #botonModoOscuroNav .switch input:checked + .slider {
+  background-color: #000;
+}
+header nav #contenedorBotonesNav #botonModoOscuroNav .switch input:focus + .slider {
+  box-shadow: 0 0 1 #000;
+}
+header nav #contenedorBotonesNav #botonModoOscuroNav .switch input:checked + .slider::before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+header nav #contenedorBotonesNav #botonModoOscuroNav .switch .slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+  border-radius: 20px;
+  background-color: #ffc26f;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+header nav #contenedorBotonesNav #botonModoOscuroNav .switch .slider::before {
+  position: absolute;
+  content: "";
+  width: 23px;
+  height: 23px;
+  left: 4px;
+  bottom: 4px;
+  border-radius: 50%;
+  background-color: #fff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+header nav #contenedorBotonesNav #botonCarritoNav {
+  width: 50%;
+}
+header nav #contenedorBotonesNav #botonCarritoNav a {
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+}
+header nav #contenedorBotonesNav #botonCarritoNav a svg {
+  fill: #fff;
+  height: 40px;
+  width: 40px;
+  padding: 5px 5px 5px 5px;
+  transition: 0.5s ease;
+  border-radius: 10px;
+  filter: drop-shadow(1px 1px 5px rgba(255, 195, 111, 0.2039215686));
+}
+header nav #contenedorBotonesNav #botonCarritoNav a:hover svg {
+  padding: 5px 5px 5px 5px;
+  border-radius: 10px;
+  fill: #ffc26f;
+}
+header #contenedroTituloNav {
+  height: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 80px;
+}
+header #contenedroTituloNav figure img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  border: solid 2px #3b221a;
+}
+header #contenedroTituloNav p {
+  font-family: "Quicksand", sans-serif;
+  color: #fff;
+  font-size: 20px;
+  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
