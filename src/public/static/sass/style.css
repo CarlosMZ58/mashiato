@@ -27,7 +27,7 @@ body {
 }
 #contenedorContactanos #contactanoContenedor {
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: rgba(49, 46, 44, 0.7607843137);
@@ -65,6 +65,7 @@ body {
   border: none;
   background: none;
   outline: none;
+  position: relative;
 }
 #contenedorContactanos #contactanoContenedor form .ContactContenedor textarea {
   width: 100%;
@@ -87,33 +88,42 @@ body {
   left: 5px;
   transform: translateY(-50%);
   pointer-events: none;
+  transition: 0.3s ease all;
 }
-#contenedorContactanos #contactanoContenedor form .ContactContenedor span::before {
-  content: "";
-  position: absolute;
-  top: 40px;
-  left: 0;
-  width: 0%;
-  height: 2px;
-  background-color: #9e7540;
-  transition: 0.5s ease-in-out;
+#contenedorContactanos #contactanoContenedor form #contenedorBotonContact {
+  display: grid;
+  place-items: center;
+  margin: 30px 0 40px 0;
+}
+#contenedorContactanos #contactanoContenedor form #contenedorBotonContact button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 13px;
+  background-color: #3b2f20;
+  box-shadow: 0 0 4px 0 rgba(255, 255, 255, 0.6588235294);
+  color: rgba(255, 255, 255, 0.6039215686);
+  transition: 0.3s ease;
+}
+#contenedorContactanos #contactanoContenedor form #contenedorBotonContact button:hover {
+  background-color: #2c2318;
+  box-shadow: 0 0 8px 0 rgba(255, 255, 255, 0.6588235294);
 }
 #contenedorContactanos #contactanoContenedor form .ContactContenedor input:focus ~ label,
-#contenedorContactanos #contactanoContenedor form .ContactContenedor input:focus ~ label {
+#contenedorContactanos #contactanoContenedor form .ContactContenedor input:valid ~ label {
   top: -5px;
   color: #9e7540;
 }
 #contenedorContactanos #contactanoContenedor form .ContactContenedor input:focus ~ span::before,
-#contenedorContactanos #contactanoContenedor form .ContactContenedor input:focus ~ span::before {
+#contenedorContactanos #contactanoContenedor form .ContactContenedor input:valid ~ span::before {
   width: 100%;
 }
 #contenedorContactanos #contactanoContenedor form .ContactContenedor textarea:focus ~ label,
-#contenedorContactanos #contactanoContenedor form .ContactContenedor textarea:focus ~ label {
+#contenedorContactanos #contactanoContenedor form .ContactContenedor textarea:valid ~ label {
   top: -10px;
   color: #9e7540;
 }
 #contenedorContactanos #contactanoContenedor form .ContactContenedor textarea:focus ~ span::before,
-#contenedorContactanos #contactanoContenedor form .ContactContenedor textarea:focus ~ span::before {
+#contenedorContactanos #contactanoContenedor form .ContactContenedor textarea:valid ~ span::before {
   width: 100%;
 }
 #contenedorContactanos #barraNavegacionRegiyIncio {

@@ -18,23 +18,23 @@
             <form>
                 <h2>Contactanos</h2>
                 <div class="ContactContenedor">
-                    <input placeholder="Nombres y apellidos" type="text" name="nombre">
+                    <input required type="text" name="nombre"><span></span>
                     <label>Nombre Completo</label>
                 </div>
                 <div class="ContactContenedor">
-                    <input type="tel" name="tel">
+                    <input required type="tel" name="tel"><span></span>
                     <label>Telefono</label>
                 </div>
                 <div class="ContactContenedor">
-                    <input type="email" name="E-mail">
+                    <input required type="email" name="E-mail"><span></span>
                     <label>E-mail</label>
                 </div>
                 <div class="ContactContenedor">
-                    <input type="text" name="Asunto">
+                    <input required type="text" name="Asunto"><span></span>
                     <label>Asunto</label>
                 </div>
                 <div class="ContactContenedor">
-                    <textarea name="mensaje" rows="5"></textarea>
+                    <textarea required name="mensaje" rows="5"></textarea><span id="spantext"></span>
                     <label>Mensaje</label>
                 </div>
                 <div id="contenedorBotonContact">

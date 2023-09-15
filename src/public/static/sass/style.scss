@@ -61,7 +61,7 @@ body {
   height: 699px;
   #contactanoContenedor{
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #312e2cc2;
@@ -96,6 +96,7 @@ body {
           border: none;
           background: none;
           outline: none;
+          position: relative;
         }
         textarea{
           width: 100%;
@@ -118,34 +119,43 @@ body {
           left: 5px;
           transform: translateY(-50%);
           pointer-events: none;
+          transition: 0.3s ease all;
         }
       }
-      .ContactContenedor span::before{
-        content: "";
-        position: absolute;
-        top: 40px;
-        left: 0;
-        width: 0%;
-        height: 2px;
-        background-color: #9e7540;
-        transition: 0.5s ease-in-out;
+      #contenedorBotonContact{
+        display: grid;
+        place-items: center;
+        margin: 30px 0 40px 0;
+        button{
+          padding: 10px 20px;
+          border: none;
+          border-radius: 13px;
+          background-color: #3b2f20;
+          box-shadow: 0 0 4px 0 #ffffffa8;
+          color: #ffffff9a;
+          transition: 0.3s ease;
+        }
+        button:hover{
+          background-color: #2c2318;
+          box-shadow: 0 0 8px 0 #ffffffa8;
+        }
       }
       .ContactContenedor input:focus ~label,
-      .ContactContenedor input:focus ~label{
+      .ContactContenedor input:valid ~label{
         top: -5px;
         color: #9e7540;
       }
       .ContactContenedor input:focus ~ span::before,
-      .ContactContenedor input:focus ~ span::before{
+      .ContactContenedor input:valid ~ span::before{
         width: 100%;
       }
       .ContactContenedor textarea:focus ~label,
-      .ContactContenedor textarea:focus ~label{
+      .ContactContenedor textarea:valid ~label{
         top: -10px;
         color: #9e7540;
       }
       .ContactContenedor textarea:focus ~ span::before,
-      .ContactContenedor textarea:focus ~ span::before{
+      .ContactContenedor textarea:valid ~ span::before{
         width: 100%;
       }
     }
