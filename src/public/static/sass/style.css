@@ -16,14 +16,105 @@ body {
 #contenedorContactanos {
   background-image: linear-gradient(rgba(110, 108, 108, 0), rgba(0, 0, 0, 0.7411764706)), url(../../img/fondoPagContactanos.jpg);
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
-  width: 100%;
-  height: 699px;
+  background-position: center;
   display: flex;
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
+  width: 100%;
+  height: 699px;
+}
+#contenedorContactanos #contactanoContenedor {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(49, 46, 44, 0.7607843137);
+  box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.5803921569);
+  width: 500px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+#contenedorContactanos #contactanoContenedor form {
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+#contenedorContactanos #contactanoContenedor form h2 {
+  font-family: "Caveat", cursive;
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  padding: 20px 0 15px 0;
+  margin: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2941176471);
+}
+#contenedorContactanos #contactanoContenedor form .ContactContenedor {
+  position: relative;
+  margin: 30px 0;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2941176471);
+}
+#contenedorContactanos #contactanoContenedor form .ContactContenedor input {
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-family: "Caveat", cursive;
+  color: #fff;
+  font-size: 14px;
+  border: none;
+  background: none;
+  outline: none;
+}
+#contenedorContactanos #contactanoContenedor form .ContactContenedor textarea {
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  margin-top: 10px;
+  font-family: "Caveat", cursive;
+  color: #fff;
+  font-size: 14px;
+  border: none;
+  background: none;
+  outline: none;
+}
+#contenedorContactanos #contactanoContenedor form .ContactContenedor label {
+  font-family: "Caveat", cursive;
+  font-size: 17px;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+#contenedorContactanos #contactanoContenedor form .ContactContenedor span::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #9e7540;
+  transition: 0.5s ease-in-out;
+}
+#contenedorContactanos #contactanoContenedor form .ContactContenedor input:focus ~ label,
+#contenedorContactanos #contactanoContenedor form .ContactContenedor input:focus ~ label {
+  top: -5px;
+  color: #9e7540;
+}
+#contenedorContactanos #contactanoContenedor form .ContactContenedor input:focus ~ span::before,
+#contenedorContactanos #contactanoContenedor form .ContactContenedor input:focus ~ span::before {
+  width: 100%;
+}
+#contenedorContactanos #contactanoContenedor form .ContactContenedor textarea:focus ~ label,
+#contenedorContactanos #contactanoContenedor form .ContactContenedor textarea:focus ~ label {
+  top: -10px;
+  color: #9e7540;
+}
+#contenedorContactanos #contactanoContenedor form .ContactContenedor textarea:focus ~ span::before,
+#contenedorContactanos #contactanoContenedor form .ContactContenedor textarea:focus ~ span::before {
+  width: 100%;
 }
 #contenedorContactanos #barraNavegacionRegiyIncio {
   width: 100%;
