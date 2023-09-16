@@ -10,6 +10,8 @@ body {
   padding: 0;
   margin: 0;
   background-color: #ebddca;
+  padding-top: 50px;
+  z-index: 99;
 }
 
 #aprendeIndex {
