@@ -11,7 +11,7 @@ $colorWhatsapp: #23c73e;
 $colorTwitter: #1d8dd8;
 $colorFacebook: #0f26a8;
 $colorfocustext: #e6c290;
-$colorCafe: #2b1007;
+$colorbrown: #2b1007;
 * {
   @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap");
   @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
@@ -24,9 +24,6 @@ $colorCafe: #2b1007;
   background-position: center;
   background-repeat: no-repeat;
 }
-@mixin fuenteh1 {
-  font-family: "Caveat", cursive;
-}
 @mixin fuenteTitulos {
   font-family: "Nunito", sans-serif;
 }
@@ -36,17 +33,12 @@ $colorCafe: #2b1007;
 @mixin fuenteParrafosP {
   font-family: "PT Mono", monospace;
 }
-@mixin bordes {
-  border-radius: 7px;
-}
-body {
-  padding: 0;
-  margin: 0;
-  height: 600px;
-  background-image: linear-gradient(to left, #00000098, #332410a4),
-    url(../../img/Background/fondo.registro4.jpg  );
-}
 #contenedorAllRAndI{
+  width: 100%;
+  height: 700px;
+  box-sizing: border-box;
+  background-image: linear-gradient(to left, #00000098, #332410a4),
+    url(../../img/fondoregistro/fondo.registro4.jpg);
   #barraNavegacionRegiyIncio{
     width: 100%;
     height: 60px;
@@ -113,7 +105,7 @@ body {
   }
   #contenedorInicio {
     form {
-      background-color: $colorCafe;
+      background-color: $colorbrown;
       // opacity: 75%;
       width: 600px;
       height: 100%;
@@ -204,12 +196,12 @@ body {
         justify-content: center;
         button{
           padding: 10px 15px;
-          @include bordes();
+          border-radius: 7px;
           @include fuenteParrafosN();
           border: none;
           background-color: $colorCuarto;
           font-size: 15px;
-          color: $colorCafe;
+          color: $colorbrown;
           font-weight: 700;
           margin: 25px 10px;
           box-shadow: 0px 0px 7px #fabc89ad;
