@@ -41,14 +41,6 @@ $colorCafe: #2b1007;
 @mixin fuenteParrafosP {
   font-family: "PT Mono", monospace;
 }
-@mixin bordes {
-  border-radius: 9px;
-}
-body {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
 #contenedorAllRI {
   padding: 0;
   margin: 0;
@@ -214,7 +206,7 @@ body {
         align-items: center;
         button {
           padding: 10px 15px;
-          @include bordes();
+          border-radius: 9px;
           @include fuenteParrafosN();
           border: none;
           background-color: $colorCuarto;
