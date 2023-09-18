@@ -11,7 +11,7 @@ $colorWhatsapp: #23c73e;
 $colorTwitter: #1d8dd8;
 $colorFacebook: #0f26a8;
 $colorfocustext: #e6c290;
-$colorCafe1: #2b1007;
+$colorbrown: #2b1007;
 * {
   @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap");
   @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
@@ -108,7 +108,7 @@ $colorCafe1: #2b1007;
   }
   #contenedorRegistro {
     form {
-      background-color: $colorCafe1;
+      background-color: $colorbrown;
       width: 600px;
       height: 650px;
       margin: 0px 180px;
@@ -207,7 +207,7 @@ $colorCafe1: #2b1007;
           border: none;
           background-color: $colorCuarto;
           font-size: 15px;
-          color: $colorCafe1;
+          color: $colorbrown;
           font-weight: 700;
           margin: 0 10px;
           box-shadow: 0px 0px 7px #fabc89ad;
