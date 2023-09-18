@@ -41,7 +41,7 @@ $colorbrown: #2b1007;
   box-sizing: border-box;
   background-image: linear-gradient(to left, #00000098, #332410a4),
     url(../../img/fondoregistro/fondo.registro4.jpg);
-  #barraNavegacionRegiyIncio{
+  #barraNavegacionRegiyIncioI{
     width: 100%;
     height: 60px;
     background-color: #2b1007;
@@ -70,10 +70,10 @@ $colorbrown: #2b1007;
         font-size: 36px;
       }
     }
-    #grupoNavegacion{
+    #grupoNavegacionI{
       display: flex;
       align-items: center;
-      #barraNavegacionFija{
+      #barraNavegacionFijaI{
         position: relative;
         display: flex;
         gap: 30px;
