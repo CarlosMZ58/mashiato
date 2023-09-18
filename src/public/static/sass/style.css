@@ -12,6 +12,7 @@ body {
   background-color: #ebddca;
   padding-top: 50px;
   z-index: 99;
+  box-sizing: border-box;
 }
 
 #aprendeIndex {
