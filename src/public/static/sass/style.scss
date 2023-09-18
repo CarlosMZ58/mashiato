@@ -2,11 +2,6 @@
 @import "../sass/components/Navegacion.scss";
 @import "../sass/components/Main.scss";
 @import "../sass/components/ModoNoche.scss";
-//index//
-
-//nosotros//
-
-//REGISTRO//
 $colorFondoAndText: #fff;
 $colorSecundario: #9e7540;
 $colorTerceareo: #000;
@@ -16,7 +11,7 @@ $colorWhatsapp: #23c73e;
 $colorTwitter: #1d8dd8;
 $colorFacebook: #0f26a8;
 $colorfocustext: #e6c290;
-$colorCafe: #2b1007;
+$colorCafe1: #2b1007;
 * {
   @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap");
   @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
@@ -32,15 +27,17 @@ $colorCafe: #2b1007;
 @mixin fuenteTitulos {
   font-family: "Nunito", sans-serif;
 }
-@mixin fuenteh1 {
-  font-family: "Caveat", cursive;
-}
 @mixin fuenteParrafosN {
   font-family: "Quicksand", sans-serif;
 }
 @mixin fuenteParrafosP {
   font-family: "PT Mono", monospace;
 }
+
+
+
+
+//REGISTRO INICIO
 #contenedorAllRI {
   padding: 0;
   margin: 0;
@@ -115,7 +112,7 @@ $colorCafe: #2b1007;
   }
   #contenedorRegistro {
     form {
-      background-color: $colorCafe;
+      background-color: $colorCafe1;
       width: 600px;
       height: 100%;
       margin: 0px 180px;
@@ -211,7 +208,7 @@ $colorCafe: #2b1007;
           border: none;
           background-color: $colorCuarto;
           font-size: 15px;
-          color: $colorCafe;
+          color: $colorCafe1;
           font-weight: 700;
           margin: 0 10px;
           box-shadow: 0px 0px 7px #fabc89ad;
@@ -231,3 +228,4 @@ $colorCafe: #2b1007;
     }
   }
 }
+//REGISTRO FIN
