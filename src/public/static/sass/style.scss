@@ -36,12 +36,8 @@ $colorCafe1: #2b1007;
 
 //REGISTRO INICIO
 #contenedorAllRI {
-  padding: 0;
-  margin: 0;
   width: 100%;
-  position: absolute;
-  top: 0;
-  height: 100%;
+  height: 700px;
   box-sizing: border-box;
   background-image: linear-gradient(to left, #00000098, #332410a4),
     url(../../img/fondoregistro/fondo.registro4.jpg);
@@ -50,7 +46,8 @@ $colorCafe1: #2b1007;
     height: 60px;
     background-color: #2b1007;
     box-sizing: border-box;
-    position: sticky;
+    position: fixed;
+    z-index: 100;
     top: 0;
     left: 0;
     overflow: hidden;
@@ -113,9 +110,12 @@ $colorCafe1: #2b1007;
     form {
       background-color: $colorCafe1;
       width: 600px;
-      height: 100%;
+      height: 650px;
       margin: 0px 180px;
       border-radius: 16px;
+      position: relative;
+      translate: 0 30px;
+      z-index: 99;
       border: $colorSecundario solid 2.8px;
       box-shadow: 0 0 20px #000;
       h2 {
