@@ -1,0 +1,270 @@
+$colorFondoAndText: #fff;
+$colorSecundario: #9e7540;
+$colorTerceareo: #000;
+$colorCuarto: #ffc26f;
+$colorInsta: #e72fcfde;
+$colorWhatsapp: #23c73e;
+$colorTwitter: #1d8dd8;
+$colorFacebook: #0f26a8;
+$colorFondoPag: #ebddca;
+$colorCafe: #3b221a;
+
+* {
+  @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=PT+Mono&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap");
+}
+
+@mixin backEdition {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@mixin fuenteTitulos {
+  font-family: "Nunito", sans-serif;
+}
+@mixin fuenteParrafosN {
+  font-family: "Quicksand", sans-serif;
+}
+@mixin fuenteParrafosP {
+  font-family: "PT Mono", monospace;
+}
+@mixin fuenteh1 {
+  font-family: "Caveat", cursive;
+}
+body{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  padding-top: 50px;
+}
+.dark{
+  background-color: #201c1c;
+}
+header{
+  nav{
+    background-color: #493226;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    display: flex;
+    width: 100%;
+    height: 90px;
+    transition: 0.4s ease-in-out;
+    #contenedorImgNav{
+      margin: 0 160px 0 20px;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      h1{
+        @include fuenteh1();
+        font-size: 40px;
+        color: $colorFondoAndText;
+        letter-spacing: 1px;
+        font-weight: bold;
+        margin: 0;
+        span{
+        font-size: 40px;
+        color: #ffc26f;
+        letter-spacing: 1px;
+        font-weight: bold;
+        margin: 0;
+        filter: drop-shadow(1px 1px 5px #b87f2a8e);
+        }
+      }
+    }
+    #barraNavegacionPrincipalNav{
+      width: 500px;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      li{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a{
+          text-decoration: none;
+          @include fuenteParrafosN();
+          color: $colorFondoAndText;
+          font-weight: 600;
+          letter-spacing: 1px;
+          border-radius: 10px;
+          font-size: 16px;
+          text-align: center;
+          padding: 13px 5px 5px 5px;
+          transition: 0.5s ease;
+          position: relative;
+          display: grid;
+          place-items: center;
+        }
+        a:before{
+          content: "";
+          position: absolute;
+          bottom: -2px;
+          width: 100%;
+          height: 3px;
+          background-color: $colorCuarto;
+          box-shadow: 0 1px 10px #ffffff48;
+          transform: scaleX(0);
+          transition: transform 0.35s ease-in-out;
+          transform-origin: right;
+        }
+        a:hover::before{
+          transform: scaleX(1);
+          transform-origin: left;
+        }
+      }
+      li:hover a{
+        border-radius: 10px;
+        color: #ffffff85;
+        padding: 13px 5px 5px 5px;
+      }
+    }
+    #contenedorBotonesNav{
+      width: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      #botonModoOscuroNav{
+        margin-left: 165px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        svg{
+          fill: #ffffffd3;
+          width: 22px;
+          height: 22px;
+          filter: drop-shadow(1px 1px 5px #ffc36f34);
+          padding: 5px;
+        }
+        .switch{
+          position: relative;
+          display: inline-block;
+          width: 50px;
+          height: 23px;
+          filter: drop-shadow(1px 1px 3px #ffffff4f);
+          input{
+            opacity: 0;
+            width: 0;
+            height: 0;
+          }
+          input:checked+.slider{
+            background-color: #131212ee;
+          }
+          input:focus+.slider{
+            box-shadow: 0 0 1 #131212ee;
+          }
+          input:checked+.slider::before{
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+          }
+          .slider{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            cursor: pointer;
+            border-radius: 20px;
+            background-color: $colorCuarto;
+            -webkit-transition: 0.4s;
+            transition: 0.4s;
+          }
+          .slider::before{
+            position: absolute;
+            content: "";
+            width: 16px;
+            height: 16px;
+            left: 4px;
+            bottom: 4px;
+            border-radius: 50%;
+            background-color: $colorFondoAndText;
+            -webkit-transition: 0.4s;
+            transition: 0.4s;
+          }
+        }
+      }
+      #botonCarritoNav{
+        a{
+          display: grid;
+          place-items: center;
+          text-decoration: none;
+          position: relative;
+          padding: 5px 5px 5px 5px;
+          margin-left: 7px;
+          svg{
+            fill: $colorFondoAndText;
+            height: 35px;
+            width: 35px;
+            transition: 0.5s ease;
+            filter: drop-shadow(1px 1px 5px #ffc36f34);
+          }
+        }
+        a:before{
+          content: "";
+          position: absolute;
+          bottom: -2px;
+          width: 100%;
+          height: 3px;
+          background-color: $colorCuarto;
+          box-shadow: 0 1px 10px #ffffff48;
+          transform: scaleX(0);
+          transition: transform 0.35s ease-in-out;
+          transform-origin: right;
+        }
+        a:hover::before{
+          transform: scaleX(1);
+          transform-origin: left;
+        }
+        a:hover svg{
+          border-radius: 10px;
+          fill: #ffffff85;
+        }
+      }
+      #botonInicioNav{
+        margin: 0 7px;
+        a{
+          display: grid;
+          place-items: center;
+          text-decoration: none;
+          padding: 5px 9px 9px 9px;
+          position: relative;
+          svg{
+            fill: $colorFondoAndText;
+            height: 28px;
+            width: 28px;
+            transition: 0.5s ease;
+            filter: drop-shadow(1px 1px 5px #ffc36f34);
+          }
+        }
+        a:before{
+          content: "";
+          position: absolute;
+          bottom: -2px;
+          width: 100%;
+          height: 3px;
+          background-color: $colorCuarto;
+          box-shadow: 0 1px 10px #ffffff48;
+          transform: scaleX(0);
+          transition: transform 0.35s ease-in-out;
+          transform-origin: right;
+        }
+        a:hover::before{
+          transform: scaleX(1);
+          transform-origin: left;
+        }
+        a:hover svg{
+          fill: #ffffff85;
+        }
+      }
+    }
+  }
+}

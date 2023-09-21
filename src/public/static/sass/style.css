@@ -7,6 +7,247 @@
 }
 
 body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  padding-top: 50px;
+}
+
+.dark {
+  background-color: #201c1c;
+}
+
+header nav {
+  background-color: #493226;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  display: flex;
+  width: 100%;
+  height: 90px;
+  transition: 0.4s ease-in-out;
+}
+header nav #contenedorImgNav {
+  margin: 0 160px 0 20px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav #contenedorImgNav h1 {
+  font-family: "Caveat", cursive;
+  font-size: 40px;
+  color: #fff;
+  letter-spacing: 1px;
+  font-weight: bold;
+  margin: 0;
+}
+header nav #contenedorImgNav h1 span {
+  font-size: 40px;
+  color: #ffc26f;
+  letter-spacing: 1px;
+  font-weight: bold;
+  margin: 0;
+  filter: drop-shadow(1px 1px 5px rgba(184, 127, 42, 0.5568627451));
+}
+header nav #barraNavegacionPrincipalNav {
+  width: 500px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+header nav #barraNavegacionPrincipalNav li {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav #barraNavegacionPrincipalNav li a {
+  text-decoration: none;
+  font-family: "Quicksand", sans-serif;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  font-size: 16px;
+  text-align: center;
+  padding: 13px 5px 5px 5px;
+  transition: 0.5s ease;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+header nav #barraNavegacionPrincipalNav li a:before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  width: 100%;
+  height: 3px;
+  background-color: #ffc26f;
+  box-shadow: 0 1px 10px rgba(255, 255, 255, 0.2823529412);
+  transform: scaleX(0);
+  transition: transform 0.35s ease-in-out;
+  transform-origin: right;
+}
+header nav #barraNavegacionPrincipalNav li a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+header nav #barraNavegacionPrincipalNav li:hover a {
+  border-radius: 10px;
+  color: rgba(255, 255, 255, 0.5215686275);
+  padding: 13px 5px 5px 5px;
+}
+header nav #contenedorBotonesNav {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav #contenedorBotonesNav #botonModoOscuroNav {
+  margin-left: 165px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav #contenedorBotonesNav #botonModoOscuroNav svg {
+  fill: rgba(255, 255, 255, 0.8274509804);
+  width: 22px;
+  height: 22px;
+  filter: drop-shadow(1px 1px 5px rgba(255, 195, 111, 0.2039215686));
+  padding: 5px;
+}
+header nav #contenedorBotonesNav #botonModoOscuroNav .switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 23px;
+  filter: drop-shadow(1px 1px 3px rgba(255, 255, 255, 0.3098039216));
+}
+header nav #contenedorBotonesNav #botonModoOscuroNav .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+header nav #contenedorBotonesNav #botonModoOscuroNav .switch input:checked + .slider {
+  background-color: rgba(19, 18, 18, 0.9333333333);
+}
+header nav #contenedorBotonesNav #botonModoOscuroNav .switch input:focus + .slider {
+  box-shadow: 0 0 1 rgba(19, 18, 18, 0.9333333333);
+}
+header nav #contenedorBotonesNav #botonModoOscuroNav .switch input:checked + .slider::before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+header nav #contenedorBotonesNav #botonModoOscuroNav .switch .slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+  border-radius: 20px;
+  background-color: #ffc26f;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+header nav #contenedorBotonesNav #botonModoOscuroNav .switch .slider::before {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 16px;
+  left: 4px;
+  bottom: 4px;
+  border-radius: 50%;
+  background-color: #fff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+header nav #contenedorBotonesNav #botonCarritoNav a {
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+  position: relative;
+  padding: 5px 5px 5px 5px;
+  margin-left: 7px;
+}
+header nav #contenedorBotonesNav #botonCarritoNav a svg {
+  fill: #fff;
+  height: 35px;
+  width: 35px;
+  transition: 0.5s ease;
+  filter: drop-shadow(1px 1px 5px rgba(255, 195, 111, 0.2039215686));
+}
+header nav #contenedorBotonesNav #botonCarritoNav a:before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  width: 100%;
+  height: 3px;
+  background-color: #ffc26f;
+  box-shadow: 0 1px 10px rgba(255, 255, 255, 0.2823529412);
+  transform: scaleX(0);
+  transition: transform 0.35s ease-in-out;
+  transform-origin: right;
+}
+header nav #contenedorBotonesNav #botonCarritoNav a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+header nav #contenedorBotonesNav #botonCarritoNav a:hover svg {
+  border-radius: 10px;
+  fill: rgba(255, 255, 255, 0.5215686275);
+}
+header nav #contenedorBotonesNav #botonInicioNav {
+  margin: 0 7px;
+}
+header nav #contenedorBotonesNav #botonInicioNav a {
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+  padding: 5px 9px 9px 9px;
+  position: relative;
+}
+header nav #contenedorBotonesNav #botonInicioNav a svg {
+  fill: #fff;
+  height: 28px;
+  width: 28px;
+  transition: 0.5s ease;
+  filter: drop-shadow(1px 1px 5px rgba(255, 195, 111, 0.2039215686));
+}
+header nav #contenedorBotonesNav #botonInicioNav a:before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  width: 100%;
+  height: 3px;
+  background-color: #ffc26f;
+  box-shadow: 0 1px 10px rgba(255, 255, 255, 0.2823529412);
+  transform: scaleX(0);
+  transition: transform 0.35s ease-in-out;
+  transform-origin: right;
+}
+header nav #contenedorBotonesNav #botonInicioNav a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+header nav #contenedorBotonesNav #botonInicioNav a:hover svg {
+  fill: rgba(255, 255, 255, 0.5215686275);
+}
+
+* {
+  @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=PT+Mono&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap");
+}
+
+body {
   padding: 0;
   margin: 0;
   background-color: #ebddca;
