@@ -1,0 +1,323 @@
+$colorFondoAndText: #fff;
+$colorSecundario: #9e7540;
+$colorNavyFooter: #493226;
+$colorTerceareo: #000;
+$colorInsta: #b60c9fde;
+$colorWhatsapp: #23c73e;
+$colorTwitter: #1d8dd8;
+$colorFacebook: #0f26a8;
+* {
+  @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=PT+Mono&display=swap");
+}
+@mixin trasform {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+@mixin centrar {
+  display: grid;
+  place-items: center;
+  place-content: center;
+}
+@mixin textDecoration {
+  text-decoration: none;
+  color: $colorTerceareo;
+}
+@mixin grosor {
+  font-weight: 800;
+}
+@mixin alinearTextCenter {
+  text-align: center;
+}
+@mixin fuenteTitulos {
+  font-family: "Nunito", sans-serif;
+}
+@mixin fuenteParrafosN {
+  font-family: "Quicksand", sans-serif;
+}
+@mixin fuenteParrafosP {
+  font-family: "PT Mono", monospace;
+}
+@mixin listas {
+  list-style: none;
+}
+@mixin border {
+  border-radius: 1.5em;
+}
+
+footer {
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  svg {
+    width: 100%;
+    overflow: visible;
+  }
+  .wave {
+    animation: wave 3s linear;
+    animation-iteration-count: infinite;
+    fill: $colorNavyFooter;
+  }
+  .drop {
+    fill: $colorNavyFooter;
+    animation: drop 3.2s linear infinite normal;
+    stroke: $colorNavyFooter;
+    stroke-width: 0.5;
+    transform: translateY(25px);
+    transform-box: fill-box;
+    transform-origin: 50% 100%;
+  }
+  .drop1 {
+    animation-delay: 1s;
+    animation-duration: 2.8s;
+  }
+  .drop2 {
+    animation-delay: 3s;
+    animation-duration: 3s;
+  }
+  .drop3 {
+    animation-delay: -2s;
+    animation-duration: 3.4s;
+  }
+  .drop4 {
+    animation-delay: 1.7s;
+  }
+  .drop5 {
+    animation-delay: 2.7s;
+    animation-duration: 3.1s;
+  }
+  .drop6 {
+    animation-delay: -2.1s;
+    animation-duration: 3.2s;
+  }
+  .gooeff {
+    filter: url(#goo);
+  }
+  #wave2 {
+    animation-duration: 5s;
+    animation-direction: reverse;
+    opacity: 0.6;
+  }
+  #wave3 {
+    animation-duration: 7s;
+    opacity: 0.3;
+  }
+  @keyframes drop {
+    0% {
+      transform: translateY(25px);
+    }
+    30% {
+      transform: translateY(-10px) scale(0.1);
+    }
+    70% {
+      transform: translateY(25px);
+    }
+    100% {
+      transform: translateY(-10px) scale(0.1);
+    }
+  }
+  @keyframes wave {
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  #contenedorTodoFooter {
+    position: absolute;
+    background-color: $colorNavyFooter;
+    #contenedorFooter {
+      display: grid;
+      grid-template-columns: repeat(3, 33%);
+      #infoCafeFooter {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        figure {
+          width: 225px;
+          height: 70px;
+          margin-right: 70px;
+          margin-bottom: 0;
+          img {
+            width: inherit;
+            height: inherit;
+          }
+        }
+        p {
+          @include fuenteParrafosN();
+          color: $colorFondoAndText;
+          padding: 15px;
+          text-align: justify;
+          margin: 0;
+        }
+        #redesFooter {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          h3 {
+            @include fuenteTitulos();
+            color: $colorFondoAndText;
+            text-align: center;
+          }
+          #contenedorRedes {
+            display: flex;
+            padding: 7px;
+            width: auto;
+            height: 100%;
+            margin: 0 0 30px 0;
+            li {
+              list-style: none;
+              width: 38px;
+              height: 38px;
+              border-radius: 50%;
+              border: solid 2px $colorFondoAndText;
+              margin: 3px;
+              padding: 0;
+              svg {
+                fill: $colorFondoAndText;
+                width: 28px;
+                height: 28px;
+                padding: 5px;
+              }
+            }
+            li:hover{
+              transform: scale(1.05);
+              transition: 0.4s ease;
+            }
+            #whatsapp:hover{
+              background-color: $colorWhatsapp;
+              transition: 0.6s ease;
+            }
+            #intagram:hover{
+              background-color: $colorInsta;
+              transition: 0.6s ease;
+            }
+            #facebook:hover{
+              background-color: $colorFacebook;
+              transition: 0.6s ease;
+            }
+            #twitter:hover{
+              background-color: $colorTerceareo;
+              transition: 0.6s ease;
+            }
+          }
+        }
+      }
+      #contactanosFooter {
+        h2 {
+          @include fuenteTitulos();
+          color: $colorFondoAndText;
+          text-align: center;
+        }
+        #datosExtraCafeteria{
+          width: 100%;
+          height: 200px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-top: 40px;
+          .contenedorDatos{
+            display: flex;
+            width: 90%;
+            margin: 5px;
+            span{
+              @include fuenteParrafosN();
+              color: $colorFondoAndText;
+              margin: auto 0;
+              margin-left: 10px;
+              cursor: pointer;
+            }
+            figure{
+              width: 26px;
+              height: 26px;
+              border-radius: 50%;
+              margin: 10px 0 10px 100px;
+              svg{
+                width: 24px;
+                height: 24px;
+                fill: $colorFondoAndText;
+                color: $colorFondoAndText;
+              }
+            }
+          }
+        }
+      }
+      #suscribcion{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        margin: 0;
+        width: 80%;
+        h4{
+          color: $colorFondoAndText;
+          font-size: 30px;
+          text-align: center;
+          margin-top: 70px;
+        }
+        form{
+          padding-bottom: 15px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          border-bottom: 1px solid #fff;
+          margin-bottom: 20px;
+          svg{
+            fill: $colorFondoAndText;
+            width: 26px;
+            height: 26px;
+            margin-right: 10px;
+          }
+          input{
+            width: 100%;
+            background: transparent;
+            color: #fff;
+            border: 0;
+            outline: none;
+          }
+          input::placeholder{
+            color: #fff;
+            font-size: 16px;
+            @include fuenteParrafosP()
+          }
+          button{
+            background: transparent;
+            border: 0;
+            outline: none;
+            cursor: pointer;
+            svg{
+              width: 28px;
+              height: 28px;
+              fill: $colorFondoAndText;
+            }
+            svg:hover{
+              transform: scale(1.05);
+              transition: 0.8 ease;
+            }
+          }
+        }
+      }
+    }
+  }
+  #derechosAutor {
+    hr {
+      border-width: 1.5px;
+      opacity: 40%;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      padding: 5px;
+      margin: 3px;
+    }
+    p {
+      color: $colorFondoAndText;
+      font-size: 16px;
+      @include fuenteParrafosP();
+      @include alinearTextCenter();
+      padding: 15px;
+      margin-top: 0;
+    }
+  }
+}
