@@ -11,6 +11,7 @@ rutas.get('/registro',controlador.zonaRegistro);
 rutas.get('/inicio',controlador.zonaInicio);
 rutas.get('/origen',controlador.zonaOrigen);
 rutas.get('/metodos',controlador.zonaMetodos);
+rutas.get('/tipoCafe',controlador.zonaTipoCafe);
 
 
 module.exports = rutas

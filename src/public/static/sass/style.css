@@ -1722,4 +1722,139 @@ body {
   transition: 0.6s ease;
 }
 
+#contenedorPortadaTiposCafe {
+  background-image: linear-gradient(rgba(20, 19, 19, 0.2274509804), rgba(0, 0, 0, 0.7529411765)), url(../../img/TIPOSCAFE/fondo\ portada.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 600px;
+  display: grid;
+  place-items: center;
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.937254902);
+}
+#contenedorPortadaTiposCafe h2 {
+  font-family: "Caveat", cursive;
+  font-size: 100px;
+  color: #fff;
+}
+
+#contenedorInformacioTiposCafe {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 60px 0;
+}
+#contenedorInformacioTiposCafe .cardCafe {
+  position: relative;
+  width: 425px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 3px;
+}
+#contenedorInformacioTiposCafe .cardCafe .contenedorTrajetasTiposCafe {
+  background-color: rgba(243, 195, 131, 0.8078431373);
+  border-radius: 0 30px;
+  box-shadow: 6px 6px 13px rgba(0, 0, 0, 0.937254902);
+  position: absolute;
+  backface-visibility: hidden;
+  overflow: hidden;
+  transition: 1s ease;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#contenedorInformacioTiposCafe .cardCafe .contenedorTrajetasTiposCafe figure {
+  border-radius: 20px;
+  height: 300px;
+  width: 380px;
+}
+#contenedorInformacioTiposCafe .cardCafe .contenedorTrajetasTiposCafe #arabica {
+  background-image: linear-gradient(rgba(20, 19, 19, 0.2274509804), rgba(185, 185, 185, 0.0823529412)), url(../../img/TIPOSCAFE/CAFE\ ARABICA.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#contenedorInformacioTiposCafe .cardCafe .contenedorTrajetasTiposCafe #bourbon {
+  background-image: linear-gradient(rgba(20, 19, 19, 0.2274509804), rgba(185, 185, 185, 0.0823529412)), url(../../img/TIPOSCAFE/CAFE\ BOURBON.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#contenedorInformacioTiposCafe .cardCafe .contenedorTrajetasTiposCafe #excelsa {
+  background-image: linear-gradient(rgba(20, 19, 19, 0.2274509804), rgba(185, 185, 185, 0.0823529412)), url(../../img/TIPOSCAFE/CAFE\ EXCELSA.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#contenedorInformacioTiposCafe .cardCafe .contenedorTrajetasTiposCafe #geisha {
+  background-image: linear-gradient(rgba(20, 19, 19, 0.2274509804), rgba(185, 185, 185, 0.0823529412)), url(../../img/TIPOSCAFE/CAFE\ GEISHA.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#contenedorInformacioTiposCafe .cardCafe .contenedorTrajetasTiposCafe #liberica {
+  background-image: linear-gradient(rgba(20, 19, 19, 0.2274509804), rgba(185, 185, 185, 0.0823529412)), url(../../img/TIPOSCAFE/CAFE\ LIBERICA.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#contenedorInformacioTiposCafe .cardCafe .contenedorTrajetasTiposCafe #robusta {
+  background-image: linear-gradient(rgba(20, 19, 19, 0.2274509804), rgba(185, 185, 185, 0.0823529412)), url(../../img/TIPOSCAFE/CAFE\ ROBUSTA.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#contenedorInformacioTiposCafe .cardCafe .contenedorTrajetasTiposCafe .contenedorTextoTiposCafe {
+  display: grid;
+  place-items: center;
+}
+#contenedorInformacioTiposCafe .cardCafe .contenedorTrajetasTiposCafe .contenedorTextoTiposCafe h3 {
+  color: #000;
+  font-family: "Caveat", cursive;
+  font-size: 26px;
+}
+#contenedorInformacioTiposCafe .cardCafe .front {
+  transform: perspective(600px) rotateY(0deg);
+}
+#contenedorInformacioTiposCafe .cardCafe .front figure {
+  position: absolute;
+  object-fit: cover;
+}
+#contenedorInformacioTiposCafe .cardCafe .front .contenedorTextoTiposCafe h3 {
+  position: absolute;
+  bottom: 60px;
+}
+#contenedorInformacioTiposCafe .cardCafe .back {
+  transform: perspective(600px) rotateY(180deg);
+}
+#contenedorInformacioTiposCafe .cardCafe .back h3 {
+  color: #000;
+  font-family: "Caveat", cursive;
+  font-size: 26px;
+  text-align: center;
+}
+#contenedorInformacioTiposCafe .cardCafe .back p {
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  padding: 30px;
+  text-align: justify;
+}
+#contenedorInformacioTiposCafe .cardCafe:hover .front {
+  transform: perspective(600px) rotateY(180deg);
+}
+#contenedorInformacioTiposCafe .cardCafe:hover .back {
+  transform: perspective(600px) rotateY(360deg);
+}
+
 /*# sourceMappingURL=style.css.map */
