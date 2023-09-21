@@ -14,7 +14,8 @@ body {
 }
 
 .dark {
-  background-color: #201c1c;
+  background-color: #2b2525;
+  color: #fff;
 }
 
 header nav {
@@ -562,26 +563,28 @@ body {
   font-size: 36px;
   font-weight: bold;
 }
-#aprendeIndex .cuadroAprendeIndex button {
-  height: 37px;
-  width: 100px;
+#aprendeIndex .cuadroAprendeIndex a {
+  padding: 7px 15px;
   border: solid 2px #ffc26f;
   background: rgba(0, 0, 0, 0.337254902);
   border-radius: 13px;
   color: #fff;
-  font-size: 18px;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: "Caveat", cursive;
 }
-#aprendeIndex .cuadroAprendeIndex button:hover {
-  transform: scale(1.09);
+#aprendeIndex .cuadroAprendeIndex a:hover {
+  padding: 7px 15px;
   border: solid 2.2px #f3a941;
   cursor: pointer;
   box-shadow: 3px 3px 12px #f3a941;
 }
-#aprendeIndex .cuadroAprendeIndex button:active {
+#aprendeIndex .cuadroAprendeIndex a:active {
+  padding: 7px 15px;
   background: rgba(0, 0, 0, 0.7176470588);
 }
-#aprendeIndex .cuadroAprendeIndex:hover button {
-  transform: scale(1.08);
+#aprendeIndex .cuadroAprendeIndex:hover a {
+  padding: 7px 15px;
   cursor: pointer;
   box-shadow: 3px 3px 12px rgba(255, 195, 111, 0.7882352941);
   transition: 0.6s ease-in-out;
@@ -1138,11 +1141,9 @@ body {
 #contenedorInformacionOrigen #informacionOrigenCafe h3 {
   font-size: 23px;
   font-family: "Nunito", sans-serif;
-  color: #000;
 }
 #contenedorInformacionOrigen #informacionOrigenCafe p {
   font-family: "Quicksand", sans-serif;
-  color: #000;
   text-align: justify;
   font-size: 18px;
   margin: 15px 0;
@@ -1346,10 +1347,8 @@ body {
 #procesov60 #contenedorPasosv60 .pasov60 .contenedorInforPasosv60 h3 {
   font-size: 30px;
   font-family: "Caveat", cursive;
-  color: #000;
 }
 #procesov60 #contenedorPasosv60 .pasov60 .contenedorInforPasosv60 p {
-  color: #000;
   font-size: 18px;
   font-family: "Quicksand", sans-serif;
   text-align: justify;
@@ -1469,10 +1468,8 @@ body {
 #procesoPrensaFrancesa #contenedorPasosPrensaFrancesa .pasoPrensaFrancesa .contenedorInforPasosPrensaFrancesa h3 {
   font-size: 30px;
   font-family: "Caveat", cursive;
-  color: #000;
 }
 #procesoPrensaFrancesa #contenedorPasosPrensaFrancesa .pasoPrensaFrancesa .contenedorInforPasosPrensaFrancesa p {
-  color: #000;
   font-size: 18px;
   font-family: "Quicksand", sans-serif;
   text-align: justify;
@@ -1592,10 +1589,8 @@ body {
 #procesocafeteraitaliana #contenedorPasosCafeteraItaliana .pasoCafeteraItaliana .contenedorInforPasosCafeteraItaliana h3 {
   font-size: 30px;
   font-family: "Caveat", cursive;
-  color: #000;
 }
 #procesocafeteraitaliana #contenedorPasosCafeteraItaliana .pasoCafeteraItaliana .contenedorInforPasosCafeteraItaliana p {
-  color: #000;
   font-size: 18px;
   font-family: "Quicksand", sans-serif;
   text-align: justify;
@@ -1715,10 +1710,8 @@ body {
 #procesoAeropress #contenedorPasosAeropress .pasoAeropress .contenedorInforAeropress h3 {
   font-size: 30px;
   font-family: "Caveat", cursive;
-  color: #000;
 }
 #procesoAeropress #contenedorPasosAeropress .pasoAeropress .contenedorInforAeropress p {
-  color: #000;
   font-size: 18px;
   font-family: "Quicksand", sans-serif;
   text-align: justify;

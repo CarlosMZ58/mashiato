@@ -6,7 +6,6 @@ document.getElementById('input').addEventListener('change', ()=>{
     document.body.classList.remove('dark')
   }
 })
-
 window.addEventListener("scroll", function () {
   const navbar = document.querySelector("nav");
   if (window.scrollY > 30) { // Cambia 50 a la cantidad de desplazamiento que desees antes de que la barra cambie de color
