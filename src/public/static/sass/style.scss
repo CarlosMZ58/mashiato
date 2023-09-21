@@ -37,7 +37,7 @@ $colorbrown: #2b1007;
 // PAG INICIO STAR
 #contenedorAllRAndI{
   width: 100%;
-  height: 700px;
+  height: 649px;
   box-sizing: border-box;
   background-image: linear-gradient(to left, #00000098, #332410a4),
     url(../../img/fondoregistro/fondo.registro4.jpg);
@@ -46,7 +46,8 @@ $colorbrown: #2b1007;
     height: 60px;
     background-color: #2b1007;
     box-sizing: border-box;
-    position: sticky;
+    position: fixed;
+    z-index: 100;
     top: 0;
     left: 0;
     overflow: hidden;
@@ -106,12 +107,13 @@ $colorbrown: #2b1007;
     }
   }
   #contenedorInicio {
+    position: relative;
+    translate: 0 60px;
     form {
       background-color: $colorbrown;
-      // opacity: 75%;
       width: 600px;
       height: 100%;
-      margin: 93px 180px;
+      margin: 0 180px;
       border-radius: 16px;
       border: $colorSecundario solid 2.8px;
       box-shadow: 0 0 20px #000 ;
