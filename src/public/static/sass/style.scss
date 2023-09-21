@@ -1231,6 +1231,9 @@ body {
   width: 100%;
   height: 600px;
   display: grid;
+  position: relative;
+  top: 0;
+  z-index: 99;
   place-items: center;
   box-shadow: 6px 6px 20px #000000ef;
   h2{
@@ -1259,7 +1262,7 @@ body {
     margin: 3px;
     .contenedorTrajetasTiposCafe{
       background-color: #f3c383ce;
-      border-radius: 0 30px;
+      border-radius: 30px;
       box-shadow: 6px 6px 13px #000000ef;
       position: absolute;
       backface-visibility: hidden;
@@ -1303,7 +1306,6 @@ body {
         display: grid;
         place-items: center;
         h3{
-          color: $colorTerceareo;
           @include fuenteh1();
           font-size: 26px;
         }
@@ -1325,7 +1327,6 @@ body {
     .back{
       transform: perspective(600px) rotateY(180deg);
       h3{
-        color: $colorTerceareo;
         @include fuenteh1();
         font-size: 26px;
         text-align: center;

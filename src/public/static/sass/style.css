@@ -1730,6 +1730,9 @@ body {
   width: 100%;
   height: 600px;
   display: grid;
+  position: relative;
+  top: 0;
+  z-index: 99;
   place-items: center;
   box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.937254902);
 }
@@ -1761,7 +1764,7 @@ body {
 }
 #contenedorInformacioTiposCafe .cardCafe .contenedorTrajetasTiposCafe {
   background-color: rgba(243, 195, 131, 0.8078431373);
-  border-radius: 0 30px;
+  border-radius: 30px;
   box-shadow: 6px 6px 13px rgba(0, 0, 0, 0.937254902);
   position: absolute;
   backface-visibility: hidden;
@@ -1819,7 +1822,6 @@ body {
   place-items: center;
 }
 #contenedorInformacioTiposCafe .cardCafe .contenedorTrajetasTiposCafe .contenedorTextoTiposCafe h3 {
-  color: #000;
   font-family: "Caveat", cursive;
   font-size: 26px;
 }
@@ -1838,7 +1840,6 @@ body {
   transform: perspective(600px) rotateY(180deg);
 }
 #contenedorInformacioTiposCafe .cardCafe .back h3 {
-  color: #000;
   font-family: "Caveat", cursive;
   font-size: 26px;
   text-align: center;
