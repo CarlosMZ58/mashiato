@@ -10,6 +10,7 @@ rutas.get('/',controlador.zonaIndex);
 rutas.get('/registro',controlador.zonaRegistro);
 rutas.get('/inicio',controlador.zonaInicio);
 rutas.get('/origen',controlador.zonaOrigen);
+rutas.get('/metodos',controlador.zonaMetodos);
 
 
 module.exports = rutas

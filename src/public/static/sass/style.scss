@@ -673,3 +673,562 @@ body {
   }
 }
 //ORIGEN FIN
+//  metodos
+#aprende {
+  display: grid;
+  grid-template-rows: repeat(2, 49%);
+  margin-top: 40px;
+  .contenedorCuadrosAprende {
+    display: grid;
+    grid-template-columns: repeat(2, 49%);
+    gap: 18px;
+    margin: 20px auto;
+    div {
+      width: 650px;
+      height: 650px;
+      color: $colorFondoAndText;
+      @include bordes();
+      h2 {
+        margin-top: 475px;
+        font-size: 30px;
+        @include fuenteTitulos();
+        text-align: center;
+        padding-top: 10px;
+      }
+      .contenedorBotonAprende {
+        display: grid;
+        place-content: center;
+        place-items: center;
+        width: 100%;
+        height: 40px;
+        .mi-boton {
+          color: $colorFondoAndText;
+          padding: 18px 20px;
+          @include bordes();
+          @include fuenteParrafosN();
+          border: #ffffff86 solid 3px;
+          font-size: 16px;
+          text-decoration: none;
+          background-color: #0000005b;
+        }
+        .mi-boton:hover {
+          border: $colorFondoAndText solid 3.3px;
+          opacity: 80%;
+        }
+        .mi-boton:active {
+          color: $colorCuarto;
+          border: $colorCuarto solid 3.3px;
+        }
+      }
+    }
+    #cuadroV60 {
+      background-image: linear-gradient(#6e6c6c00, #000000bd),
+        url(../../img/ARTICULOS/V60\ 3.jpg);
+      @include backEdition();
+      box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.822);
+    }
+    #cuadroCafeteraItaliana {
+      background-image: linear-gradient(#6e6c6c00, #000000bd),
+        url(../../img/ARTICULOS/cafetera\ italiana\ 2.jpg);
+      @include backEdition();
+      box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.822);
+    }
+    #cuadroPrensaFrancesa {
+      background-image: linear-gradient(#ebebeb38, #00000093),
+        url(../../img/ARTICULOS/prensa\ francesa.jpg);
+      @include backEdition();
+      box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.822);
+    }
+    #cuadroAeropress {
+      background-image: linear-gradient(#ebebeb38, #00000093),
+        url(../../img/ARTICULOS/aero\ exprese.jpg);
+      @include backEdition();
+      box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.822);
+    }
+  }
+}
+#procesov60{
+  width: 100%;
+  height: 100%;
+  margin: 100px 0;
+  #fondov60materiales{
+    width: 100%;
+    height: 580px;
+    background-image: linear-gradient(#08080877, #000000b7),
+        url(../../img/ARTICULOS/v60\ portada\ mats.jpg);
+        @include backEdition();
+      box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.822);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    #materialesv60{
+      height: auto;
+      background-color: #00000081;
+      border-radius: 10px;
+      margin: 0 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      h3{
+        @include fuenteh1();
+        font-size: 23px;
+        color: $colorFondoAndText;
+      }
+      li{
+        width: 80%;
+        height: 50px;
+        margin: 5px;
+        color: $colorFondoAndText;
+        h5{
+          font-size: 15px;
+          @include fuenteParrafosN();
+        }
+      }
+      li::marker{
+        font-size: 24px;
+        margin: 0;
+      }
+    }
+    #contenidoTitulov60{
+      width: 60%;
+      height: auto;
+      h2{
+        @include fuenteh1();
+        color: $colorFondoAndText;
+        font-size: 60px;
+        text-align: center;
+      }
+      p{
+        color: $colorFondoAndText;
+        font-size: 16px;
+        text-align: justify;
+        padding: 0 55px;
+        @include fuenteParrafosN();
+        font-weight: bold;
+      }
+    }
+  }
+  #contenedorPasosv60{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    hr{
+      width: 90%;
+      border: solid 1.5px #3b221a;
+      margin: 0 auto;
+    }
+    .pasov60{
+      width: 95%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      margin: 50px 0;
+      figure{
+        width: auto;
+        height: auto;
+        margin: 20px 0;
+        img{
+          border-radius: 15px;
+          width: 375px;
+          height: 375px;
+          box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.822);
+        }
+      }
+      .contenedorInforPasosv60{
+        width: 500px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 0 150px;
+        h3{
+          font-size: 30px;
+          @include fuenteh1();
+          color: $colorTerceareo;
+        }
+        p{
+          color: $colorTerceareo;
+          font-size: 18px;
+          @include fuenteParrafosN();
+          text-align: justify;
+        }
+      }
+    }
+    .pasov60:hover{
+      background-color: #c9b0b08a;
+      border-radius: 15px;
+      transition: 0.6s ease;
+    }
+  }
+}
+#procesoPrensaFrancesa{
+  width: 100%;
+  height: 100%;
+  margin: 100px 0;
+  #fondoPrensaFrancesaMateriales{
+    width: 100%;
+    height: 580px;
+    background-image: linear-gradient(#08080877, #000000b7),
+        url(../../img/ARTICULOS/prensa\ francesa\ fondo.jpg);
+        @include backEdition();
+      box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.822);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    #materialesPrensaFrancesa{
+      height: auto;
+      background-color: #00000081;
+      border-radius: 10px;
+      margin: 0 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      h3{
+        @include fuenteh1();
+        font-size: 23px;
+        color: $colorFondoAndText;
+      }
+      li{
+        width: 80%;
+        height: 50px;
+        margin: 5px;
+        color: $colorFondoAndText;
+        h5{
+          font-size: 15px;
+          @include fuenteParrafosN();
+        }
+      }
+      li::marker{
+        font-size: 24px;
+        margin: 0;
+      }
+    }
+    #contenidoTituloPrensaFrancesa{
+      width: 60%;
+      height: auto;
+      h2{
+        @include fuenteh1();
+        color: $colorFondoAndText;
+        font-size: 60px;
+        text-align: center;
+      }
+      p{
+        color: $colorFondoAndText;
+        font-size: 16px;
+        text-align: justify;
+        padding: 0 55px;
+        @include fuenteParrafosN();
+        font-weight: bold;
+      }
+    }
+  }
+  #contenedorPasosPrensaFrancesa{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    hr{
+      width: 90%;
+      border: solid 1.5px #3b221a;
+      margin: 0 auto;
+    }
+    .pasoPrensaFrancesa{
+      width: 95%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      margin: 50px 0;
+      figure{
+        width: auto;
+        height: auto;
+        margin: 20px 0;
+        img{
+          border-radius: 15px;
+          width: 375px;
+          height: 375px;
+          box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.822);
+        }
+      }
+      .contenedorInforPasosPrensaFrancesa{
+        width: 500px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 0 150px;
+        h3{
+          font-size: 30px;
+          @include fuenteh1();
+          color: $colorTerceareo;
+        }
+        p{
+          color: $colorTerceareo;
+          font-size: 18px;
+          @include fuenteParrafosN();
+          text-align: justify;
+        }
+      }
+    }
+    .pasoPrensaFrancesa:hover{
+      background-color: #c9b0b08a;
+      border-radius: 15px;
+      transition: 0.6s ease;
+    }
+  }
+}
+#procesocafeteraitaliana{
+  width: 100%;
+  height: 100%;
+  margin: 100px 0;
+  #fondoCafeteraItalianaMateriales{
+    width: 100%;
+    height: 580px;
+    background-image: linear-gradient(#08080877, #000000b7),
+        url(../../img/ARTICULOS/fondo\ cafetera\ italiana.jpg);
+        @include backEdition();
+      box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.822);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    #materialesCafeteraItaliana{
+      height: auto;
+      background-color: #00000081;
+      border-radius: 10px;
+      margin: 0 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      h3{
+        @include fuenteh1();
+        font-size: 23px;
+        color: $colorFondoAndText;
+      }
+      li{
+        width: 80%;
+        height: 50px;
+        margin: 5px;
+        color: $colorFondoAndText;
+        h5{
+          font-size: 15px;
+          @include fuenteParrafosN();
+        }
+      }
+      li::marker{
+        font-size: 24px;
+        margin: 0;
+      }
+    }
+    #contenidoTituloCafeteraItaliana{
+      width: 60%;
+      height: auto;
+      h2{
+        @include fuenteh1();
+        color: $colorFondoAndText;
+        font-size: 60px;
+        text-align: center;
+      }
+      p{
+        color: $colorFondoAndText;
+        font-size: 16px;
+        text-align: justify;
+        padding: 0 55px;
+        @include fuenteParrafosN();
+        font-weight: bold;
+      }
+    }
+  }
+  #contenedorPasosCafeteraItaliana{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    hr{
+      width: 90%;
+      border: solid 1.5px #3b221a;
+      margin: 0 auto;
+    }
+    .pasoCafeteraItaliana{
+      width: 95%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      margin: 50px 0;
+      figure{
+        width: auto;
+        height: auto;
+        margin: 20px 0;
+        img{
+          border-radius: 15px;
+          width: 375px;
+          height: 375px;
+          box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.822);
+        }
+      }
+      .contenedorInforPasosCafeteraItaliana{
+        width: 500px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 0 150px;
+        h3{
+          font-size: 30px;
+          @include fuenteh1();
+          color: $colorTerceareo;
+        }
+        p{
+          color: $colorTerceareo;
+          font-size: 18px;
+          @include fuenteParrafosN();
+          text-align: justify;
+        }
+      }
+    }
+    .pasoCafeteraItaliana:hover{
+      background-color: #c9b0b08a;
+      border-radius: 15px;
+      transition: 0.6s ease;
+    }
+  }
+}
+#procesoAeropress{
+  width: 100%;
+  height: 100%;
+  margin: 100px 0;
+  #fondoPrensaAeropress{
+    width: 100%;
+    height: 580px;
+    background-image: linear-gradient(#08080877, #000000b7),
+        url(../../img/ARTICULOS/fondo\ aeropress.jpg);
+        @include backEdition();
+      box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.822);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    #materialesAeropress{
+      height: auto;
+      background-color: #00000081;
+      border-radius: 10px;
+      margin: 0 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      h3{
+        @include fuenteh1();
+        font-size: 23px;
+        color: $colorFondoAndText;
+      }
+      li{
+        width: 80%;
+        height: 50px;
+        margin: 5px;
+        color: $colorFondoAndText;
+        h5{
+          font-size: 15px;
+          @include fuenteParrafosN();
+        }
+      }
+      li::marker{
+        font-size: 24px;
+        margin: 0;
+      }
+    }
+    #contenidoTituloAeropress{
+      width: 60%;
+      height: auto;
+      h2{
+        @include fuenteh1();
+        color: $colorFondoAndText;
+        font-size: 60px;
+        text-align: center;
+      }
+      p{
+        color: $colorFondoAndText;
+        font-size: 16px;
+        text-align: justify;
+        padding: 0 55px;
+        @include fuenteParrafosN();
+        font-weight: bold;
+      }
+    }
+  }
+  #contenedorPasosAeropress{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    hr{
+      width: 90%;
+      border: solid 1.5px #3b221a;
+      margin: 0 auto;
+    }
+    .pasoAeropress{
+      width: 95%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      margin: 50px 0;
+      figure{
+        width: auto;
+        height: auto;
+        margin: 20px 0;
+        img{
+          border-radius: 15px;
+          width: 375px;
+          height: 375px;
+          box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.822);
+        }
+      }
+      .contenedorInforAeropress{
+        width: 500px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 0 150px;
+        h3{
+          font-size: 30px;
+          @include fuenteh1();
+          color: $colorTerceareo;
+        }
+        p{
+          color: $colorTerceareo;
+          font-size: 18px;
+          @include fuenteParrafosN();
+          text-align: justify;
+        }
+      }
+    }
+    .pasoAeropress:hover{
+      background-color: #c9b0b08a;
+      border-radius: 15px;
+      transition: 0.6s ease;
+    }
+  }
+}
+//metodos fin

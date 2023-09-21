@@ -13,7 +13,9 @@ controlador.zonaIndex=(consulta,respuesta)=>{
 controlador.zonaRegistro=(consulta,respuesta)=>{
     respuesta.render("registro.ejs")
 }
-
+controlador.zonaMetodos=(consulta,respuesta)=>{
+    respuesta.render("metodo.ejs")
+}
 controlador.zonaInicio=(consulta,respuesta)=>{
     respuesta.render("inicio.ejs")
 }

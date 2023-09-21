@@ -1159,4 +1159,574 @@ body {
   box-shadow: 7px 7px 16px rgba(0, 0, 0, 0.74);
 }
 
+#aprende {
+  display: grid;
+  grid-template-rows: repeat(2, 49%);
+  margin-top: 40px;
+}
+#aprende .contenedorCuadrosAprende {
+  display: grid;
+  grid-template-columns: repeat(2, 49%);
+  gap: 18px;
+  margin: 20px auto;
+}
+#aprende .contenedorCuadrosAprende div {
+  width: 650px;
+  height: 650px;
+  color: #fff;
+  border-radius: 12px;
+}
+#aprende .contenedorCuadrosAprende div h2 {
+  margin-top: 475px;
+  font-size: 30px;
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+  padding-top: 10px;
+}
+#aprende .contenedorCuadrosAprende div .contenedorBotonAprende {
+  display: grid;
+  place-content: center;
+  place-items: center;
+  width: 100%;
+  height: 40px;
+}
+#aprende .contenedorCuadrosAprende div .contenedorBotonAprende .mi-boton {
+  color: #fff;
+  padding: 18px 20px;
+  border-radius: 12px;
+  font-family: "Quicksand", sans-serif;
+  border: rgba(255, 255, 255, 0.5254901961) solid 3px;
+  font-size: 16px;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.3568627451);
+}
+#aprende .contenedorCuadrosAprende div .contenedorBotonAprende .mi-boton:hover {
+  border: #fff solid 3.3px;
+  opacity: 80%;
+}
+#aprende .contenedorCuadrosAprende div .contenedorBotonAprende .mi-boton:active {
+  color: #ffc26f;
+  border: #ffc26f solid 3.3px;
+}
+#aprende .contenedorCuadrosAprende #cuadroV60 {
+  background-image: linear-gradient(rgba(110, 108, 108, 0), rgba(0, 0, 0, 0.7411764706)), url(../../img/ARTICULOS/V60\ 3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.822);
+}
+#aprende .contenedorCuadrosAprende #cuadroCafeteraItaliana {
+  background-image: linear-gradient(rgba(110, 108, 108, 0), rgba(0, 0, 0, 0.7411764706)), url(../../img/ARTICULOS/cafetera\ italiana\ 2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.822);
+}
+#aprende .contenedorCuadrosAprende #cuadroPrensaFrancesa {
+  background-image: linear-gradient(rgba(235, 235, 235, 0.2196078431), rgba(0, 0, 0, 0.5764705882)), url(../../img/ARTICULOS/prensa\ francesa.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.822);
+}
+#aprende .contenedorCuadrosAprende #cuadroAeropress {
+  background-image: linear-gradient(rgba(235, 235, 235, 0.2196078431), rgba(0, 0, 0, 0.5764705882)), url(../../img/ARTICULOS/aero\ exprese.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.822);
+}
+
+#procesov60 {
+  width: 100%;
+  height: 100%;
+  margin: 100px 0;
+}
+#procesov60 #fondov60materiales {
+  width: 100%;
+  height: 580px;
+  background-image: linear-gradient(rgba(8, 8, 8, 0.4666666667), rgba(0, 0, 0, 0.7176470588)), url(../../img/ARTICULOS/v60\ portada\ mats.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.822);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+#procesov60 #fondov60materiales #materialesv60 {
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.5058823529);
+  border-radius: 10px;
+  margin: 0 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#procesov60 #fondov60materiales #materialesv60 h3 {
+  font-family: "Caveat", cursive;
+  font-size: 23px;
+  color: #fff;
+}
+#procesov60 #fondov60materiales #materialesv60 li {
+  width: 80%;
+  height: 50px;
+  margin: 5px;
+  color: #fff;
+}
+#procesov60 #fondov60materiales #materialesv60 li h5 {
+  font-size: 15px;
+  font-family: "Quicksand", sans-serif;
+}
+#procesov60 #fondov60materiales #materialesv60 li::marker {
+  font-size: 24px;
+  margin: 0;
+}
+#procesov60 #fondov60materiales #contenidoTitulov60 {
+  width: 60%;
+  height: auto;
+}
+#procesov60 #fondov60materiales #contenidoTitulov60 h2 {
+  font-family: "Caveat", cursive;
+  color: #fff;
+  font-size: 60px;
+  text-align: center;
+}
+#procesov60 #fondov60materiales #contenidoTitulov60 p {
+  color: #fff;
+  font-size: 16px;
+  text-align: justify;
+  padding: 0 55px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+}
+#procesov60 #contenedorPasosv60 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+#procesov60 #contenedorPasosv60 hr {
+  width: 90%;
+  border: solid 1.5px #3b221a;
+  margin: 0 auto;
+}
+#procesov60 #contenedorPasosv60 .pasov60 {
+  width: 95%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+#procesov60 #contenedorPasosv60 .pasov60 figure {
+  width: auto;
+  height: auto;
+  margin: 20px 0;
+}
+#procesov60 #contenedorPasosv60 .pasov60 figure img {
+  border-radius: 15px;
+  width: 375px;
+  height: 375px;
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.822);
+}
+#procesov60 #contenedorPasosv60 .pasov60 .contenedorInforPasosv60 {
+  width: 500px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 150px;
+}
+#procesov60 #contenedorPasosv60 .pasov60 .contenedorInforPasosv60 h3 {
+  font-size: 30px;
+  font-family: "Caveat", cursive;
+  color: #000;
+}
+#procesov60 #contenedorPasosv60 .pasov60 .contenedorInforPasosv60 p {
+  color: #000;
+  font-size: 18px;
+  font-family: "Quicksand", sans-serif;
+  text-align: justify;
+}
+#procesov60 #contenedorPasosv60 .pasov60:hover {
+  background-color: rgba(201, 176, 176, 0.5411764706);
+  border-radius: 15px;
+  transition: 0.6s ease;
+}
+
+#procesoPrensaFrancesa {
+  width: 100%;
+  height: 100%;
+  margin: 100px 0;
+}
+#procesoPrensaFrancesa #fondoPrensaFrancesaMateriales {
+  width: 100%;
+  height: 580px;
+  background-image: linear-gradient(rgba(8, 8, 8, 0.4666666667), rgba(0, 0, 0, 0.7176470588)), url(../../img/ARTICULOS/prensa\ francesa\ fondo.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.822);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+#procesoPrensaFrancesa #fondoPrensaFrancesaMateriales #materialesPrensaFrancesa {
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.5058823529);
+  border-radius: 10px;
+  margin: 0 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#procesoPrensaFrancesa #fondoPrensaFrancesaMateriales #materialesPrensaFrancesa h3 {
+  font-family: "Caveat", cursive;
+  font-size: 23px;
+  color: #fff;
+}
+#procesoPrensaFrancesa #fondoPrensaFrancesaMateriales #materialesPrensaFrancesa li {
+  width: 80%;
+  height: 50px;
+  margin: 5px;
+  color: #fff;
+}
+#procesoPrensaFrancesa #fondoPrensaFrancesaMateriales #materialesPrensaFrancesa li h5 {
+  font-size: 15px;
+  font-family: "Quicksand", sans-serif;
+}
+#procesoPrensaFrancesa #fondoPrensaFrancesaMateriales #materialesPrensaFrancesa li::marker {
+  font-size: 24px;
+  margin: 0;
+}
+#procesoPrensaFrancesa #fondoPrensaFrancesaMateriales #contenidoTituloPrensaFrancesa {
+  width: 60%;
+  height: auto;
+}
+#procesoPrensaFrancesa #fondoPrensaFrancesaMateriales #contenidoTituloPrensaFrancesa h2 {
+  font-family: "Caveat", cursive;
+  color: #fff;
+  font-size: 60px;
+  text-align: center;
+}
+#procesoPrensaFrancesa #fondoPrensaFrancesaMateriales #contenidoTituloPrensaFrancesa p {
+  color: #fff;
+  font-size: 16px;
+  text-align: justify;
+  padding: 0 55px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+}
+#procesoPrensaFrancesa #contenedorPasosPrensaFrancesa {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+#procesoPrensaFrancesa #contenedorPasosPrensaFrancesa hr {
+  width: 90%;
+  border: solid 1.5px #3b221a;
+  margin: 0 auto;
+}
+#procesoPrensaFrancesa #contenedorPasosPrensaFrancesa .pasoPrensaFrancesa {
+  width: 95%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+#procesoPrensaFrancesa #contenedorPasosPrensaFrancesa .pasoPrensaFrancesa figure {
+  width: auto;
+  height: auto;
+  margin: 20px 0;
+}
+#procesoPrensaFrancesa #contenedorPasosPrensaFrancesa .pasoPrensaFrancesa figure img {
+  border-radius: 15px;
+  width: 375px;
+  height: 375px;
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.822);
+}
+#procesoPrensaFrancesa #contenedorPasosPrensaFrancesa .pasoPrensaFrancesa .contenedorInforPasosPrensaFrancesa {
+  width: 500px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 150px;
+}
+#procesoPrensaFrancesa #contenedorPasosPrensaFrancesa .pasoPrensaFrancesa .contenedorInforPasosPrensaFrancesa h3 {
+  font-size: 30px;
+  font-family: "Caveat", cursive;
+  color: #000;
+}
+#procesoPrensaFrancesa #contenedorPasosPrensaFrancesa .pasoPrensaFrancesa .contenedorInforPasosPrensaFrancesa p {
+  color: #000;
+  font-size: 18px;
+  font-family: "Quicksand", sans-serif;
+  text-align: justify;
+}
+#procesoPrensaFrancesa #contenedorPasosPrensaFrancesa .pasoPrensaFrancesa:hover {
+  background-color: rgba(201, 176, 176, 0.5411764706);
+  border-radius: 15px;
+  transition: 0.6s ease;
+}
+
+#procesocafeteraitaliana {
+  width: 100%;
+  height: 100%;
+  margin: 100px 0;
+}
+#procesocafeteraitaliana #fondoCafeteraItalianaMateriales {
+  width: 100%;
+  height: 580px;
+  background-image: linear-gradient(rgba(8, 8, 8, 0.4666666667), rgba(0, 0, 0, 0.7176470588)), url(../../img/ARTICULOS/fondo\ cafetera\ italiana.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.822);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+#procesocafeteraitaliana #fondoCafeteraItalianaMateriales #materialesCafeteraItaliana {
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.5058823529);
+  border-radius: 10px;
+  margin: 0 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#procesocafeteraitaliana #fondoCafeteraItalianaMateriales #materialesCafeteraItaliana h3 {
+  font-family: "Caveat", cursive;
+  font-size: 23px;
+  color: #fff;
+}
+#procesocafeteraitaliana #fondoCafeteraItalianaMateriales #materialesCafeteraItaliana li {
+  width: 80%;
+  height: 50px;
+  margin: 5px;
+  color: #fff;
+}
+#procesocafeteraitaliana #fondoCafeteraItalianaMateriales #materialesCafeteraItaliana li h5 {
+  font-size: 15px;
+  font-family: "Quicksand", sans-serif;
+}
+#procesocafeteraitaliana #fondoCafeteraItalianaMateriales #materialesCafeteraItaliana li::marker {
+  font-size: 24px;
+  margin: 0;
+}
+#procesocafeteraitaliana #fondoCafeteraItalianaMateriales #contenidoTituloCafeteraItaliana {
+  width: 60%;
+  height: auto;
+}
+#procesocafeteraitaliana #fondoCafeteraItalianaMateriales #contenidoTituloCafeteraItaliana h2 {
+  font-family: "Caveat", cursive;
+  color: #fff;
+  font-size: 60px;
+  text-align: center;
+}
+#procesocafeteraitaliana #fondoCafeteraItalianaMateriales #contenidoTituloCafeteraItaliana p {
+  color: #fff;
+  font-size: 16px;
+  text-align: justify;
+  padding: 0 55px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+}
+#procesocafeteraitaliana #contenedorPasosCafeteraItaliana {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+#procesocafeteraitaliana #contenedorPasosCafeteraItaliana hr {
+  width: 90%;
+  border: solid 1.5px #3b221a;
+  margin: 0 auto;
+}
+#procesocafeteraitaliana #contenedorPasosCafeteraItaliana .pasoCafeteraItaliana {
+  width: 95%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+#procesocafeteraitaliana #contenedorPasosCafeteraItaliana .pasoCafeteraItaliana figure {
+  width: auto;
+  height: auto;
+  margin: 20px 0;
+}
+#procesocafeteraitaliana #contenedorPasosCafeteraItaliana .pasoCafeteraItaliana figure img {
+  border-radius: 15px;
+  width: 375px;
+  height: 375px;
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.822);
+}
+#procesocafeteraitaliana #contenedorPasosCafeteraItaliana .pasoCafeteraItaliana .contenedorInforPasosCafeteraItaliana {
+  width: 500px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 150px;
+}
+#procesocafeteraitaliana #contenedorPasosCafeteraItaliana .pasoCafeteraItaliana .contenedorInforPasosCafeteraItaliana h3 {
+  font-size: 30px;
+  font-family: "Caveat", cursive;
+  color: #000;
+}
+#procesocafeteraitaliana #contenedorPasosCafeteraItaliana .pasoCafeteraItaliana .contenedorInforPasosCafeteraItaliana p {
+  color: #000;
+  font-size: 18px;
+  font-family: "Quicksand", sans-serif;
+  text-align: justify;
+}
+#procesocafeteraitaliana #contenedorPasosCafeteraItaliana .pasoCafeteraItaliana:hover {
+  background-color: rgba(201, 176, 176, 0.5411764706);
+  border-radius: 15px;
+  transition: 0.6s ease;
+}
+
+#procesoAeropress {
+  width: 100%;
+  height: 100%;
+  margin: 100px 0;
+}
+#procesoAeropress #fondoPrensaAeropress {
+  width: 100%;
+  height: 580px;
+  background-image: linear-gradient(rgba(8, 8, 8, 0.4666666667), rgba(0, 0, 0, 0.7176470588)), url(../../img/ARTICULOS/fondo\ aeropress.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.822);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+#procesoAeropress #fondoPrensaAeropress #materialesAeropress {
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.5058823529);
+  border-radius: 10px;
+  margin: 0 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#procesoAeropress #fondoPrensaAeropress #materialesAeropress h3 {
+  font-family: "Caveat", cursive;
+  font-size: 23px;
+  color: #fff;
+}
+#procesoAeropress #fondoPrensaAeropress #materialesAeropress li {
+  width: 80%;
+  height: 50px;
+  margin: 5px;
+  color: #fff;
+}
+#procesoAeropress #fondoPrensaAeropress #materialesAeropress li h5 {
+  font-size: 15px;
+  font-family: "Quicksand", sans-serif;
+}
+#procesoAeropress #fondoPrensaAeropress #materialesAeropress li::marker {
+  font-size: 24px;
+  margin: 0;
+}
+#procesoAeropress #fondoPrensaAeropress #contenidoTituloAeropress {
+  width: 60%;
+  height: auto;
+}
+#procesoAeropress #fondoPrensaAeropress #contenidoTituloAeropress h2 {
+  font-family: "Caveat", cursive;
+  color: #fff;
+  font-size: 60px;
+  text-align: center;
+}
+#procesoAeropress #fondoPrensaAeropress #contenidoTituloAeropress p {
+  color: #fff;
+  font-size: 16px;
+  text-align: justify;
+  padding: 0 55px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+}
+#procesoAeropress #contenedorPasosAeropress {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+#procesoAeropress #contenedorPasosAeropress hr {
+  width: 90%;
+  border: solid 1.5px #3b221a;
+  margin: 0 auto;
+}
+#procesoAeropress #contenedorPasosAeropress .pasoAeropress {
+  width: 95%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+#procesoAeropress #contenedorPasosAeropress .pasoAeropress figure {
+  width: auto;
+  height: auto;
+  margin: 20px 0;
+}
+#procesoAeropress #contenedorPasosAeropress .pasoAeropress figure img {
+  border-radius: 15px;
+  width: 375px;
+  height: 375px;
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.822);
+}
+#procesoAeropress #contenedorPasosAeropress .pasoAeropress .contenedorInforAeropress {
+  width: 500px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 150px;
+}
+#procesoAeropress #contenedorPasosAeropress .pasoAeropress .contenedorInforAeropress h3 {
+  font-size: 30px;
+  font-family: "Caveat", cursive;
+  color: #000;
+}
+#procesoAeropress #contenedorPasosAeropress .pasoAeropress .contenedorInforAeropress p {
+  color: #000;
+  font-size: 18px;
+  font-family: "Quicksand", sans-serif;
+  text-align: justify;
+}
+#procesoAeropress #contenedorPasosAeropress .pasoAeropress:hover {
+  background-color: rgba(201, 176, 176, 0.5411764706);
+  border-radius: 15px;
+  transition: 0.6s ease;
+}
+
 /*# sourceMappingURL=style.css.map */
