@@ -1,3 +1,257 @@
+* {
+  @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=PT+Mono&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap");
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
+body {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #ebddca;
+}
+body .main .principal__box__img {
+  margin-top: 0px;
+}
+body .main .principal__box__img .box__img {
+  background-color: #ebddca;
+  margin: auto;
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+}
+body .main .principal__box__img .box__img .fila {
+  background-color: #ebddca;
+  display: flex;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  border-radius: 15px;
+}
+body .main .principal__box__img .box__img .fila .card:hover .front {
+  transform: perspective(600px) rotateY(180deg);
+}
+body .main .principal__box__img .box__img .fila .card:hover .back {
+  transform: perspective(600px) rotateY(360deg);
+}
+body .main .principal__box__img .box__img .fila .ocultar {
+  opacity: 0;
+  position: relative;
+  width: 300px;
+  height: 350px;
+  margin: 20px;
+}
+body .main .principal__box__img .box__img .fila .card {
+  position: relative;
+  width: 300px;
+  height: 350px;
+  margin: 20px;
+}
+body .main .principal__box__img .box__img .fila .card .back {
+  transform: perspective(600px) rotateY(180deg);
+  background: #9e7540;
+  padding: 15px;
+  color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 5px 10px #000;
+}
+body .main .principal__box__img .box__img .fila .card .back h3 {
+  font-size: 23px;
+  margin-top: 20px;
+  letter-spacing: 2px;
+  font-family: "Nunito", sans-serif;
+}
+body .main .principal__box__img .box__img .fila .card .back #margenp {
+  margin-top: 50px;
+}
+body .main .principal__box__img .box__img .fila .card .back .mocha_helado {
+  margin-top: 40px;
+}
+body .main .principal__box__img .box__img .fila .card .back .naranja {
+  margin-top: 20px;
+}
+body .main .principal__box__img .box__img .fila .card .back .limonada {
+  margin-top: 30px;
+}
+body .main .principal__box__img .box__img .fila .card .back .avena {
+  margin-top: 60px;
+}
+body .main .principal__box__img .box__img .fila .card .back .salmon {
+  margin-top: 40px;
+}
+body .main .principal__box__img .box__img .fila .card .back .chocolate {
+  margin-top: 40px;
+}
+body .main .principal__box__img .box__img .fila .card .back .panqueque {
+  margin-top: 5px;
+}
+body .main .principal__box__img .box__img .fila .card .back .frutos_rojos {
+  margin-top: 30px;
+}
+body .main .principal__box__img .box__img .fila .card .back .croasan {
+  margin-top: 60px;
+}
+body .main .principal__box__img .box__img .fila .card .back .sello_rojo {
+  margin-top: 30px;
+}
+body .main .principal__box__img .box__img .fila .card .back .v60 {
+  margin-top: 30px;
+}
+body .main .principal__box__img .box__img .fila .card .back .moledor_cafe {
+  margin-top: 20px;
+}
+body .main .principal__box__img .box__img .fila .card .back p {
+  letter-spacing: 1px;
+  font-size: 15px;
+  text-align: justify;
+  font-family: "Quicksand", sans-serif;
+}
+body .main .principal__box__img .box__img .fila .card .back .boton {
+  border-radius: 0.4;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+body .main .principal__box__img .box__img .fila .card .back h5 {
+  font-size: 20px;
+}
+body .main .principal__box__img .box__img .fila .card .back .link {
+  border-top: solid 1px #f3f3f3;
+  height: 50px;
+}
+body .main .principal__box__img .box__img .fila .card .back .link .botoncito {
+  margin-left: 50px;
+  padding-top: 10px;
+  text-decoration: none;
+  width: 130px;
+  height: 40px;
+  color: rgba(255, 255, 255, 0.34);
+  background-color: #9e7540;
+  border-radius: 4px;
+  box-shadow: inset 0 0 0 0 #ffc26f;
+  transition: ease-out 0.8s;
+  outline: none;
+}
+body .main .principal__box__img .box__img .fila .card .back .link .botoncito:hover {
+  box-shadow: inset 130px 0 0 0 #ffc26f;
+  color: #fff;
+}
+body .main .principal__box__img .box__img .fila .card .back .link a {
+  color: #f3f3f3;
+}
+body .main .principal__box__img .box__img .fila .card .front {
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 5px 10px #000;
+}
+body .main .principal__box__img .box__img .fila .card .front h3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+body .main .principal__box__img .box__img .fila .card .front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+body .main .principal__box__img .box__img .fila .card .hola3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+body .main .principal__box__img .box__img .fila .card .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 1s;
+}
+body .main .principal__box__img .box__img .fila .imagen {
+  width: 300px;
+  margin-left: 300px;
+}
+body .main .principal__box__img .box__img .box__img img {
+  width: 80%;
+}
+body .galeria {
+  margin-left: 300px;
+}
+body .nav__link {
+  color: #000;
+  display: block;
+  padding: 10px 0;
+  text-decoration: none;
+}
+body .nav__link--inside {
+  border-radius: 6px;
+  padding: 2px 0 1px 0;
+  padding-left: 25px;
+}
+body .nav__link--inside:hover {
+  background-color: #eacfa9;
+}
+body .nav__link--up {
+  padding: 4px 0;
+}
+body .titulo__list {
+  margin-left: 20px;
+}
+body nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+}
+body nav .list {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 0 16px 16px 0;
+  border-color: black;
+  background-color: #e6c290;
+}
+body nav .list .list__item {
+  list-style: none;
+  width: 100%;
+  overflow: hidden;
+}
+body nav .list .list__item--click {
+  cursor: pointer;
+}
+body nav .list .list__item .list__button {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  width: 70%;
+  margin: 0 auto;
+}
+body nav .list .list__item .list__show {
+  width: 80%;
+  margin-left: auto;
+  border-left: 2px solid #303440;
+  list-style: none;
+  transition: height 0.5s;
+  height: 0;
+}
 
 /*# sourceMappingURL=style.css.map */

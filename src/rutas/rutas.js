@@ -8,6 +8,8 @@ const controlador = require('../controladores/controladores')
 
 rutas.get('/',controlador.zonaIndex);
 
+rutas.get('/',controlador.zonaMenu);
+
 
 
 module.exports = rutas

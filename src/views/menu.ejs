@@ -1,0 +1,1323 @@
+<%- include ('components/_main.ejs') -%>
+    <title>INICIO</title>
+    <script src="../public/static/js/menu.js"></script>
+    <script src="../public/static/js/mennu2.js"></script>
+</head>
+<body>
+    <%- include ('components/_navegacion.ejs') -%>
+    <div id="lista_principal">
+        <nav class="nav">
+            
+            <ul class="list">
+                <h2 class="titulo__list titulo__list--menu">MENU</h2>
+                <li class="list__item">
+                    <div class="list__button">
+                        <a href="#Bcalientes" class="nav__link">Bebidas calientes</a>
+                    </div>
+                </li>
+                <li class="list__item list__item--click">
+                    <div class="list__button list__button--click">
+                        <a href="#nada" class="nav__link">Bebidas frias</a>
+                    </div>
+                    <ul class="list__show">
+                        <li class="list__inside">
+                            <a href="#espresso" class="nav__link nav__link--inside">Bebidas a base de espresso</a>
+                        </li>
+                        <li class="list__inside">
+                            <a href="#naturales" class="nav__link nav__link--inside">Bebidas naturales</a>
+                        </li>
+                        <li class="list__inside">
+                            <a href="#granizados" class="nav__link nav__link--inside">Granizados</a>
+                        </li>
+                        <li class="list__inside">
+                            <a href="#otras_bebidas" class="nav__link nav__link--inside">Otras bebidas</a>
+                        </li>
+                        
+                    </ul>
+                </li>
+                <li class="list__item list__item--click">
+                    <div class="list__button list__button--click">
+                        <a href="#nada" class="nav__link">Comidas</a>
+                    </div>
+                    <ul class="list__show">
+                        <li class="list__inside">
+                            <a href="#comidas" class="nav__link nav__link--inside">Salmon</a>
+                        </li>
+                        <li class="list__inside">
+                            <a href="#comidas" class="nav__link nav__link--inside">Pasta napolitana</a>
+                        </li>
+                        <li class="list__inside">
+                            <a href="#comidas" class="nav__link nav__link--inside">Filete con salsa de frutas</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="list__item list__item--click">
+                    <div class="list__button list__button--click">
+                        <a href="#nada" class="nav__link">pasteleria</a>
+                    </div>
+                    <ul class="list__show">
+                        <li class="list__inside">
+                            <a href="#pasteleria" class="nav__link nav__link--inside">Torta de chocolate</a>
+                        </li>
+                        <li class="list__inside">
+                            <a href="#pasteleria" class="nav__link nav__link--inside">Torta de zanahoria</a>
+                        </li>
+                        <li class="list__inside">
+                            <a href="#pasteleria" class="nav__link nav__link--inside">Panqueque</a>
+                        </li>
+                        
+                    </ul>
+                </li>
+                
+                <li class="list__item list__item--click">
+                    <div class="list__button list__button--click">
+                        <a href="#nada" class="nav__link">Panaderia</a>
+                    </div>
+                    <ul class="list__show">
+                        <li class="list__inside">
+                            <a href="#panaderia" class="nav__link nav__link--inside">Croissants</a>
+                        </li>
+                        <li class="list__inside">
+                            <a href="#panaderia" class="nav__link nav__link--inside">Galletas</a>
+                        </li>
+                        <li class="list__inside">
+                            <a href="#panaderia" class="nav__link nav__link--inside">Baguette</a>
+                        </li>
+                        
+                    </ul>
+                </li>
+                <li class="list__item list__item--click">
+                    <div class="list__button list__button--click">
+                        <a href="#nada" class="nav__link">Reposteria</a>
+                    </div>
+                    <ul class="list__show">
+                        <li class="list__inside">
+                            <a href="#reposteria" class="nav__link nav__link--inside">Cheesecake de frutos rojos</a>
+                        </li>
+                        <li class="list__inside">
+                            <a href="#reposteria" class="nav__link nav__link--inside">Cheescake de vainilla</a>
+                        </li>
+                        <li class="list__inside">
+                            <a href="#reposteria" class="nav__link nav__link--inside">Pie de limon</a>
+                        </li>
+                        
+                    </ul>
+                </li>
+                <h2 class="titulo__list titulo__list--menu">PRODUCTOS</h2>
+                
+                <li class="list__item">
+                    <div class="list__button">
+                        <a href="#cafeteras" class="nav__link">Cafeteras</a>
+                    </div>
+                </li>
+                <li class="list__item">
+                    <div class="list__button">
+                        <a href="#cafe_sin_moler" class="nav__link">Café sin moler</a>
+                    </div>
+                </li>
+                <li class="list__item">
+                    <div class="list__button">
+                        <a href="#filtros" class="nav__link">Filtros</a>
+                    </div>
+                </li>
+                <li class="list__item">
+                    <div class="list__button">
+                        <a href="#molinos" class="nav__link">Molinos</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <main class="main">
+            <div class="galeria principal__box__img">
+                <div class="caja__img__Bcalientes box__img">
+                    <a id="Bcalientes">
+                        <div class="fila">
+                            <div class="card">
+                                <div class="face front">
+                                    <img class="espresso" src="../public/img/CALIENTES/espresso.jpg
+                                    " alt="">
+                                    <h3>ESPRESSO</h3>
+                                </div>
+                                <div class="face back">
+                                    <h3>ESPRESSO</h3>
+                                    <p class="espreso">     
+                                        Espresso es una bebida de café intensa y concentrada elaborada al pasar agua caliente a alta presión a través de café molido fino.     </p>
+                                    <h5 class="espreso">$3.500</h5>
+                                    <div class="link boton">
+                                        <a class="botoncito" href="#">COMPRAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="face front">
+                                    <img src="../public/img/CALIENTES/machiato.jpg
+                                    " alt="">
+                                    <h3>MACCHIATO</h3>
+                                </div>
+                                <div class="face back">
+                                    <h3>MACCHIATO</h3>
+                                    <p>      Un macchiato es una bebida de café que combina un shot de expresso con una pequeña cantidad de leche caliente y espumada     </p>
+                                    <h5> $4.000 </h5>
+                                    <div class="link boton">
+                                        <a class="botoncito" href="#">COMPRAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="face front">
+                                    <img src="../public/img/CALIENTES/capuccino1.jpg
+                                    " alt="">
+                                    <h3>CAPUCHINO</h3>
+                                </div>
+                                <div class="face back">
+                                    <h3>CAPUCHINO</h3>
+                                    <p>      Un capuchino es una clásica bebida de café italiana que combina partes iguales de espresso, leche caliente y espuma de leche      </p>
+                                    
+                                    <h5> $4.500 </h5>
+                                    <div class="link boton">
+                                        <a class="botoncito" href="#">COMPRAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fila">
+                            <div class="card">
+                                <div class="face front">
+                                    <img src="../public/img/CALIENTES/capuchino irlandes.jpg
+                                    " alt="">
+                                    <h3>CAPUCHINO IRLANDÉS</h3>
+                                </div>
+                                <div class="face back">
+                                    <h3>CAPUCHINO IRLANDÉS</h3>
+                                    <p>      Capuchino irlandés: Espresso con leche, espuma y whisky irlandés como Baileys para un toque alcohólico.      </p>
+                                    <h5>$5.000</h5>
+                                    <div class="link boton">
+                                        <a class="botoncito" href="#">COMPRAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="face front">
+                                    <img src="../public/img/CALIENTES/capuchinovienes.jpg
+                                    " alt="">
+                                    <h3>CAPUCHINO VIENÉS</h3>
+                                </div>
+                                <div class="face back">
+                                    <h3>CAPUCHINO VIENÉS</h3>
+                                    <p>      Capuchino vienés: Servido en taza grande con crema batida encima, similar al capuchino con espresso, leche caliente y espuma de leche.       </p>
+                                    <h5> $5.000 </h5>
+                                    <div class="link boton">
+                                        <a class="botoncito" href="#">COMPRAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="face front">
+                                    <img src="../public/img/CALIENTES/lattetradicional.jpg
+                                    " alt="">
+                                    <h3>LATTE TRADICIONAL</h3>
+                                </div>
+                                <div class="face back">
+                                    <h3>LATTE TRADICIONAL</h3>
+                                    <p>       Un latte tradicional es una bebida de café que combina espresso, leche caliente y una fina capa de espuma de leche en la parte superior.         </p>
+                                    <h5> $4.000 </h5>
+                                    <div class="link boton">
+                                        <a class="botoncito" href="#">COMPRAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fila">
+                            <div class="card">
+                                <div class="face front">
+                                    <img src="../public/img/CALIENTES/lattemoca.jpg
+                                    " alt="">
+                                    <h3>LATTE MOCCA</h3>
+                                </div>
+                                <div class="face back">
+                                    <h3>LATTE MOCCA</h3>
+                                    <p>      El Latte mocha con Café, leche, chocolate y espuma de leche; espresso mezclado con chocolate y leche caliente, cubierto con espuma de leche.        </p>
+                                    <h5> $4.300 </h5>
+                                    <div class="link boton">
+                                        <a class="botoncito" href="#">COMPRAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="face front">
+                                    <img src="../public/img/CALIENTES/americano.jpg
+                                    " alt="">
+                                    <h3>AMERICANO</h3>
+                                </div>
+                                <div class="face back">
+                                    <h3>AMERICANO</h3>
+                                    <p>       Un café americano es una bebida de café que se obtiene al diluir un shot de expresso con agua caliente.        </p>
+                                    <h5> $3.500 </h5>
+                                    <div class="link boton">
+                                        <a class="botoncito" href="#">COMPRAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="face front">
+                                    <img src="../public/img/CALIENTES/matcha.jpg
+                                    " alt="">
+                                    <h3>MATCHA</h3>
+                                </div>
+                                <div class="face back">
+                                    <h3>MATCHA</h3>
+                                    <p>       Un café matcha es una variante del café tradicional que incorpora matcha, el té verde en polvo japonés.        </p>
+                                    <h5> $4.200 </h5>
+                                    <div class="link boton">
+                                        <a class="botoncito" href="#">COMPRAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fila">
+                            <div class="card">
+                                <div class="face front">
+                                    <img src="../public/img/CALIENTES/chocolate.jpg
+                                    " alt="">
+                                    <h3>CHOCOLATE CALIENTE</h3>
+                                </div>
+                                <div class="face back">
+                                    <h3>CHOCOLATE CALIENTE</h3>
+                                    <p>       Chocolate caliente. Reconfortante e indulgente, preparado con chocolate derretido o cacao en polvo, leche caliente y azúcar opcional.       </p>
+                                    <h5> $4.000 </h5>
+                                    <div class="link boton">
+                                        <a class="botoncito" href="#">COMPRAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ocultar">
+                                <div class="hola3">
+                                    <img class="noimg" src="../public/img/" alt="">
+                                    <h3></h3>
+                                </div>
+                                <div class="hola">
+                                    <h3></h3>
+                                    <p></p>
+                                    <div class="hola2">
+                                        <a href="#"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ocultar">
+                                <div class="hola3">
+                                    <img class="noimg" src="../public/img/" alt="">
+                                    <h3></h3>
+                                </div>
+                                <div class="hola">
+                                    <h3></h3>
+                                    <p></p>
+                                    <div class="hola2">
+                                        <a href="#"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="caja__img__Bfrias box__img">
+                    <a id="espresso">
+                        <div class="fila">
+                            <div class="card">
+                                <div class="face front">
+                                    <img src="../public/img/FRIAS/mocha.jpg
+                                    " alt="">
+                                    <h3>MOCHA HELADO</h3>
+                                </div>
+                                <div class="face back">
+                                    <h3>MOCHA HELADO</h3>
+                                    <p class="mocha_helado">      Mocha Helado: Café y chocolate juntos en una bebida refrescante y deliciosa.       </p>
+                                    <h5 class="mocha_helado">$6.500</h5>
+                                    <div class="link boton">
+                                        <a class="botoncito" href="#">COMPRAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="face front">
+                                    <img src="../public/img/FRIAS/lattehelado.jpg
+                                    " alt="">
+                                    <h3>LATTE HELADO</h3>
+                                </div>
+                                <div class="face back">
+                                    <h3>LATTE HELADO</h3>
+                                    <p>       Una bebida refrescante que combina café espresso, leche fría y espuma cremosa para brindarte una experiencia suave y revitalizante. Perfecto para disfrutar en cualquier momento del día        </p>
+                                    <h5> $5.500 </h5>
+                                    <div class="link boton">
+                                        <a class="botoncito" href="#">COMPRAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="face front">
+                                    <img src="../public/img/FRIAS/americano frio.jpg
+                                    " alt="">
+                                    <h3>ESPRESSO AMERICANO HELADO</h3>
+                                </div>
+                                <div class="face back">
+                                    <h3>ESPRESSO AMERICANO HELADO</h3>
+                                    <p>      Fresco y estimulante, espresso con hielo, ideal para amantes del café en días calurosos.        </p>
+                                    <h5> $4.500 </h5>
+                                    <div class="link boton">
+                                        <a class="botoncito" href="#">COMPRAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a id="naturales">
+                        <div class="fila">
+                            <div class="card">
+                                <div class="face front">
+                                    <img src="../public/img/FRIAS/naranja.jpg
+                                    " alt="">
+                                    <h3>JUGO DE NARANJA</h3>
+                                </div>
+                                <div class="face back">
+                                    <h3>JUGO DE NARANJA</h3>
+                                    <p class="naranja">       
+                                        El jugo de naranja Clásico, saludable y lleno de vitaminas para revitalizarte.       </p>
+                                    <h5 class="naranja"> $8.500 </h5>
+                                    <div class="link boton">
+                                        <a class="botoncito" href="#">COMPRAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="face front">
+                                    <img src="../public/img/FRIAS/fresa.jpg
+                                    " alt="">
+                                    <h3>JUGO DE FRESA</h3>
+                                </div>
+                                <div class="face back">
+                                    <h3>JUGO DE FRESA</h3>
+                                    <p>       Una refrescante y deliciosa bebida que destaca por su sabor dulce y vibrante, obtenido de las jugosas fresas. Una opción irresistible para disfrutar de un momento refrescante y lleno de sabor.        </p>
+                                    <h5> $8.500 </h5>
+                                    <div class="link boton">
+                                        <a class="botoncito" href="#">COMPRAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="face front">
+                                    <img src="../public/img/FRIAS/mango.jpg
+                                    " alt="">
+                                    <h3>JUGO DE MANGO</h3>
+                                </div>
+                                <div class="face back">
+                                    <h3>JUGO DE MANGO</h3>
+                                    <p>       Refrescante y dulce, el jugo de mango te brinda un sabor tropical y jugoso en cada sorbo. Perfecto para disfrutar en días calurosos y transportarte a un paraíso frutal.        </p>
+                                    <h5> $8.500 </h5>
+                                    <div class="link boton">
+                                        <a class="botoncito" href="#">COMPRAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fila">
+                            <div class="card">
+                                <div class="face front">
+                                    <img src="../public/img/FRIAS/mora.jpg
+                                    " alt="">
+                                    <h3>JUGO DE MORA</h3>
+                                </div>
+                                <div class="face back">
+                                    <h3>JUGO DE MORA</h3>
+                                    <p>       Una delicia refrescante y frutal con sabor intenso y textura granulada. Perfecto para aliviar el calor y disfrutar de un momento dulce.        </p>
+                                    <h5> $8.500 </h5>
+                                    <div class="link boton">
+                                        <a class="botoncito" href="#">COMPRAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ocultar">
+                                <div class="hola3">
+                                    <img class="noimg" src="../public/img/" alt="">
+                                    <h3></h3>
+                                </div>
+                                <div class="hola">
+                                    <h3></h3>
+                                    <p></p>
+                                    <div class="hola2">
+                                        <a href="#"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ocultar">
+                                <div class="hola3">
+                                    <img class="noimg" src="../public/img/" alt="">
+                                    <h3></h3>
+                                </div>
+                                <div class="hola">
+                                    <h3></h3>
+                                    <p></p>
+                                    <div class="hola2">
+                                        <a href="#"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a id="granizados">
+                        <div class="fila">
+                            <div class="card">
+                                <div class="face front">
+                                    <img src="../public/img/FRIAS/limonada.jpg
+                                    " alt="">
+                                    <h3>LIMONADA NATURAL</h3>
+                                </div>
+                                <div class="face back">
+                                    <h3>LIMONADA NATURAL</h3>
+                                    <p class="limonada">       Refrescante y equilibrada, con el sabor cítrico y revitalizante de limones frescos exprimidos. Ideal para refrescarte en cualquier ocasión.        </p>
+                                    <h5 class="limonada"> $6.500 </h5>
+                                    <div class="link boton">
+                                        <a class="botoncito" href="#">COMPRAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="face front">
+                                    <img src="../public/img/FRIAS/granizado fresa.jpg
+                                    " alt="">
+                                    <h3>GRANIZADO DE FRESA</h3>
+                                </div>
+                                <div class="face back">
+                                    <h3>GRANIZADO DE FRESA</h3>
+                                    <p>      Delicioso y refrescante, combina el dulce sabor de las fresas con una textura granulada.   </p>
+                                    <h5> $9.500                                    </h5>
+                                    <div class="link boton">
+                                        <a class="botoncito" href="#">COMPRAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="face front">
+                                    <img src="../public/img/FRIAS/granizadodenaranja.jpg
+                                    " alt="">
+                                    <h3>GRANIZADO DE NARANJA</h3>
+                                </div>
+                                <div class="face back">
+                                    <h3>GRANIZADO DE NARANJA</h3>
+                                    <p>       Refrescante y jugoso, te transporta a un oasis cítrico en días calurosos. La opción perfecta para disfrutar como postre o refrescarte en cualquier momento.        </p>
+                                    <h5> $9.500 </h5>
+                                    <div class="link boton">
+                                        <a class="botoncito" href="#">COMPRAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a id="otras_bebidas">
+                        <div class="fila">
+                            <div class="card">
+                                <div class="face front">
+                                    <img src="../public/img/CALIENTES/avena.jpg
+                                    " alt="">
+                                    <h3>AVENA</h3>
+                                </div>
+                                <div class="face back">
+                                    <h3>AVENA</h3>
+                                    <p class="avena">       Saludable, nutritiva y versátil. Perfecta para energizarte y mantener un estilo de vida equilibrado.        </p>
+                                    <h5 class="avena"> $5.000 </h5>
+                                    <div class="link boton">
+                                        <a class="botoncito" href="#">COMPRAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="face front">
+                                    <img src="../public/img/FRIAS/agua.jpg
+                                    " alt="">
+                                    <h3>AGUA</h3>
+                                </div>
+                                <div class="face back">
+                                    <h3>AGUA</h3>
+                                    <p>       Esencial para la vida, refrescante y sin calorías. Satisface tu sed y mantiene tu cuerpo hidratado.        </p>
+                                    <h5> $4.000 </h5>
+                                    <div class="link boton">
+                                        <a class="botoncito" href="#">COMPRAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="face front">
+                                    <img src="../public/img/FRIAS/aguacongas.jpg
+                                    " alt="">
+                                    <h3>AGUA CON GAS</h3>
+                                </div>
+                                <div class="face back">
+                                    <h3>AGUA CON GAS</h3>
+                                    <p>       Refrescante y burbujeante, es una variante divertida del agua que agrega una sensación efervescente al beber.         </p>
+                                    <h5> $4.500 </h5>
+                                    <div class="link boton">
+                                        <a class="botoncito" href="#">COMPRAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fila">
+                            <div class="card">
+                                <div class="face front">
+                                    <img src="../public/img/FRIAS/aguamineral.jpg
+                                    " alt="">
+                                    <h3>AGUA MINERAL</h3>
+                                </div>
+                                <div class="face back">
+                                    <h3>AGUA MINERAL</h3>
+                                    <p>       Naturalmente pura y llena de minerales esenciales para el cuerpo. Refrescante y saludable, te hidrata y te ayuda a mantener el equilibrio.        </p>
+                                    <h5> $5.000 </h5>
+                                    <div class="link boton">
+                                        <a class="botoncito" href="#">COMPRAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="face front">
+                                    <img src="../public/img/FRIAS/cocacola.jpg
+                                    " alt="">
+                                    <h3>COCA COLA</h3>
+                                </div>
+                                <div class="face back">
+                                    <h3>COCA COLA(500 ml)</h3>
+                                    <p>       Una bebida icónica y refrescante que combina burbujas carbonatadas con un sabor único y delicioso. Disfruta de su dulzura y su carácter distintivo en cualquier ocasión.        </p>
+                                    <h5> $5.500 </h5>
+                                    <div class="link boton">
+                                        <a class="botoncito" href="#">COMPRAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ocultar">
+                                <div class="hola3">
+                                    <img class="noimg" src="../public/img/" alt="">
+                                    <h3></h3>
+                                </div>
+                                <div class="hola">
+                                    <h3></h3>
+                                    <p></p>
+                                    <div class="hola2">
+                                        <a href="#"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="caja__img__comidas box__img">
+                    <a id="comidas">
+                        <div class="fila">
+                            <div class="card">
+                                <div class="face front">
+                                    <img src="../public/img/COMIDAS/salmon.jpg
+                                    " alt="">
+                                    <h3>SALMON</h3>
+                                </div>
+                                <div class="face back">
+                                    <h3>SALMON</h3>
+                                    <p class="salmon">       El salmón se presenta en un lecho de hojas verdes frescas, como espinacas tiernas o mezcla de lechugas, que aportan color y textura al plato.        </p>
+                                    <h5 class="salmon"> $40.000 </h5>
+                                    <div class="link boton">
+                                        <a class="botoncito" href="#">COMPRAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="face front">
+                                    <img src="../public/img/COMIDAS/napolitana.jpg
+                                    " alt="">
+                                    <h3>PASTA NAPOLITANA</h3>
+                                </div>
+                                <div class="face back">
+                                    <h3>PASTA NAPOLITANA</h3>
+                                    <p>       La pasta se sirve con una rica y aromática salsa napolitana, conocida como "salsa al pomodoro" o "salsa alla marinara".        </p>
+                                    <h5> $28.000 </h5>
+                                    <div class="link boton">
+                                        <a class="botoncito" href="#">COMPRAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="face front">
+                                    <img src="../public/img/COMIDAS/filete.jpg
+                                    " alt="">
+                                    <h3>FILETE</h3>
+                                </div>
+                                <div class="face back">
+                                    <h3>FILETE CON SALSA DE FRUTAS</h3>
+                                    <p>       un filete tierno y jugoso con una salsa agridulce de frutas frescas y sabrosas.        </p>
+                                    <h5> $36.000 </h5>
+                                    <div class="link boton">
+                                        <a class="botoncito" href="#">COMPRAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="caja__img__pasteleria box__img">
+                    <a id="pasteleria">
+                        <div class="fila">
+                            <div class="card">
+                                <div class="face front">
+                                    <img src="../public/img/PASTELERIA/tortadechocolate.jpg
+                                    " alt="">
+                                    <h3>TORTA DE CHOCOLATE</h3>
+                                </div>
+                                <div class="face back">
+                                    <h3>TORTA DE CHOCOLATE</h3>
+                                    <p class="chocolate">       La torta de chocolate es un delicioso postre que destaca por su intenso sabor y su textura suave y esponjosa.        </p>
+                                    <h5 class="chocolate"> $7.000 </h5>
+                                    <div class="link boton">
+                                        <a class="botoncito" href="#">COMPRAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="face front">
+                                    <img src="../public/img/PASTELERIA/tortadezanahoria.jpg
+                                    " alt="">
+                                    <h3>TORTA DE ZANAHORIA</h3>
+                                </div>
+                                <div class="face back">
+                                    <h3>TORTA DE ZANAHORIA</h3>
+                                    <p>       La torta de zanahoria es un delicioso postre que combina el sabor dulce y suave de las zanahorias con una mezcla de specias como canela y nuez moscada.   </p>
+                                    <h5> $7.000 </h5>
+                                    <div class="link boton">
+                                        <a class="botoncito" href="#">COMPRAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="face front">
+                                    <img src="../public/img/PASTELERIA/panqueque.jpg
+                                    " alt="">
+                                    <h3>PANQUEQUE</h3>
+                                </div>
+                                <div class="face back">
+                                    <h3>PANQUEQUE</h3>
+                                    <p class="panqueque">       Los panqueques, también conocidos como hotcakes o pancakes, son un clásico desayuno        </p>
+                                    <h5 class="panqueque"> $9.000 </h5>
+                                    <div class="link boton">
+                                        <a class="botoncito" href="#">COMPRAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="caja__img__reposteria box__img">
+                    <a id="reposteria">
+                        <div class="fila">
+                            <div class="card">
+                                <div class="face front">
+                                    <img src="../public/img/REPOSTERIA/cheesecake-frutos-rojos.jpg
+                                    " alt="">
+                                    <h3>CHEESECAKE DE FRUTOS ROJOS</h3>
+                                </div>
+                                <div class="face back">
+                                    <h3>CHEESECAKE DE FRUTOS ROJOS</h3>
+                                    <p class="frutos_rojos">       El cheesecake de frutos rojos es un postre exquisito y cremoso que combina la suavidad y sabor único del cheesecake con la frescura y dulzura de los frutos rojos.        </p>
+                                    <h5 class="frutos_rojos"> $8.500 </h5>
+                                    <div class="link boton">
+                                        <a class="botoncito" href="#">COMPRAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="face front">
+                                    <img src="../public/img/REPOSTERIA/cheesecake-vainilla.jpg
+                                    " alt="">
+                                    <h3>CHEESECAKE DE VAINILLA</h3>
+                                </div>
+                                <div class="face back">
+                                    <h3>CHEESECAKE DE VAINILLA</h3>
+                                    <p>       El cheesecake de vainilla es un clásico postre que combina la suavidad y cremosidad del cheesecake con el delicado y reconfortante sabor de la vainilla.        </p>
+                                    <h5> $8.500 </h5>
+                                    <div class="link boton">
+                                        <a class="botoncito" href="#">COMPRAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="face front">
+                                    <img src="../public/img/REPOSTERIA/pie-limon.jpg" alt="">
+                                    <h3>PIE DE LIMÓN</h3>
+                                </div>
+                                <div class="face back">
+                                    <h3>PIE DE LIMÓN</h3>
+                                    <p>       El pie de limón es un postre clásico que combina una base de masa quebrada crujiente con un relleno suave y refrescante de limón.        </p>
+                                    <h5> $8.500 </h5>
+                                    <div class="link boton">
+                                        <a class="botoncito" href="#">COMPRAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="cja__img__panaderia box__img">
+                    <a id="panaderia">
+                        <div class="fila">
+                            <div class="card">
+                                <div class="face front">
+                                    <img src="../public/img/PANADERIA/croassants.jpg
+                                    " alt="">
+                                    <h3>CROISSANTS</h3>
+                                </div>
+                                <div class="face back">
+                                    <h3>CROISSANTS</h3>
+                                    <p class="croasan">       Nuestro croissant clásico, horneado a la perfección, con su forma de media luna y una textura hojaldrada y delicada.         </p>
+                                    <h5 class="croasan"> $4.000 </h5>
+                                    <div class="link boton">
+                                        <a class="botoncito" href="#">COMPRAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="face front">
+                                    <img src="../public/img/PANADERIA/galletas.jpg
+                                    " alt="">
+                                    <h3>GALLETAS</h3>
+                                </div>
+                                <div class="face back">
+                                    <h3>GALLETAS</h3>
+                                    <p>       Nuestras galletas son dulces y deliciosos bocaditos horneados que se elaboran a partir de una masa de ingredientes básicos como harina, mantequilla, azúcar y huevos.        </p>
+                                    <h5> $3.000 </h5>
+                                    <div class="link boton">
+                                        <a class="botoncito" href="#">COMPRAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="face front">
+                                    <img src="../public/img/PANADERIA/baggete.jpg
+                                    " alt="">
+                                    <h3>BAGUETTE</h3>
+                                </div>
+                                <div class="face back">
+                                    <h3>BAGUETTE</h3>
+                                    <p>       Las baguettes son panes de origen francés que se caracterizan por su forma alargada y estrecha, similar a una vara o bastón.         </p>
+                                    <h5> $5.000 </h5>
+                                    <div class="link boton">
+                                        <a class="botoncito" href="#">COMPRAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="caja__img__cafeteras box__img">
+                    <a id="cafeteras">
+                        <div class="fila">
+                            <div class="card">
+                                <div class="face front">
+                                    <img src="../public/img/PRODUCTOS/CAFETERAS/CAFETERA OSTER BVSTDCDR5 SEMI AUTOMATICA 127V.jpg" alt="">
+                                    <h3>CAFETERA OSTER</h3>
+                                </div>
+                                <div class="face back">
+                                    <h3>CAFETERA OSTER</h3>
+                                    <p>      
+                                        Cafeteras Oster, Transforma tu café con versatilidad. Puedes usar café molido o cápsulas para preparar un café delicioso y aromático con facilidad.     </p>
+                                    <h5> $107.900 </h5>
+                                    <div class="link boton">
+                                        <a class="botoncito" href="#">COMPRAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="face front">
+                                    <img src="../public/img/PRODUCTOS/CAFETERAS/CAFETERA DE FILTRO SIMPLY BREW TO GO INOX KRUPS.jpg" alt="">
+                                    <h3>CAFETERA DE FILTRO</h3>
+                                </div>
+                                <div class="face back">
+                                    <h3>CAFETERA DE FILTRO SIMPLY</h3>
+                                    <p>       La cafetera KRUPS no tiene complicaciones para preparar tu café de la mañana, caliente y fresco con solo presionar un botón, tiene un uso versátil y prepara hasta 14Oz de café        </p>
+                                    <h5> $219.900 </h5>
+                                    <div class="link boton">
+                                        <a class="botoncito" href="#">COMPRAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="face front">
+                                    <img src="../public/img/PRODUCTOS/CAFETERAS/MAQUINA CAFÉ EXPRESO CÁPSULA CAFFITALY EVA 15 BAR CAPSULAS.jpg" alt="">
+                                    <h3>MAQUINA CAFÉ EXPRESO CÁPSULA</h3>
+                                </div>
+                                <div class="face back">
+                                    <h3>MAQUINA CAFÉ EXPRESO CÁPSULA</h3>
+                                    <p>       Regálate una pausa
+                                        Empieza tu día con energía y de la mejor manera, disfrutando de la textura y calidad de un buen café en la comodidad de tu casa.
+                                                </p>
+                                    <h5> $294.000 </h5>
+                                                <div class="link boton">
+                                        <a class="botoncito" href="#">COMPRAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fila">
+                            <div class="card">
+                                <div class="face front">
+                                    <img src="../public/img/PRODUCTOS/CAFETERAS/CAFETERAKRUPSDOLCECAFETERA KRUPS DOLCE GUSTO GENIOS S PLUS NEGRA.jpg" alt="">
+                                    <h3>CAFETERA KRUPS DOLCE</h3>
+                                </div>
+                                <div class="face back">
+                                    <h3>CAFETERA KRUPS DOLCE</h3>
+                                    <p>        La cafetera krups dolce dispone de una serie de funciones avanzadas que te encantarán y un diseño compacto que captará la mirada de todos tus amigos        </p>
+                                    <h5> $precio </h5>
+                                    <div class="link boton">
+                                        <a class="botoncito" href="#">COMPRAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="face front">
+                                    <img src="../public/img/PRODUCTOS/CAFETERAS/CAFETERA OSTER PERFECT BREW BVSTEM7300 AUTOMATICA EXPRESO 127V.jpg" alt="">
+                                    <h3>CAFETERA OSTER </h3>
+                                </div>
+                                <div class="face back">
+                                    <h3>CAFETERA OSTER PERFECT</h3>
+                                    <p>       
+                                        La Cafetera Oster Perfect simplifica la preparación de café, ofreciendo facilidad de uso y funcionalidad confiable, con características específicas según el modelo.        </p>
+                                    <h5> $669.900 </h5>
+                                        <div class="link boton">
+                                        <a class="botoncito" href="#">COMPRAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="face front">
+                                    <img src="../public/img/PRODUCTOS/CAFETERAS/CAFETERA OSTER ESPRESSO AUTOMATICA DE 20 BARES BVSTEM8100.jpg" alt="">
+                                    <h3>CAFETERA ESPRESSO AUTO </h3>
+                                </div>
+                                <div class="face back">
+                                    <h3>CAFETERA OSTER ESPRESSO AUTOMATICA </h3>
+                                    <p>       La Cafeteras Oster Espresso Simplifican la preparación de café con ajustes automáticos y personalizables.        </p>
+                                    <h5> $1.709.000</h5>
+                                    <div class="link boton">
+                                        <a class="botoncito" href="#">COMPRAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fila">
+                            <div class="card">
+                                <div class="face front">
+                                    <img src="../public/img/PRODUCTOS/CAFETERAS/CAFETERA ESPRESSERIA AUTOMATICA ESSENTIAL KRUPS.jpg" alt="">
+                                    <h3>CAFETERA ESPRESSERIA</h3>
+                                </div>
+                                <div class="face back">
+                                    <h3>CAFETERA ESPRESSERIA AUTOMATICA</h3>
+                                    <p>       Las cafeteras espresseria automáticas simplifican la preparación de espresso, cappuccino y otras bebidas de café mediante una variedad de funciones y características.        </p>
+                                    <h5> $1.877.900</h5>
+                                    <div class="link boton">
+                                        <a class="botoncito" href="#">COMPRAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ocultar">
+                                <div class="hola3">
+                                    <img class="noimg" src="../public/img/" alt="">
+                                    <h3></h3>
+                                </div>
+                                <div class="hola">
+                                    <h3></h3>
+                                    <p></p>
+                                    <div class="hola2">
+                                        <a href="#"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ocultar">
+                                <div class="hola3">
+                                    <img class="noimg" src="../public/img/" alt="">
+                                    <h3></h3>
+                                </div>
+                                <div class="hola">
+                                    <h3></h3>
+                                    <p></p>
+                                    <div class="hola2">
+                                        <a href="#"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class=" caja__img__cafe box__img">
+                    <a id="cafe_sin_moler">
+                        <div class="fila">
+                            <div class="card">
+                                <div class="face front">
+                                    <img src="../public/img/PRODUCTOS/CAFE EN GRANO/Café Sello Rojo Expreso Grano 500 Gr - .jpg" alt="">
+                                    <h3>CAFÉ SELLO ROJO EXPRESO </h3>
+                                </div>
+                                <div class="face back">
+                                    <h3>CAFÉ SELLO ROJO EXPRESO GRANO 500 GR - KG</h3>
+                                    <p class="sello_rojo">       Café Sello Rojo tostado en grano tipo Espresso, 100% puro café.        </p>
+                                    <h5 class="sello_rojo"> $34.200 </h5>
+                                    <div class="link boton">
+                                        <a class="botoncito" href="#">COMPRAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="face front">
+                                    <img src="../public/img/PRODUCTOS/CAFE EN GRANO/Cafe Matiz Escarlata Grano X 500 .jpg" alt="">
+                                    <h3>CAFE MATIZ ESCARLATA</h3>
+                                </div>
+                                <div class="face back">
+                                    <h3>CAFE MATIZ ESCARLATA GRANO X 500 GR</h3>
+                                    <p>       Café Matiz Escarlata en grano de tostión oscura y molienda gruesa.
+                                            Brinda un aroma pronunciado, sabor intenso y gusto prolongado denotas tostadas y de chocolate.
+                                                </p>
+                                    <h5> $34.250 </h5>
+                                                <div class="link boton">
+                                        <a class="botoncito" href="#">COMPRAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="face front">
+                                    <img src="../public/img/PRODUCTOS/CAFE EN GRANO/Café Juan Valdez Volcán Grano .jpg" alt="">
+                                    <h3>CAFÉ  VOLCÁN </h3>
+                                </div>
+                                <div class="face back">
+                                    <h3>CAFÉ VOLCÁN GRANO 454GR</h3>
+                                    <p>       Café Premium 100% Colombiano Excelso. El Café Volcán es una combinación única de cafés Colombianos y notas aromáticas que sorprenderán tu paladar        </p>
+                                    <h5> $38.300 </h5>
+                                    <div class="link boton">
+                                        <a class="botoncito" href="#">COMPRAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fila">
+                            <div class="card">
+                                <div class="face front">
+                                    <img src="../public/img/PRODUCTOS/CAFE EN GRANO/Café Amber Cane X 500g - Tueste .jpg" alt="">
+                                    <h3>CAFÉ AMBER CANE X 500G </h3>
+                                </div>
+                                <div class="face back">
+                                    <h3>CAFÉ AMBER CANE X 500G - TUESTE ALTO</h3>
+                                    <p>       Cane 1900 café especial, de origen y cultivado en la altura, en el suroeste antioqueño a 1900 msnm, con notas a chocolate oscuro y caramelo, acidez baja y un agradable sabor residual        </p>
+                                    <h5> $35.000 </h5>
+                                    <div class="link boton">
+                                        <a class="botoncito" href="#">COMPRAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="face front">
+                                    <img src="../public/img/PRODUCTOS/CAFE EN GRANO/Café Amber Cane 1900 X 250g - Tueste Alto.jpg" alt="">
+                                    <h3>CAFÉ AMBER CANE 1900 X 250G</h3>
+                                </div>
+                                <div class="face back">
+                                    <h3>CAFÉ AMBER CANE 1900 X 250G - TUESTE ALTO</h3>
+                                    <p>      Cane 1900 Café Especial del suroeste antioqueño, 1900 msnm, notas de chocolate y caramelo, baja acidez, sabor agradable.           </p>
+                                    <h5> $20.000 </h5>
+                                    <div class="link boton">
+                                        <a class="botoncito" href="#">COMPRAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="face front">
+                                    <img src="../public/img/PRODUCTOS/CAFE EN GRANO/Cafe Juan Valdez Finca Grano 1k - kg.jpg" alt="">
+                                    <h3>CAFE FINCA GRANO </h3>
+                                </div>
+                                <div class="face back">
+                                    <h3>CAFE FINCA GRANO 1K - KG</h3>
+                                    <p>        Este tipo de café suele destacarse por su calidad y origen particular, ya que se cultiva en una finca específica y se selecciona cuidadosamente.        </p>
+                                    <h5> $89.900 </h5>
+                                    <div class="link boton">
+                                        <a class="botoncito" href="#">COMPRAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fila">
+                            <div class="card">
+                                <div class="face front">
+                                    <img src="../public/img/PRODUCTOS/CAFE EN GRANO/Café Doña Betty_250g Colombiano - kg.jpg" alt="">
+                                    <h3>CAFÉ DOÑA BETTY</h3>
+                                </div>
+                                <div class="face back">
+                                    <h3>CAFÉ DOÑA BETTY_250G COLOMBIANO - KG</h3>
+                                    <p>       Café 100% colombiano de la región de Moniquirá, Boyacá (1670 m.s.n.m). Es un café con un aroma intenso con un nivel de tostión medio alto, con notas de panela y limón.        </p>
+                                    <h5> $11.000 </h5>
+                                    <div class="link boton">
+                                        <a class="botoncito" href="#">COMPRAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ocultar">
+                                <div class="hola3">
+                                    <img class="noimg" src="../public/img/" alt="">
+                                    <h3></h3>
+                                </div>
+                                <div class="hola">
+                                    <h3></h3>
+                                    <p></p>
+                                    <div class="hola2">
+                                        <a href="#"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ocultar">
+                                <div class="hola3">
+                                    <img class="noimg" src="../public/img/" alt="">
+                                    <h3></h3>
+                                </div>
+                                <div class="hola">
+                                    <h3></h3>
+                                    <p></p>
+                                    <div class="hola2">
+                                        <a href="#"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="caja__img__filtros box__img">
+                    <a id="filtros">
+                        <div class="fila">
+                            <div class="card">
+                                <div class="face front">
+                                    <img src="../public/img/PRODUCTOS/FILTROS/Filtros V60 02 X100uni Brewing Cafe Especial Papel Natura (2).jpg" alt="">
+                                    <h3>FILTROS V60 02 X100UNI</h3>
+                                </div>
+                                <div class="face back">
+                                    <h3>FILTROS V60 02 X100UNI</h3>
+                                    <p class="v60">       Los filtros V60 02 x100uni son un conjunto de 100 filtros diseñados específicamente para la preparación de café mediante el método de goteo o vertido       </p>
+                                    <h5 class="v60"> $55.999 </h5>
+                                    <div class="link boton">
+                                        <a class="botoncito" href="#">COMPRAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="face front">
+                                    <img src="../public/img/PRODUCTOS/FILTROS/Filtros Para Café 40 Unidades Connaisseur Utensilio.jpg" alt="">
+                                    <h3>FILTROS CONNAISSEUR 40UND</h3>
+                                </div>
+                                <div class="face back">
+                                    <h3>FILTROS CONNAISSEUR 40UND</h3>
+                                    <p>       Canasta de filtros de café Gk Connaisseur - Se adapta a la mayoría de las cafeteras que requieren filtros de cono n. ° 4 - 40 unidades        </p>
+                                    <h5> $23.990 </h5>
+                                    <div class="link boton">
+                                        <a class="botoncito" href="#">COMPRAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="face front">
+                                    <img src="../public/img/PRODUCTOS/FILTROS/Repuesto FiltroDe Agua Para Cafeteras Mr Coffee Y Oster.jpg" alt="">
+                                    <h3>REPUESTO FILTRO DE AGUA</h3>
+                                </div>
+                                <div class="face back">
+                                    <h3>REPUESTO FILTRO DE AGUA CAFETERAS</h3>
+                                    <p>       Filtro de agua para cafeteras mr. coffe water filtration disk. Com carbon activado de palmera de coco absorbe los olores y sabor del cloro y purifica el agua        </p>
+                                    <h5> $19.900 </h5>
+                                    <div class="link boton">
+                                        <a class="botoncito" href="#">COMPRAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fila">
+                            <div class="card">
+                                <div class="face front">
+                                    <img src="../public/img/PRODUCTOS/FILTROS/Repuestos Kit Empaque Y Filtro Plano Para Cafetera Italiana.jpg" alt="">
+                                    <h3>KIT EMPAQUE Y FILTRO PLANO</h3>
+                                </div>
+                                <div class="face back">
+                                    <h3>KIT EMPAQUE Y FILTRO PLANO CAFETERA ITALIANA</h3>
+                                    <p>      
+                                        Un kit de empaque y filtro plano para cafetera italiana es un conjunto de piezas que se utiliza para mantener o reparar una cafetera italiana.         </p>
+                                    <h5> $23.000 </h5>
+                                        <div class="link boton">
+                                        <a class="botoncito" href="#">COMPRAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ocultar">
+                                <div class="hola3">
+                                    <img class="noimg" src="../public/img/" alt="">
+                                    <h3></h3>
+                                </div>
+                                <div class="hola">
+                                    <h3></h3>
+                                    <p></p>
+                                    <div class="hola2">
+                                        <a href="#"></a>
+                                    </div>
+                                </div>
+                            </div>                          
+                            <div class="ocultar">
+                                <div class="hola3">
+                                    <img class="noimg" src="../public/img/" alt="">
+                                    <h3></h3>
+                                </div>
+                                <div class="hola">
+                                    <h3></h3>
+                                    <p></p>
+                                    <div class="hola2">
+                                        <a href="#"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="caja__img__molinos box__img">
+                    <a id="molinos">
+                        <div class="fila">
+                            <div class="card">
+                                <div class="face front">
+                                    <img src="../public/img/PRODUCTOS/MOLINOS/Molino Moledor De Café Y Especias Pequeñas Eléctrico.jpg" alt="">
+                                    <h3>MOLINO DE CAFÉ</h3>
+                                </div>
+                                <div class="face back">
+                                    <h3>MOLINO MOLEDOR DE CAFÉ</h3>
+                                    <p class="moledor_cafe">       El molinillo eléctrico es un producto que no debe faltar en tu hogar como herramienta que ayuda a moler el café, frutos secos, azúcar, especias etc.        </p>
+                                    
+                                    <h5 class="moledor_cafe"> $39.528 </h5>
+                                    <div class="link boton">
+                                        <a class="botoncito" href="#">COMPRAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="face front">
+                                    <img src="../public/img/PRODUCTOS/MOLINOS/Molino De Café Imusa Coffee.jpg" alt="">
+                                    <h3>MOLINO DE CAFÉ IMUSA </h3>
+                                </div>
+                                <div class="face back">
+                                    <h3>MOLINO DE CAFÉ IMUSA COFFEE GRINDER</h3>
+                                    <p>       Con el Molino de Café adaptable y eléctrico podrás moler y preparar tu café de manera rápida y sencilla, ¡sin salir de casa!        </p>
+                                    <h5> $109.900 </h5>
+                                    <div class="link boton">
+                                        <a class="botoncito" href="#">COMPRAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="face front">
+                                    <img src="../public/img/PRODUCTOS/MOLINOS/Molino De Café Manual Moledor Cafe En Vidrio Raktors 120grms.jpg" alt="">
+                                    <h3>MOLINO DE CAFÉ MANUAL</h3>
+                                </div>
+                                <div class="face back">
+                                    <h3>MOLINO DE CAFÉ MANUAL EN VIDRIO</h3>
+                                    <p>       ¡Disfruta del auténtico sabor del café recién molido en la comodidad de tu hogar con nuestro moledor de café manual! Con su diseño elegante y suave mecanismo de molienda!        </p>
+                                    <h5> $63.800 </h5>
+                                    <div class="link boton">
+                                        <a class="botoncito" href="#">COMPRAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fila">
+                            <div class="card">
+                                <div class="face front">
+                                    <img src="../public/img/PRODUCTOS/MOLINOS/Molino De Café Oster® Bvstbmh23.jpg" alt="">
+                                    <h3>MOLINO DE CAFÉ OSTER</h3>
+                                </div>
+                                <div class="face back">
+                                    <h3>MOLINO DE CAFÉ OSTER BVSTBMH23</h3>
+                                    <p>       Con Oster tu café no volverá a ser como antes! Las cafeteras de esta marca brindan la posibilidad de utilizar café molido o directo en cápsulas        </p>
+                                    <h5> $288.500 </h5>
+                                    <div class="link boton">
+                                        <a class="botoncito" href="#">COMPRAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="face front">
+                                    <img src="../public/img/PRODUCTOS/MOLINOS/Molino De Cafe Manual Acero Moledor De Café.jpg" alt="">
+                                    <h3>MOLINO MANUAL ACERO</h3>
+                                </div>
+                                <div class="face back">
+                                    <h3>MOLINO DE CAFÉ MANUAL ACERO</h3>
+                                    <p>       Somos importadores directos, vendemos al mayor y detal
+                                        Molino café Portátil manual
+                                                </p>
+                                    <h5> $46.900 </h5>
+                                                <div class="link boton">
+                                        <a class="botoncito" href="#">COMPRAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="face front">
+                                    <img src="../public/img/PRODUCTOS/MOLINOS/Moledor Molino De Café Eléctrico Hamilton Beach.jpg" alt="">
+                                    <h3>MOLINO ELÉCTRICO </h3>
+                                </div>
+                                <div class="face back">
+                                    <h3>MOLEDOR MOLINO DE CAFÉ ELÉCTRICO HAMILTON BEACH</h3>
+                                    <p>       Empieza tu día con energía y de la mejor manera, disfrutando de la textura y calidad de un buen café en la comodidad de tu casa.        </p>
+                                    <h5> $114.000 </h5>
+                                    <div class="link boton">
+                                        <a class="botoncito" href="#">COMPRAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fila">
+                            <div class="card">
+                                <div class="face front">
+                                    <img src="../public/img/PRODUCTOS/MOLINOS/Pulverizador Molino Café Pulvermaster Granos Home Elements.jpg" alt="">
+                                    <h3>PULVERIZADOR MOLINO</h3>
+                                </div>
+                                <div class="face back">
+                                    <h3>PULVERIZADOR MOLINO CAFÉ PULVERMASTER</h3>
+                                    <p>       Pulverizador Molino Café Pulver Master Granos Home Elements        </p>
+                                    <h5> $83.500 </h5>
+                                    <div class="link boton">
+                                        <a class="botoncito" href="#">COMPRAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="face front">
+                                    <img src="../public/img/PRODUCTOS/MOLINOS/Molinillo De Café Para Meson Manual Molino De Grano Cafe.jpg" alt="">
+                                    <h3>MOLINILLO PARA MESÓN</h3>
+                                </div>
+                                <div class="face back">
+                                    <h3>MOLINILLO DE CAFÉ PARA MESÓN MANUAL</h3>
+                                    <p>Un molinillo de café para mesón manual es un dispositivo diseñado para moler granos de café de forma manual.</p>
+                                    <h5> $39.990 </h5>
+                                    <div class="link boton">
+                                        <a class="botoncito" href="#">COMPRAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ocultar">
+                                <div class="hola3">
+                                    <img class="noimg" src="../public/img/" alt="">
+                                    <h3></h3>
+                                </div>
+                                <div class="hola">
+                                    <h3></h3>
+                                    <p></p>
+                                    <div class="hola2">
+                                        <a href="#"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </main>
+        <%- include ('components/_footer.ejs') -%>
+        <script src="../public/static/js/mennu.js"></script>
+    </div>
+</body>
+</html>

@@ -10,7 +10,9 @@ const multer = require("multer");
 controlador.zonaIndex=(consulta,respuesta)=>{
     respuesta.render("index.ejs")
 }
-
+controlador.zonaMenu=(consulta,respuesta)=>{
+    respuesta.render("menu.ejs")
+}
 
 
 module.exports = controlador;

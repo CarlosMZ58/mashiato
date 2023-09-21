@@ -2,3 +2,301 @@
 @import "../sass/components/Navegacion.scss";
 @import "../sass/components/Main.scss";
 @import "../sass/components/ModoNoche.scss";
+    
+$colorFondoAndText: #fff;
+$colorSecundario: #9e7540;
+$colorTerceareo: #000;
+$colorCuarto: #ffc26f;
+$colorInsta: #e72fcfde;
+$colorWhatsapp: #23c73e;
+$colorTwitter: #1d8dd8;
+$colorFacebook: #0f26a8;
+$colorFondoPag: #ebddca;
+$colorCafe: #3b221a;
+
+    @mixin backEdition {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    }
+    @mixin fuenteTitulos {
+    font-family: "Nunito", sans-serif;
+    }
+    @mixin fuenteParrafosN {
+    font-family: "Quicksand", sans-serif;
+    }
+    @mixin fuenteParrafosP {
+    font-family: "PT Mono", monospace;
+    }
+    @mixin fuenteh1 {
+    font-family: "Caveat", cursive;
+    }
+    @mixin bordes {
+    border-radius: 12px;
+    }
+
+* {
+    @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=PT+Mono&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap");
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: $colorFondoPag;
+    .main{
+        .principal__box__img{
+            margin-top: 0px;
+            .box__img{
+                background-color: $colorFondoPag;
+                margin: auto;
+                width: 90%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                border-radius:  15px;
+                .fila{
+                    background-color: $colorFondoPag;
+                    display: flex;
+                    width: 100%;
+                    text-align: center;
+                    margin-top: 20px;
+                    border-radius:  15px;
+                    .card:hover .front {
+                        transform: perspective(600px) rotateY(180deg);
+                    }
+                    .card:hover .back {
+                        transform: perspective(600px) rotateY(360deg);
+                    }
+                    .ocultar{
+                        opacity: 0;
+                        position: relative;
+                        width: 300px;
+                        height: 350px;
+                        margin: 20px;
+                    }
+                    .card {
+                        position: relative;
+                        width: 300px;
+                        height: 350px;
+                        margin: 20px;
+                        .back {
+                            transform: perspective(600px) rotateY(180deg);
+                            background: $colorSecundario;
+                            padding: 15px;
+                            color: #f3f3f3;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            text-align: center;
+                            box-shadow: 0 5px 10px #000;
+                            h3 {
+                                font-size: 23px;
+                                margin-top: 20px;
+                                letter-spacing: 2px;
+                                @include fuenteTitulos();
+                            }
+                            #margenp{
+                                margin-top: 50px;
+                            }
+                            .mocha_helado{
+                                margin-top: 40px;
+                            }
+                            .naranja{
+                                margin-top: 20px;
+                            }
+                            .limonada{
+                                margin-top: 30px;
+                            }
+                            .avena{
+                                margin-top: 60px;
+                            }
+                            .salmon{
+                                margin-top: 40px;
+                            }
+                            .chocolate{
+                                margin-top: 40px;
+                            }
+                            .panqueque{
+                                margin-top: 5px;
+                            }
+                            .frutos_rojos{
+                                margin-top: 30px;
+                            }
+                            .croasan{
+                                margin-top: 60px;
+                            }
+                            .sello_rojo{
+                                margin-top: 30px;
+                            }
+                            .v60{
+                                margin-top: 30px;
+                            }
+                            .moledor_cafe{
+                                margin-top: 20px;
+                            }
+                            p {
+                                letter-spacing: 1px;
+                                font-size: 15px;
+                                text-align: justify;
+                                @include fuenteParrafosN();
+                            } 
+                            .boton{
+                                border-radius: .4;
+                                display: flex;
+                                align-items: center;
+                                text-align: center;
+                            }
+                            h5{
+                                font-size: 20px;
+                            }
+                            .link {
+                                border-top: solid 1px #f3f3f3;
+                                height: 50px;
+                                .botoncito{
+                                    margin-left: 50px;
+                                    padding-top: 10px;
+                                    text-decoration: none;
+                                    width: 130px;
+                                    height: 40px;
+                                    color: rgb(255, 255, 255, 0.34);
+                                    background-color: #9e7540;
+                                    border-radius: 4px;
+                                    box-shadow: inset 0 0 0 0 #ffc26f;
+                                    transition: ease-out .8s;
+                                    outline: none;
+                                }
+                                .botoncito:hover{
+                                    box-shadow: inset 130px 0 0 0 #ffc26f ;
+                                    color: #fff;
+                                }
+                                a {
+                                    color: #f3f3f3;
+                                }
+                            }
+                        }
+                        .front {
+                            transform: perspective(600px) rotateY(0deg);
+                            box-shadow: 0 5px 10px #000;
+                            h3 {
+                                position: absolute;
+                                bottom: 0;
+                                width: 100%;
+                                height: 45px;
+                                line-height: 45px;
+                                color: #fff;
+                                background: rgba(0,0,0,.4);
+                                text-align: center;
+                            }
+                            img {
+                                // position: absolute;
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+                        .hola3{
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                        }
+                        .face {
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            backface-visibility: hidden;
+                            border-radius: 10px;
+                            overflow: hidden;
+                            transition: 1s;
+                        }
+                    }
+                    .imagen{
+                        width: 300px;
+                        margin-left: 300px;
+                    }
+                }
+                .box__img{
+                    img{
+                        width: 80%;
+                    }
+                } 
+            }
+        }
+    }
+    .galeria{
+    margin-left: 300px;
+    }
+    .nav__link{
+        color: #000;
+        display: block;
+        padding: 10px 0;
+        text-decoration: none;
+    }
+    .nav__link--inside{
+        border-radius: 6px;
+        padding: 2px 0 1px 0;
+        padding-left: 25px;
+    }
+    .nav__link--inside:hover{
+        background-color: #eacfa9;
+        
+    }
+    .nav__link--up{
+        padding: 4px 0;
+    }
+    .titulo__list{
+        margin-left: 20px;
+    }
+    nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 300px;
+        .list{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content:center;
+            flex-direction:column;
+            border-radius: 0 16px 16px 0;
+            border-color: black;
+            background-color: #e6c290;
+            .list__item{
+                list-style: none;
+                width: 100%;
+                overflow: hidden;
+            }
+            .list__item--click{
+                cursor: pointer;
+            }
+            .list__item{
+                .list__button{
+                    display: flex;
+                    align-items: center;
+                    gap: 1em;
+                    width: 70%;
+                    margin: 0 auto;
+                }
+            }
+            .list__item{
+                .list__show{
+                    width: 80%;
+                    margin-left: auto;
+                    border-left: 2px solid #303440;
+                    list-style: none;
+                    transition: height .5s;
+                    height: 0;
+                }
+            }
+        }
+    }
+}
