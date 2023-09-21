@@ -2,3 +2,219 @@
 @import "../sass/components/Navegacion.scss";
 @import "../sass/components/Main.scss";
 @import "../sass/components/ModoNoche.scss";
+$colorFondoAndText: #fff;
+$colorSecundario: #9e7540;
+$colorTerceareo: #000;
+$colorCuarto: #ffc26f;
+$colorInsta: #e72fcfde;
+$colorWhatsapp: #23c73e;
+$colorTwitter: #1d8dd8;
+$colorFacebook: #0f26a8;
+$colorFondoPag: #ebddca;
+$colorCafe: #3b221a;
+$colorfocustext: #e6c290;
+$colorbrown: #2b1007;
+* {
+  @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=PT+Mono&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap");
+}
+@mixin backEdition {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@mixin fuenteTitulos {
+  font-family: "Nunito", sans-serif;
+}
+@mixin fuenteParrafosN {
+  font-family: "Quicksand", sans-serif;
+}
+@mixin fuenteParrafosP {
+  font-family: "PT Mono", monospace;
+}
+@mixin fuenteh1 {
+  font-family: "Caveat", cursive;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background-color: $colorFondoPag;
+  padding-top: 50px;
+  z-index: 99;
+  box-sizing: border-box;
+}
+//index inicio
+#aprendeIndex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+  #contenidoAprendeIndex {
+    width: 100%;
+    height: 580px;
+    display: grid;
+    grid-template-columns: repeat(3, 32%);
+    justify-content: space-around;
+  }
+  .cuadroAprendeIndex {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    h3{
+      @include fuenteh1();
+      color: $colorFondoAndText;
+      font-size: 36px;
+      font-weight: bold;
+    }
+    button{
+      height: 37px;
+      width: 100px;
+      border: solid 2px $colorCuarto;
+      background: #00000056;
+      border-radius: 13px;
+      color: $colorFondoAndText;
+      font-size: 18px;
+    }
+    button:hover{
+      transform: scale(1.09);
+      border: solid 2.2px #f3a941;
+      cursor: pointer;
+      box-shadow: 3px 3px 12px #f3a941;
+    }
+    button:active{
+      background: #000000b7;
+    }
+  }
+  .cuadroAprendeIndex:hover button{
+    transform: scale(1.08);
+    cursor: pointer;
+    box-shadow: 3px 3px 12px #ffc36fc9;
+    transition: 0.6s ease-in-out;
+  }
+  .cuadroAprendeIndex:hover{
+    transform: scale(1.04);
+    transition: 0.5s ease;
+  }
+  #metodos{
+    background-image: linear-gradient(#2c212138, #0000009c), url(../../img/ARTICULOS/metodos.jpg);
+    @include backEdition();
+    box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.822);
+  }
+  #tiposDeCafe{
+    background-image: linear-gradient(#5331316c, #000000a6), url(../../img/ARTICULOS/tipos\ cafe.jpg);
+    @include backEdition();
+    box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.822);
+  }
+  #origen{
+    background-image: linear-gradient(#291c1ce3, #00000093), url(../../img/ARTICULOS/mapa.jpg);
+    @include backEdition();
+    box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.822);
+  }
+}
+#testimonios{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  #contenedorTestimonio{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 100px 50px;
+    .tarjetaTestimonio{
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      width: 350px;
+      height: 340px;
+      background-color: #ebc895;
+      border-radius: 20px;
+      box-shadow: 0px 11px 30px #000;
+      transition: 0.5s ease;
+      figure{
+        position: absolute;
+        top: 20px;
+        width: 300px;
+        height: 220px;
+        background-color: #3b221a;
+        border-radius: 13px;
+        overflow: hidden;
+        transition: 0.5s ease;
+        img{
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .contenidoTestimonio{
+        position: absolute;
+        top: 270px;
+        overflow: hidden;
+        height: 55px;
+        width: 100%;
+        padding: 0 30px;
+        text-align: center;
+        h2{
+          @include fuenteh1();
+          color: #000;
+          font-size: 23px;
+          transition: 0.5s ease-in-out;
+        }
+        h3{
+          @include fuenteParrafosN();
+          color: #423e3e;
+          font-weight: bold;
+          letter-spacing: 2px;
+          font-size: 16px;
+          margin: 0;
+        }
+        p{
+          @include fuenteParrafosN();
+          padding: 0 30px;
+          text-align: justify;
+          color: #000;
+          letter-spacing: 0.7px;
+        }
+        .contenedorEstrellas{
+          display: flex;
+          justify-content: center;
+          margin: 0;
+          svg{
+            width: 30px;
+            height: 30px;
+            fill: #ffe601;
+            color: #ffe601;
+            filter: drop-shadow(0px 3px 3px #00000088);
+          }
+        }
+      }
+    }
+    .tarjetaTestimonio:hover{
+      height: 480px;
+    }
+    .tarjetaTestimonio:hover figure{
+      top: -100px;
+      box-shadow: 0 13px 50px #000000c0;
+    }
+    .tarjetaTestimonio:hover .contenidoTestimonio{
+      top: 150px;
+      height: 290px;
+      transition: 0.5s ease;
+    }
+  }
+}
