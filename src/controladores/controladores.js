@@ -17,6 +17,9 @@ controlador.zonaRegistro=(consulta,respuesta)=>{
 controlador.zonaInicio=(consulta,respuesta)=>{
     respuesta.render("inicio.ejs")
 }
+controlador.zonaOrigen=(consulta,respuesta)=>{
+    respuesta.render("origen.ejs")
+}
 
 
 module.exports = controlador;

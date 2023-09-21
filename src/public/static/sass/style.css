@@ -1095,4 +1095,68 @@ body {
   margin: auto;
 }
 
+#contenedorOrigendelcafe {
+  width: 100%;
+  height: 680px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(17, 17, 17, 0.6431372549), rgba(243, 158, 60, 0.1176470588)), url(../../img/ORIGEN//PAISAJE\ DE\ CAFE\ 2.jpg);
+  font-family: "Caveat", cursive;
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.664);
+}
+#contenedorOrigendelcafe #encabezadoOrigenCafe {
+  width: 80%;
+}
+#contenedorOrigendelcafe #encabezadoOrigenCafe h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 60px;
+}
+#contenedorOrigendelcafe #textoEncabezadoOrigenCafe {
+  padding: 50px;
+}
+#contenedorOrigendelcafe #textoEncabezadoOrigenCafe p {
+  color: #fff;
+  font-size: 18px;
+  text-align: justify;
+  font-family: "Quicksand", sans-serif;
+}
+
+#contenedorInformacionOrigen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+#contenedorInformacionOrigen #informacionOrigenCafe {
+  width: 60%;
+  height: auto;
+}
+#contenedorInformacionOrigen #informacionOrigenCafe h3 {
+  font-size: 23px;
+  font-family: "Nunito", sans-serif;
+  color: #000;
+}
+#contenedorInformacionOrigen #informacionOrigenCafe p {
+  font-family: "Quicksand", sans-serif;
+  color: #000;
+  text-align: justify;
+  font-size: 18px;
+  margin: 15px 0;
+}
+#contenedorInformacionOrigen #informacionOrigenCafe figure {
+  width: 100%;
+  height: 400px;
+  margin: 10px 0;
+}
+#contenedorInformacionOrigen #informacionOrigenCafe figure img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px 40px;
+  box-shadow: 7px 7px 16px rgba(0, 0, 0, 0.74);
+}
+
 /*# sourceMappingURL=style.css.map */
