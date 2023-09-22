@@ -42,182 +42,42 @@ body {
   padding: 0;
   margin: 0;
   background-color: $colorFondoPag;
-  padding-top: 50px;
+  padding-top: 10px;
   z-index: 99;
   box-sizing: border-box;
 }
 //index inicio
-#contenedorPresentacion{
+#presentacionContenedor{
   width: 100%;
-  height: 649px;
-  overflow: hidden;
-  #sliderContenedorPresentacion{
+  height: 610px;
+  background-image: linear-gradient(#2b21034d, #000000af), url(../../img/portadapag.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  top: 0;
+  #contenedorContenidoPresentacion{
+    height: 400px;
     width: 100%;
     display: flex;
-    .contenidoSliderPre{
-      background-color: #3b221a;
-      width: 100%;
-      height: 649px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-shrink: 0;
-      background-image: linear-gradient(#0c0b0b00, #0000006c), url(../../img/ARTICULOS/portada\ pag.jpg);
-      background-size: cover;
-      background-position: center;
-      .informacionSlidePre{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        figure{
-          img{
-            width: 220px;
-            height: 220px;
-            border-radius: 50%;
-            border: solid 2px $colorCafe;
-          }
-        }
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    padding-top: 100px;
+    figure{
+      img{
+        width: 220px;
+        height: 220px;
+        border-radius: 50%;
+        border: solid 2px $colorCafe;
       }
     }
-    .slide1{
-      background-color: #3b221a;
-      width: 100%;
-      height: 649px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-shrink: 0;
-      background-image: linear-gradient(#0c0b0b00, #0000006c), url(../../img/ARTICULOS/portada\ pag.jpg);
-      background-size: cover;
-      background-position: center;
-      .informacionSlidePre{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        figure{
-          img{
-            width: 220px;
-            height: 220px;
-            border-radius: 50%;
-            border: solid 2px $colorCafe;
-          }
-        }
-        h2{
-          @include fuenteh1();
-          color: $colorFondoAndText;
-          font-size: 32px;
-          text-align: center;
-        }
-      }
-    }
-    #slide2{
-      background-color: #23c73e;
-      width: 100%;
-      height: 649px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-shrink: 0;
-      background-image: linear-gradient(#271414c9, #00000093), url(../../img/ARTICULOS/cafeteria1.jpg);
-      background-size: cover;
-      background-position: center;
-      .informacionSlidePre{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        #contenedorBotonPresentacion{
-          width: 40%;
-          display: grid;
-          place-items: center;
-          a{
-            color: $colorFondoAndText;
-            text-decoration: none;
-            @include fuenteh1();
-            font-size: 18px;
-            background-color: $colorCuarto;
-            padding: 14px 25px;
-            border-radius: 20px;
-            box-shadow: 0 3px 10px #000;
-            transition: .5s ease;
-            margin-right: 70px;
-          }
-          a:hover{
-            color: $colorFondoAndText;
-            text-decoration: none;
-            @include fuenteh1();
-            font-size: 18px;
-            background-color: #835310;
-            padding: 14px 25px;
-            border-radius: 20px;
-            box-shadow: 0 3px 10px #000;
-          }
-          a:active{
-            color: $colorFondoAndText;
-            text-decoration: none;
-            @include fuenteh1();
-            font-size: 18px;
-            background-color: #8353109a;
-            padding: 14px 25px;
-            border-radius: 20px;
-            box-shadow: 0 3px 10px #000;
-          }
-        }
-        #contenedorDesPre{
-          width: 60%;
-          height: 400px;
-          display: flex;
-          justify-content: flex-start;
-          align-items: center;
-          flex-direction: column;
-          margin: 0;
-          padding: 0 80px;
-          h2{
-            @include fuenteh1();
-            color: $colorFondoAndText;
-            font-size: 40px;
-            text-align: center;
-          }
-          p{
-            @include fuenteParrafosN();
-            color: $colorFondoAndText;
-            font-size: 23px;
-            text-align: center;
-          }
-        }
-      }
-    }
-    #slide3{
-      background-color: #3b221a;
-      width: 100%;
-      height: 649px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-shrink: 0;
-      background-image: linear-gradient(#0c0b0b00, #0000006c), url(../../img/ARTICULOS/cafeteria2.jpg);
-      background-size: cover;
-      background-position: center;
-      .informacionSlidePre{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        figure{
-          img{
-            width: 220px;
-            height: 220px;
-            border-radius: 50%;
-            border: solid 2px $colorCafe;
-          }
-        }
-        p{
-          @include fuenteParrafosN();
-          color: $colorFondoAndText;
-          font-size: 20px;
-          margin: 0;
-        }
-      }
+    h2{
+      @include fuenteh1();
+      color: $colorFondoAndText;
+      font-size: 30px;
+      margin: 0;
     }
   }
 }

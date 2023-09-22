@@ -251,177 +251,41 @@ body {
   padding: 0;
   margin: 0;
   background-color: #ebddca;
-  padding-top: 50px;
+  padding-top: 10px;
   z-index: 99;
   box-sizing: border-box;
 }
 
-#contenedorPresentacion {
+#presentacionContenedor {
   width: 100%;
-  height: 649px;
-  overflow: hidden;
-}
-#contenedorPresentacion #sliderContenedorPresentacion {
-  width: 100%;
-  display: flex;
-}
-#contenedorPresentacion #sliderContenedorPresentacion .contenidoSliderPre {
-  background-color: #3b221a;
-  width: 100%;
-  height: 649px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
-  background-image: linear-gradient(rgba(12, 11, 11, 0), rgba(0, 0, 0, 0.4235294118)), url(../../img/ARTICULOS/portada\ pag.jpg);
+  height: 610px;
+  background-image: linear-gradient(rgba(43, 33, 3, 0.3019607843), rgba(0, 0, 0, 0.6862745098)), url(../../img/portadapag.jpg);
   background-size: cover;
   background-position: center;
+  position: relative;
+  top: 0;
 }
-#contenedorPresentacion #sliderContenedorPresentacion .contenidoSliderPre .informacionSlidePre {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#contenedorPresentacion #sliderContenedorPresentacion .contenidoSliderPre .informacionSlidePre figure img {
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
-  border: solid 2px #3b221a;
-}
-#contenedorPresentacion #sliderContenedorPresentacion .slide1 {
-  background-color: #3b221a;
-  width: 100%;
-  height: 649px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
-  background-image: linear-gradient(rgba(12, 11, 11, 0), rgba(0, 0, 0, 0.4235294118)), url(../../img/ARTICULOS/portada\ pag.jpg);
-  background-size: cover;
-  background-position: center;
-}
-#contenedorPresentacion #sliderContenedorPresentacion .slide1 .informacionSlidePre {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-#contenedorPresentacion #sliderContenedorPresentacion .slide1 .informacionSlidePre figure img {
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
-  border: solid 2px #3b221a;
-}
-#contenedorPresentacion #sliderContenedorPresentacion .slide1 .informacionSlidePre h2 {
-  font-family: "Caveat", cursive;
-  color: #fff;
-  font-size: 32px;
-  text-align: center;
-}
-#contenedorPresentacion #sliderContenedorPresentacion #slide2 {
-  background-color: #23c73e;
-  width: 100%;
-  height: 649px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
-  background-image: linear-gradient(rgba(39, 20, 20, 0.7882352941), rgba(0, 0, 0, 0.5764705882)), url(../../img/ARTICULOS/cafeteria1.jpg);
-  background-size: cover;
-  background-position: center;
-}
-#contenedorPresentacion #sliderContenedorPresentacion #slide2 .informacionSlidePre {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#contenedorPresentacion #sliderContenedorPresentacion #slide2 .informacionSlidePre #contenedorBotonPresentacion {
-  width: 40%;
-  display: grid;
-  place-items: center;
-}
-#contenedorPresentacion #sliderContenedorPresentacion #slide2 .informacionSlidePre #contenedorBotonPresentacion a {
-  color: #fff;
-  text-decoration: none;
-  font-family: "Caveat", cursive;
-  font-size: 18px;
-  background-color: #ffc26f;
-  padding: 14px 25px;
-  border-radius: 20px;
-  box-shadow: 0 3px 10px #000;
-  transition: 0.5s ease;
-  margin-right: 70px;
-}
-#contenedorPresentacion #sliderContenedorPresentacion #slide2 .informacionSlidePre #contenedorBotonPresentacion a:hover {
-  color: #fff;
-  text-decoration: none;
-  font-family: "Caveat", cursive;
-  font-size: 18px;
-  background-color: #835310;
-  padding: 14px 25px;
-  border-radius: 20px;
-  box-shadow: 0 3px 10px #000;
-}
-#contenedorPresentacion #sliderContenedorPresentacion #slide2 .informacionSlidePre #contenedorBotonPresentacion a:active {
-  color: #fff;
-  text-decoration: none;
-  font-family: "Caveat", cursive;
-  font-size: 18px;
-  background-color: rgba(131, 83, 16, 0.6039215686);
-  padding: 14px 25px;
-  border-radius: 20px;
-  box-shadow: 0 3px 10px #000;
-}
-#contenedorPresentacion #sliderContenedorPresentacion #slide2 .informacionSlidePre #contenedorDesPre {
-  width: 60%;
+#presentacionContenedor #contenedorContenidoPresentacion {
   height: 400px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
-  margin: 0;
-  padding: 0 80px;
-}
-#contenedorPresentacion #sliderContenedorPresentacion #slide2 .informacionSlidePre #contenedorDesPre h2 {
-  font-family: "Caveat", cursive;
-  color: #fff;
-  font-size: 40px;
-  text-align: center;
-}
-#contenedorPresentacion #sliderContenedorPresentacion #slide2 .informacionSlidePre #contenedorDesPre p {
-  font-family: "Quicksand", sans-serif;
-  color: #fff;
-  font-size: 23px;
-  text-align: center;
-}
-#contenedorPresentacion #sliderContenedorPresentacion #slide3 {
-  background-color: #3b221a;
   width: 100%;
-  height: 649px;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-shrink: 0;
-  background-image: linear-gradient(rgba(12, 11, 11, 0), rgba(0, 0, 0, 0.4235294118)), url(../../img/ARTICULOS/cafeteria2.jpg);
-  background-size: cover;
-  background-position: center;
-}
-#contenedorPresentacion #sliderContenedorPresentacion #slide3 .informacionSlidePre {
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 80px;
+  padding-top: 100px;
 }
-#contenedorPresentacion #sliderContenedorPresentacion #slide3 .informacionSlidePre figure img {
+#presentacionContenedor #contenedorContenidoPresentacion figure img {
   width: 220px;
   height: 220px;
   border-radius: 50%;
   border: solid 2px #3b221a;
 }
-#contenedorPresentacion #sliderContenedorPresentacion #slide3 .informacionSlidePre p {
-  font-family: "Quicksand", sans-serif;
+#presentacionContenedor #contenedorContenidoPresentacion h2 {
+  font-family: "Caveat", cursive;
   color: #fff;
-  font-size: 20px;
+  font-size: 30px;
   margin: 0;
 }
 
