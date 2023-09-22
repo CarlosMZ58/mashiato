@@ -2,3 +2,397 @@
 @import "../sass/components/Navegacion.scss";
 @import "../sass/components/Main.scss";
 @import "../sass/components/ModoNoche.scss";
+$colorFondoAndText: #fff;
+$colorSecundario: #9e7540;
+$colorTerceareo: #000;
+$colorCuarto: #ffc26f;
+$colorInsta: #e72fcfde;
+$colorWhatsapp: #23c73e;
+$colorTwitter: #1d8dd8;
+$colorFacebook: #0f26a8;
+$colorFondoPag: #ebddca;
+$colorCafe: #3b221a;
+$colorfocustext: #e6c290;
+$colorbrown: #2b1007;
+* {
+  @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=PT+Mono&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap");
+}
+@mixin backEdition {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@mixin fuenteTitulos {
+  font-family: "Nunito", sans-serif;
+}
+@mixin fuenteParrafosN {
+  font-family: "Quicksand", sans-serif;
+}
+@mixin fuenteParrafosP {
+  font-family: "PT Mono", monospace;
+}
+@mixin fuenteh1 {
+  font-family: "Caveat", cursive;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background-color: $colorFondoPag;
+  padding-top: 50px;
+  z-index: 99;
+  box-sizing: border-box;
+}
+//index inicio
+#contenedorPresentacion{
+  width: 100%;
+  height: 649px;
+  overflow: hidden;
+  #sliderContenedorPresentacion{
+    width: 100%;
+    display: flex;
+    .contenidoSliderPre{
+      background-color: #3b221a;
+      width: 100%;
+      height: 649px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+      background-image: linear-gradient(#0c0b0b00, #0000006c), url(../../img/ARTICULOS/portada\ pag.jpg);
+      background-size: cover;
+      background-position: center;
+      .informacionSlidePre{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        figure{
+          img{
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            border: solid 2px $colorCafe;
+          }
+        }
+      }
+    }
+    .slide1{
+      background-color: #3b221a;
+      width: 100%;
+      height: 649px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+      background-image: linear-gradient(#0c0b0b00, #0000006c), url(../../img/ARTICULOS/portada\ pag.jpg);
+      background-size: cover;
+      background-position: center;
+      .informacionSlidePre{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        figure{
+          img{
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            border: solid 2px $colorCafe;
+          }
+        }
+        h2{
+          @include fuenteh1();
+          color: $colorFondoAndText;
+          font-size: 32px;
+          text-align: center;
+        }
+      }
+    }
+    #slide2{
+      background-color: #23c73e;
+      width: 100%;
+      height: 649px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+      background-image: linear-gradient(#271414c9, #00000093), url(../../img/ARTICULOS/cafeteria1.jpg);
+      background-size: cover;
+      background-position: center;
+      .informacionSlidePre{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        #contenedorBotonPresentacion{
+          width: 40%;
+          display: grid;
+          place-items: center;
+          a{
+            color: $colorFondoAndText;
+            text-decoration: none;
+            @include fuenteh1();
+            font-size: 18px;
+            background-color: $colorCuarto;
+            padding: 14px 25px;
+            border-radius: 20px;
+            box-shadow: 0 3px 10px #000;
+            transition: .5s ease;
+            margin-right: 70px;
+          }
+          a:hover{
+            color: $colorFondoAndText;
+            text-decoration: none;
+            @include fuenteh1();
+            font-size: 18px;
+            background-color: #835310;
+            padding: 14px 25px;
+            border-radius: 20px;
+            box-shadow: 0 3px 10px #000;
+          }
+          a:active{
+            color: $colorFondoAndText;
+            text-decoration: none;
+            @include fuenteh1();
+            font-size: 18px;
+            background-color: #8353109a;
+            padding: 14px 25px;
+            border-radius: 20px;
+            box-shadow: 0 3px 10px #000;
+          }
+        }
+        #contenedorDesPre{
+          width: 60%;
+          height: 400px;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          flex-direction: column;
+          margin: 0;
+          padding: 0 80px;
+          h2{
+            @include fuenteh1();
+            color: $colorFondoAndText;
+            font-size: 40px;
+            text-align: center;
+          }
+          p{
+            @include fuenteParrafosN();
+            color: $colorFondoAndText;
+            font-size: 23px;
+            text-align: center;
+          }
+        }
+      }
+    }
+    #slide3{
+      background-color: #3b221a;
+      width: 100%;
+      height: 649px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+      background-image: linear-gradient(#0c0b0b00, #0000006c), url(../../img/ARTICULOS/cafeteria2.jpg);
+      background-size: cover;
+      background-position: center;
+      .informacionSlidePre{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        figure{
+          img{
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            border: solid 2px $colorCafe;
+          }
+        }
+        p{
+          @include fuenteParrafosN();
+          color: $colorFondoAndText;
+          font-size: 20px;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+#aprendeIndex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+  #contenidoAprendeIndex {
+    width: 100%;
+    height: 580px;
+    display: grid;
+    grid-template-columns: repeat(3, 32%);
+    justify-content: space-around;
+  }
+  .cuadroAprendeIndex {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    h3{
+      @include fuenteh1();
+      color: $colorFondoAndText;
+      font-size: 36px;
+      font-weight: bold;
+    }
+    a{
+      padding: 7px 15px;
+      border: solid 2px $colorCuarto;
+      background: #00000056;
+      border-radius: 13px;
+      color: $colorFondoAndText;
+      font-size: 20px;
+      text-decoration: none;
+      @include fuenteh1();
+    }
+    a:hover{
+      padding: 7px 15px;
+      border: solid 2.2px #f3a941;
+      cursor: pointer;
+      box-shadow: 3px 3px 12px #f3a941;
+    }
+    a:active{
+      padding: 7px 15px;
+      background: #000000b7;
+    }
+  }
+  .cuadroAprendeIndex:hover a{
+    padding: 7px 15px;
+    cursor: pointer;
+    box-shadow: 3px 3px 12px #ffc36fc9;
+    transition: 0.6s ease-in-out;
+  }
+  .cuadroAprendeIndex:hover{
+    transform: scale(1.04);
+    transition: 0.5s ease;
+  }
+  #metodos{
+    background-image: linear-gradient(#2c212138, #0000009c), url(../../img/ARTICULOS/metodos.jpg);
+    @include backEdition();
+    box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.822);
+  }
+  #tiposDeCafe{
+    background-image: linear-gradient(#5331316c, #000000a6), url(../../img/ARTICULOS/tipos\ cafe.jpg);
+    @include backEdition();
+    box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.822);
+  }
+  #origen{
+    background-image: linear-gradient(#291c1ce3, #00000093), url(../../img/ARTICULOS/mapa.jpg);
+    @include backEdition();
+    box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.822);
+  }
+}
+#testimonios{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  #contenedorTestimonio{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 100px 50px;
+    .tarjetaTestimonio{
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      width: 350px;
+      height: 360px;
+      background-color: #2b1007;
+      border-radius: 20px;
+      box-shadow: 0px 11px 30px #000;
+      transition: 0.5s ease;
+      figure{
+        position: absolute;
+        top: 20px;
+        width: 300px;
+        height: 220px;
+        background-color: #3b221a;
+        border-radius: 13px;
+        overflow: hidden;
+        transition: 0.5s ease;
+        img{
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .contenidoTestimonio{
+        position: absolute;
+        top: 270px;
+        overflow: hidden;
+        height: 60px;
+        width: 100%;
+        padding: 0 30px;
+        text-align: center;
+        h2{
+          @include fuenteh1();
+          color: $colorFondoAndText;
+          font-size: 23px;
+          transition: 0.5s ease-in-out;
+        }
+        h3{
+          @include fuenteParrafosN();
+          color: #b3a7a7;
+          font-weight: bold;
+          letter-spacing: 2px;
+          font-size: 16px;
+          margin: 0;
+        }
+        p{
+          @include fuenteParrafosN();
+          padding: 0 30px;
+          text-align: justify;
+          color: $colorFondoAndText;
+          letter-spacing: 0.7px;
+          font-size: 15px;
+        }
+        .contenedorEstrellas{
+          display: flex;
+          justify-content: center;
+          margin: 0;
+          svg{
+            width: 30px;
+            height: 30px;
+            fill: #ffe601;
+            color: #ffe601;
+            filter: drop-shadow(0px 1px 3px #ffffff71);
+          }
+        }
+      }
+    }
+    .tarjetaTestimonio:hover{
+      height: 520px;
+    }
+    .tarjetaTestimonio:hover figure{
+      top: -100px;
+      box-shadow: 0 13px 50px #000000c0;
+    }
+    .tarjetaTestimonio:hover .contenidoTestimonio{
+      top: 150px;
+      height: 338px;
+      transition: 0.5s ease;
+    }
+  }
+}
+//INDEX FIN
