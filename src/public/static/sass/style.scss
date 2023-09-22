@@ -47,6 +47,180 @@ body {
   box-sizing: border-box;
 }
 //index inicio
+#contenedorPresentacion{
+  width: 100%;
+  height: 649px;
+  overflow: hidden;
+  #sliderContenedorPresentacion{
+    width: 100%;
+    display: flex;
+    .contenidoSliderPre{
+      background-color: #3b221a;
+      width: 100%;
+      height: 649px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+      background-image: linear-gradient(#0c0b0b00, #0000006c), url(../../img/ARTICULOS/portada\ pag.jpg);
+      background-size: cover;
+      background-position: center;
+      .informacionSlidePre{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        figure{
+          img{
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            border: solid 2px $colorCafe;
+          }
+        }
+      }
+    }
+    .slide1{
+      background-color: #3b221a;
+      width: 100%;
+      height: 649px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+      background-image: linear-gradient(#0c0b0b00, #0000006c), url(../../img/ARTICULOS/portada\ pag.jpg);
+      background-size: cover;
+      background-position: center;
+      .informacionSlidePre{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        figure{
+          img{
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            border: solid 2px $colorCafe;
+          }
+        }
+        h2{
+          @include fuenteh1();
+          color: $colorFondoAndText;
+          font-size: 32px;
+          text-align: center;
+        }
+      }
+    }
+    #slide2{
+      background-color: #23c73e;
+      width: 100%;
+      height: 649px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+      background-image: linear-gradient(#271414c9, #00000093), url(../../img/ARTICULOS/cafeteria1.jpg);
+      background-size: cover;
+      background-position: center;
+      .informacionSlidePre{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        #contenedorBotonPresentacion{
+          width: 40%;
+          display: grid;
+          place-items: center;
+          a{
+            color: $colorFondoAndText;
+            text-decoration: none;
+            @include fuenteh1();
+            font-size: 18px;
+            background-color: $colorCuarto;
+            padding: 14px 25px;
+            border-radius: 20px;
+            box-shadow: 0 3px 10px #000;
+            transition: .5s ease;
+            margin-right: 70px;
+          }
+          a:hover{
+            color: $colorFondoAndText;
+            text-decoration: none;
+            @include fuenteh1();
+            font-size: 18px;
+            background-color: #835310;
+            padding: 14px 25px;
+            border-radius: 20px;
+            box-shadow: 0 3px 10px #000;
+          }
+          a:active{
+            color: $colorFondoAndText;
+            text-decoration: none;
+            @include fuenteh1();
+            font-size: 18px;
+            background-color: #8353109a;
+            padding: 14px 25px;
+            border-radius: 20px;
+            box-shadow: 0 3px 10px #000;
+          }
+        }
+        #contenedorDesPre{
+          width: 60%;
+          height: 400px;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          flex-direction: column;
+          margin: 0;
+          padding: 0 80px;
+          h2{
+            @include fuenteh1();
+            color: $colorFondoAndText;
+            font-size: 40px;
+            text-align: center;
+          }
+          p{
+            @include fuenteParrafosN();
+            color: $colorFondoAndText;
+            font-size: 23px;
+            text-align: center;
+          }
+        }
+      }
+    }
+    #slide3{
+      background-color: #3b221a;
+      width: 100%;
+      height: 649px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+      background-image: linear-gradient(#0c0b0b00, #0000006c), url(../../img/ARTICULOS/cafeteria2.jpg);
+      background-size: cover;
+      background-position: center;
+      .informacionSlidePre{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        figure{
+          img{
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            border: solid 2px $colorCafe;
+          }
+        }
+        p{
+          @include fuenteParrafosN();
+          color: $colorFondoAndText;
+          font-size: 20px;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
 #aprendeIndex {
   display: flex;
   justify-content: center;
@@ -73,27 +247,29 @@ body {
       font-size: 36px;
       font-weight: bold;
     }
-    button{
-      height: 37px;
-      width: 100px;
+    a{
+      padding: 7px 15px;
       border: solid 2px $colorCuarto;
       background: #00000056;
       border-radius: 13px;
       color: $colorFondoAndText;
-      font-size: 18px;
+      font-size: 20px;
+      text-decoration: none;
+      @include fuenteh1();
     }
-    button:hover{
-      transform: scale(1.09);
+    a:hover{
+      padding: 7px 15px;
       border: solid 2.2px #f3a941;
       cursor: pointer;
       box-shadow: 3px 3px 12px #f3a941;
     }
-    button:active{
+    a:active{
+      padding: 7px 15px;
       background: #000000b7;
     }
   }
-  .cuadroAprendeIndex:hover button{
-    transform: scale(1.08);
+  .cuadroAprendeIndex:hover a{
+    padding: 7px 15px;
     cursor: pointer;
     box-shadow: 3px 3px 12px #ffc36fc9;
     transition: 0.6s ease-in-out;
@@ -138,8 +314,8 @@ body {
       justify-content: center;
       align-items: flex-start;
       width: 350px;
-      height: 340px;
-      background-color: #ebc895;
+      height: 360px;
+      background-color: #2b1007;
       border-radius: 20px;
       box-shadow: 0px 11px 30px #000;
       transition: 0.5s ease;
@@ -165,19 +341,19 @@ body {
         position: absolute;
         top: 270px;
         overflow: hidden;
-        height: 55px;
+        height: 60px;
         width: 100%;
         padding: 0 30px;
         text-align: center;
         h2{
           @include fuenteh1();
-          color: #000;
+          color: $colorFondoAndText;
           font-size: 23px;
           transition: 0.5s ease-in-out;
         }
         h3{
           @include fuenteParrafosN();
-          color: #423e3e;
+          color: #b3a7a7;
           font-weight: bold;
           letter-spacing: 2px;
           font-size: 16px;
@@ -187,8 +363,9 @@ body {
           @include fuenteParrafosN();
           padding: 0 30px;
           text-align: justify;
-          color: #000;
+          color: $colorFondoAndText;
           letter-spacing: 0.7px;
+          font-size: 15px;
         }
         .contenedorEstrellas{
           display: flex;
@@ -199,13 +376,13 @@ body {
             height: 30px;
             fill: #ffe601;
             color: #ffe601;
-            filter: drop-shadow(0px 3px 3px #00000088);
+            filter: drop-shadow(0px 1px 3px #ffffff71);
           }
         }
       }
     }
     .tarjetaTestimonio:hover{
-      height: 480px;
+      height: 520px;
     }
     .tarjetaTestimonio:hover figure{
       top: -100px;
@@ -213,8 +390,9 @@ body {
     }
     .tarjetaTestimonio:hover .contenidoTestimonio{
       top: 150px;
-      height: 290px;
+      height: 338px;
       transition: 0.5s ease;
     }
   }
 }
+//INDEX FIN

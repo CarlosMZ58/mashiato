@@ -15,6 +15,175 @@ body {
   box-sizing: border-box;
 }
 
+#contenedorPresentacion {
+  width: 100%;
+  height: 649px;
+  overflow: hidden;
+}
+#contenedorPresentacion #sliderContenedorPresentacion {
+  width: 100%;
+  display: flex;
+}
+#contenedorPresentacion #sliderContenedorPresentacion .contenidoSliderPre {
+  background-color: #3b221a;
+  width: 100%;
+  height: 649px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  background-image: linear-gradient(rgba(12, 11, 11, 0), rgba(0, 0, 0, 0.4235294118)), url(../../img/ARTICULOS/portada\ pag.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#contenedorPresentacion #sliderContenedorPresentacion .contenidoSliderPre .informacionSlidePre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contenedorPresentacion #sliderContenedorPresentacion .contenidoSliderPre .informacionSlidePre figure img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  border: solid 2px #3b221a;
+}
+#contenedorPresentacion #sliderContenedorPresentacion .slide1 {
+  background-color: #3b221a;
+  width: 100%;
+  height: 649px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  background-image: linear-gradient(rgba(12, 11, 11, 0), rgba(0, 0, 0, 0.4235294118)), url(../../img/ARTICULOS/portada\ pag.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#contenedorPresentacion #sliderContenedorPresentacion .slide1 .informacionSlidePre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#contenedorPresentacion #sliderContenedorPresentacion .slide1 .informacionSlidePre figure img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  border: solid 2px #3b221a;
+}
+#contenedorPresentacion #sliderContenedorPresentacion .slide1 .informacionSlidePre h2 {
+  font-family: "Caveat", cursive;
+  color: #fff;
+  font-size: 32px;
+  text-align: center;
+}
+#contenedorPresentacion #sliderContenedorPresentacion #slide2 {
+  background-color: #23c73e;
+  width: 100%;
+  height: 649px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  background-image: linear-gradient(rgba(39, 20, 20, 0.7882352941), rgba(0, 0, 0, 0.5764705882)), url(../../img/ARTICULOS/cafeteria1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#contenedorPresentacion #sliderContenedorPresentacion #slide2 .informacionSlidePre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contenedorPresentacion #sliderContenedorPresentacion #slide2 .informacionSlidePre #contenedorBotonPresentacion {
+  width: 40%;
+  display: grid;
+  place-items: center;
+}
+#contenedorPresentacion #sliderContenedorPresentacion #slide2 .informacionSlidePre #contenedorBotonPresentacion a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Caveat", cursive;
+  font-size: 18px;
+  background-color: #ffc26f;
+  padding: 14px 25px;
+  border-radius: 20px;
+  box-shadow: 0 3px 10px #000;
+  transition: 0.5s ease;
+  margin-right: 70px;
+}
+#contenedorPresentacion #sliderContenedorPresentacion #slide2 .informacionSlidePre #contenedorBotonPresentacion a:hover {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Caveat", cursive;
+  font-size: 18px;
+  background-color: #835310;
+  padding: 14px 25px;
+  border-radius: 20px;
+  box-shadow: 0 3px 10px #000;
+}
+#contenedorPresentacion #sliderContenedorPresentacion #slide2 .informacionSlidePre #contenedorBotonPresentacion a:active {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Caveat", cursive;
+  font-size: 18px;
+  background-color: rgba(131, 83, 16, 0.6039215686);
+  padding: 14px 25px;
+  border-radius: 20px;
+  box-shadow: 0 3px 10px #000;
+}
+#contenedorPresentacion #sliderContenedorPresentacion #slide2 .informacionSlidePre #contenedorDesPre {
+  width: 60%;
+  height: 400px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 0 80px;
+}
+#contenedorPresentacion #sliderContenedorPresentacion #slide2 .informacionSlidePre #contenedorDesPre h2 {
+  font-family: "Caveat", cursive;
+  color: #fff;
+  font-size: 40px;
+  text-align: center;
+}
+#contenedorPresentacion #sliderContenedorPresentacion #slide2 .informacionSlidePre #contenedorDesPre p {
+  font-family: "Quicksand", sans-serif;
+  color: #fff;
+  font-size: 23px;
+  text-align: center;
+}
+#contenedorPresentacion #sliderContenedorPresentacion #slide3 {
+  background-color: #3b221a;
+  width: 100%;
+  height: 649px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  background-image: linear-gradient(rgba(12, 11, 11, 0), rgba(0, 0, 0, 0.4235294118)), url(../../img/ARTICULOS/cafeteria2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#contenedorPresentacion #sliderContenedorPresentacion #slide3 .informacionSlidePre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#contenedorPresentacion #sliderContenedorPresentacion #slide3 .informacionSlidePre figure img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  border: solid 2px #3b221a;
+}
+#contenedorPresentacion #sliderContenedorPresentacion #slide3 .informacionSlidePre p {
+  font-family: "Quicksand", sans-serif;
+  color: #fff;
+  font-size: 20px;
+  margin: 0;
+}
+
 #aprendeIndex {
   display: flex;
   justify-content: center;
@@ -43,26 +212,28 @@ body {
   font-size: 36px;
   font-weight: bold;
 }
-#aprendeIndex .cuadroAprendeIndex button {
-  height: 37px;
-  width: 100px;
+#aprendeIndex .cuadroAprendeIndex a {
+  padding: 7px 15px;
   border: solid 2px #ffc26f;
   background: rgba(0, 0, 0, 0.337254902);
   border-radius: 13px;
   color: #fff;
-  font-size: 18px;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: "Caveat", cursive;
 }
-#aprendeIndex .cuadroAprendeIndex button:hover {
-  transform: scale(1.09);
+#aprendeIndex .cuadroAprendeIndex a:hover {
+  padding: 7px 15px;
   border: solid 2.2px #f3a941;
   cursor: pointer;
   box-shadow: 3px 3px 12px #f3a941;
 }
-#aprendeIndex .cuadroAprendeIndex button:active {
+#aprendeIndex .cuadroAprendeIndex a:active {
+  padding: 7px 15px;
   background: rgba(0, 0, 0, 0.7176470588);
 }
-#aprendeIndex .cuadroAprendeIndex:hover button {
-  transform: scale(1.08);
+#aprendeIndex .cuadroAprendeIndex:hover a {
+  padding: 7px 15px;
   cursor: pointer;
   box-shadow: 3px 3px 12px rgba(255, 195, 111, 0.7882352941);
   transition: 0.6s ease-in-out;
@@ -115,8 +286,8 @@ body {
   justify-content: center;
   align-items: flex-start;
   width: 350px;
-  height: 340px;
-  background-color: #ebc895;
+  height: 360px;
+  background-color: #2b1007;
   border-radius: 20px;
   box-shadow: 0px 11px 30px #000;
   transition: 0.5s ease;
@@ -143,20 +314,20 @@ body {
   position: absolute;
   top: 270px;
   overflow: hidden;
-  height: 55px;
+  height: 60px;
   width: 100%;
   padding: 0 30px;
   text-align: center;
 }
 #testimonios #contenedorTestimonio .tarjetaTestimonio .contenidoTestimonio h2 {
   font-family: "Caveat", cursive;
-  color: #000;
+  color: #fff;
   font-size: 23px;
   transition: 0.5s ease-in-out;
 }
 #testimonios #contenedorTestimonio .tarjetaTestimonio .contenidoTestimonio h3 {
   font-family: "Quicksand", sans-serif;
-  color: #423e3e;
+  color: #b3a7a7;
   font-weight: bold;
   letter-spacing: 2px;
   font-size: 16px;
@@ -166,8 +337,9 @@ body {
   font-family: "Quicksand", sans-serif;
   padding: 0 30px;
   text-align: justify;
-  color: #000;
+  color: #fff;
   letter-spacing: 0.7px;
+  font-size: 15px;
 }
 #testimonios #contenedorTestimonio .tarjetaTestimonio .contenidoTestimonio .contenedorEstrellas {
   display: flex;
@@ -179,10 +351,10 @@ body {
   height: 30px;
   fill: #ffe601;
   color: #ffe601;
-  filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.5333333333));
+  filter: drop-shadow(0px 1px 3px rgba(255, 255, 255, 0.4431372549));
 }
 #testimonios #contenedorTestimonio .tarjetaTestimonio:hover {
-  height: 480px;
+  height: 520px;
 }
 #testimonios #contenedorTestimonio .tarjetaTestimonio:hover figure {
   top: -100px;
@@ -190,7 +362,7 @@ body {
 }
 #testimonios #contenedorTestimonio .tarjetaTestimonio:hover .contenidoTestimonio {
   top: 150px;
-  height: 290px;
+  height: 338px;
   transition: 0.5s ease;
 }
 
