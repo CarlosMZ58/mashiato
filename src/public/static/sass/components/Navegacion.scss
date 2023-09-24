@@ -34,11 +34,17 @@ $colorCafe: #3b221a;
 @mixin fuenteh1 {
   font-family: "Caveat", cursive;
 }
+html{
+  --colornoche: #1f1c1c;
+  --colorDia: #ffc26f;
+  --colorfondo: #fff;
+}
 body{
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   padding-top: 50px;
+  background-color: var(--colorfondo);
 }
 .dark{
   background-color: #2b2525;
@@ -145,53 +151,68 @@ header{
           filter: drop-shadow(1px 1px 5px #ffc36f34);
           padding: 5px;
         }
-        .switch{
-          position: relative;
-          display: inline-block;
+        .botoninterruptor{
+          background-color: var(--colornoche);
           width: 50px;
-          height: 23px;
-          filter: drop-shadow(1px 1px 3px #ffffff4f);
-          input{
-            opacity: 0;
-            width: 0;
-            height: 0;
-          }
-          input:checked+.slider{
-            background-color: #131212ee;
-          }
-          input:focus+.slider{
-            box-shadow: 0 0 1 #131212ee;
-          }
-          input:checked+.slider::before{
-            -webkit-transform: translateX(26px);
-            -ms-transform: translateX(26px);
-            transform: translateX(26px);
-          }
-          .slider{
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            cursor: pointer;
-            border-radius: 20px;
-            background-color: $colorCuarto;
-            -webkit-transition: 0.4s;
-            transition: 0.4s;
-          }
-          .slider::before{
-            position: absolute;
-            content: "";
-            width: 16px;
-            height: 16px;
-            left: 4px;
-            bottom: 4px;
+          height: 25px;
+          border-radius: 15px;
+          .interruptor{
+            height: 20px;
+            width: 20px;
             border-radius: 50%;
-            background-color: $colorFondoAndText;
-            -webkit-transition: 0.4s;
-            transition: 0.4s;
+            background-color: var(--colorDia);
+            border: solid 2px #1f1c1c;
+            position: relative;
+            transition: .4s ease-in-out;
           }
         }
+        // .switch{
+        //   position: relative;
+        //   display: inline-block;
+        //   width: 50px;
+        //   height: 23px;
+        //   filter: drop-shadow(1px 1px 3px #ffffff4f);
+        //   input{
+        //     opacity: 0;
+        //     width: 0;
+        //     height: 0;
+        //   }
+        //   input:checked+.slider{
+        //     background-color: #131212ee;
+        //   }
+        //   input:focus+.slider{
+        //     box-shadow: 0 0 1 #131212ee;
+        //   }
+        //   input:checked+.slider::before{
+        //     -webkit-transform: translateX(26px);
+        //     -ms-transform: translateX(26px);
+        //     transform: translateX(26px);
+        //   }
+        //   .slider{
+        //     position: absolute;
+        //     top: 0;
+        //     left: 0;
+        //     right: 0;
+        //     bottom: 0;
+        //     cursor: pointer;
+        //     border-radius: 20px;
+        //     background-color: $colorCuarto;
+        //     -webkit-transition: 0.4s;
+        //     transition: 0.4s;
+        //   }
+        //   .slider::before{
+        //     position: absolute;
+        //     content: "";
+        //     width: 16px;
+        //     height: 16px;
+        //     left: 4px;
+        //     bottom: 4px;
+        //     border-radius: 50%;
+        //     background-color: $colorFondoAndText;
+        //     -webkit-transition: 0.4s;
+        //     transition: 0.4s;
+        //   }
+        // }
       }
       #botonCarritoNav{
         a{

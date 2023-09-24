@@ -38,10 +38,16 @@ $colorbrown: #2b1007;
 @mixin fuenteh1 {
   font-family: "Caveat", cursive;
 }
+html{
+  --colorfondo: #ebddca;
+  --colorContenedorTestimonio: #ebc895;
+  --colorTexto: #000;
+  --colorhovermetodos: #c9b0b08a;
+}
 body {
   padding: 0;
   margin: 0;
-  background-color: $colorFondoPag;
+  background-color: var(--colorfondo);
   padding-top: 50px;
   z-index: 99;
   box-sizing: border-box;
@@ -141,16 +147,15 @@ body {
       align-items: flex-start;
       width: 350px;
       height: 340px;
-      background-color: #ebc895;
+      background-color: var(--colorContenedorTestimonio);
       border-radius: 20px;
-      box-shadow: 0px 11px 30px #000;
+      box-shadow: 0px 3px 5px var(--colorTexto);
       transition: 0.5s ease;
       figure{
         position: absolute;
         top: 20px;
         width: 300px;
         height: 220px;
-        background-color: #3b221a;
         border-radius: 13px;
         overflow: hidden;
         transition: 0.5s ease;
@@ -173,13 +178,13 @@ body {
         text-align: center;
         h2{
           @include fuenteh1();
-          color: #000;
+          color: var(--colorTexto);
           font-size: 23px;
           transition: 0.5s ease-in-out;
         }
         h3{
           @include fuenteParrafosN();
-          color: #423e3e;
+          color: var(--colorTexto);
           font-weight: bold;
           letter-spacing: 2px;
           font-size: 16px;
@@ -189,7 +194,7 @@ body {
           @include fuenteParrafosN();
           padding: 0 30px;
           text-align: justify;
-          color: #000;
+          color: var(--colorTexto);
           letter-spacing: 0.7px;
         }
         .contenedorEstrellas{
@@ -652,12 +657,14 @@ body {
     h3{
       font-size: 23px;
       @include fuenteTitulos();
+      color: var(--colorTexto);
     }
     p{
       @include fuenteParrafosN();
       text-align: justify;
       font-size: 18px;
       margin: 15px 0;
+      color: var(--colorTexto);
     }
     figure{
       width: 100%;
@@ -851,16 +858,18 @@ body {
         h3{
           font-size: 30px;
           @include fuenteh1();
+          color: var(--colorTexto);
         }
         p{
           font-size: 18px;
           @include fuenteParrafosN();
           text-align: justify;
+          color: var(--colorTexto);
         }
       }
     }
     .pasov60:hover{
-      background-color: #c9b0b08a;
+      background-color: var(--colorhovermetodos);
       border-radius: 15px;
       transition: 0.6s ease;
     }
@@ -970,16 +979,18 @@ body {
         h3{
           font-size: 30px;
           @include fuenteh1();
+          color: var(--colorTexto);
         }
         p{
           font-size: 18px;
           @include fuenteParrafosN();
           text-align: justify;
+          color: var(--colorTexto);
         }
       }
     }
     .pasoPrensaFrancesa:hover{
-      background-color: #c9b0b08a;
+      background-color: var(--colorhovermetodos);
       border-radius: 15px;
       transition: 0.6s ease;
     }
@@ -1089,16 +1100,18 @@ body {
         h3{
           font-size: 30px;
           @include fuenteh1();
+          color: var(--colorTexto);
         }
         p{
           font-size: 18px;
           @include fuenteParrafosN();
           text-align: justify;
+          color: var(--colorTexto);
         }
       }
     }
     .pasoCafeteraItaliana:hover{
-      background-color: #c9b0b08a;
+      background-color: var(--colorhovermetodos);
       border-radius: 15px;
       transition: 0.6s ease;
     }
@@ -1208,16 +1221,18 @@ body {
         h3{
           font-size: 30px;
           @include fuenteh1();
+          color: var(--colorTexto);
         }
         p{
           font-size: 18px;
           @include fuenteParrafosN();
           text-align: justify;
+          color: var(--colorTexto);
         }
       }
     }
     .pasoAeropress:hover{
-      background-color: #c9b0b08a;
+      background-color: var(--colorhovermetodos);
       border-radius: 15px;
       transition: 0.6s ease;
     }
