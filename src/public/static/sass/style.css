@@ -593,8 +593,9 @@ body {
   filter: drop-shadow(0px 1px 3px rgba(77, 67, 67, 0.4431372549));
 }
 #contenedorProductosVendidos #contenedorTarjetaPV .tarjetaPV .contenedorPreciosPV {
-  width: 80%;
+  width: 100%;
   margin-bottom: 0;
+  margin-left: 70px;
 }
 #contenedorProductosVendidos #contenedorTarjetaPV .tarjetaPV .contenedorPreciosPV .precioComun {
   text-decoration: line-through;
@@ -609,7 +610,7 @@ body {
   font-size: 20px;
   font-weight: bold;
   letter-spacing: 1px;
-  margin-left: 90px;
+  margin-left: 140px;
   color: var(--colorTexto);
 }
 #contenedorProductosVendidos #contenedorTarjetaPV .tarjetaPV .ContenedorBotonCompraPV {

@@ -127,8 +127,9 @@ body {
         }
       }
       .contenedorPreciosPV{
-        width: 80%;
+        width: 100%;
         margin-bottom: 0;
+        margin-left: 70px;
         .precioComun{
           text-decoration: line-through;
           @include fuenteParrafosN();
@@ -142,7 +143,7 @@ body {
           font-size: 20px;
           font-weight: bold;
           letter-spacing: 1px;
-          margin-left: 90px;
+          margin-left: 140px;
           color: var(--colorTexto);
         }
       }
