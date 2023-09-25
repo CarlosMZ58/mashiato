@@ -13,69 +13,77 @@ html {
 html body {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 html #navegacionVertical {
   width: 380px;
-  height: 699px;
-  background-color: var(--colorNavegacionVertical);
-  display: flex;
-  align-items: center;
 }
 html #navegacionVertical .lista {
   padding: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--colorNavegacionVertical);
+  border-radius: 0 15px 15px 0;
 }
 html #navegacionVertical .lista h2 {
   color: var(--colornegro);
   font-family: "Caveat", cursive;
+  width: 100%;
   text-align: center;
   font-size: 29px;
 }
+html #navegacionVertical .lista .click {
+  cursor: pointer;
+}
 html #navegacionVertical .lista .listaItem {
   list-style: none;
-  width: 380px;
-  height: 40px;
-  margin: 30px 0;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  margin-right: auto;
+}
+html #navegacionVertical .lista .listaItem .arrow .flechaNavV {
+  transform: rotate(90deg);
 }
 html #navegacionVertical .lista .listaItem .botonLista {
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin: 0;
-  padding: 0;
-  width: 380px;
-}
-html #navegacionVertical .lista .listaItem .botonLista figure {
-  width: 10%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-html #navegacionVertical .lista .listaItem .botonLista figure svg {
-  width: 24px;
-  height: 24px;
-  fill: var(--colornegro);
-}
-html #navegacionVertical .lista .listaItem .botonLista .flechaNavV {
-  width: 20%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-html #navegacionVertical .lista .listaItem .botonLista .flechaNavV svg {
-  width: 23px;
-  height: 23px;
-  fill: var(--colornegro);
+  gap: 1em;
+  width: 100%;
+  margin: 0 auto;
 }
 html #navegacionVertical .lista .listaItem .botonLista a {
-  width: 70%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Caveat", cursive;
-  margin: 0;
-  font-size: 18px;
-  text-decoration: none;
   color: var(--colornegro);
+  font-family: "Caveat", cursive;
+  display: block;
+  padding: 15px 0;
+  text-decoration: none;
+}
+html #navegacionVertical .lista .listaItem .botonLista .flechaNavV {
+  margin-left: auto;
+  transition: transform 0.3s;
+}
+html #navegacionVertical .lista .listaItem .listaShow {
+  width: 80%;
+  margin-left: auto;
+  border-left: 2px solid var(--colornegro);
+  list-style: none;
+  transition: height 0.4s;
+  height: 0;
+}
+html #navegacionVertical .lista .listaItem .listaShow .listaInside a {
+  color: var(--colornegro);
+  font-family: "Caveat", cursive;
+  display: block;
+  padding: 15px 0;
+  text-decoration: none;
+  opacity: 87%;
+  transition: 0.4s ease;
+  border-radius: 6px;
+  padding-left: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
