@@ -15,10 +15,13 @@ html body {
   margin: 0;
   box-sizing: border-box;
 }
-html #navegacionVertical {
-  width: 380px;
+html #contenedorMenuP {
+  display: flex;
 }
-html #navegacionVertical .lista {
+html #contenedorMenuP #navegacionVertical {
+  width: 27%;
+}
+html #contenedorMenuP #navegacionVertical .lista {
   padding: 0;
   margin: 0;
   width: 100%;
@@ -29,34 +32,34 @@ html #navegacionVertical .lista {
   background-color: var(--colorNavegacionVertical);
   border-radius: 0 15px 15px 0;
 }
-html #navegacionVertical .lista h2 {
+html #contenedorMenuP #navegacionVertical .lista h2 {
   color: var(--colornegro);
   font-family: "Caveat", cursive;
   width: 100%;
   text-align: center;
   font-size: 29px;
 }
-html #navegacionVertical .lista .click {
+html #contenedorMenuP #navegacionVertical .lista .click {
   cursor: pointer;
 }
-html #navegacionVertical .lista .listaItem {
+html #contenedorMenuP #navegacionVertical .lista .listaItem {
   list-style: none;
   width: 100%;
   text-align: center;
   overflow: hidden;
   margin-right: auto;
 }
-html #navegacionVertical .lista .listaItem .arrow .flechaNavV {
+html #contenedorMenuP #navegacionVertical .lista .listaItem .arrow .flechaNavV {
   transform: rotate(90deg);
 }
-html #navegacionVertical .lista .listaItem .botonLista {
+html #contenedorMenuP #navegacionVertical .lista .listaItem .botonLista {
   display: flex;
   align-items: center;
   gap: 1em;
   width: 100%;
   margin: 0 auto;
 }
-html #navegacionVertical .lista .listaItem .botonLista a {
+html #contenedorMenuP #navegacionVertical .lista .listaItem .botonLista a {
   color: var(--colornegro);
   font-family: "Caveat", cursive;
   font-size: 20px;
@@ -64,13 +67,13 @@ html #navegacionVertical .lista .listaItem .botonLista a {
   padding: 15px 0;
   text-decoration: none;
 }
-html #navegacionVertical .lista .listaItem .botonLista .flechaNavV {
+html #contenedorMenuP #navegacionVertical .lista .listaItem .botonLista .flechaNavV {
   margin-left: auto;
   transition: transform 0.3s ease;
   opacity: 0;
   transition: 0.3s ease-in-out;
 }
-html #navegacionVertical .lista .listaItem .listaShow {
+html #contenedorMenuP #navegacionVertical .lista .listaItem .listaShow {
   width: 80%;
   margin-left: auto;
   border-left: 2px solid var(--colornegro);
@@ -78,7 +81,7 @@ html #navegacionVertical .lista .listaItem .listaShow {
   transition: height 0.4s;
   height: 0;
 }
-html #navegacionVertical .lista .listaItem .listaShow .listaInside a {
+html #contenedorMenuP #navegacionVertical .lista .listaItem .listaShow .listaInside a {
   color: var(--colornegro);
   font-family: "Caveat", cursive;
   display: block;
@@ -89,7 +92,7 @@ html #navegacionVertical .lista .listaItem .listaShow .listaInside a {
   padding-left: 20px;
   text-align: left;
 }
-html #navegacionVertical .lista .listaItem:hover .flechaNavV {
+html #contenedorMenuP #navegacionVertical .lista .listaItem:hover .flechaNavV {
   opacity: 1;
 }
 
