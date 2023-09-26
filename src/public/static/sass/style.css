@@ -3,59 +3,52 @@ body {
   padding: 0;
 }
 
-#nosotrosPrincipal {
+article {
   width: 100%;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  margin: 0;
-  padding: 0;
 }
-#nosotrosPrincipal .cartasNosotros {
-  width: 800px;
+article .cartasNosotros {
+  width: 65%;
   height: 300px;
   overflow: hidden;
   margin: 20px;
-  background-color: black;
+  background-color: pink;
   border-radius: 8px;
 }
-#nosotrosPrincipal .cartasNosotros .logosNosotros {
-  width: 800px;
-  height: 300px;
-  background: radial-gradient();
-}
-#nosotrosPrincipal .cartasNosotros h3 {
+article .cartasNosotros h3 {
+  border-radius: 8px 8px 0 0 black;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.658);
   color: white;
-  z-index: 100;
-  width: 800px;
-  translate: 0 -20px;
+  width: 987px;
+  translate: 0 -19.2px;
   text-align: center;
 }
-#nosotrosPrincipal .cartasNosotros p {
+article .cartasNosotros p {
   color: aliceblue;
   position: absolute;
   width: 0px;
-  height: 301px;
+  background-color: rgba(0, 0, 0, 0.705);
+  height: 300px;
   display: flex;
   align-items: center;
   text-align: center;
-  translate: 800px -19px;
+  translate: 988px -19px;
   font-size: 18px;
-  background-color: rgba(0, 0, 0, 0.705);
   visibility: hidden;
 }
-#nosotrosPrincipal .izquierda {
+article .izquierda {
   align-items: end;
 }
-#nosotrosPrincipal .derecha {
-  translate: 64% 0;
+article .derecha {
+  translate: 50% 0;
 }
-#nosotrosPrincipal .cartasNosotros:hover {
+article .cartasNosotros:hover {
   cursor: pointer;
 }
-#nosotrosPrincipal .cartasNosotros:hover p {
+article .cartasNosotros:hover p {
   color: aliceblue;
   position: absolute;
   width: 300px;
@@ -63,16 +56,16 @@ body {
   display: flex;
   align-items: center;
   text-align: center;
-  translate: 500px -19px;
+  translate: 688px -19px;
   font-size: 18px;
   background-color: rgba(0, 0, 0, 0.705);
   visibility: visible;
-  transition: 0.3s;
+  transition: 0.5s;
 }
-#nosotrosPrincipal .cartasNosotros:hover h3 {
-  width: 500px;
+article .cartasNosotros:hover h3 {
+  width: 678px;
   text-align: left;
-  transition: 0.3s;
+  transition: 0.5s;
   padding-left: 10px;
 }
 
