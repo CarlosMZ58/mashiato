@@ -12,6 +12,7 @@ rutas.get('/inicio',controlador.zonaInicio);
 rutas.get('/origen',controlador.zonaOrigen);
 rutas.get('/metodos',controlador.zonaMetodos);
 rutas.get('/tipoCafe',controlador.zonaTipoCafe);
+rutas.get('/menu',controlador.zonaMenu);
 
 
 module.exports = rutas

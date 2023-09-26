@@ -505,6 +505,11 @@ html {
   --colorContenedorTestimonio: #ebc895;
   --colorTexto: #000;
   --colorhovermetodos: #c9b0b08a;
+  --colornegro: #000;
+  --colorNavegacionVertical: #ffdba6;
+  --colorBlanco: #fff;
+  --colorCafeBoton: #623715;
+  --colorCafeBotonHover: #6b4020;
 }
 
 body {
@@ -2013,6 +2018,228 @@ body {
   transform: perspective(600px) rotateY(180deg);
 }
 #contenedorInformacioTiposCafe .cardCafe:hover .back {
+  transform: perspective(600px) rotateY(360deg);
+}
+
+#contenedorMenuP {
+  display: flex;
+  z-index: 90;
+  position: relative;
+  margin-top: 100px;
+}
+#contenedorMenuP #navegacionVertical {
+  width: 29%;
+  height: 300vh;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+#contenedorMenuP #navegacionVertical .lista {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--colorNavegacionVertical);
+  border-radius: 0 15px 15px 0;
+  position: sticky;
+}
+#contenedorMenuP #navegacionVertical .lista h2 {
+  color: var(--colornegro);
+  font-family: "Caveat", cursive;
+  width: 100%;
+  text-align: center;
+  font-size: 29px;
+}
+#contenedorMenuP #navegacionVertical .lista .click {
+  cursor: pointer;
+}
+#contenedorMenuP #navegacionVertical .lista .listaItem {
+  list-style: none;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  margin-right: auto;
+}
+#contenedorMenuP #navegacionVertical .lista .listaItem .arrow .flechaNavV {
+  transform: rotate(90deg);
+}
+#contenedorMenuP #navegacionVertical .lista .listaItem .botonLista {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  width: 100%;
+  margin: 0 auto;
+}
+#contenedorMenuP #navegacionVertical .lista .listaItem .botonLista a {
+  color: var(--colornegro);
+  font-family: "Caveat", cursive;
+  font-size: 18px;
+  display: block;
+  padding: 15px 0;
+  text-decoration: none;
+}
+#contenedorMenuP #navegacionVertical .lista .listaItem .botonLista .flechaNavV {
+  margin-left: auto;
+  transition: transform 0.3s ease;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+#contenedorMenuP #navegacionVertical .lista .listaItem .listaShow {
+  width: 80%;
+  margin-left: auto;
+  border-left: 2px solid var(--colornegro);
+  list-style: none;
+  transition: height 0.4s;
+  height: 0;
+}
+#contenedorMenuP #navegacionVertical .lista .listaItem .listaShow .listaInside a {
+  color: var(--colornegro);
+  font-family: "Caveat", cursive;
+  display: block;
+  padding: 15px 0;
+  text-decoration: none;
+  transition: 0.4s ease;
+  border-radius: 6px;
+  padding-left: 20px;
+  text-align: left;
+}
+#contenedorMenuP #navegacionVertical .lista .listaItem:hover .flechaNavV {
+  opacity: 1;
+}
+#contenedorMenuP #contenedorCardsProductosM .contenedorCategoriaProducto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 0;
+  right: 0;
+  gap: 20px;
+  min-height: 100vh;
+  width: 70%;
+  margin: 10px 6px 0 0;
+}
+#contenedorMenuP #contenedorCardsProductosM .contenedorCategoriaProducto .tarjetaProducto {
+  position: relative;
+  width: 300px;
+  height: 350px;
+}
+#contenedorMenuP #contenedorCardsProductosM .contenedorCategoriaProducto .tarjetaProducto .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+}
+#contenedorMenuP #contenedorCardsProductosM .contenedorCategoriaProducto .tarjetaProducto .face h2 {
+  font-family: "Caveat", cursive;
+  color: var(--colornegro);
+  text-align: center;
+}
+#contenedorMenuP #contenedorCardsProductosM .contenedorCategoriaProducto .tarjetaProducto .face .precioProducto {
+  font-family: "Caveat", cursive;
+  color: var(--colornegro);
+  width: 100%;
+  text-align: center;
+}
+#contenedorMenuP #contenedorCardsProductosM .contenedorCategoriaProducto .tarjetaProducto .face .contenedorBotonesProductoM {
+  display: grid;
+  place-items: center;
+  margin-bottom: 50px;
+}
+#contenedorMenuP #contenedorCardsProductosM .contenedorCategoriaProducto .tarjetaProducto .face .contenedorBotonesProductoM a {
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+  font-family: "Caveat", cursive;
+  color: var(--colorBlanco);
+  background-color: var(--colorCafeBotonHover);
+  width: 170px;
+  height: 35px;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 var(--colorCafeBoton);
+  transition: 0.3s;
+}
+#contenedorMenuP #contenedorCardsProductosM .contenedorCategoriaProducto .tarjetaProducto .face .contenedorBotonesProductoM a:hover {
+  box-shadow: inset 170px 0 0 0 var(--colorCafeBoton);
+}
+#contenedorMenuP #contenedorCardsProductosM .contenedorCategoriaProducto .tarjetaProducto .front {
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 2px 5px var(--colornegro);
+  height: 100%;
+  background-color: #ffdba6;
+}
+#contenedorMenuP #contenedorCardsProductosM .contenedorCategoriaProducto .tarjetaProducto .front figure {
+  width: 100%;
+  height: 55%;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  background-color: aqua;
+  box-shadow: 0 1px 5px var(--colornegro);
+}
+#contenedorMenuP #contenedorCardsProductosM .contenedorCategoriaProducto .tarjetaProducto .front figure img {
+  width: 100%;
+  height: 100%;
+}
+#contenedorMenuP #contenedorCardsProductosM .contenedorCategoriaProducto .tarjetaProducto .front h2 {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+}
+#contenedorMenuP #contenedorCardsProductosM .contenedorCategoriaProducto .tarjetaProducto .front p {
+  position: absolute;
+  top: 65%;
+}
+#contenedorMenuP #contenedorCardsProductosM .contenedorCategoriaProducto .tarjetaProducto .front .contenedorEstrellas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  top: 83%;
+}
+#contenedorMenuP #contenedorCardsProductosM .contenedorCategoriaProducto .tarjetaProducto .front .contenedorEstrellas svg {
+  width: 23px;
+  height: 23px;
+  fill: #ffa805;
+}
+#contenedorMenuP #contenedorCardsProductosM .contenedorCategoriaProducto .tarjetaProducto .front .contenedorBotonesProductoM {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 20px;
+}
+#contenedorMenuP #contenedorCardsProductosM .contenedorCategoriaProducto .tarjetaProducto .back {
+  transform: perspective(600px) rotateY(180deg);
+  box-shadow: 0 2px 5px var(--colornegro);
+  background-color: #ffdba6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#contenedorMenuP #contenedorCardsProductosM .contenedorCategoriaProducto .tarjetaProducto .back h2 {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  margin: 20;
+}
+#contenedorMenuP #contenedorCardsProductosM .contenedorCategoriaProducto .tarjetaProducto .back p {
+  font-family: "Quicksand", sans-serif;
+  text-align: justify;
+  font-size: 15px;
+  margin-top: 100px;
+  padding: 10px;
+}
+#contenedorMenuP #contenedorCardsProductosM .contenedorCategoriaProducto .tarjetaProducto:hover .front {
+  transform: perspective(600px) rotateY(180deg);
+}
+#contenedorMenuP #contenedorCardsProductosM .contenedorCategoriaProducto .tarjetaProducto:hover .back {
   transform: perspective(600px) rotateY(360deg);
 }
 
