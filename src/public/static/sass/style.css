@@ -22,7 +22,7 @@ html #navegacionVertical .lista {
   padding: 0;
   margin: 0;
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -41,7 +41,6 @@ html #navegacionVertical .lista .click {
 }
 html #navegacionVertical .lista .listaItem {
   list-style: none;
-  margin: 10px 0;
   width: 100%;
   text-align: center;
   overflow: hidden;
@@ -67,7 +66,9 @@ html #navegacionVertical .lista .listaItem .botonLista a {
 }
 html #navegacionVertical .lista .listaItem .botonLista .flechaNavV {
   margin-left: auto;
-  transition: transform 0.3s;
+  transition: transform 0.3s ease;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
 }
 html #navegacionVertical .lista .listaItem .listaShow {
   width: 80%;
@@ -87,6 +88,9 @@ html #navegacionVertical .lista .listaItem .listaShow .listaInside a {
   border-radius: 6px;
   padding-left: 20px;
   text-align: left;
+}
+html #navegacionVertical .lista .listaItem:hover .flechaNavV {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=style.css.map */
