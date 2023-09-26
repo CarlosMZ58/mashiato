@@ -39,9 +39,10 @@ html{
   }
   #contenedorMenuP{
     display: flex;
+    align-items: start;
     #navegacionVertical{
       width: 29%;
-      position: relative;
+      position: sticky;
       top: 0;
       left: 0;
       .lista{
