@@ -1,0 +1,47 @@
+
+<%- include ('components/_main.ejs') -%>
+    <title>CONTACTANOS</title>
+</head>
+<body>
+    <div id="contenedorContactanos">
+        <div id="barraNavegacionRegiyIncio">
+            <a href="#">MASSHIATO</a>
+            <div id="grupoNavegacion">
+                <ul id="barraNavegacionFija">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Aprende</a></li>
+                    <li><a href="#">Quienes Somos</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="contactanoContenedor">
+            <form action="https://formsubmit.co/masshiato@gmail.com" method="POST">
+                <h2>Contactanos</h2>
+                <div class="ContactContenedor">
+                    <input type="text" name="name" required><span></span>
+                    <label>Nombre Completo</label>
+                </div>
+                <div class="ContactContenedor">
+                    <input required type="tel" name="phone"><span></span>
+                    <label>Telefono</label>
+                </div>
+                <div class="ContactContenedor">
+                    <input required type="email" name="email"><span></span>
+                    <label>E-mail</label>
+                </div>
+                <div class="ContactContenedor">
+                    <input required type="text" name="Asunto"><span></span>
+                    <label>Asunto</label>
+                </div>
+                <div class="ContactContenedor">
+                    <textarea required name="message" rows="5"></textarea><span id="spantext"></span>
+                    <label>Mensaje</label>
+                </div>
+                <div id="contenedorBotonContact">
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+</body>
+</html>

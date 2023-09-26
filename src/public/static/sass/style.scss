@@ -403,7 +403,7 @@ body {
 //REGISTRO INICIO
 #contenedorAllRI {
   width: 100%;
-  height: 649px;
+  height: 100vh;
   box-sizing: border-box;
   background-image: linear-gradient(to left, #00000098, #332410a4),
     url(../../img/fondoregistro/fondo.registro4.jpg);
@@ -474,7 +474,7 @@ body {
   }
   #contenedorRegistro {
     position: relative;
-    translate: 0 14px;
+    translate: 0 70px;
     form {
       background-color: $colorbrown;
       width: 600px;
@@ -597,7 +597,7 @@ body {
 // PAG INICIO STAR
 #contenedorAllRAndI{
   width: 100%;
-  height: 649px;
+  height: 100vh;
   box-sizing: border-box;
   background-image: linear-gradient(to left, #00000098, #332410a4),
     url(../../img/fondoregistro/fondo.registro4.jpg);
@@ -668,7 +668,7 @@ body {
   }
   #contenedorInicio {
     position: relative;
-    translate: 0 60px;
+    translate: 0 120px;
     form {
       background-color: $colorbrown;
       width: 600px;
@@ -1537,3 +1537,177 @@ body {
   }
 }
 //tipos de cafe fin
+// contactanos
+#contenedorContactanos{
+  background-image:linear-gradient(#6e6c6c00, #000000bd), url(../../img/fondo.registro4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 699px;
+  #contactanoContenedor{
+    position: absolute;
+    top: 55%;
+    left: 34%;
+    transform: translate(-50%, -50%);
+    background-color: #2b1007;
+    box-shadow: 0 0 5px 0 #ffffff94;
+    width: 500px;
+    border-radius: 15px;
+    overflow: hidden;
+    form{
+      padding: 0 40px;
+      box-sizing: border-box;
+      h2{
+        @include fuenteh1();
+        font-size: 30px;
+        color: $colorFondoAndText;
+        text-align: center;
+        width: 100%;
+        padding: 20px 0 15px 0;
+        margin: 0;
+        border-bottom: 1px solid #ffffff4b;
+      }
+      .ContactContenedor{
+        position: relative;
+        margin: 30px 0;
+        border-bottom: 2px solid #ffffff4b;
+        input{
+          width: 100%;
+          padding: 0 5px;
+          height: 40px;
+          @include fuenteh1();
+          color: $colorFondoAndText;
+          font-size: 14px;
+          border: none;
+          background: none;
+          outline: none;
+          position: relative;
+        }
+        textarea{
+          width: 100%;
+          padding: 0 5px;
+          height: 40px;
+          margin-top: 10px;
+          @include fuenteh1();
+          color: $colorFondoAndText;
+          font-size: 14px;
+          border: none;
+          background: none;
+          outline: none;
+        }
+        label{
+          @include fuenteh1();
+          font-size: 17px;
+          color: $colorFondoAndText;
+          position: absolute;
+          top: 50%;
+          left: 5px;
+          transform: translateY(-50%);
+          pointer-events: none;
+          transition: 0.3s ease all;
+        }
+      }
+      #contenedorBotonContact{
+        display: grid;
+        place-items: center;
+        margin: 30px 0 40px 0;
+        button{
+          padding: 10px 20px;
+          border: none;
+          border-radius: 13px;
+          background-color: #8f6f47;
+          box-shadow: 0 0 4px 0 #ffffffa8;
+          color: #ffffff9a;
+          transition: 0.3s ease;
+          @include fuenteh1();
+          font-size: 16px;
+        }
+        button:hover{
+          background-color: #8f6f47;
+          box-shadow: 0 0 8px 0 #ffffffa8;
+        }
+      }
+      .ContactContenedor input:focus ~label,
+      .ContactContenedor input:valid ~label{
+        top: -5px;
+        color: #9e7540;
+      }
+      .ContactContenedor input:focus ~ span::before,
+      .ContactContenedor input:valid ~ span::before{
+        width: 100%;
+      }
+      .ContactContenedor textarea:focus ~label,
+      .ContactContenedor textarea:valid ~label{
+        top: -10px;
+        color: #9e7540;
+      }
+      .ContactContenedor textarea:focus ~ span::before,
+      .ContactContenedor textarea:valid ~ span::before{
+        width: 100%;
+      }
+    }
+  }
+  #barraNavegacionRegiyIncio{
+    width: 100%;
+    height: 60px;
+    background-color: #2b1007;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    box-shadow: 3px 3px 13px $colorTerceareo;
+    a{
+      color: $colorFondoAndText;
+      text-decoration: none;
+      @include fuenteh1();
+      font-size: 20px;
+      margin: 5px 20px;
+      letter-spacing: 3px;
+    }
+    #grupoNavegacion{
+      display: flex;
+      align-items: center;
+      #barraNavegacionFija{
+        position: relative;
+        display: flex;
+        gap: 30px;
+        margin: 5px 60px;
+        li{
+          list-style: none;
+          a{
+            position: relative;
+            @include fuenteParrafosP();
+            font-size: 18px;
+            font-weight: 500;
+            letter-spacing: 1px;
+          }
+          a:before{
+            content: "";
+            position: absolute;
+            bottom: -2px;
+            width: 100%;
+            height: 2px;
+            background-color: #e6c290;
+            transform: scaleX(0);
+            transition: transform 0.3s ease-in-out;
+            transform-origin: right;
+          }
+          a:hover::before{
+            transform: scaleX(1);
+            transform-origin: left;
+          }
+        }
+      }
+    }
+  }
+}

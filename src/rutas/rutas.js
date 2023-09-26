@@ -13,6 +13,6 @@ rutas.get('/origen',controlador.zonaOrigen);
 rutas.get('/metodos',controlador.zonaMetodos);
 rutas.get('/tipoCafe',controlador.zonaTipoCafe);
 rutas.get('/menu',controlador.zonaMenu);
-
+rutas.get('/contactanos',controlador.zonaContactanos);
 
 module.exports = rutas

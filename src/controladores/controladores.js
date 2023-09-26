@@ -28,6 +28,9 @@ controlador.zonaTipoCafe=(consulta,respuesta)=>{
 controlador.zonaMenu=(consulta,respuesta)=>{
     respuesta.render("menu.ejs")
 }
+controlador.zonaContactanos=(consulta,respuesta)=>{
+    respuesta.render("contactanos.ejs")
+}
 
 
 module.exports = controlador;
