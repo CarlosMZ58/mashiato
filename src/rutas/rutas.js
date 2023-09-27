@@ -18,5 +18,6 @@ rutas.get('/contactanos',controlador.zonaContactanos);
 // post
 
 rutas.post('/registrarUsuario',controlador.zonaRegistroUsuario);
+rutas.post('/iniciarSesion',controlador.zonaInicioSesion);
 
 module.exports = rutas
