@@ -34,14 +34,18 @@ controlador.zonaContactanos=(consulta,respuesta)=>{
 
 //registrar usuario
 controlador.zonaRegistroUsuario=(consulta,respuesta)=>{
-    let registrarse = consulta.body;
-    console.log(registrarse);
+    let registro=consulta.body;
+    console.log(registro);
     consulta.getConnection((error,conexion)=>{
-        conexion.query("insert into registro set ?", [registrarse], (error, registro)=>{
-            respuesta.render('/');
+        conexion.query('insert into registro set ?',[registro],(error,registro)=>{
+            if(error){
+                console.log("perras");
+            }else{
+                respuesta.render('/')
+            }
         });
     });
-};
+}
 //fin registrar usuario
 
 
