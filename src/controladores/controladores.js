@@ -76,4 +76,24 @@ controlador.zonaInicioSesion=(consulta,respuesta)=>{
     });
 }
 //fin inicio de sesion
+//cambiar contraseña
+controlador.zonaCambiarContrasena=(consulta,respuesta)=>{
+    let correo=consulta.body.correo;
+    let contrasena=consulta.body
+    console.log(correo);
+    console.log(nuevaContraseña);
+    consulta.getConnection((error,conexion)=>{
+        conexion.query("select * from registro where correo=?", [correo],(error,resultadoConsulta)=>{
+            console.log(resultadoConsulta)
+            if(error){
+                console.log(error);
+            }else{
+                conexion.query("update registro set contrasena=? where correo=?",[correo, contrasena],(error,resultadoActualizado)=>{
+                    respuesta.render("inicio.ejs")
+                });
+            }
+        });
+    });
+}
+//fin cambiar contraseña
 module.exports = controlador;

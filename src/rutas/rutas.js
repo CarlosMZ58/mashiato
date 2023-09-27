@@ -21,5 +21,6 @@ rutas.get('/eliminarUsuario',controlador.zonaEliminarUsuario);
 
 rutas.post('/registrarUsuario',controlador.zonaRegistroUsuario);
 rutas.post('/iniciarSesion',controlador.zonaInicioSesion);
+rutas.post('/cambiarContrasena',controlador.zonacambioContrasena);
 
 module.exports = rutas
