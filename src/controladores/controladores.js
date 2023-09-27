@@ -37,15 +37,39 @@ controlador.zonaCambiarContrasena=(consulta,respuesta)=>{
 
 //registrar usuario
 controlador.zonaRegistroUsuario=(consulta,respuesta)=>{
-    let registrarse = consulta.body;
-    console.log(registrarse);
+    let registro=consulta.body;
+    console.log(registro);
     consulta.getConnection((error,conexion)=>{
-        conexion.query("insert into registro set ?", [registrarse], (error, registro)=>{
-            respuesta.render('/');
+        conexion.query('insert into registro set ?',[registro],(error,registro)=>{
+            if(error){
+                console.error("Error al conectar a la base de datos: " + error.message);
+            }else{
+                console.log("Datos del formulario recibidos:", registro);
+                respuesta.render('index.ejs');
+            }
         });
     });
-};
+}
+
 //fin registrar usuario
 
 
+//inicio de sesion
+controlador.zonaInicioSesion=(consulta,respuesta)=>{
+    let correo=consulta.body.correo;
+    let contrasena=consulta.body.contrasena
+    console.log(correo);
+    console.log(contrasena);
+    consulta.getConnection((error,conexion)=>{
+        conexion.query("select * from registro where correo=? and contrasena=?",[correo, contrasena],(error,inicio)=>{
+            console.log(inicio);
+            if(inicio.length !==0){
+                respuesta.redirect("/");
+            }else{
+                respuesta.render("inicio.ejs");
+            }
+        });
+    });
+}
+//fin inicio de sesion
 module.exports = controlador;

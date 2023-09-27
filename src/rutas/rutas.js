@@ -19,5 +19,6 @@ rutas.get('/cambiarContrasena',controlador.zonaCambiarContrasena);
 // post
 
 rutas.post('/registrarUsuario',controlador.zonaRegistroUsuario);
+rutas.post('/iniciarSesion',controlador.zonaInicioSesion);
 
 module.exports = rutas
