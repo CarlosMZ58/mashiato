@@ -1,0 +1,42 @@
+<%- include ('components/_main.ejs') -%>
+    <title>ORIGEN</title>
+</head>
+<body>
+  <div id="contenedorCambiarContrasenaTodo">
+    <div id="barraNavegacionRegiyIncio">
+      <a href="#">MA<span>SS</span>HIATO</a>
+      <div id="grupoNavegacion">
+        <ul id="barraNavegacionFija">
+          <li><a href="/">Inicio</a></li>
+          <li><a href="#">Productos</a></li>
+          <li><a href="/#aprendeIndex">Aprende</a></li>
+          <li><a href="#">Quienes Somos</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="contenedorCambiarContrasena">
+      <form action="" method="post" id="form">
+        <h2>CAMBIAR CONTRASEÑA</h2>
+        <div class="contenedorCassillasCambio">
+          <input type="email" name="" id="campoEmail" required><span class="barra"></span>
+          <label for="">E-mail</label>
+        </div>
+        <div class="contenedorCassillasCambio">
+          <input type="password" name="" id="campoContrasena" required><span class="barra"></span>
+          <label for="">Contraseña</label>
+        </div>
+        <div class="contenedorCassillasCambio">
+          <input type="password" name="" id="campoContrasena" required><span class="barra"></span>
+          <label for="">Confirmar Contraseña</label>
+        </div>
+        <div id="contenidoPreguntaCambio">
+          <p>¿Estás seguro de cambiar tu contraseña?<a href="/registro">Iniciar Sesión</a></p>
+        </div>
+        <div id="contenedorBotonesCambio">
+          <input type="text" value="Confirmar">
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

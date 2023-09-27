@@ -2195,4 +2195,196 @@ body {
   transform-origin: left;
 }
 
+#contenedorCambiarContrasenaTodo {
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5960784314), rgba(51, 36, 16, 0.6431372549)), url(../../img/fondoregistro/fondo.registro4.jpg);
+}
+#contenedorCambiarContrasenaTodo #barraNavegacionRegiyIncio {
+  width: 100%;
+  height: 60px;
+  background-color: #2b1007;
+  box-sizing: border-box;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  box-shadow: 3px 3px 13px #000;
+}
+#contenedorCambiarContrasenaTodo #barraNavegacionRegiyIncio a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Caveat", cursive;
+  font-size: 36px;
+  margin: 5px 20px;
+}
+#contenedorCambiarContrasenaTodo #barraNavegacionRegiyIncio a span {
+  margin: 0;
+  padding: 0;
+  color: #ce914f;
+  font-family: "Caveat", cursive;
+  font-size: 36px;
+}
+#contenedorCambiarContrasenaTodo #barraNavegacionRegiyIncio #grupoNavegacion {
+  display: flex;
+  align-items: center;
+}
+#contenedorCambiarContrasenaTodo #barraNavegacionRegiyIncio #grupoNavegacion #barraNavegacionFija {
+  position: relative;
+  display: flex;
+  gap: 30px;
+  margin: 5px 60px;
+}
+#contenedorCambiarContrasenaTodo #barraNavegacionRegiyIncio #grupoNavegacion #barraNavegacionFija li {
+  list-style: none;
+}
+#contenedorCambiarContrasenaTodo #barraNavegacionRegiyIncio #grupoNavegacion #barraNavegacionFija li a {
+  position: relative;
+  font-family: "PT Mono", monospace;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+#contenedorCambiarContrasenaTodo #barraNavegacionRegiyIncio #grupoNavegacion #barraNavegacionFija li a:before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: #e6c290;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+  transform-origin: right;
+}
+#contenedorCambiarContrasenaTodo #barraNavegacionRegiyIncio #grupoNavegacion #barraNavegacionFija li a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+#contenedorCambiarContrasenaTodo #contenedorCambiarContrasena {
+  position: relative;
+  translate: 0 75px;
+}
+#contenedorCambiarContrasenaTodo #contenedorCambiarContrasena form {
+  background-color: #2b1007;
+  width: 600px;
+  height: 100%;
+  margin: 0 180px;
+  border-radius: 16px;
+  border: #9e7540 solid 2.8px;
+  box-shadow: 0 0 20px #000;
+}
+#contenedorCambiarContrasenaTodo #contenedorCambiarContrasena form h2 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 35px;
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+  padding: 6px;
+}
+#contenedorCambiarContrasenaTodo #contenedorCambiarContrasena form .contenedorCassillasCambio {
+  position: relative;
+  margin: 55px;
+}
+#contenedorCambiarContrasenaTodo #contenedorCambiarContrasena form .contenedorCassillasCambio input {
+  background: none;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 10px 10px 6px;
+  display: block;
+  width: 93%;
+  border: none;
+  border-bottom: 1px solid #fff;
+}
+#contenedorCambiarContrasenaTodo #contenedorCambiarContrasena form .contenedorCassillasCambio input:focus {
+  outline: none;
+  color: #e6c290;
+}
+#contenedorCambiarContrasenaTodo #contenedorCambiarContrasena form .contenedorCassillasCambio label {
+  color: #fff;
+  font-size: 20px;
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  transition: 0.3s ease all;
+  pointer-events: none;
+}
+#contenedorCambiarContrasenaTodo #contenedorCambiarContrasena form .contenedorCassillasCambio input:focus ~ label,
+#contenedorCambiarContrasenaTodo #contenedorCambiarContrasena form .contenedorCassillasCambio input:valid ~ label {
+  top: -14px;
+  font-size: 16px;
+  color: #ffc26f;
+}
+#contenedorCambiarContrasenaTodo #contenedorCambiarContrasena form .barra {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+#contenedorCambiarContrasenaTodo #contenedorCambiarContrasena form .barra::before {
+  content: "";
+  height: 2px;
+  width: 0%;
+  bottom: 0;
+  position: absolute;
+  background-color: #9e7540;
+  transition: 0.2s ease width;
+  left: 0;
+}
+#contenedorCambiarContrasenaTodo #contenedorCambiarContrasena form input:focus ~ .barra::before {
+  width: 97%;
+}
+#contenedorCambiarContrasenaTodo #contenedorCambiarContrasena form #contenidoPreguntaCambio {
+  text-align: center;
+  padding: 5px;
+}
+#contenedorCambiarContrasenaTodo #contenedorCambiarContrasena form #contenidoPreguntaCambio p {
+  color: #fff;
+  font-size: 16px;
+  font-family: "PT Mono", monospace;
+}
+#contenedorCambiarContrasenaTodo #contenedorCambiarContrasena form #contenidoPreguntaCambio p a {
+  color: #ffc26f;
+  font-family: "PT Mono", monospace;
+  text-decoration: none;
+  padding: 5px;
+}
+#contenedorCambiarContrasenaTodo #contenedorCambiarContrasena form #contenidoPreguntaCambio p a:hover {
+  text-decoration: underline;
+}
+#contenedorCambiarContrasenaTodo #contenedorCambiarContrasena form #contenedorBotonesCambio {
+  display: flex;
+  margin: 20px;
+  justify-content: center;
+}
+#contenedorCambiarContrasenaTodo #contenedorCambiarContrasena form #contenedorBotonesCambio input {
+  width: 150px;
+  height: 35px;
+  text-align: center;
+  border-radius: 7px;
+  font-family: "Quicksand", sans-serif;
+  border: none;
+  background-color: #ffc26f;
+  font-size: 15px;
+  color: #2b1007;
+  font-weight: 700;
+  margin: 25px 10px;
+  box-shadow: 0px 0px 7px rgba(250, 188, 137, 0.6784313725);
+}
+#contenedorCambiarContrasenaTodo #contenedorCambiarContrasena form #contenedorBotonesCambio input:hover {
+  background-color: #ce914f;
+  color: #fff;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8980392157);
+  cursor: pointer;
+  transition: 0.7s ease-in-out;
+}
+#contenedorCambiarContrasenaTodo #contenedorCambiarContrasena .form {
+  width: 100%;
+  margin: auto;
+}
+
 /*# sourceMappingURL=style.css.map */

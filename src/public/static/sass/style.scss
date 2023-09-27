@@ -1711,3 +1711,200 @@ body {
     }
   }
 }
+
+//cambiar contraseña
+
+#contenedorCambiarContrasenaTodo{
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  background-image: linear-gradient(to left, #00000098, #332410a4),
+    url(../../img/fondoregistro/fondo.registro4.jpg);
+  #barraNavegacionRegiyIncio{
+    width: 100%;
+    height: 60px;
+    background-color: #2b1007;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    box-shadow: 3px 3px 13px $colorTerceareo;
+    a{
+      color: $colorFondoAndText;
+      text-decoration: none;
+      @include fuenteh1();
+      font-size: 36px;
+      margin: 5px 20px;
+      span{
+        margin: 0;
+        padding: 0;
+        color: #ce914f;
+        @include fuenteh1();
+        font-size: 36px;
+      }
+    }
+    #grupoNavegacion{
+      display: flex;
+      align-items: center;
+      #barraNavegacionFija{
+        position: relative;
+        display: flex;
+        gap: 30px;
+        margin: 5px 60px;
+        li{
+          list-style: none;
+          a{
+            position: relative;
+            @include fuenteParrafosP();
+            font-size: 18px;
+            font-weight: 500;
+            letter-spacing: 1px;
+          }
+          a:before{
+            content: "";
+            position: absolute;
+            bottom: -2px;
+            width: 100%;
+            height: 2px;
+            background-color: #e6c290;
+            transform: scaleX(0);
+            transition: transform 0.3s ease-in-out;
+            transform-origin: right;
+          }
+          a:hover::before{
+            transform: scaleX(1);
+            transform-origin: left;
+          }
+        }
+      }
+    }
+  }
+  #contenedorCambiarContrasena {
+    position: relative;
+    translate: 0 75px;
+    form {
+      background-color: $colorbrown;
+      width: 600px;
+      height: 100%;
+      margin: 0 180px;
+      border-radius: 16px;
+      border: $colorSecundario solid 2.8px;
+      box-shadow: 0 0 20px #000 ;
+      h2 {
+        color: $colorFondoAndText;
+        font-weight: bold;
+        font-size: 35px;
+        @include fuenteTitulos();
+        text-align: center;
+        padding: 6px;
+      }
+      .contenedorCassillasCambio {
+        position: relative;
+        margin: 55px;
+        input{
+          background: none;
+          color: $colorFondoAndText;
+          font-size: 16px;
+          padding: 10px 10px 10px 6px;
+          display: block;
+          width: 93%;
+          border: none;
+          border-bottom: 1px solid $colorFondoAndText;
+        }
+        input:focus{
+          outline: none;
+          color: $colorfocustext;
+        }
+        label{
+          color: $colorFondoAndText;
+          font-size: 20px;
+          position: absolute;
+          left: 5px;
+          top: 10px;
+          transition: 0.3s ease all;
+          pointer-events: none;
+        }
+        input:focus~label,
+        input:valid~label{
+          top: -14px;
+          font-size: 16px;
+          color: $colorCuarto;
+        }
+      }
+      .barra{
+        position: relative;
+        display: block;
+        width: 100%;
+      }
+      .barra::before{
+        content: "";
+        height: 2px;
+        width: 0%;
+        bottom: 0;
+        position: absolute;
+        background-color: $colorSecundario;
+        transition: 0.2s ease width;
+        left: 0;
+      }
+      input:focus~.barra::before{
+        width: 97%;
+      }
+      #contenidoPreguntaCambio{
+        text-align: center;
+        padding: 5px;
+        p{
+          color: $colorFondoAndText;
+          font-size: 16px;
+          @include fuenteParrafosP();
+          a{
+            color: $colorCuarto;
+            @include fuenteParrafosP();
+            text-decoration: none;
+            padding: 5px;
+          }
+          a:hover{
+            text-decoration: underline;
+          }
+        }
+      }
+      #contenedorBotonesCambio{
+        display: flex;
+        margin: 20px;
+        justify-content: center;
+        input{
+          width: 150px;
+          height: 35px;
+          text-align: center;
+          border-radius: 7px;
+          @include fuenteParrafosN();
+          border: none;
+          background-color: $colorCuarto;
+          font-size: 15px;
+          color: $colorbrown;
+          font-weight: 700;
+          margin: 25px 10px;
+          box-shadow: 0px 0px 7px #fabc89ad;
+        }
+        input:hover{
+          background-color: #ce914f;
+          color: #fff;
+          box-shadow: 0px 0px 10px #ffffffe5;
+          cursor: pointer;
+          transition: 0.7s ease-in-out;
+        }
+      }
+    }
+    .form{
+      width: 100%;
+      margin: auto;
+    }
+  }
+}
+
+//fin cambiar contraseña

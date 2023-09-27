@@ -14,6 +14,7 @@ rutas.get('/metodos',controlador.zonaMetodos);
 rutas.get('/tipoCafe',controlador.zonaTipoCafe);
 rutas.get('/menu',controlador.zonaMenu);
 rutas.get('/contactanos',controlador.zonaContactanos);
+rutas.get('/cambiarContrasena',controlador.zonaCambiarContrasena);
 
 // post
 
