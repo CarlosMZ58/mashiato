@@ -34,6 +34,10 @@ controlador.zonaContactanos=(consulta,respuesta)=>{
 controlador.zonaCambiarContrasena=(consulta,respuesta)=>{
     respuesta.render("cambiarContrasena.ejs")
 }
+controlador.zonaEliminarUsuario=(consulta,respuesta)=>{
+    respuesta.render("eliminarUsuario.ejs")
+}
+
 
 //registrar usuario
 controlador.zonaRegistroUsuario=(consulta,respuesta)=>{

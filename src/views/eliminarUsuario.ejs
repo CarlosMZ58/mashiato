@@ -1,0 +1,38 @@
+<%- include ('components/_main.ejs') -%>
+    <title>ORIGEN</title>
+</head>
+<body>
+  <div id="contenedorEliminarUsuarioTodo">
+    <div id="barraNavegacionRegiyIncio">
+      <a href="#">MA<span>SS</span>HIATO</a>
+      <div id="grupoNavegacion">
+        <ul id="barraNavegacionFija">
+          <li><a href="/">Inicio</a></li>
+          <li><a href="#">Productos</a></li>
+          <li><a href="/#aprendeIndex">Aprende</a></li>
+          <li><a href="#">Quienes Somos</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="contenedorEliminarUsuario">
+      <form action="" method="post" id="form">
+        <h2>ELIMINAR USUARIO</h2>
+        <div class="contenedorCassillasEliminarUsuario">
+          <input type="email" name="correo" id="correo" required><span class="barra"></span>
+          <label for="">E-mail</label>
+        </div>
+        <div class="contenedorCassillasEliminarUsuario">
+          <input type="password" name="contrasena" id="Contrasena" required><span class="barra"></span>
+          <label for="">Contraseña</label>
+        </div>
+        <div id="contenidoPreguntaEliminarUsuario">
+          <p>¿Estas seguro de querrer eliminar tu usuario?<a href="/inicio">Iniciar Sesión</a></p>
+        </div>
+        <div id="contenedorBotonesEliminarUsuario">
+          <input type="submit" value="Iniciar sesion">
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
