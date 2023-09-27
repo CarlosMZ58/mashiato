@@ -32,5 +32,17 @@ controlador.zonaContactanos=(consulta,respuesta)=>{
     respuesta.render("contactanos.ejs")
 }
 
+//registrar usuario
+controlador.zonaRegistroUsuario=(consulta,respuesta)=>{
+    let registrarse = consulta.body;
+    console.log(registrarse);
+    consulta.getConnection((error,conexion)=>{
+        conexion.query("insert into registro set ?", [registrarse], (error, registro)=>{
+            respuesta.render('/');
+        });
+    });
+};
+//fin registrar usuario
+
 
 module.exports = controlador;

@@ -15,4 +15,8 @@ rutas.get('/tipoCafe',controlador.zonaTipoCafe);
 rutas.get('/menu',controlador.zonaMenu);
 rutas.get('/contactanos',controlador.zonaContactanos);
 
+// post
+
+rutas.post('/registrarUsuario',controlador.zonaRegistroUsuario);
+
 module.exports = rutas
