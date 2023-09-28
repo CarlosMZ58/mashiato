@@ -89,7 +89,7 @@ controlador.zonaNuevaContrasena=(consulta,respuesta)=>{
             if(error){
                 console.log(error);
             }else{
-                conexion.query("update into registro set contrasena=nuevaContrasena where correo=?",[correo, contrasena],(error,resultadoActualizado)=>{
+                conexion.query("update registro set contrasena=nuevaContrasena where correo=?",[correo, contrasena],(error,resultadoActualizado)=>{
                     respuesta.render("inicio.ejs")
                 });
             }
