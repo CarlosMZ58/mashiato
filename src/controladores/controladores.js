@@ -77,9 +77,9 @@ controlador.zonaInicioSesion=(consulta,respuesta)=>{
 }
 //fin inicio de sesion
 //cambiar contraseña
-controlador.zonaCambiarContrasena=(consulta,respuesta)=>{
+controlador.zonaNuevaContrasena=(consulta,respuesta)=>{
     let correo=consulta.body.correo;
-    let nuevaContrasena=consulta.body.contrasena
+    let nuevaContrasena=consulta.body
     let contrasena=consulta.body
     console.log(correo);
     console.log(nuevaContrasena);
@@ -89,7 +89,7 @@ controlador.zonaCambiarContrasena=(consulta,respuesta)=>{
             if(error){
                 console.log(error);
             }else{
-                conexion.query("update registro set contrasena=? where correo=?",[correo, contrasena],(error,resultadoActualizado)=>{
+                conexion.query("update registro set contrasena=nuevaContrasena where correo=?",[correo, contrasena],(error,resultadoActualizado)=>{
                     respuesta.render("inicio.ejs")
                 });
             }

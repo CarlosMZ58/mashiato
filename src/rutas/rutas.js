@@ -15,13 +15,11 @@ rutas.get('/tipoCafe',controlador.zonaTipoCafe);
 rutas.get('/menu',controlador.zonaMenu);
 rutas.get('/contactanos',controlador.zonaContactanos);
 rutas.get('/cambiarContrasena',controlador.zonaCambiarContrasena);
-rutas.get('/eliminarUsuario',controlador.zonaEliminarUsuario);
 
 // post
 
 rutas.post('/registrarUsuario',controlador.zonaRegistroUsuario);
 rutas.post('/iniciarSesion',controlador.zonaInicioSesion);
-rutas.post('/cambiarContrasena',controlador.zonaCambiarContrasena);
-rutas.post('/eliminarUsuario',controlador.zonaEliminarUsuario);
+rutas.post('/nuevaContrasena',controlador.zonaNuevaContrasena);
 
 module.exports = rutas
