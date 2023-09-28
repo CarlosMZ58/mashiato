@@ -79,9 +79,10 @@ controlador.zonaInicioSesion=(consulta,respuesta)=>{
 //cambiar contraseña
 controlador.zonaCambiarContrasena=(consulta,respuesta)=>{
     let correo=consulta.body.correo;
+    let nuevaContrasena=consulta.body.contrasena
     let contrasena=consulta.body
     console.log(correo);
-    console.log(nuevaContraseña);
+    console.log(nuevaContrasena);
     consulta.getConnection((error,conexion)=>{
         conexion.query("select * from registro where correo=?", [correo],(error,resultadoConsulta)=>{
             console.log(resultadoConsulta)
@@ -96,4 +97,15 @@ controlador.zonaCambiarContrasena=(consulta,respuesta)=>{
     });
 }
 //fin cambiar contraseña
+
+//eliminar usuario
+
+controlador.zonaEliminarUsuario=(consulta,respuesta)=>{
+    let correo=consulta.body.correo;
+    let contrasena=consulta.body.contrasena
+    console.log(correo);
+    console.log();
+}
+
+//fin eliminar usuario
 module.exports = controlador;
