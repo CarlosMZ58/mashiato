@@ -95,23 +95,32 @@ controlador.zonaNuevaContrasena=(consulta,respuesta)=>{
 //fin cambiar contraseña
 
 //eliminar usuario
-controlador.zonaEliminarUsuario=(consulta,respuesta)=>{
-    let correo=consulta.body.correo;
-    let contrasena=consulta.body.contrasena;
-        consulta.getConnection((error,conexion)=>{
-            conexion.query("select * from registro where correo=?", [correo],(error,resultadoConsulta)=>{
-                if(error){
-                    console.log(error);
-                }else{
-                    conexion.query("delete registro set contrasena=? and correo=?",[contrasena,correo],(error,resultado)=>{
-                        respuesta.redirect("/");
+
+controlador.zonaEliminarUsuario = (consulta, respuesta) => {
+    let correo = consulta.body.correo;
+    let contrasena = consulta.body.contrasena;
+    consulta.getConnection((error, conexion) => {
+        conexion.query("SELECT * FROM registro WHERE correo = ? AND contrasena = ?", [correo, contrasena], (error, resultadoConsulta) => {
+            if (error) {
+                console.log(error);
+            } else {
+                if (resultadoConsulta.length === 0) {
+                    console.log("Usuario no encontrado"); // Manejo de usuario no encontrado
+                    respuesta.redirect("/");
+                } else {
+                    // Eliminar el usuario correspondiente al registro ingresado
+                    conexion.query("DELETE FROM registro WHERE correo = ?", [correo], (error, resultado) => {
+                        if (error) {
+                            console.log(error);
+                        } else {
+                            console.log("Usuario eliminado correctamente");
+                            respuesta.redirect("/");
+                        }
                     });
                 }
-            });
+            }
         });
+    });
 }
-
-
-
 //fin eliminar usuario
 module.exports = controlador;
