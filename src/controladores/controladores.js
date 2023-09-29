@@ -34,7 +34,7 @@ controlador.zonaContactanos=(consulta,respuesta)=>{
 controlador.zonaCambiarContrasena=(consulta,respuesta)=>{
     respuesta.render("cambiarContrasena.ejs")
 }
-controlador.zonaEliminarUsuario=(consulta,respuesta)=>{
+controlador.zonaEliminaUsuario=(consulta,respuesta)=>{
     respuesta.render("eliminarUsuario.ejs")
 }
 
@@ -79,33 +79,39 @@ controlador.zonaInicioSesion=(consulta,respuesta)=>{
 //cambiar contraseña
 controlador.zonaNuevaContrasena=(consulta,respuesta)=>{
     let correo=consulta.body.correo;
-    let nuevaContrasena=consulta.body
-    let contrasena=consulta.body
-    console.log(correo);
-    console.log(nuevaContrasena);
-    consulta.getConnection((error,conexion)=>{
-        conexion.query("select * from registro where correo=?", [correo],(error,resultadoConsulta)=>{
-            console.log(resultadoConsulta)
-            if(error){
-                console.log(error);
-            }else{
-                conexion.query("update registro set contrasena=? where correo=?",[correo, contrasena],(error,resultadoActualizado)=>{
-                    respuesta.render("inicio.ejs")
-                });
-            }
+    let contrasena=consulta.body.contrasena;
+        consulta.getConnection((error,conexion)=>{
+            conexion.query("select * from registro where correo=?", [correo],(error,resultadoConsulta)=>{
+                if(error){
+                    console.log(error);
+                }else{
+                    conexion.query("update registro set contrasena=? where correo=?",[contrasena,correo],(error,resultado)=>{
+                        respuesta.redirect("/");
+                    });
+                }
+            });
         });
-    });
 }
 //fin cambiar contraseña
 
 //eliminar usuario
-
 controlador.zonaEliminarUsuario=(consulta,respuesta)=>{
     let correo=consulta.body.correo;
-    let contrasena=consulta.body.contrasena
-    console.log(correo);
-    console.log();
+    let contrasena=consulta.body.contrasena;
+        consulta.getConnection((error,conexion)=>{
+            conexion.query("select * from registro where correo=?", [correo],(error,resultadoConsulta)=>{
+                if(error){
+                    console.log(error);
+                }else{
+                    conexion.query("delete registro set contrasena=? and correo=?",[contrasena,correo],(error,resultado)=>{
+                        respuesta.redirect("/");
+                    });
+                }
+            });
+        });
 }
+
+
 
 //fin eliminar usuario
 module.exports = controlador;
