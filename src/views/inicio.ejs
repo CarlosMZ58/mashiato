@@ -1,5 +1,5 @@
 <%- include ('components/_main.ejs') -%>
-    <title>ORIGEN</title>
+    <title>Masshiato</title>
 </head>
 <body>
   <div id="contenedorAllRAndI">
@@ -8,7 +8,7 @@
       <div id="grupoNavegacion">
         <ul id="barraNavegacionFija">
           <li><a href="/">Inicio</a></li>
-          <li><a href="#">Productos</a></li>
+          <li><a href="/menu">Productos</a></li>
           <li><a href="/#aprendeIndex">Aprende</a></li>
           <li><a href="#">Quienes Somos</a></li>
         </ul>
@@ -25,11 +25,21 @@
           <input type="password" name="contrasena" id="Contrasena" required><span class="barra"></span>
           <label for="">Contraseña</label>
         </div>
-        <div id="contenidoPreguntaInicio">
-          <p>¿Aún no tienes una cuenta?<a href="/registro">Registrate</a></p>
-        </div>
         <div id="contenedorBotonesInicio">
           <input type="submit" value="Iniciar sesion">
+        </div>
+        <div id="contenidoPreguntaInicio">
+          <div id="otrasPreguntas">
+            <div id="preguntaRegistrar">
+              <p>¿todavía no te has registrado?</p>
+              <a href="/registro">Registrarse</a>
+            </div>
+            <div id="preguntaEliminarUsuario">
+              <p>¿Quieres eliminar tu cuenta?</p>
+              <a href="/eliminarUsuario">Eliminar Usuario</a>
+            </div>
+          </div>
+          <p>¿Haz olvidado tu contraseña?<a href="/cambiarContrasena">Cambiar Contraseña</a></p>
         </div>
       </form>
     </div>

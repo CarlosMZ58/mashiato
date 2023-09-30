@@ -36,7 +36,8 @@ header nav {
   transition: 0.4s ease-in-out;
 }
 header nav #contenedorImgNav {
-  margin: 0 160px 0 20px;
+  margin: 0 0 0 20px;
+  margin-right: auto;
   padding: 0;
   display: flex;
   justify-content: center;
@@ -65,6 +66,7 @@ header nav #barraNavegacionPrincipalNav {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  margin: auto;
 }
 header nav #barraNavegacionPrincipalNav li {
   list-style: none;
@@ -113,9 +115,9 @@ header nav #contenedorBotonesNav {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: auto;
 }
 header nav #contenedorBotonesNav #botonModoOscuroNav {
-  margin-left: 165px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -551,7 +553,7 @@ body {
   align-items: center;
   flex-direction: column;
   padding: 0;
-  transition: linear 0.4s;
+  transition: linear 0.3s;
   box-shadow: 0 3px 10px var(--colorTexto);
 }
 #contenedorProductosVendidos #contenedorTarjetaPV .tarjetaPV figure {
@@ -645,7 +647,7 @@ body {
   box-shadow: inset 220px 0 0 0 #ffe5ad;
 }
 #contenedorProductosVendidos #contenedorTarjetaPV .tarjetaPV:hover {
-  background-color: #dbb277;
+  transform: translateY(-13px);
 }
 
 #presentacionContenedor {
@@ -964,7 +966,7 @@ body {
 }
 #contenedorAllRI #contenedorRegistro form .contenedorCassillasRegistro {
   position: relative;
-  margin: 30.5px;
+  margin: 30.5px 55px 0 55px;
 }
 #contenedorAllRI #contenedorRegistro form .contenedorCassillasRegistro input {
   background: none;
@@ -1016,6 +1018,7 @@ body {
 #contenedorAllRI #contenedorRegistro form #contenidoPregunta {
   text-align: center;
   padding: 5px;
+  margin-top: 5px;
 }
 #contenedorAllRI #contenedorRegistro form #contenidoPregunta p {
   color: #fff;
@@ -1037,7 +1040,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-#contenedorAllRI #contenedorRegistro form #contenedorBotonesRegistro button {
+#contenedorAllRI #contenedorRegistro form #contenedorBotonesRegistro input {
   padding: 10px 15px;
   border-radius: 9px;
   font-family: "Quicksand", sans-serif;
@@ -1046,11 +1049,10 @@ body {
   font-size: 15px;
   color: #2b1007;
   font-weight: 700;
-  margin: 0 10px;
-  box-shadow: 0px 0px 7px rgba(250, 188, 137, 0.6784313725);
+  margin: 30px 10px 0 10px;
+  box-shadow: 0px 0px 7px rgba(255, 255, 255, 0.8980392157);
 }
-#contenedorAllRI #contenedorRegistro form #contenedorBotonesRegistro button:hover {
-  background-color: #ce914f;
+#contenedorAllRI #contenedorRegistro form #contenedorBotonesRegistro input:hover {
   color: #fff;
   box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8980392157);
   cursor: pointer;
@@ -1134,7 +1136,7 @@ body {
 }
 #contenedorAllRAndI #contenedorInicio {
   position: relative;
-  translate: 0 120px;
+  translate: 0 140px;
 }
 #contenedorAllRAndI #contenedorInicio form {
   background-color: #2b1007;
@@ -1155,7 +1157,7 @@ body {
 }
 #contenedorAllRAndI #contenedorInicio form .contenedorCassillasInicio {
   position: relative;
-  margin: 55px;
+  margin: 40px 40px 10px 40px;
 }
 #contenedorAllRAndI #contenedorInicio form .contenedorCassillasInicio input {
   background: none;
@@ -1207,11 +1209,17 @@ body {
 #contenedorAllRAndI #contenedorInicio form #contenidoPreguntaInicio {
   text-align: center;
   padding: 5px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 #contenedorAllRAndI #contenedorInicio form #contenidoPreguntaInicio p {
   color: #fff;
   font-size: 16px;
   font-family: "PT Mono", monospace;
+  margin: 30px;
 }
 #contenedorAllRAndI #contenedorInicio form #contenidoPreguntaInicio p a {
   color: #ffc26f;
@@ -1222,12 +1230,51 @@ body {
 #contenedorAllRAndI #contenedorInicio form #contenidoPreguntaInicio p a:hover {
   text-decoration: underline;
 }
+#contenedorAllRAndI #contenedorInicio form #contenidoPreguntaInicio #otrasPreguntas {
+  display: flex;
+  width: 90%;
+}
+#contenedorAllRAndI #contenedorInicio form #contenidoPreguntaInicio #otrasPreguntas p {
+  color: #fff;
+  font-size: 16px;
+  margin: 10px;
+  font-family: "PT Mono", monospace;
+}
+#contenedorAllRAndI #contenedorInicio form #contenidoPreguntaInicio #otrasPreguntas a {
+  color: #ffc26f;
+  font-family: "PT Mono", monospace;
+  text-decoration: none;
+  padding: 5px;
+  margin: 0;
+}
+#contenedorAllRAndI #contenedorInicio form #contenidoPreguntaInicio #otrasPreguntas a:hover {
+  text-decoration: underline;
+}
+#contenedorAllRAndI #contenedorInicio form #contenidoPreguntaInicio #otrasPreguntas #preguntaRegistrar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#contenedorAllRAndI #contenedorInicio form #contenidoPreguntaInicio #otrasPreguntas #preguntaRegistrar p {
+  margin: 0;
+}
+#contenedorAllRAndI #contenedorInicio form #contenidoPreguntaInicio #otrasPreguntas #preguntaEliminarUsuario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: auto;
+}
+#contenedorAllRAndI #contenedorInicio form #contenidoPreguntaInicio #otrasPreguntas #preguntaEliminarUsuario p {
+  margin: 0;
+}
 #contenedorAllRAndI #contenedorInicio form #contenedorBotonesInicio {
   display: flex;
-  margin: 20px;
+  margin: 0;
   justify-content: center;
 }
-#contenedorAllRAndI #contenedorInicio form #contenedorBotonesInicio button {
+#contenedorAllRAndI #contenedorInicio form #contenedorBotonesInicio input {
   padding: 10px 15px;
   border-radius: 7px;
   font-family: "Quicksand", sans-serif;
@@ -1239,10 +1286,9 @@ body {
   margin: 25px 10px;
   box-shadow: 0px 0px 7px rgba(250, 188, 137, 0.6784313725);
 }
-#contenedorAllRAndI #contenedorInicio form #contenedorBotonesInicio button:hover {
-  background-color: #ce914f;
+#contenedorAllRAndI #contenedorInicio form #contenedorBotonesInicio input:hover {
   color: #fff;
-  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8980392157);
+  box-shadow: 0px 0px 10px rgba(250, 188, 137, 0.6784313725);
   cursor: pointer;
   transition: 0.7s ease-in-out;
 }
@@ -1414,7 +1460,7 @@ body {
   height: auto;
   background-color: rgba(0, 0, 0, 0.5058823529);
   border-radius: 10px;
-  margin: 0 50px;
+  margin: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1434,6 +1480,7 @@ body {
 #procesov60 #fondov60materiales #materialesv60 li h5 {
   font-size: 15px;
   font-family: "Quicksand", sans-serif;
+  margin: 0;
 }
 #procesov60 #fondov60materiales #materialesv60 li::marker {
   font-size: 24px;
@@ -1557,6 +1604,7 @@ body {
 #procesoPrensaFrancesa #fondoPrensaFrancesaMateriales #materialesPrensaFrancesa li h5 {
   font-size: 15px;
   font-family: "Quicksand", sans-serif;
+  margin: 0;
 }
 #procesoPrensaFrancesa #fondoPrensaFrancesaMateriales #materialesPrensaFrancesa li::marker {
   font-size: 24px;
@@ -1680,6 +1728,7 @@ body {
 #procesocafeteraitaliana #fondoCafeteraItalianaMateriales #materialesCafeteraItaliana li h5 {
   font-size: 15px;
   font-family: "Quicksand", sans-serif;
+  margin: 0;
 }
 #procesocafeteraitaliana #fondoCafeteraItalianaMateriales #materialesCafeteraItaliana li::marker {
   font-size: 24px;
@@ -1803,6 +1852,7 @@ body {
 #procesoAeropress #fondoPrensaAeropress #materialesAeropress li h5 {
   font-size: 15px;
   font-family: "Quicksand", sans-serif;
+  margin: 0;
 }
 #procesoAeropress #fondoPrensaAeropress #materialesAeropress li::marker {
   font-size: 24px;
@@ -2268,7 +2318,7 @@ body {
 }
 #contenedorCambiarContrasenaTodo #contenedorCambiarContrasena {
   position: relative;
-  translate: 0 75px;
+  translate: 0 125px;
 }
 #contenedorCambiarContrasenaTodo #contenedorCambiarContrasena form {
   background-color: #2b1007;
@@ -2358,7 +2408,7 @@ body {
 }
 #contenedorCambiarContrasenaTodo #contenedorCambiarContrasena form #contenedorBotonesCambio {
   display: flex;
-  margin: 20px;
+  margin: 0;
   justify-content: center;
 }
 #contenedorCambiarContrasenaTodo #contenedorCambiarContrasena form #contenedorBotonesCambio input {
@@ -2460,7 +2510,7 @@ body {
 }
 #contenedorEliminarUsuarioTodo #contenedorEliminarUsuario {
   position: relative;
-  translate: 0 125px;
+  translate: 0 135px;
 }
 #contenedorEliminarUsuarioTodo #contenedorEliminarUsuario form {
   background-color: #2b1007;
@@ -2481,7 +2531,7 @@ body {
 }
 #contenedorEliminarUsuarioTodo #contenedorEliminarUsuario form .contenedorCassillasEliminarUsuario {
   position: relative;
-  margin: 55px;
+  margin: 55px 55px 0 55px;
 }
 #contenedorEliminarUsuarioTodo #contenedorEliminarUsuario form .contenedorCassillasEliminarUsuario input {
   background: none;
@@ -2536,10 +2586,12 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin: 20px 20px 0 20px;
 }
 #contenedorEliminarUsuarioTodo #contenedorEliminarUsuario form #contenidoPreguntaEliminarUsuario p {
   color: #fff;
   font-size: 16px;
+  margin: 15px;
   font-family: "PT Mono", monospace;
 }
 #contenedorEliminarUsuarioTodo #contenedorEliminarUsuario form #contenidoPreguntaEliminarUsuario p a {
@@ -2553,7 +2605,7 @@ body {
 }
 #contenedorEliminarUsuarioTodo #contenedorEliminarUsuario form #contenedorBotonesEliminarUsuario {
   display: flex;
-  margin: 20px;
+  margin: 0 0 20px 0;
   justify-content: center;
 }
 #contenedorEliminarUsuarioTodo #contenedorEliminarUsuario form #contenedorBotonesEliminarUsuario input {
@@ -2567,7 +2619,7 @@ body {
   font-size: 15px;
   color: #2b1007;
   font-weight: 700;
-  margin: 25px 10px;
+  margin: 10px;
   box-shadow: 0px 0px 7px rgba(250, 188, 137, 0.6784313725);
 }
 #contenedorEliminarUsuarioTodo #contenedorEliminarUsuario form #contenedorBotonesEliminarUsuario input:hover {

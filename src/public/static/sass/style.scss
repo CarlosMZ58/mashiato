@@ -86,7 +86,7 @@ body {
       align-items: center;
       flex-direction: column;
       padding: 0;
-      transition: linear .4s;
+      transition: linear .3s;
       box-shadow: 0 3px 10px var(--colorTexto);
       figure{
         width: 100%;
@@ -180,7 +180,7 @@ body {
       }
     }
     .tarjetaPV:hover{
-      background-color: #dbb277;
+      transform: translateY(-13px);
     }
   }
 }
@@ -494,7 +494,7 @@ body {
       }
       .contenedorCassillasRegistro {
         position: relative;
-        margin: 30.5px;
+        margin: 30.5px  55px 0 55px;
         input {
           background: none;
           color: $colorFondoAndText;
@@ -546,6 +546,7 @@ body {
       #contenidoPregunta {
         text-align: center;
         padding: 5px;
+        margin-top: 5px;
         p {
           color: $colorFondoAndText;
           font-size: 16px;
@@ -566,7 +567,7 @@ body {
         margin: 0;
         justify-content: center;
         align-items: center;
-        button {
+        input {
           padding: 10px 15px;
           border-radius: 9px;
           @include fuenteParrafosN();
@@ -575,11 +576,10 @@ body {
           font-size: 15px;
           color: $colorbrown;
           font-weight: 700;
-          margin: 0 10px;
-          box-shadow: 0px 0px 7px #fabc89ad;
+          margin: 30px 10px 0 10px;
+          box-shadow: 0px 0px 7px #ffffffe5;
         }
-        button:hover {
-          background-color: #ce914f;
+        input:hover {
           color: #fff;
           box-shadow: 0px 0px 10px #ffffffe5;
           cursor: pointer;
@@ -668,7 +668,7 @@ body {
   }
   #contenedorInicio {
     position: relative;
-    translate: 0 120px;
+    translate: 0 140px;
     form {
       background-color: $colorbrown;
       width: 600px;
@@ -687,7 +687,7 @@ body {
       }
       .contenedorCassillasInicio {
         position: relative;
-        margin: 55px;
+        margin: 40px 40px  10px 40px;
         input{
           background: none;
           color: $colorFondoAndText;
@@ -739,10 +739,16 @@ body {
       #contenidoPreguntaInicio{
         text-align: center;
         padding: 5px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         p{
           color: $colorFondoAndText;
           font-size: 16px;
           @include fuenteParrafosP();
+          margin: 30px;    
           a{
             color: $colorCuarto;
             @include fuenteParrafosP();
@@ -753,12 +759,51 @@ body {
             text-decoration: underline;
           }
         }
+        #otrasPreguntas{
+          display: flex;
+          width: 90%;
+          p{
+            color: $colorFondoAndText;
+            font-size: 16px;
+            margin: 10px;
+            @include fuenteParrafosP();
+          }
+          a{
+            color: $colorCuarto;
+            @include fuenteParrafosP();
+            text-decoration: none;
+            padding: 5px;
+            margin: 0;
+          }
+          a:hover{
+            text-decoration: underline;
+          }
+          #preguntaRegistrar{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            p{
+              margin: 0;
+            }
+          }
+          #preguntaEliminarUsuario{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-left: auto;
+            p{
+              margin: 0;
+            }
+          }
+        }
       }
       #contenedorBotonesInicio{
         display: flex;
-        margin: 20px;
+        margin: 0;
         justify-content: center;
-        button{
+        input{
           padding: 10px 15px;
           border-radius: 7px;
           @include fuenteParrafosN();
@@ -770,10 +815,9 @@ body {
           margin: 25px 10px;
           box-shadow: 0px 0px 7px #fabc89ad;
         }
-        button:hover{
-          background-color: #ce914f;
+        input:hover{
           color: #fff;
-          box-shadow: 0px 0px 10px #ffffffe5;
+          box-shadow: 0px 0px 10px #fabc89ad;
           cursor: pointer;
           transition: 0.7s ease-in-out;
         }
@@ -946,7 +990,7 @@ body {
       height: auto;
       background-color: #00000081;
       border-radius: 10px;
-      margin: 0 50px;
+      margin: 50px;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -964,6 +1008,7 @@ body {
         h5{
           font-size: 15px;
           @include fuenteParrafosN();
+          margin: 0;
         }
       }
       li::marker{
@@ -1085,6 +1130,7 @@ body {
         h5{
           font-size: 15px;
           @include fuenteParrafosN();
+          margin: 0;
         }
       }
       li::marker{
@@ -1206,6 +1252,7 @@ body {
         h5{
           font-size: 15px;
           @include fuenteParrafosN();
+          margin: 0;
         }
       }
       li::marker{
@@ -1327,6 +1374,7 @@ body {
         h5{
           font-size: 15px;
           @include fuenteParrafosN();
+          margin: 0;
         }
       }
       li::marker{
@@ -1787,7 +1835,7 @@ body {
   }
   #contenedorCambiarContrasena {
     position: relative;
-    translate: 0 75px;
+    translate: 0 125px;
     form {
       background-color: $colorbrown;
       width: 600px;
@@ -1875,7 +1923,7 @@ body {
       }
       #contenedorBotonesCambio{
         display: flex;
-        margin: 20px;
+        margin: 0;
         justify-content: center;
         input{
           width: 150px;
@@ -1984,7 +2032,7 @@ body {
   }
   #contenedorEliminarUsuario {
     position: relative;
-    translate: 0 125px;
+    translate: 0 135px;
     form {
       background-color: $colorbrown;
       width: 600px;
@@ -2003,7 +2051,7 @@ body {
       }
       .contenedorCassillasEliminarUsuario{
         position: relative;
-        margin: 55px;
+        margin: 55px 55px 0 55px;
         input{
           background: none;
           color: $colorFondoAndText;
@@ -2058,9 +2106,11 @@ body {
         display: flex;
         justify-content: center;
         flex-direction: column;
+        margin: 20px 20px 0 20px;
         p{
           color: $colorFondoAndText;
           font-size: 16px;
+          margin: 15px;
           @include fuenteParrafosP();
           a{
             color: $colorCuarto;
@@ -2075,7 +2125,7 @@ body {
       }
       #contenedorBotonesEliminarUsuario{
         display: flex;
-        margin: 20px;
+        margin: 0 0 20px 0;
         justify-content: center;
         input{
           width: 150px;
@@ -2088,7 +2138,7 @@ body {
           font-size: 15px;
           color: $colorbrown;
           font-weight: 700;
-          margin: 25px 10px;
+          margin: 10px;
           box-shadow: 0px 0px 7px #fabc89ad;
         }
         input:hover{
