@@ -1447,7 +1447,7 @@ body {
 #procesov60 #fondov60materiales {
   width: 100%;
   height: 580px;
-  background-image: linear-gradient(rgba(8, 8, 8, 0.4666666667), rgba(0, 0, 0, 0.7176470588)), url(../../img/ARTICULOS/v60\ portada\ mats.jpg);
+  background-image: linear-gradient(rgba(8, 8, 8, 0.4666666667), rgba(0, 0, 0, 0.7176470588)), url(../../IMG/ARTICULOS/v60\ portada\ mats.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1571,7 +1571,7 @@ body {
 #procesoPrensaFrancesa #fondoPrensaFrancesaMateriales {
   width: 100%;
   height: 580px;
-  background-image: linear-gradient(rgba(8, 8, 8, 0.4666666667), rgba(0, 0, 0, 0.7176470588)), url(../../img/ARTICULOS/prensa\ francesa\ fondo.jpg);
+  background-image: linear-gradient(rgba(8, 8, 8, 0.4666666667), rgba(0, 0, 0, 0.7176470588)), url(../../IMG/ARTICULOS/prensa\ francesa\ fondo.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1695,7 +1695,7 @@ body {
 #procesocafeteraitaliana #fondoCafeteraItalianaMateriales {
   width: 100%;
   height: 580px;
-  background-image: linear-gradient(rgba(8, 8, 8, 0.4666666667), rgba(0, 0, 0, 0.7176470588)), url(../../img/ARTICULOS/fondo\ cafetera\ italiana.jpg);
+  background-image: linear-gradient(rgba(8, 8, 8, 0.4666666667), rgba(0, 0, 0, 0.7176470588)), url(../../IMG/ARTICULOS/fondo\ cafetera\ italiana.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1819,7 +1819,7 @@ body {
 #procesoAeropress #fondoPrensaAeropress {
   width: 100%;
   height: 580px;
-  background-image: linear-gradient(rgba(8, 8, 8, 0.4666666667), rgba(0, 0, 0, 0.7176470588)), url(../../img/ARTICULOS/fondo\ aeropress.jpg);
+  background-image: linear-gradient(rgba(8, 8, 8, 0.4666666667), rgba(0, 0, 0, 0.7176470588)), url(../../IMG/ARTICULOS/fondo\ aeropress.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
