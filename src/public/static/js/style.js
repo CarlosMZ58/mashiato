@@ -26,7 +26,9 @@ boton.addEventListener('click',function(){
     pagina.style.setProperty('--colorfondo', '#1f1c1c');
     pagina.style.setProperty('--colorDia', '#1f1c1c');
     pagina.style.setProperty('--colornoche', '#ffc26f');
+    pagina.style.setProperty('--colornegro', '#fff');
     pagina.style.setProperty('--colorTexto', '#fff');
+    pagina.style.setProperty('--colorTarjetaTiposCafe', '#f3c283');
     pagina.style.setProperty('--colorContenedorTestimonio', '#493226');
     pagina.style.setProperty('--colorhovermetodos', '#302b2b8a');
     interruptor.style.left = '25px';
@@ -36,6 +38,8 @@ boton.addEventListener('click',function(){
     pagina.style.setProperty('--colorDia', '#ffc26f');
     pagina.style.setProperty('--colornoche', '#1f1c1c ');
     pagina.style.setProperty('--colorTexto', '#000');
+    pagina.style.setProperty('--colornegro', '#000');
+    pagina.style.setProperty('--colorTarjetaTiposCafe', '#6b4020');
     pagina.style.setProperty('--colorContenedorTestimonio', '#ebc895');
     pagina.style.setProperty('--colorhovermetodos', '#c9b0b08a');
     interruptor.style.left = '0';

@@ -37,7 +37,9 @@ controlador.zonaCambiarContrasena=(consulta,respuesta)=>{
 controlador.zonaEliminaUsuario=(consulta,respuesta)=>{
     respuesta.render("eliminarUsuario.ejs")
 }
-
+controlador.zonaTiposCafe=(consulta,respuesta)=>{
+    respuesta.render("tiposCafe.ejs")
+}
 
 //registrar usuario
 controlador.zonaRegistroUsuario=(consulta,respuesta)=>{
