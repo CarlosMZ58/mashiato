@@ -24,9 +24,13 @@ html #contenedorMenuP {
 }
 html #contenedorMenuP #navegacionVertical {
   width: 29%;
-  position: sticky;
+  position: fixed;
+  height: 100vh;
   top: 0;
   left: 0;
+  overflow-y: auto;
+  background-color: var(--colorNavegacionVertical);
+  border-radius: 0 15px 15px 0;
 }
 html #contenedorMenuP #navegacionVertical .lista {
   padding: 0;
@@ -35,8 +39,6 @@ html #contenedorMenuP #navegacionVertical .lista {
   min-height: 300vh;
   display: flex;
   flex-direction: column;
-  background-color: var(--colorNavegacionVertical);
-  border-radius: 0 15px 15px 0;
   position: sticky;
 }
 html #contenedorMenuP #navegacionVertical .lista h2 {

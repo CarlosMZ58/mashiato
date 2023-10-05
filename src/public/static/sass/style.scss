@@ -26,63 +26,65 @@
 @mixin fuenteh1 {
   font-family: "Caveat", cursive;
 }
-html{
+html {
   --colornegro: #000;
   --colorNavegacionVertical: #ffdba6;
   --colorBlanco: #fff;
   --colorCafeBoton: #623715;
   --colorCafeBotonHover: #6b4020;
-  body{
+  body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
   }
-  #contenedorMenuP{
+  #contenedorMenuP {
     display: flex;
     align-items: start;
-    #navegacionVertical{
+    #navegacionVertical {
       width: 29%;
-      position: sticky;
+      position: fixed;
+      height: 100vh;
       top: 0;
       left: 0;
-      .lista{
+      overflow-y: auto;
+      background-color: var(--colorNavegacionVertical);
+      border-radius: 0 15px 15px 0;
+      .lista {
         padding: 0;
         margin: 0;
         width: 100%;
         min-height: 300vh;
         display: flex;
         flex-direction: column;
-        background-color: var(--colorNavegacionVertical);
-        border-radius: 0 15px 15px 0;
         position: sticky;
-        h2{
+        h2 {
           color: var(--colornegro);
           @include fuenteh1();
           width: 100%;
           text-align: center;
           font-size: 29px;
         }
-        .click{
+        .click {
           cursor: pointer;
         }
-        .listaItem{
+        .listaItem {
           list-style: none;
           width: 100%;
           text-align: center;
           overflow: hidden;
           margin-right: auto;
-          .arrow{
-            .flechaNavV{
+          .arrow {
+            .flechaNavV {
               transform: rotate(90deg);
             }
           }
-          .botonLista{
+          .botonLista {
             display: flex;
             align-items: center;
             gap: 1em;
             width: 100%;
             margin: 0 auto;
-            a{
+            a {
               color: var(--colornegro);
               @include fuenteh1();
               font-size: 18px;
@@ -90,28 +92,28 @@ html{
               padding: 15px 0;
               text-decoration: none;
             }
-            .flechaNavV{
+            .flechaNavV {
               margin-left: auto;
-              transition: transform .3s ease;
+              transition: transform 0.3s ease;
               opacity: 0;
-              transition: .3s ease-in-out;
+              transition: 0.3s ease-in-out;
             }
           }
-          .listaShow{
+          .listaShow {
             width: 80%;
             margin-left: auto;
             border-left: 2px solid var(--colornegro);
             list-style: none;
-            transition: height .4s;
+            transition: height 0.4s;
             height: 0;
-            .listaInside{
-              a{
+            .listaInside {
+              a {
                 color: var(--colornegro);
                 @include fuenteh1();
                 display: block;
                 padding: 15px 0;
                 text-decoration: none;
-                transition: .4s ease;
+                transition: 0.4s ease;
                 border-radius: 6px;
                 padding-left: 20px;
                 text-align: left;
@@ -119,13 +121,13 @@ html{
             }
           }
         }
-        .listaItem:hover .flechaNavV{
+        .listaItem:hover .flechaNavV {
           opacity: 1;
         }
       }
     }
-    #contenedorCardsProductosM{
-      .contenedorCategoriaProducto{
+    #contenedorCardsProductosM {
+      .contenedorCategoriaProducto {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -137,35 +139,35 @@ html{
         min-height: 100vh;
         width: 70%;
         margin: 10px 6px 0 0;
-        .tarjetaProducto{
+        .tarjetaProducto {
           position: relative;
           width: 300px;
           height: 350px;
-          .face{
+          .face {
             position: absolute;
             width: 100%;
             height: 100%;
             backface-visibility: hidden;
             border-radius: 10px;
             overflow: hidden;
-            transition: .5s ease-in-out;
+            transition: 0.5s ease-in-out;
             // transicionrotaciontarjeta
-            h2{
+            h2 {
               @include fuenteh1();
               color: var(--colornegro);
               text-align: center;
             }
-            .precioProducto{
+            .precioProducto {
               @include fuenteh1();
               color: var(--colornegro);
               width: 100%;
               text-align: center;
             }
-            .contenedorBotonesProductoM{
+            .contenedorBotonesProductoM {
               display: grid;
               place-items: center;
               margin-bottom: 50px;
-              a{
+              a {
                 display: grid;
                 place-items: center;
                 text-decoration: none;
@@ -177,19 +179,19 @@ html{
                 border-radius: 20px;
                 cursor: pointer;
                 box-shadow: inset 0 0 0 0 var(--colorCafeBoton);
-                transition: .3s;
+                transition: 0.3s;
               }
-              a:hover{
+              a:hover {
                 box-shadow: inset 170px 0 0 0 var(--colorCafeBoton);
               }
             }
           }
-          .front{
+          .front {
             transform: perspective(600px) rotateY(0deg);
             box-shadow: 0 2px 5px var(--colornegro);
             height: 100%;
             background-color: #ffdba6;
-            figure{
+            figure {
               width: 100%;
               height: 55%;
               margin: 0;
@@ -197,54 +199,54 @@ html{
               top: 0;
               background-color: aqua;
               box-shadow: 0 1px 5px var(--colornegro);
-              img{
+              img {
                 width: 100%;
                 height: 100%;
               }
             }
-            h2{
+            h2 {
               position: absolute;
               width: 100%;
               top: 50%;
             }
-            p{
+            p {
               position: absolute;
               top: 65%;
             }
-            .contenedorEstrellas{
+            .contenedorEstrellas {
               display: flex;
               justify-content: center;
               align-items: center;
               width: 100%;
               position: absolute;
               top: 83%;
-              svg{
+              svg {
                 width: 23px;
                 height: 23px;
                 fill: #ffa805;
               }
             }
-            .contenedorBotonesProductoM{
+            .contenedorBotonesProductoM {
               width: 100%;
               position: absolute;
               bottom: 0;
               margin-bottom: 20px;
             }
           }
-          .back{
+          .back {
             transform: perspective(600px) rotateY(180deg);
             box-shadow: 0 2px 5px var(--colornegro);
             background-color: #ffdba6;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            h2{
+            h2 {
               position: absolute;
               top: 0;
               width: 100%;
               margin: 20;
             }
-            p{
+            p {
               @include fuenteParrafosN();
               text-align: justify;
               font-size: 15px;
@@ -253,10 +255,10 @@ html{
             }
           }
         }
-        .tarjetaProducto:hover .front{
+        .tarjetaProducto:hover .front {
           transform: perspective(600px) rotateY(180deg);
         }
-        .tarjetaProducto:hover .back{
+        .tarjetaProducto:hover .back {
           transform: perspective(600px) rotateY(360deg);
         }
       }
