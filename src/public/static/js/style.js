@@ -47,3 +47,5 @@ boton.addEventListener('click',function(){
   }
   dia = !dia;
 });
+
+
