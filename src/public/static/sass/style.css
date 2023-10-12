@@ -2687,6 +2687,9 @@ body {
   width: 100%;
   margin: 0 auto;
 }
+#contenedorMenuP #navegacionVertical .lista .listaItem .botonLista figure svg {
+  fill: var(--colornegro);
+}
 #contenedorMenuP #navegacionVertical .lista .listaItem .botonLista a {
   color: var(--colornegro);
   font-family: "Caveat", cursive;
@@ -2700,6 +2703,9 @@ body {
   transition: transform 0.3s ease;
   opacity: 0;
   transition: 0.3s ease-in-out;
+}
+#contenedorMenuP #navegacionVertical .lista .listaItem .botonLista .flechaNavV svg {
+  fill: var(--colornegro);
 }
 #contenedorMenuP #navegacionVertical .lista .listaItem .listaShow {
   width: 80%;
@@ -2790,7 +2796,7 @@ body {
   transform: perspective(600px) rotateY(0deg);
   box-shadow: 0 2px 5px var(--colornegro);
   height: 100%;
-  background-color: #ffdba6;
+  background-color: var(--colorNavegacionVertical);
 }
 #contenedorMenuP #contenedorCardsProductosM .contenedorCategoriaProducto .tarjetaProducto .front figure {
   width: 100%;
@@ -2836,7 +2842,7 @@ body {
 #contenedorMenuP #contenedorCardsProductosM .contenedorCategoriaProducto .tarjetaProducto .back {
   transform: perspective(600px) rotateY(180deg);
   box-shadow: 0 2px 5px var(--colornegro);
-  background-color: #ffdba6;
+  background-color: var(--colorNavegacionVertical);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -2853,6 +2859,7 @@ body {
   font-size: 15px;
   margin-top: 100px;
   padding: 10px;
+  color: var(--colorTexto);
 }
 #contenedorMenuP #contenedorCardsProductosM .contenedorCategoriaProducto .tarjetaProducto:hover .front {
   transform: perspective(600px) rotateY(180deg);
