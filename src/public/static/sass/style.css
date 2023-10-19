@@ -2061,7 +2061,7 @@ body {
 }
 #contenedorInformacioTiposCafe .cardCafe .back p {
   font-family: "Quicksand", sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   letter-spacing: 1px;
   padding: 30px;
   text-align: justify;
@@ -2866,6 +2866,63 @@ body {
 }
 #contenedorMenuP #contenedorCardsProductosM .contenedorCategoriaProducto .tarjetaProducto:hover .back {
   transform: perspective(600px) rotateY(360deg);
+}
+
+#contenedorHorizonte {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  min-height: 100%;
+  width: 100%;
+  margin-top: 100px;
+}
+#contenedorHorizonte .cardHorizonte {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 350px;
+  margin-top: 20px;
+  margin: auto;
+  width: 80%;
+  border-radius: 20px;
+  border: solid 3px rgba(0, 0, 0, 0);
+}
+#contenedorHorizonte .cardHorizonte figure {
+  width: 40%;
+  height: 100%;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+#contenedorHorizonte .cardHorizonte figure img {
+  width: 250px;
+  height: 250px;
+}
+#contenedorHorizonte .cardHorizonte figure #imgHorizonte {
+  width: 330px;
+  height: 330px;
+}
+#contenedorHorizonte .cardHorizonte .contenedortextoHorizonte {
+  width: 40%;
+  padding: 20px;
+}
+#contenedorHorizonte .cardHorizonte .contenedortextoHorizonte h2 {
+  color: var(--colorTexto);
+  font-family: "Caveat", cursive;
+  font-size: 25px;
+  text-align: center;
+}
+#contenedorHorizonte .cardHorizonte .contenedortextoHorizonte p {
+  text-align: justify;
+  color: var(--colorTexto);
+  font-family: "Quicksand", sans-serif;
+  font-size: 18px;
+  margin-top: 10px;
+}
+#contenedorHorizonte .cardHorizonte:hover {
+  border: solid 3px var(--colorCafeBoton);
 }
 
 /*# sourceMappingURL=style.css.map */

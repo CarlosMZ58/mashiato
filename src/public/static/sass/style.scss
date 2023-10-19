@@ -1572,7 +1572,7 @@ body {
       }
       p{
         @include fuenteParrafosN();
-        font-size: 20px;
+        font-size: 18px;
         letter-spacing: 1px;
         padding: 30px;
         text-align: justify;
@@ -2404,3 +2404,62 @@ body {
 
 
 //menu fin
+
+//Quienes somos Inicio
+#contenedorHorizonte{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  min-height: 100%;
+  width: 100%;
+  margin-top: 100px;
+  .cardHorizonte{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 350px;
+    margin-top: 20px;
+    margin: auto;
+    width: 80%;
+    border-radius: 20px;
+    border: solid 3px #00000000;
+    figure{
+      width: 40%;
+      height: 100%;
+      overflow: hidden;
+      display: grid;
+      place-items: center;
+      img{
+        width: 250px;
+        height: 250px;
+      }
+      #imgHorizonte{
+        width: 330px;
+        height: 330px;
+      }
+    }
+    .contenedortextoHorizonte{
+      width: 40%;
+      padding: 20px;
+      h2{
+        color: var(--colorTexto);
+        @include fuenteh1();
+        font-size: 25px;
+        text-align: center;
+      }
+      p{
+        text-align: justify;
+        color: var(--colorTexto);
+        @include fuenteParrafosN();
+        font-size: 18px;
+        margin-top: 10px;
+      }
+    }
+  }
+  .cardHorizonte:hover{
+    border: solid 3px var(--colorCafeBoton);
+  }
+}
+//Quienes somos fin

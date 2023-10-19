@@ -7,6 +7,10 @@ const fs = require("fs");
 const { get } = require("http");
 const multer = require("multer");
 
+controlador.zonaQuienes=(consulta,respuesta)=>{
+    respuesta.render("quienesSomos.ejs")
+}
+
 controlador.zonaIndex=(consulta,respuesta)=>{
     respuesta.render("index.ejs")
 }
