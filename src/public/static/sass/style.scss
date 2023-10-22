@@ -48,6 +48,7 @@ html{
   --colorBlanco: #fff;
   --colorCafeBoton: #623715;
   --colorCafeBotonHover: #6b4020;
+  --colorBotonProductos: #fdce67;
 }
 body {
   padding: 0;
@@ -121,7 +122,6 @@ body {
         justify-content: flex-start;
         align-items: center;
         margin: 5px 0;
-        margin-left: 17px;
         svg{
           width: 20px;
           height: 20px;
@@ -134,13 +134,11 @@ body {
       .contenedorPreciosPV{
         width: 100%;
         margin-bottom: 0;
-        margin-left: 70px;
+        display: grid;
+        place-items: center;
         .precioComun{
-          text-decoration: line-through;
           @include fuenteParrafosN();
-          font-size: 16px;
-          font-weight: 500;
-          letter-spacing: 1px;
+          font-size: 18px;
           color: var(--colorTexto);
         }
         .precioOferta{
@@ -169,13 +167,13 @@ body {
           height: 35px;
           display: grid;
           place-items: center;
-          transition: ease-out .3s;
+          transition: ease-out .3s .3s;
           outline: none;
           box-shadow: inset 0 0 0 0 #f3bf77;
           margin: 5px 0 0 0;
         }
         a:hover{
-          box-shadow: inset 220px 0 0 0 #ffe5ad;
+          box-shadow: inset 220px 0 0 0 #fdce67;
         }
       }
     }
@@ -1504,7 +1502,7 @@ body {
       position: absolute;
       backface-visibility: hidden;
       overflow: hidden;
-      transition: 1s ease;
+      transition: 1s 0.2s ease;
       width: 100%;
       height: 100%;
       display: flex;
@@ -2425,6 +2423,7 @@ body {
     width: 80%;
     border-radius: 20px;
     border: solid 3px #00000000;
+    transition: .3s .5s;
     figure{
       width: 40%;
       height: 100%;
@@ -2432,8 +2431,9 @@ body {
       display: grid;
       place-items: center;
       img{
-        width: 250px;
-        height: 250px;
+        width: 330px;
+        height: 330px;
+        border-radius: 16px;
       }
       #imgHorizonte{
         width: 330px;

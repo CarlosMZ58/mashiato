@@ -32,6 +32,7 @@ boton.addEventListener('click',function(){
     pagina.style.setProperty('--colorContenedorTestimonio', '#493226');
     pagina.style.setProperty('--colorhovermetodos', '#302b2b8a');
     pagina.style.setProperty('--colorNavegacionVertical', '#493226');
+    pagina.style.setProperty('--colorBotonProductos', '#f3bf77');
     interruptor.style.left = '25px';
   }
   else{
@@ -44,6 +45,7 @@ boton.addEventListener('click',function(){
     pagina.style.setProperty('--colorContenedorTestimonio', '#ebc895');
     pagina.style.setProperty('--colorhovermetodos', '#c9b0b08a');
     pagina.style.setProperty('--colorNavegacionVertical', '#ffdba6');
+    pagina.style.setProperty('--colorBotonProductos', '#fdce67');
     interruptor.style.left = '0';
     interruptor.style.transition = '.4s ease-in-out';
   }

@@ -512,6 +512,7 @@ html {
   --colorBlanco: #fff;
   --colorCafeBoton: #623715;
   --colorCafeBotonHover: #6b4020;
+  --colorBotonProductos: #fdce67;
 }
 
 body {
@@ -589,7 +590,6 @@ body {
   justify-content: flex-start;
   align-items: center;
   margin: 5px 0;
-  margin-left: 17px;
 }
 #contenedorProductosVendidos #contenedorTarjetaPV .tarjetaPV .contenedorEstrellasPV svg {
   width: 20px;
@@ -602,14 +602,12 @@ body {
 #contenedorProductosVendidos #contenedorTarjetaPV .tarjetaPV .contenedorPreciosPV {
   width: 100%;
   margin-bottom: 0;
-  margin-left: 70px;
+  display: grid;
+  place-items: center;
 }
 #contenedorProductosVendidos #contenedorTarjetaPV .tarjetaPV .contenedorPreciosPV .precioComun {
-  text-decoration: line-through;
   font-family: "Quicksand", sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  letter-spacing: 1px;
+  font-size: 18px;
   color: var(--colorTexto);
 }
 #contenedorProductosVendidos #contenedorTarjetaPV .tarjetaPV .contenedorPreciosPV .precioOferta {
@@ -638,13 +636,13 @@ body {
   height: 35px;
   display: grid;
   place-items: center;
-  transition: ease-out 0.3s;
+  transition: ease-out 0.3s 0.3s;
   outline: none;
   box-shadow: inset 0 0 0 0 #f3bf77;
   margin: 5px 0 0 0;
 }
 #contenedorProductosVendidos #contenedorTarjetaPV .tarjetaPV .ContenedorBotonCompraPV a:hover {
-  box-shadow: inset 220px 0 0 0 #ffe5ad;
+  box-shadow: inset 220px 0 0 0 #fdce67;
 }
 #contenedorProductosVendidos #contenedorTarjetaPV .tarjetaPV:hover {
   transform: translateY(-13px);
@@ -1982,7 +1980,7 @@ body {
   position: absolute;
   backface-visibility: hidden;
   overflow: hidden;
-  transition: 1s ease;
+  transition: 1s 0.2s ease;
   width: 100%;
   height: 100%;
   display: flex;
@@ -2888,6 +2886,7 @@ body {
   width: 80%;
   border-radius: 20px;
   border: solid 3px rgba(0, 0, 0, 0);
+  transition: 0.3s 0.5s;
 }
 #contenedorHorizonte .cardHorizonte figure {
   width: 40%;
@@ -2897,8 +2896,9 @@ body {
   place-items: center;
 }
 #contenedorHorizonte .cardHorizonte figure img {
-  width: 250px;
-  height: 250px;
+  width: 330px;
+  height: 330px;
+  border-radius: 16px;
 }
 #contenedorHorizonte .cardHorizonte figure #imgHorizonte {
   width: 330px;
