@@ -871,7 +871,7 @@ body {
 
 #contenedorAllRI {
   width: 100%;
-  height: 100vh;
+  height: 110vh;
   box-sizing: border-box;
   background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5960784314), rgba(51, 36, 16, 0.6431372549)), url(../../img/fondoregistro/fondo.registro4.jpg);
 }
