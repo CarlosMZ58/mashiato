@@ -841,6 +841,8 @@ body {
   justify-content: center;
   align-items: center;
   background-image: linear-gradient(#111111a4, #f39e3c1e), url(../../img/ORIGEN//PAISAJE\ DE\ CAFE\ 2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   @include fuenteh1();
   box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.664);
   #encabezadoOrigenCafe{

@@ -1303,6 +1303,8 @@ body {
   justify-content: center;
   align-items: center;
   background-image: linear-gradient(rgba(17, 17, 17, 0.6431372549), rgba(243, 158, 60, 0.1176470588)), url(../../img/ORIGEN//PAISAJE\ DE\ CAFE\ 2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   font-family: "Caveat", cursive;
   box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.664);
 }
